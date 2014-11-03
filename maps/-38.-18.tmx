@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="45" height="45" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Sinnoh Interiors.tsx"/>
+ <tileset firstgid="17826" source="InteriorObjects1.tsx"/>
+ <layer name="Walkable" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XRW6WURSA4R93QmWKFyjuVii+A9xnuLMCXFqKFqfFZQd4KQ5FixXfAe4jnuS7bIEvgfsmz+SMTm5yBjeTicVisb/XihaZzEpWsZo1rGUd69nARoooZhMlLdLbt21WoiWtaE2bMGtHe/LoQEc6kU/nII0uZCVOc4aznON8mF+kgktUcpkrXA3S3HlsdiYzjvFMYCKTmMwUpjKN6cxgZpBGn7IT73jPBz6G2We+8JVvfOcHP/kVpNGfd96Q484oophNlLCZLWxlG9vZQWmQ5s55ue6MjnQin850oSvd6E4PetIrSKMruYkKLlHJ5TC7yjWuc4Ob3OI2VUEsFovFYrHYv1qpv91OdrGbPexlH/s5QBnlHOQQh1P8D/bKSvSmD33pR38GMJBBDKaAIQylMEijqqzEHe5yj/s84CHVPOIxT3jKM2qCNJqVnZjNHOYyj/ksYCGLWMwSlrKM5UEa1cpJ1KYOdalHfRrQkEY0pglNaUbzII325yQOUEY5BznEYY5wlGMc5wQnORWk0cDcxCAGU8AQhlLIMIYzgpGMYjRjgjSqzk084jFPeMozanjOC17yite84W0Qi8VisVjs/+k3MN2G96QfAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Xt04DQRSF4QGbIIFkG/dQEN6A8AI05BwacrAJErwBEtkUNEBDKpBwRw/vQw4mNWR+V5hltTiwM2s0R/ok7PHOPZZMcYXQcWrCqgskkXTtXOMRohZ1qEcDGtGEZrSgFW1oRwc60YVuj/zvHZ13zNwTnOIM57jAJa5wjRtEcIs73OMBj4o6z3i/Xs/y9xzmsYBFLGEZIe/P51e9ajrHptAnRJHv+3vFvC5BKcoMZ2Z32B3jvEM6HZn0SuQOu/MX81R3jhTwf1aQ2h12xzgv5BdixZ/aHXYnXX8bB9XJPx99VkXn38TzOZlJ19+GE+6QPU93ljNPd5YzT3eWM09F5x72o170oR8DGMQQhjGCUQQQxBjGMYFJRbvVE3Of8YJXvOEdHxDsThnIhAtuZCEbOchVtFutMXcdGyb73ibvbWHb5CyaPQfsg7EpZ8eqQCWqLPYtJ3WWeUcq8wLsVUGL3WqKs2nDuerOLvYqt8VulcdZvuFcdecd+uxadN7nLOywzqruSHTef9wH490ZZXZO9POqO+vo6Ojo6JjlE1V+oUKkHwAA
+  </data>
+ </layer>
+ <layer name="Walkbehind" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XQQ0AAAjEMMzhFKHIOELa/wSsCgDgpulMCwAAQJYfBAA+WyRj/DakHwAA
+  </data>
+ </layer>
+</map>

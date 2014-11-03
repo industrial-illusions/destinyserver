@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="45" height="85" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="false"/>
+  <property name="pvp" value="disabled"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 8.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 13.tsx"/>
+ <layer name="Walkable" width="45" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQrAIBBFQa+vpw5CijRKQPgbyAxstYWvErY1AAAAqo2DqTLf7ovZ7XpF7E1zhuaMVdd47L72bwAAQBV3d4bmDM0Z7m4AAHjP3Z2hOUNzhrsbAIA/uQATOQxMxDsAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="45" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ4BQRgF4NnT0eIMFE7gJjR7ACsOgIJbcBx/gmQ6W5CZ5fuSl/mLKV77UgIAAPg9+9IFPujcpHRpHvfq+U7inUZmTblefWwjXZZd2Tq9HCLHLKeydQAAAKrUZvfQN/g1tvWt8n0NAADA/2rffxmcZezweWRR+R4fZf3GlXd9GWJnWEc2pUsAAMAX3QFdiqEPxDsAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="85" opacity="0.9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XuwrCQBBF448IPhofnyuCIhKtUlpaaKf/5YIuDCGRSOLNjp4Dl0xgMzlW8WYZAAAAAAB8m+HgGU9E59Xrfh2yMcnNvC1dY9S/OTrvXvf7kINJYeZj6RrTl3MdRcMdSnDW8IvOJzNfQq4VSc35bOZbyL0iqTk33aEkOrdNH85tnvXkbHcowVkDzhpw1oCzBpw1VPVuO+eZj95tZ3p3N7RxHoXnxgn+F33nPAvPzZ052x1K6N0aPH9T/qV32x1KcNaAswacNeCsAWcNnp1tj/bSu22Ppnd3z6fOk3B2WjqfuvMinF06c67boYTercHjN8W+t+yfau8GAAAAgLR4AFsHoB/EOwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ6CQBCG0d3jiSfQBBI9ATfTTm8gHRzJSaCkgcaMvJf82fbbckoBAADY51FLedZfV2zzit730twv7yneJnZO9hcAAAD+2yfu1CHZrTpG77TSfKnzMrnVeQAAABzHNeEdeI/mNtYlbAcAAIAj+AJh0kyIxDsAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="45" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ0AIAxFwfrfkYAD8AcCgBVo7pKfdOz6IgAAAM7q7QeAozbXFwMAAP5QNjfwBt0NAAB56G54j+4GAACyG37260DEOwAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,14 @@
+[/npc]
+MtBattleTrainer100
+down
+450
+24
+22
+Dusknoir,70,Latios,70,Metagross,70,Slaking,70,Gyarados,70,Latias,70
+6
+-1
+0
+false
+false
+false
+[/npc]

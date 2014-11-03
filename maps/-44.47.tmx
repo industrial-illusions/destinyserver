@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Hoenn Gyms Set.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XSw7CMAwFm/ufhqQt2bCFc7AFDkEqEslKE9ddxUZvpCcon8qD47RMEwAAAAAAAODfuLhfrFHqLlnd/jULbrT+OWUReDwVOkr6sCVkzzkfv1LeKR/yGT/Qp+cRSd1HfdLQF2k/pNHkcT2olXt/pEeo1s1Rb3rnGe1R6i4zsZDnLQ+Ne7N0r7LusfXllh8te1haV/Q65pkavRGP1ly0Zp07zyi4PpTfvb5eWOtHXa+ldRUYD0v9WIlP797QikfsOHimVi0eZW+i9ffuBzX3o7c3WfWQBB5jPOr/5PUMtb4z2oPORnT7ma/3MHoclXlI55yLFo8zuac8lHgAAAAALb76YDiEECcAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ3AIAxFQbP/NFkJUgWGwIghIkt30ivcfUcAAADwt6dF9Gxkb7t3RWf3l81sFf4DAAAAAACoaQOyK6wNECcAAA==
+  </data>
+ </layer>
+ <layer name="Grass" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAODfAC7KO00QJwAA
+  </data>
+ </layer>
+ <layer name="Water" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAODfAC7KO00QJwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YSw7CMAxEyQ24/00IbBpgE1btrrdBlmJhIucDFGKkeVIkCEgdm5nWYbcDAAAAAAAAADt4V96XyzpB0Uh7ck2NOg6D66Q+x6ThKLRE97xatOr8NtTrJWk4f6hlpPeo1/MGdXin+/OXrOn6J0ULZ4P3S/4Jnf77FtILF0ULv4+Ne9bIGohXvBAatYzOxyvfLdVtIR9Er4ZS3VbyITV4cQ/rxWI+aG+t+KeElXws6Zmo9ZY1Ws8HMQs/5b0Niv/yzy3kg1iTn7TeRjG/aFjIRz6b573l+XE2/vyQ8znv5fj0W1nOR898/g/50Pxwy84kLY2j8yFnjVtDS+t8O/rsq/Xy6p4X+99qPrQeXt3j3MGL/W81H9osPlXOIcw+e20lH1t4ovac/AW9/4nUOLwxI1sgP6dPlRkZAAAAGMUd4sWXABAnAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YwYoCMQyG7fs/kb3ZOVnBdWRZHRDUwx72sO9gCw2Gmk6rDiYD+SCHmRSaxP9vBxcLRVEURVEURVHmzrdpj68QO/S8JXJcnEx7HEIc0fMPkeNiGfa2jfufw7pLiGu2/tfcc1yswt7uyf3/svX/aRZLxj4ifoL94yxWjH20aqrGFLN4h5KmHNIb9OoqXppqJq9QmmN871PdUL8f8ZJ9wWefxGX1l/qGdVzUtOBR/fuRtZL84Sra6IX7wyL9+5HzcxDuD+p3sKkf6MklXUn2h89qoGYb8/1M/IHfQV0blB+E+2OdAuqgZovvQgoJ/ujNPUrM4f4YUFB0DTVK8EdN113K74X7o6brLtXfC74/bEUzsYcu1TgIvj9adBWR7o8WXbXC6Y/IFLPk9gecQe/OktsfcAaVvtmdeQwKbn/AGYS/2XF4IvLves7/SRRFURRljBvBQ/kGECcAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YQQqAIBCF4bxdZ+4YnahFCGJqYy58Tv8HQtSieeJktW0AAAAAoO0Iz/EHs3POvr8ipTmJtZT6o9UnShngi8LaGt0nFDLkvOx7+TMrPedFK88KWd9qVMhwhntECjX1KtW8Yo5eyv1h2TtW6A8PPM2jNcvo2lOg3h9f779Xjmfy8l4Y1fZE6/8fpbmwfoun15TqBwDAowvk0oSuECcAAA==
+  </data>
+ </layer>
+ <layer name="LedgesLeft" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WwQ0AIAgEQey/I6uzBhNBJTMVHMk+iAAAAHjHHLcX0JGuOG2nqU79dbqFPDqhkt4AgF/5YwAgzwLIT2w5ECcAAA==
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UoQ0AQAgDQNh/qF8Nj0G8IeQuqapuIwAAAAD49XLuewA28ldwn50DAACXFUSV9RwQJwAA
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ43oAAAAAAAAAAAAODfAC7KO00QJwAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="Deep Colosseum.tsx"/>
+ <tileset firstgid="2443" source="Colosseum Train.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ2AMAxEUadgnOy/BxOlp4BIyJLB70nX348AAIAcczyvqp3vX2h601GpRYeODDp0ZOneUc0fGq7O434AAAAA0NkCbE5kSxAnAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UV8yOdxwG4OdbsQ6M2lSV0qg6tDc1EqO1ouZnt0S1jXVm703NDmLvVZIO0dYBrd1hV0LbtIjNZ7RFXIfaA4nv4UHyv5Mr79Hvvf938uaNopCQkJCQZz3teZsOdKQTnelCVzLpRnd60JNe9KYP7/AufemX7NP/k8UsYSnLWM4KVrKK1axhLetYzwY2sonNfM4Wtib89gdzngtc5BKXucJVrnGdLG5wk1vc5m/+4V/ucJd7Cb/9wVROiaIqVKUa1alBTWpRmzrUpR71aUBD3qARjWlC05Sns2GY3uGMYCSjGM0YxjKO8UxgIpOYzBSmMo3pzGAmsxLcsVPXLr7nB3azh73sYz8HOEhWrij6yefP/MIhDnOEoxzjOCf4lZMJ7sibGkX5yE8BXqAghShMEYpSjNTcUVTCZ0lepBQvUZqXKUNZXqEc5Xk1NZkdHfR0pBOd6UJXMrPR39/NewzgfT7gw4R2LNWzjOWsYCWrYnR/4fZLvuJrtiW046KeS1zmCle5FqM7Jc3vjzTSyUh7fG99WKrqqUZ1alCTWjG6m7ltTgta8mZCO0bqGcVoxjCWcTG657idyzzmsyChHXv17GM/BzjIjzG6T7k9zW/8zh8J7SiU7v+VIhSlGMXTs/99Fdy+RkVep1KM73qUZOrpRnd60JNeMboHuh3EYIYwNKEdq/WsYS3rWM+GGN3b3X7Dt3zHjoR2XNeTxQ1ucovbMbpzZERRTnKRmzwZj++tD0ttPXWoSz3q04CG2eh/y00rWtOGtrRLaMf/c0TvUaYyjenMYCaz+IjZzGEu85jPAj7mEz7lMxay6CntiJs/vfsvznCWc8/pjpCQkJCQkJCQkJCQkJCQkJCQJ5/7Q63RzxAnAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TOw6CQBQF0GdkMEOlbslP52dx6ga01CgmFIKdC3AxVn4Kr8ECRIkh6oDck9zwAhT3JTMiRERERHFjHT5HOpwn2myfrKY6Ps8KuMcBnd1I79tsOyI1x1ynLCpOco8G3jULtkfZeAW8M8/scrJH/U/OO/egb9nn5K5+wtISWSEusrZe/7fBNx8JkG3Kf6Yc0emEnJFLSr+qErEQhdjqd/3e1UKnNtJBusgcZ21xP2/RuYdvfWSADHO4xyMfvQOdnImIiIiIiIiIiMruCrIgM8cQJwAA
+  </data>
+ </layer>
+</map>

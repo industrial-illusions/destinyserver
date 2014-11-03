@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Spheal,10;Zubat,45;Golbat,20;Sealeo,5;Snorunt,20;"/>
+  <property name="dayPokemonLevels" value="26-32;26-32;32-32;32-32;25-25;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Spheal,10;Zubat,45;Golbat,20;Sealeo,5;Snorunt,20;"/>
+  <property name="nightPokemonLevels" value="26-32;26-32;32-32;32-32;25-25;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal1.tsx"/>
+ <tileset firstgid="1025" source="normal7.tsx"/>
+ <tileset firstgid="2049" source="Hoenn Victory Road.tsx"/>
+ <layer name="Grass" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TsQnAIBgFYUkal3EJIaNnr2ArRC00OfA++PvHiSFIkiSqHOef+9p3n+x99H7UfekYe++/9tH6vfUqd1Vnv34zwj56vxktv9o3cvXfoO2j91u9T5Ik7eMBlFHebAAZAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OIQEAAAgDsBv6R6IaBVAYzJZgCQAAALDp+h4AAHA1+l26sgAZAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WQQ7CIBBFu+Q+uFRX2I21K3v/qwiJE3GcQYoMcfFf8jdNSl8+Q9tpAgAAAMC/cnHvucfcfoyVX3K7xhxjTjtzztax8MvdQox3n91SDsK12dCPuy0Ne7oa+XG38OxHw7vXfSPmb2Zupe4SUl98v3v7hSzUj9Zhzfm28uPdJbQ5o86kc2TlJ1EzbyP6WwqdUW+ld451fwlp5rTetoF+2plNrMrzwkC/FshP+pb09vMNa357T/Zi739ATQAAAAAAWngAhCVOWAAZAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsD34l4BVZCwhrYImAAAA0LHTHgAA8NUBq4fNDAAZAAA=
+  </data>
+ </layer>
+</map>

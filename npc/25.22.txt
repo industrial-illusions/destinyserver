@@ -1,0 +1,56 @@
+[npc]
+Aroma Lady Daisy
+down
+382
+19
+61
+Roselia,16
+1
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Twin Amy
+down
+262
+9
+60
+Plusle,16
+1
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Twin Liv
+down
+262
+10
+60
+Minum,16
+1
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Pokefan Miguel
+up
+274
+11
+68
+Skitty,16
+1
+-1
+0
+false
+false
+false
+[/npc]

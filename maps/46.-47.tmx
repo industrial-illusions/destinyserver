@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="71" height="35" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Pidgey,15;Oddish,5;Gloom,10;Bellsprout,5;Weepinbell,15;Beautifly,10;Dustox,10;Volbeat,10;illumise,10;Roselia,10;"/>
+  <property name="dayPokemonLevels" value="47-50;30-35;51-52;30-35;50-52;48-48;48-48;48-48;48-48;48-48;"/>
+  <property name="fishPokemonChances" value="Magikarp,90;Gyarados,10;"/>
+  <property name="fishPokemonLevels" value="15-20;40-55;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Noctowl,15;Ariados,85;"/>
+  <property name="nightPokemonLevels" value="47-50;50-52;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value="Wingull,40;Pelipper,20;Surskit,30;Masquerain,10;"/>
+  <property name="waterPokemonLevels" value="40-55;40-55;40-55;40-55;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal12.tsx"/>
+ <tileset firstgid="1025" source="Sinnoh Land Sea 2.tsx"/>
+ <tileset firstgid="1521" source="SinnohSet10.tsx"/>
+ <tileset firstgid="3985" source="SinnohSet4.tsx"/>
+ <layer name="Walkable" width="71" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DQQ0AAAwDoTNX/5ZmYw9IWDVVVVVVVVVVVVV98ACAex9d1CYAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="71" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WUQ7CIAyGifHFlz14HA+kHsATeHKz6BJC2sJKYUX+L1lCmBb4VgohAAAAAAD4432xiXM+fR9A889+4hyK1xm3c3m2/fZIR1Z7IY1J+YnXOasbKna6xlbjHu2zFGn95LurzbhWfno7lnzdjNysWOxJKde3dlo/apDivAzdrFi44Wok19bQsq61Yu/5oaE07+J94KGm9pjDXi9x3+xw38dD7ngFXtrQo2ZRse9LCI/f81zaja3Bsp7n/quJPeJ5TZFzS73L3XtKzyXvtHBTO6YXNPOsuTuP4mVlpLn2Bm54NPVmFqR7gNQ/A3DDAzc8Wjez+aH6ZnbDOZDWb+3mA2PQ+ijUJgAA
+  </data>
+ </layer>
+ <layer name="Grass" width="71" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XTQqEMAxAYbduvKX3B08gLgpSG/uj0aZ5HwwIlkqeM4NOEwAAwH+2Wf48Wduz3AzhmDbXOazP1+KuSa5PyZ5353tX0yasr91TOte72jate6euZYFWH43eX9NoY73JmfTfQpv326T2tkrzvlpvo2mE35Um2sg8tFmXsnUjPNtooUua5+9MblavXQ7SvB5bxKQGtCl/N/XYJkYXGW0AwL4drrXeRdQmAAA=
+  </data>
+ </layer>
+ <layer name="Water" width="71" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YSwrCMBSF4YySgY+6J5/QiftTUXDifmrV5XiiFtqYTATbQf4PDhScNIdbm8YYAAAAAMA/7Kwxe+UQyckOfXfDqrT+q1JHUrq8e2q6mbh4pkqhzNzQd9q/WDdNH/76pt/uyoO5+UrO3Yy0/nGil9y7YW7SmJu0uda/UJbKSrnY7n9yzu+pUNiVz1rZ0A0A4Eftc4Zjpt/MKdXnTMHv0diLdGdl697dFOzTXsIzKT8zZ8s+zWt/B9U8Sx3h3p55AfrxBOvhO7HUJgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="71" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YQQ7CIBBFifEC9TSeS2/gUi9SE93rXi/iQYywIGlISplhmD+oPyEsCsPM7wuFjmvnzr6NoD4nVE6xv/l2B/Y5oXNDvxvL/KDfjWV+0LyU8PPr3OT4+XPD50daVrnh8COtlJs57yxxwxU1ZspNKovccEWNucRNVI/c1MaM44+Dc6dhflyP3NTGjOMf3pdnxhuuNLmRjh3HvRv4EqTJjXTsOG674dVeKgvfKW6uO+/NvqE/ktzUnjeouV68L9fG7ExVU0fteYOa02slU3OpJLip5SR9PpeDtjc1ktpzSzkK3oSmtRe2uGtK7/dT74I3re9v6bqSd03pc4LWtzWdJ7nO0hxu7lpn+XSe5DpLc7i5o/9BfCM36LvmIVPDUo2lQnOhyQ1VaC409xuq0FxocMMVmgsNbrhCc/HnBssN1Xc0D5rcUH1H82CBm977ltz03lvg5gPGyiCg1CYAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="71" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2ZS27DMAxEvcimS/c2vUV7pV4ibS4QIJds64VQYcCfKDqUPwMECWxZMsePlORMU64eF/r4nTn+TH393cP3Jf/7xnhxTbynUTQiP9m8aPyc3PwL+Tm56eOHq1Ue1eOMqhZ+lrafL/wHJbWtx6G8z8xxvB8t3vKba3dt6BPbU89phLXFwxAHd77WnYmRk8ZNUSY/kieaPxKLXJ6VfuqY3+dp+phpTzP50WoIl1taXSpt0R+q3qyhCN5uRm88YyE/Wr2JVIT3Vm48Y0l9Y38/c38slHr4sXLD1Q5OLfwtenuN92VRDz9YG3Au9uSU5Hf23NwaR+0NzsWemHC+0bx9pjxx9NZcFPKXzUuEvDVX6oeqyThPUc8kcv9W5Mkpz7U99QefAfVMLOvrVvXUhjXY17iJyGFOmNs93Eh9W/fLlnVBxNxqEeZ2DzdS39Q13HltnTTCO4gRueE8HU1ebqTckLgp2jM32jpa22ccjRuKF0575ca6Nz0qN7U8+/a9coPXeLw5Ajet/2dtgZcobizvjTWvR9Wa3Gz9e01utq6Tm3ZurDU2gptf208mFtQmAAA=
+  </data>
+ </layer>
+</map>

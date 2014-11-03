@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="36" height="34" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Whismur,75;Zubat,20;Aron,5;"/>
+  <property name="dayPokemonLevels" value="15-16;15-16;15-16;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Whismur,50;Zubat,50;"/>
+  <property name="nightPokemonLevels" value="15-16;15-16;"/>
+  <property name="pvp" value="yes"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="Rustboro_Tunnel" tilewidth="16" tileheight="16">
+  <image source="Rustboro_Tunnel.png" width="576" height="384"/>
+ </tileset>
+ <layer name="Collisions" width="36" height="34">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WZZCVZRQAYHaX7m5YYAnp7u6S7kZRKaVD6Q6lBCRs0qI7TDAAk+7uDpUOnx33B7Ozy+CMw689M8+89zvf+e45773fjYBo0aIFEkR0YhCTWMQmDnGJR3wSkJBEJCYJSUlGclKQklSkJg1pSUd6MpCRYDKRmSyEkJVsZCdHtMgjH/kpQEEKUZgiFKUYxSlBSUpRmjKUpRzlqUBFKlGZKlSlGtWpQU1qUfsJ8zSkEY1pQlOa0ZwWtKQVrWlDW9rRnhd4kQ68xMu8Eva8nehMF7ryKq/Rje70oCe96E2fsOv60Z/XeYMBDGQQgxnCUIYxnBGMZBSjGcNYxoXb5wQmMonJTOFtpjKN6U94jf7vWMoylrOClaxiNWtYy7pnOE9o7GI3e9jLPvZzgIMcCqs7wlGOcZwTnOQUpznDWc5xngtc5BKXucJVrnGdG/zJXxHMdIe73OM+D3jIo0j2ECPA559YxCYOcYlHfBKQkEQkJglJSUZyUpCSVKQOiLhHRvlgMpGZLIREUptTPhe5yUNe8pGfAhSkEIUpQlGKUZwSlKQUpSkTSY/QqOxcFapSjeqR1NaRr0s96tOAhjSiMU1oSjOa04KWtKI1bWhLO9o/YZ6OznWiM13oGkFtD7me9KI3fehLP/rzOm8wgIEMYjBDGMowhjOCkYxidFifsdZxjOdN3mICE5nEZKaE1U61TmM67zCDmcxiNu/yHu/zAR/yER8zh7nMYz4LWMgnfMpnj+17kceLWcJSlrGcFaxkFatZw1rWsZ4NbORLvuJrvuFbvmMTm/meH/iRn9jCVrbxM7/wa7j3YbvjHexkF7vZw172sZ8DHOQQhznCUY5xnBOc5BSnOcNZznGeC1wM1/fqE+6dm87d4jZ3uMs97vOAhzwKvd4PfwCBBBGdGMQkFrGJQ1ziEZ8EJAyMvHf4SKM2LelITwYyEkwmMpOFELKSjezk4Dlykovc5CEv+R7rX/A/zBIaZdWXozwVqEglKlOFqlSjOjWoSS1q8zx1qEs96tOAhhHM0Owp53pB3Yt04CVe5hU60onOdKErr/Ia3ehOD3rSi970oS/9Iug9UG4QgxnCUIYxPKx2pHUUoxnDWMYxnjd5iwlMZBKTmcLbTGUa03mHGcxkFrMjmOVDuY/4mDnMZR7zWcBCPuFTPuNzvmARi1nCUpaxnBWsZBWrWcNa1rGeDWzkS76KYJ5Ncpv5nh/4kZ/Ywla28TO/8Cu/8Tt/sJ0d7GQXu9nDXvaxnwMc5BCHOcJRjnE83DynHZ/hLOc4zwUuconLXOEq17jODf7kL/7mJre4zR3uco/7POAhj0L7+tMfQCBBRCcGMYP+nSW2NQ5xiUd8EpCQRCQmCUlJRnJSkJJUpCYNaUlHejKQkWAykZkshJCVbGQnB8+Rk1zkJg95yUd+ClCQQhSmCEUpRnFKUJJSlKYMZSlHeSpQkUpUpgpVqUZ1alCTWtTmeepQl3rUpwENaURjmtCUZjSnBS1pRWva0JZ2tA96uu+IqIiKqIiKqHj28Q8DHPOYIBMAAA==
+  </data>
+ </layer>
+ <layer name="Grass" width="36" height="34">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ON2xTYRgF0BcHiZHeYaOEJhC9t4kSmoCI3stCmRBlZEACJgZaCr0mwE5LodckwMwCjIBoAUYOkj2G2FF+28O78tGTnu3v3ijK3xQxmCEMZRjDc7inmPksYCGLWByoa1sr/7e7TVdE0SEOcyTN3x/jOCc4ySlKKaOcCk5zhrOc4zwXuMglLnOFq1yjkiquc4ObGey/xW3ucJd7VFNDLXXc5wEPecRjnvCUZzznBS95RT0NNPKaN7xNc8+7DLa3Jk384jd/WvpxgQ8JCmlX0PZ7ernZmz70pd9/Ovr7bgADGURRgD1T3ZzGdGYwk1nN9Mz2fg5zmUdxgD0b3NzIJjazha3N9Gz3fgc72RVgSyoHM7h9NOCOVCp1VGWhJ93U29JAY5Y3fdL3mS/J3q+e3/jOD37SlKVNHRJR1JFOdKYLXelGd3rQMxGuf4TbI5P3R3mOZgxjGcd4JjCRSUxmSsA9S9xeyjJKkj3LPVewklWsZg1rWcf6gHv2uL2XfexvoedAwB3/Uup+GeVUBO5KJ9U21FBLXR7seW/DBz7mwZZU2hfmekGcOHHixImTu/wFDEhbuCATAAA=
+  </data>
+ </layer>
+</map>

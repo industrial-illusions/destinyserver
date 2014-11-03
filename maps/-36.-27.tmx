@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="30" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohInteriorSet4.tsx"/>
+ <tileset firstgid="489" source="SinnohInteriorSet2.tsx"/>
+ <tileset firstgid="961" source="SinnohInteriorSet0.tsx"/>
+ <tileset firstgid="1329" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="3697" source="SinnohInteriorSet3.tsx"/>
+ <layer name="Walkable" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQkAMAgAQcH9R02XAZzBIijkDr7/CACAf9zsNfF3Gvnz52/PHwDvFFVPxKPAEgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OoQ0AIAwF0W8QNd2aMgLrEhQGTRtyT508CQAAAPjfbPeuovrf1l0Kz744wqRh2RcAgBcWf817+8ASAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UMQqAMAyF4VD3HqYXc1Bw0GP2QHbuUhNCMPB/8Mbw3hQRAACQyV506VvsvqvoErlv1dUMN54sXezTdR1V5Ky6Gy9fuu6x7fnxPo8bqwz75qx2RP9nAMjsBY2Cfq/AEgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OOwqAMBRE0UmRJtmCLlbdl19QK7VSC92LA7G2EiIyBwbe6y4gIiIi8q7SABVXm/AfDjhduHMLFFxm4/X17Bq48e5LPJD6cLfs6rgmYt/ErplbTLyGJyu7Nm7/aJ+IiIj8zwX4i9c/wBIAAA==
+  </data>
+ </layer>
+</map>

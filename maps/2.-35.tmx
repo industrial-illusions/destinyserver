@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="22" height="30" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="SinnohCaveset.tsx"/>
+ <tileset firstgid="1081" source="SinnohCaveset2.tsx"/>
+ <tileset firstgid="1785" source="normal7.tsx"/>
+ <tileset firstgid="2809" source="Sinnoh Ruins Set.tsx"/>
+ <tileset firstgid="4204" source="Legendaries.tsx"/>
+ <layer name="Grass" width="22" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQdvoAAA4Dfb0ueSUAoAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="22" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DMQ0AAAwDoPr3VG8T0GcCIKFJqqq+AusAzNYeHlAKAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="22" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXDBXjwkoZHzR01d9TcwWfuKBgFo2AUDEUAAHOw0ydQCgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="22" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UUQ6DIAwGYN7LSbbdZ/E+6gHc7rN4H7czaGMaam1RJj6Y0OQPRPETkNh5516Z8wDnPlN7g3DtDstsGXIsmr2fXWmnODxvP5vcxXQRZ8/a0atg7Vrz1lxt7Zr7hNBPLTLPcCtjH3K5/Ltx82ou9v9xZcgiO6fL53yGS3Zqyb2V+3vEtc7vkfOgufKMDVO+SrCwbSCE7rWGS3YN+nMyjTLuZ/wf6oiz129h+d0GY2xsflbIjs1zy9PeTXapUqXWNQKzW8AQUAoAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="22" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYPAADh4IHmkA5mdsfscnNxgAsrsGqxuHOnDjHWgXjIJRMApGAX4AAD0E/5NQCgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="22" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3MsRFAQBhE4Y3vomsCHdAHZijFRegaic00sP9I9s289AP+60rAzZ+kdZsMtLzLWnekN/FZ7O70Dn6KXffVF2AoenehuQa4G80a4DrnnHMRvRj8KCtQCgAA
+  </data>
+ </layer>
+</map>

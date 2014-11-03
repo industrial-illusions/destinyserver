@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="80" height="80" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="true"/>
+  <property name="pvp" value="disabled"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Fire Red Tileset 2.tsx"/>
+ <layer name="Grass" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VUWrCMADH4TxYH+wd3JG6w7kj7RDzNBrmIJT6kP5hGvg+CLWlQWt+xlIAAAAAAAAA4LllKuVzep/jaC73z/w1vc9xNK/uTX/6q+s+P8b6fG76mFf3zRujZ/7W+47msnqu78Pv2HMtmV9fj6jtoq7/6THafenvWrtPbd2XzD8N2F7V9mf/67fuz/9vH/1l9JfRX0Z/Gf1l9JfRX0Z/Gf1l9JfRX0Z/Gf1l9JfRX0Z/mbruP/dx1d8uS/P96a9fXffzsZSPo/720F/G/pdZmt+v/vq9urfR+wMAAAAAAADgf90AWcfi1gBkAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OQQ0AMAgEsHviP8MvMkhGq6AJAAAAAAAAAAAAAAAAAAAAAMB/XiVd2wsAAAAAAAAALhiyNssWAGQAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YTWsTQRjHhzYRs6EnXwra5lqoWkHtrVf9BApWBUvzAeobaL151bvmIrSg2LOfwF569QW0PYrQakvT9lZ8OfgPy5BkNbuLs1F39veDP7MzPM/sPH+SPEyMAQAAAAAAAAAAAAAAAAAA6M2Tg8YcGjBmVKpJ50vGXCiF87RrtQzyXw6GZ8kbH3Xmyzr/rFSXHqqmR6VwnnatnkH+vvy7lEP/LurMT3X+F9KS9Fo1vSmF87RrSxnkT+n5cU79+6Tzb0tN6XDZmCPlcJ52rZlB/oMc+zc22J5Pq6Yr5e6YtGsu+Ss59u9/Af/cwD83fPHvrdbeSTuVZP0I2nlf9fwtQd+l99r7w2/e64t/R+XLsPRKtS4H8eNkh39nUsS3xmPa+3jl1/f64t9V1XZNKleNOVCNH+93+Hc3SI5vjde194zH/tnPX79Y1TvXPP7+jsi70T7612t//EtH0fxrOvbfXcXtVXrvb/HVv1ZfPevQf89F4ormX6uv3gv+vP/OB91xRfMva/DPjaL5t67nDYf+sam4rQL3j3F5cMKhf0xIpwv8+zen2m849I/bWr/TEef7/aNXfVlRtM9f1vj+/8GCalvso3/PtPdzj/2z/faz9CVmjN7L7D0vKS/ajy2++Gf77UnpVMwYvZfZe15SXrQfW3zxz/bbm9KtmDF6L7P3vKS8aD+2+OLfvwL/3MA/N/LoX0NnHnKUxXWfRg79AwAAAAAAAAAAAAAAAACAv8tPyk5MdABkAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YMQrAIAxA0aze/xJtvGQ7K4JSuuh7kC2ZPyQCAAAAAAAAAAAA9naViHti8p1avt8BAL1RV0f9zWZHbwHOtNqPdkc/AGDeH//T1GEAAAAAAAAAAAAO8gCcM/XhAGQAAA==
+  </data>
+ </layer>
+</map>

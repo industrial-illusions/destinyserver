@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="26" height="20" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Daycare Johto.tsx"/>
+ <tileset firstgid="932" source="SinnohSet7.tsx"/>
+ <tileset firstgid="2708" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="3038" source="Caveset 2.tsx"/>
+ <tileset firstgid="4062" source="Buildings8.tsx"/>
+ <layer name="Walkable" width="26" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC1vMxcCweBSP4lE8bDA6GLVnFI/i4YXpBQAiYzq/IAgAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="26" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXqfAPtglEwCkbBKBgFIwkIcjMwCEGxMPdAuwY7AABYCT3MIAgAAA==
+  </data>
+ </layer>
+ <layer name="Water" width="26" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMglEwCkbBKEAFAHVv4YEgCAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="26" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC1NmYmBQoTFWBeIQIMYFnggyMDwVxC1PrLowAva8Aep9S4Q9hNQRsodaYLDYo0xiXJNrDyl+DSNgTzgd7AHZgS9NIttzhZWB4SoQX0PCN1gJ2wMzH1+aRLaHhY2BgRWI2ZAwBxthe2DmqxEZbiZAM02B2AwJWxBhDwiokZAOUoBmpgJxGhLOINIeUtLBFKCZU4F4GhKeQaQ9pKQDQoCSdNAK1NtGJG6nIB1QCxBKB9QCoDAlJmw6scQjjN9BQZhiA+jxSGzdRG8AABHEN5wgCAAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="26" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgwA3uCDIw3BXEo4BEdaQCdj7qmzkKRgagVZqkxPw0NlQ8CmgPBmM6GAWkA/RwHg13+gAA8+CD8CAIAAA=
+  </data>
+ </layer>
+</map>

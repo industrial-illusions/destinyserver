@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="10" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal1.tsx"/>
+ <tileset firstgid="1025" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="1355" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="1655" source="SinnohInteriorSet5.tsx"/>
+ <tileset firstgid="2239" source="SinnohInteriorSet0.tsx"/>
+ <tileset firstgid="2607" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="3303" source="normal8.tsx"/>
+ <layer name="Walkable" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGDxgDg7xSBbqYGTzAqmAh7J5hMKKHPPS8GBSzYuiwL/UBAD1zCYCIAMAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGDyghRe7+B1m+rpjFJAHVrPi5+MCNTwMDLVQXMdDfXdRAgB1miZJIAMAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGCooRJmZIHgOQzkYQY0Psw8TU4GDODNg8DY+NjUw8yjFhiq5tWzMTA04MGNQNzERrx57VjUooMuEszrJ8K8SXjMQzYTWYwcDAB28wmDIAMAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIA8k8zIwpABxGi+ZBqCBZqg5bVQybxQQD3ayMjDsYqWeeYeBZh2honkDCQDYEGW+IAMAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgQAUhPAwEASE1ipwIdgxUrTMPAqPzY7CY50yEO0YKKGdjYKhAwpVYcBXbQLtyeAIAqtG8oiADAAA=
+  </data>
+ </layer>
+</map>

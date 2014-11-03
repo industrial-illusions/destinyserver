@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="11" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="331" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="1027" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="1327" source="InteriorObjects1.tsx"/>
+ <tileset firstgid="1427" source="InteriorWalls 1.tsx"/>
+ <layer name="Walkable" width="15" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGLogkgSMTa8/kXhUL/l6yQEAqD+vU5QCAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="15" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWUgAgW7Gxa6x0IUAfE9UDcQGN7APOFJI+UAgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="15" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoAwwAvFBVgaGQ0Tgw6wQ9ch6TwPFzhCBz2LRS6o7aaU3n4WBoYCFPL2VQH1VZOrFB6ip14qVOH1WWOIIGWMTw6YGANNEfRCUAgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="15" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGFiQy8LAkAfEWSwQfi2QrmMhTm85UF0FEJdA1bcD6Q4i9Y6CwQsAbMlW35QCAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="15" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoA8oZGZgKGImT28lUF8VmXqJBaksDAxpLLS1YyCBASt11dESAAD7DTr1lAIAAA==
+  </data>
+ </layer>
+</map>

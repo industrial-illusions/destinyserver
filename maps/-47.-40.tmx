@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="11" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="697" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="997" source="InteriorObjects1.tsx"/>
+ <tileset firstgid="1097" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="1427" source="InteriorWalls 1.tsx"/>
+ <layer name="Walkable" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoD6YzoIfw8BCFvwYWR2x5g0HdcQAAKSQNZ64AQAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGH7gOxN2NrnqqAmOsTAwHAfiEyyUmQMAyjVBmbgBAAA=
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAVDEQAAPZwvYrgBAAA=
+  </data>
+ </layer>
+ <layer name="Ledgesleft" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAVDEQAAPZwvYrgBAAA=
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAVDEQAAPZwvYrgBAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIA54sjAwHGRlYDiEAx9mhagB4dNA9hkc+CySuhNMDAwngdiWmYHBjhm7nSBMjNvQ1UUDcQwR6oqBuISK9uJT9wGLH2EAJAdTh2wuuhgMAwCmIXrouAEAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="10" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIB+oMzEwaDBhiu8Diu0HYmNmBgYTINYHsg2wqBsu4BkzeXKUAABdOr7UuAEAAA==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="17" height="152" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="true"/>
+  <property name="pvp" value="yes"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Fire Red Tileset 4.tsx"/>
+ <tileset firstgid="257" source="normal7.tsx"/>
+ <layer name="Walkable" width="17" height="152">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XSw6AIAwFuY6HZK07PbKskU8LxhQ7k7wlk9iSR4whhEiIgwCAT97oiy8ce8ox6ThTLgPfgoP7MesAAJ9Y6aBW92odpe619L7geCbf+4gj3/vK8+g5AMAnVjqo1t0jDt7s/zsk96TnkNwTq/MAAJ9Y6SBtH/cc0nd7hXl4cPCfrXMAgG82QWbPtzya8zUPjjKzu5V4pIw6bmE6OixgKAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="17" height="152" opacity="0.9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VzQoCIRDAces9e5469HVoO7VFUB2ie922R0vRwxDbNrZSKf8fDOuCjoOIY8z/GtuY9MyxsLFMUEubfeT8+yDNvu/OpVHsozmXs76krxr9ugAACFK967mb2piJmCvXyfNb2ahErF/M69KVQ2tjoxax/SBHibjrAHLHO+bRs8vHXQeQO94xj55dPu46gNzxjnn07PJx1wGgP9cvj0bfJ9vW38L4KvLshvocl/Ctnv6biByuV57C+CBqiuXyuPPIrdc+AD5xpvhgKAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="17" height="152">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2azw6CMAyH+zxw9c8F0APyFMarR5/Lt5QFFptm61glatjvSxrNYj8qJG2AtUTUznEa46LEmf02Ft0YFU3U9MZ/bxY6YlSKg9c/KA6tDl5/ip7C5yjHEatNnoNcX8ih8VQctVjPqSW3DmLH88dxjv0c13ntxtaWBgCgTFKzLdTHJbl9rIHD7Liv4His4IgBR9qRO58xowEAnhJnNr/n+WUdFgdm9kTq/vif/wtmNgDASkkzW/Z5ax38+Spm9ncd8tk2h1/fT+rg7z6sDq0OzGwAgJWSZvYWHKXP7C04MLMBAFYse7ZCDpc/KB6X3zOPhOfH9lz5fP8p6RL50hPryUv7cpPpOGY4fK8+JGrYUbyv++uleXy+dm35njbpcflyD5zm0OaS5ngBTicFdGAoAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="17" height="152">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3asREAIAgEQbo1tAgatwMTGALdze9pgIgeOdxVWwAAAAAAAAAAgBetho3dsPGzyd+26q1bfwCQx/4jYCgAAA==
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="17" height="152">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DMQ0AAAgDsPmXg0KOfVigTZpAzQkAAAAAAAAAAMBfC+zdFvRgKAAA
+  </data>
+ </layer>
+ <layer name="LedgesLeft" width="17" height="152">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3MMQEAAAgDoPVvYVPfNdADApBwaZ4cAAAAAAAAAAAA0BaJTcjmYCgAAA==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Numel,30;Koffing,13;Torkoal,19;Machop,15;Slugma,10;Grimer,13;"/>
+  <property name="dayPokemoneLevels" value="15-16;15-16;14-16;15-16;15-15;15-16;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonLevels" value="Numel,30;Koffing,13;Torkoal,19;Machop,15;Slugma,10;Grimer,13;"/>
+  <property name="nightPokemoneChances" value="15-16;15-16;14-16;15-16;15-15;15-16;"/>
+  <property name="pvp" value="yes"/>
+  <property name="wildModifer" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16">
+  <image source="normal10.png" trans="000000" width="480" height="432"/>
+ </tileset>
+ <tileset firstgid="811" name="1" tilewidth="16" tileheight="16">
+  <image source="normal5.png" trans="000000" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1835" source="Hoenn Set 13.tsx"/>
+ <layer name="Walkable" width="32" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XwQ2AIBAF0cWLtdijdYrl4FVDTPZDAHEm2aP7FONBs/5tS/vBr+vv67/9tzmCWbzmDPO+f3x8fHx8fHx8fPyv+LmUazz7FL/kHjx7Ss9uNN+7YzY/t1P11Wp+S0rPf/DW9X5+IiK6lwD6R1ayABkAAA==
+  </data>
+ </layer>
+ <layer name="Grass" width="32" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XwQqAIAwG4NnFZ+kNI3rs6lyXoMLKxphj+3/w6rc5UCSyk77jr7/7SLkSNXvwpxy7/xrnsIas68+JaNnXmng+Z7aWzr9mJtH81ucP37//dW9479+C/zYDrf5LNbS+/+DH9s81wIcPHz58v37pvXnypesa8/UPfv9/IwiCIPrZAI3AZBAAGQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="32" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XTVLDMAyFO2x8jd4NChyhQ8gRAqVHoIdIrgOHgCyxZ6LhVTzZTho3C6IZTRat/MnWj+XtzWazXVif3TJq8d+9vkX0RNZK2bA1LH5trCncivDrTB9wDcYPaxyH76tXlGaw13z5b/Dhw+unsrPWYPwavkwqwkebL6/fET6uofmy9yl8dl5j+MhG/q3/PoB2Bp/5G2zvDO0UX+eP7CWwmA+M37tzNstTq/6sPbDzZrmvbXPsLH7wfeeW4+/99wn4Bxev5bn5DcS/ibCrQvwcqQryWd2EfOjh9w7iclT83l3Gt/q78PfG73PtP9jdu996f1Trs5zQvS+sIb1+Ch99H5sbeIaxM7iEr3Nk58ryW/e3f0uMdHwkRqdEDIQvdw/yQ26/DLatO+//+h6w4iN5yvIF5x99fzbARj/G9F9ZJ2f+0fY9+CH/P0R8kPjoHECRuYjNP7H8blx87hM+6wEoOBfp+UP8l7iOzeXWyEFLGD/Vy1K1VA++s76d4uPe9T6k16f4rEbYmeDdYM2/eA/hrJXq57l1kcuXOpT6m8JndZHLZzZj+VY+xeZ/y+ecXmTVBc7GFl/6YGCwt9eUOMRmI8bXvlq5W5Ifk2vxrXfstfjWO7Y0X88Z7N1Yip9iB2Xvz7n4JdTaE76/59IgU2xWWWWVVf6j/AA0D1ryABkAAA==
+  </data>
+ </layer>
+</map>

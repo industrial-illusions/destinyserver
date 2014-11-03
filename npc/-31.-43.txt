@@ -1,0 +1,37 @@
+[npc]
+Bill's Sister
+down
+262
+5
+5
+NULL
+0
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Bill's Mother
+down
+275
+6
+3
+NULL
+0
+-1
+1,2
+false
+false
+false
+[/npc]
+[warp]
+3
+8
+5
+28
+-5
+0
+0
+[/warp]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="16" tileheight="16">
+<properties>
+  
+ <property name="isCave" value="false"/>
+
+ <property name="pvp" value="yes"/>
+
+ <property name="xOffsetModifier" value="0"/>
+
+ <property name="yOffsetModifier" value="0"/>
+
+</properties>
+
+ <tileset firstgid="1" source="Battle Castle Room.tsx"/>
+ <tileset firstgid="193" source="normal1.tsx"/>
+ <layer name="Walkable" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PuU5CURRA0fe3KJ2aqEgi4gSCAokCzpUDIDQEBAX011gFxSt52BBzd7Kae5JzcqMoFAqF/lcpNtgk/cddW2yzE3vbZY99MhyQjc0PyXG05I08x5xwyhnnFChyQYkyl1xRoUot4X+uuaFOgya33HHPA4888Zxwd7wXXnnjnRZtOnzQpbfi7j4DhgufjBjzxTcTpsz44XfFW6HQOjcHx0v708QJAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3N2TbVYRwG4C1JA0qSDNFApgYyhDJVaJJZSSVTJ2U44IyLyA2Yzg13wJ15Dq2WZX17L/bR/13rOfre7/fGYlGinH9SuEAqF0njEulc5gpXuUYGmWRxnRuBG9ncJIdb5HKbPO6QTwGFFHGXYkq4F7hxnwc8pJQyHlFOBZVUUc1jnvCUZ9QEbtTynDrqaaCRFzTRTAsveUUrbbTTEbjRyWve8JYuuunhHe/5wEc+0ctn+ugP3BhgkCGGGWGUL3xljG+M850f/GSCX4Ebk0wxzQyz/D6h94e/zDHPAouBG8ezxPIp7yusJnA3GfnHWgL/1tkI7G6yxXYc93fYZS+wvx/H7f9zENA5PCNRoiQjR0+BqqzECQAA
+  </data>
+ </layer>
+</map>

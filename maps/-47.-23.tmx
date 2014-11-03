@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="11" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal1.tsx"/>
+ <tileset firstgid="1025" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="1325" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="1655" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="2351" source="InteriorWalls 1.tsx"/>
+ <tileset firstgid="2651" source="InteriorObjects1.tsx"/>
+ <layer name="Walkable" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGNyglZV4jKynGgeGqYXxidGDjoerHlIBAP1ecOQ8AgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGNoglm2gXTByAQDUAJEhPAIAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIA/EcjIwxBGB44FYlxWC04HsDCJwJpIeUsBQ1LOAGbv6NC76uA3ZHlIxAHUbCQI8AgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB/IZ2FgKABiNiBmB2IOFoRcIBsDQxAbpp5KoJoqIBYAYkEgFkLSE4NFPSGQDtSTQYY+QqAV6K42FsLqhhMAANvd/JU8AgAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXooJqFgaGGhXrmxXBRz6zBYA8MAADaMidQPAIAAA==
+  </data>
+ </layer>
+</map>

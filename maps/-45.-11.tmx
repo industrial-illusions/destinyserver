@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="20" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="yes"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Black.tsx"/>
+ <tileset firstgid="199" source="Gary Room.tsx"/>
+ <layer name="Walkable" width="13" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9NiYGDQGsWjeBSPYiAGAAlNzaYQBAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="13" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC8XLNzNEYRiG4T1jO7ljhU7u5E7uVuzkTtxObtGjR48ePX6LP6DGNcOW+84ejW/mmnNmnvfOZP73vf+h+Sjz7pOv3/8k+flW+GaT0k2lrYpqaqiljvqgabA1kqOJZlpoDZo2WzsddNJFNz1B02vro58BBhliOGhGbKOMMc4Ek0wFTd42zQyzzDHPQtAs2pZYZoVV1lgPmg3bJltss8MuhaDZs+1zwCFHHHMSNMV36uaM8zJui+/C7SVXKZprtzfcpmju3N7zkKJ5dPvEc4rmxe0rbyWab08+sOcQBAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9XQyS8fcQDG4flJKI5oHW09iaU9Wo/WI60erUeKo+KfQ+z7HtRShNYu1pJ4EhIimLNv8mSWdz6X6Q+CYIBBhhhmhFHGGGeCSaaYZoZZ5phngcXg/iyxzAq/WWWNdTb4wyZbbD80O+zyl3/ssc8BhxxxzAmnD80Z51xwyRXX/OeG2+DJidxfoiKPr6Ldx/CBWOKIjwRvngR7Ikl85BPJIU2KPZU00sngc0iTZc8mh1y+8DWkybPnU0AhRRSHNCX2Usoop4LKkKbKXs03vlPDj5Cm1l5HPQ000hTSNNtb+EkrbbSHNB32X3TSRTeZwaOn57X3z7956/k9Nj3+SS99kZebO0ZcbxMQBAAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="13" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB64RUWzRsEoGGgwiRE/HxuYz4ifjw2sYcTPxwZ2MuLnYwPHGPHzQQAAAyc4DBAEAAA=
+  </data>
+ </layer>
+</map>

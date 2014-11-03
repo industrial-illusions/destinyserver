@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Veilstone Game Corner.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Os84YYBhA4T+praW2ltpaamupraW2ltpaamupraW2ltq6jz4X8M1fk+Y9ybOfgoIoiqIoiqIoiv7nClGYIhSlGMUpQUlKUZoylKUc5alARSrlX05WmSpUpRrVqUFNalGbOtSlHvVpQEMa0Tj7cbomNKUZzWlBS1rRmja0pR3t6UBHOtGZLvmXk3WlG93pQU960Zs+9KUf/RnAQAYxmCEMzb+cbBjDGcFIRjGaMYxlHOOZwEQmMZkpTGVa9uN005nBTGYxmznMZR7zWcBCFrGYJSxlGcvzLydbwUpWsZo1rGUd69nARjaxmS1sZRvb2ZF/OdlOdrGbPexlH/s5wEEOcZgjHOUYxznByezH6U5xmjOc5RznucBFLnGZK1zlGte5wU1u5V9Odps73OUe93nAQx7xmCc85RnPecFLXvE6+3G6N7zlHe/5wEc+8ZkvfOUb3/nBT37xmz/Zj6MoiqIoiqIoiqIoiqLo3/QXhXPRXBAnAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OuUpDQQCF4YBGjXGLNhr3Ldq4pBVsLHwAGzdQ0MLGTkELGzsDprBJp2AKGx8hjY+QRk1w397Dv7AYhnCJ906uIOeHDzKZO3AiEaWUUkoppdR/rg71iKIBjWhCDM2IowWtaEM7OpBAJ7rCn1yxbvQgiV70oR8DGMQQhjGCUYxhHClMYDL0xZWbwjRmMIt0FW/mjN/ztRjlowXrvPjL90uuhgRsGStYxRrWjbsNbBrnLWxb73dquq76dj3u9rBvnA9waH1z5HyRv4497k6QMc6nyFrfnDlf5K+cx905LozzJfLWN1fOF/nrOuD7gpMVwbsJ+L7oYoSDbnGHe5RQ/vn/AY94wjNe8Io3vOMDn/gKd65SSimllFJKKaWUUn/WN71CsTcQJwAA
+  </data>
+ </layer>
+</map>

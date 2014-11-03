@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="10" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal1.tsx"/>
+ <tileset firstgid="1025" source="normal8.tsx"/>
+ <tileset firstgid="2049" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="2379" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="2679" source="InteriorFloor2.tsx"/>
+ <layer name="Walkable" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoA2Yx0KevvlY9EVyUAcjm+dPBTwYzAMBDg4IxgXINQ8dDxXzqAkAkxAZcyADAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGLrAhIeBwRSIzXgG2iXDF/yF4k5O3GoWcELiAhQPC/Coq0eSw2feYAIAihzgGCADAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NkYGCooRJm5ABiID2HAQLmkIGR9YHN42CgGhiO5skzItjoYQkzbzIPqp6LnBAMEkeXs2dE5W8HqtvBieo+dD34QDyaeQeBZh2iwLx6RtxyMPOoiQElXzc4IAMAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBjgz8nAEADEgZzUMS8SaE4UEEdTybyhCIqI9PtFoDodHgYGPR786mpGcFjCAAADModsIAMAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="20" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGCoZWFgqAPiBiCew8MABjAaFwDJg/TVQ/Uhg7lQ/gIgvQRqDojWAWJdINbDYjZIHlnfcAX/kdg1aBgGutHC5zgnBIPE0eXQwVqgunWcqGKE9JAKqG3eYAYAPlPwGSADAAA=
+  </data>
+ </layer>
+</map>

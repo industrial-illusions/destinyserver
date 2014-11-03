@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="dayPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="fishPokemonChances" value="Magikarp,60;Chinchou,10;Lanturn,15;Horsea,15;"/>
+  <property name="fishPokemonLevels" value="15-20;20-35;40-40;25-30;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="nightPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value="Tentacool,60;Tentacruel,40;"/>
+  <property name="waterPokemonLevels" value="35-40;40-40;"/>
+  <property name="wildProbability" value="4"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Water02.tsx"/>
+ <tileset firstgid="193" source="Cliffs02.tsx"/>
+ <tileset firstgid="305" source="SinnohInteriorSet1.tsx"/>
+ <layer name="Grass" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3P2wmAMAAEwWBZ9l+YLcRHcNFZuP+bMdrt29yqzf6vOs7+51gbRyuOVhytOFpxtOJodPV/xXH3PwcHBwcHB8fbCg4OjtUGDg4ODg4ODg6O7zieNHBwcPzDcQAuMIkkECcAAA==
+  </data>
+ </layer>
+ <layer name="Water" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQ6AIAwFUO6/4KaTZxUPoEEgoZjX5O99aYefU0o5cLZUN7P3fMpZspccizq+7h/VUftHHBwcHLPDESscscIRK6s7WntuFEfv/lEcrX/EwcHBwcHBwcHxX8fddXt7bgTHqFtwcHBwcHBwcHCM7YgzHSNvwcHB8T4X8m4V6BAnAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YQQqAMAxE0XStO73/WXVZAoWqSCfDfycw/lSkEf62FrG31U/x3XHPcBrM4SDv1GjH1Hcv79Rox6rvnnqHWeod3N6z2zyZ+3wV0QR/Yr8A4B2+nzpooYcmmly7uM6FdWbvd9XN3u8CT1Q9D5nDeaCFhr5D5SZ9h+pNquM/RFPVDln1Dj2a4KsL7s5UpxAnAAA=
+  </data>
+ </layer>
+</map>

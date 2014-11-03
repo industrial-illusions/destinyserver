@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="12" height="24" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="yes"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Gyms Set.tsx"/>
+ <layer name="Walkable" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoC/4CcS/gPg3EP8hQv1FIGZiZGBgZoSwCYFrUD0wPNTUX0VTfwOIr0AxDCDLP0DjI4thU48PU0s9NjcRaz42gMs8XOrxmY8tPIn1N7HqcYHrJKq/hqYPxsanHuQ/WBqCsfGpJ9U9IPkvQPyVCPXEAACEF4uCgAQAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoC+4BsQXkTAxgImRgYGZkXZuGgWjYBQMDAAAjPAVMIAEAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMgoEBADBYXKGABAAA
+  </data>
+ </layer>
+ <layer name="Water" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMgoEBADBYXKGABAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC7WSXQuCMBSGz6Aujf7/P1OvoqLUpLKLvgR7x87wMJbbIl948N18HHOMaMwd1OAAjtwf9D1b0IEzuHDfBPwneIE36CN8pcbxQoV9N6k+Kd+kyQBW4r3uFZlzqoVnxw1YCl/3K5lz6oRvxzeQCT+b2Muccf8x1P+ZHdgzvrh7OOHZMr+mAGXiN967w8l5zVjfd0etvxZztk/5qevP5cfmA2fEzPKABAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWkADZG7GwQOEaiWcdI1INNvTgjNpW41csD1XMCMRcWfbjcIwhUK0SCelLcAwLcQLN5SDBfGKhWhEruIQXQWv1wAscYMOMDmxgAg6zvFIAEAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGNmAjRE7ezgBXH6kh9/vAPFdKMYGRkL4I4NvONgjFQAAX4MydIAEAAA=
+  </data>
+ </layer>
+ <layer name="LedgesLeft" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMgoEBADBYXKGABAAA
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMgoEBADBYXKGABAAA
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="12" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMgoEBADBYXKGABAAA
+  </data>
+ </layer>
+</map>

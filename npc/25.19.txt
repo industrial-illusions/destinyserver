@@ -1,0 +1,37 @@
+[npc]
+Ninja Boy Lung
+down
+261
+36
+3
+Nincada,19,Ninjask,20
+2
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Youngster Dillion
+down
+353
+4
+8
+Aron,20
+1
+-1
+0
+false
+false
+false
+[/npc]
+[warp]
+33
+5
+15
+21
+-46
+-43
+0
+[/warp]

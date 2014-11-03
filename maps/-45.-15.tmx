@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="49" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Magnemite,30;Voltorb,30;Pikachu,24;Magneton,10;Electabuzz,5;Raichu,1;"/>
+  <property name="dayPokemonLevels" value="22-25;22-25;22-26;31-34;32-35;33-36;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Magnemite,30;Voltorb,30;Pikachu,24;Magneton,10;Electabuzz,5;Raichu,1;"/>
+  <property name="nightPokemonLevels" value="22-25;22-25;22-26;31-34;32-35;33-36;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal3.tsx"/>
+ <tileset firstgid="1025" source="normal14.tsx"/>
+ <tileset firstgid="2049" source="Legendaries.tsx"/>
+ <tileset firstgid="2907" source="InteriorFloor 1.tsx"/>
+ <layer name="Walkable" width="49" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ2AMAADwTRMyqyMkj2omCBIedBZ+t43htl7O4/vxtCIoRFDo2dX4MuqYQa+MOz/wcBQiKERQyOGRgyNGBoxNGJoxNCIoRFDI4ZGf9kNKnjR06AeAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="49" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YPQ6DMAyFWZi4VTkJ9G7du3csN2nvURBFsiI7sZ3Y/D7pSQVixx/gAK2qS5fKqq1nlx6XsiYGi+3H7TviRcvv1LhUPsqamHBuTvzE3TFyQcWOhcc9GKT1wbweDNLaOPXtneEW3HtUP1oxfMb930Rtsfq49ZRmeDRVNdSz33+GAeHg1rYGw7OZ6w69J4ZXQQZ4n3kyWCk1T+5xD0nWVk28hzwZ4JpJWTOO+3ygcsXiYR7IW6pXpetSjiUMW1knQnbOGOl581DPmA+7LtT+ozJwel9riiGcE+tdLgMVX7LfMAbOtZGMs6rfk6HkOndWhpawdtwaDNzY2DhrSfuSo60ySN4ZuTlLyYPB8hk3uUMYsDnD995YbTBnuG1t7Dzm9rS3pQxQVvd/bM6YNAxW37ra9eFMDJz/KqWm8nJzSxksejo375EY9q4ftrK7+qAeAAA=
+  </data>
+ </layer>
+ <layer name="random" width="49" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ6AIAyFYRbup6gHpgxO3sln4qKJEqRx+r+kE5ShSSmEAPhZ4/v6Fn339ebccwEAaDVohoyKxCwB3Jn6KisK/QWgwrgngEf5nKct7EMOAAD4R21GW+c/+jif97WfSbWcFQs1vdgBth+05qAeAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="49" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC81ZyW4TQRCdg3uII7HDB5BDcIxhWD8glwBB4L8IhM1/wU5yBH4g7DkDH4QQAsR6p1qZkh/l6u6aHgco6SlR+nV1vRnX0s6KK4rLhNUIbhB21rwrNa4CrhGuK7xVwdOQswfPu0m4RbhNuEO4S7gHuE94QHhIuDQFXts92t41wgbhKeEZ4YWCV4TXhCHwngvOS+BVEV7bPdrezVoD2pybhLeRkVcJnsV4j/SlmeRoGjS+t3Wj31wN8nkcCmBO6E1paGLs8xhhhtAFvyX9vkNgGdZRA9uiiH2xBnKaarhQx5aKb+C28m62HHNmynE+9ggL4n1VbvLzMwdxc+wax2uYL5vFpsXXhRirOu/6wOmV43w8Rzgf0IBxarkmjTUs1ef7OELPDmPT4luAGGP5EMobTQPyY/68hpX6fB+HjO1rpyi+Eb539M+sFtsw8dmMaQhx5RloXsOuyHl7aH0vYZ+La8AzZA0OcaWGEE/6lzVrM3HecVo/QTjpwu9bWqwGo1k0SOOzMddT70Geie+1reVoYMNn6TW8d+O6FMOsm6zxGi7WP1P9YQDrR5T11H7GF7fVH+YJh50+X3E9Hxp5lUvXX65zuI5rqRqJ53GPWyKcdfp8xfV8ZOSF+gPWX1mDe2JNq5Gh81iDpZ+EclXutX62c+YqzaSGNvY/aJiG8cxnyf2jzlZLJJZFrF5DWY79ypkJbbdBJ/fpWO7nQpsVWcOG4GI9QLP2uFTu50KbFVEDcvstNawbebkW0mDd2zQmnG28he5mMeRoCPXEgZGHOSdnmxzI92nRoPVE2VeZJ3uvxpu2WTRoPVG722i9N3QH0ubN1HMP5VTTfPiX/dfq35LTTTXw9xrbhb6ioSwnedrcOxvwKXviUMmlaUL2L63HhebeSvEnud5GSi5NE9i/8Psly9xbKf4k15vlLmqZk5mX8pPT43L6XOg7Cys35rephhyzxhX7fikGy+zNXKw31ruu9f6NflGHxTffp3Hfo25RPCY86f6pAXM6dVduAs0vx2Lxrd3j3lDsbwnvFA1abQj16xB+dIriJ+FXZ7JWyPpg8W29x7EGSx1J1Zv99PcDhIPwbJoY/h8ity61id/bKVo7TTgjNPC8xIYzFJr829+oS9vt12v4QPhowGcjryna+v1E+A39apU3oB4AAA==
+  </data>
+ </layer>
+ <layer name="random2" width="49" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XywmAMAwA0KDo/mu0a7mIFjwWiu2hRd6DHBNyyicCAACouY7ZHfRLW0R+Yj9ndwKsrswLoC6/+/SL1JEDAH+x+h/d2tFp8I8u9d3X0HYD7CwU1qAeAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="49" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ6AMAwDwDAw9MOF58OIKmBtCHeSdw9R5UZAbct6H4CMvFMAQCXXXfP0N3tLJtn6/NnXbgeAWnqL2M7sbXYTMsu8ScZuNhQzHGCKDK+gHgAA
+  </data>
+ </layer>
+</map>

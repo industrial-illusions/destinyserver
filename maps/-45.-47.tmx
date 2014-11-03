@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Bertha Room.tsx"/>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Otw6CABhFYR4Hd7GikwXrZEVwUuxOFqzP7hl9AJM/Mfck334cRymllFJKqf/PRcZ64qssPOSQRwFFlFCGjwqqRn811NFAEwFaaKODLnroG/0NMMQIY0wwRYgZIsSYG/0tsESCFdbYYIsd9jjgaPR3whkXXJHihjseeOKFt9GfUkoppZRSv+gDEA6q6gAZAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OR06CURiFYQQFG3YgoQgW1GDBsgAEF4BlAQguwMIC0B1gAxEQluo7cEBy4+DGmz8Ozps8s+9Ljs+nlFJKKaX+S2PwI4BxTCCIECYxhWnMYBZhzGEeCx7sW8QSlrGCCKKIjdzEkUASKawijYwH+9awjg1sIostbGPn5yaHXexhHwfI49CDfUc4xonlXwGnzteYFVHCmeVfGefu5xhd4BJXln8VXDtfY1ZFDTeWf7e4cz/H6B4PqFv+NfDofI3Z0x9+m85W/N4zXvCKN7yjhTY+0MEnuuihjy8MMPRgn1JKKaWUMvsGAyvbZAAZAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OyQ3AIBDAQMqAdgPkIkfLcQ95oJU8kv9OSZIkSfovU5k9ISm0hSo16rTSRjsddNKgi2566J1yKkmSpAg+6c/VZAAZAAA=
+  </data>
+ </layer>
+</map>

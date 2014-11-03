@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="36" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Clefairy,15;Golbat,20;Machoke,10;Graveler,20;Nosepass,5;Meditite,20;Chingling,10;"/>
+  <property name="dayPokemonLevels" value="40-42;41-42;41-45;40-40;37-37;41-42;30-30;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Bronzong,15;Golbat,20;Machoke,10;Graveler,20;Nosepass,5;Meditite,20;Chingling,10;"/>
+  <property name="nightPokemonLevels" value="40-42;41-42;41-45;40-40;37-37;41-42;30-30;"/>
+  <property name="wildProbability" value="7"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohCaveset.tsx"/>
+ <tileset firstgid="1081" source="normal12.tsx"/>
+ <layer name="Grass" width="32" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SsQkAMAzEQM+b7N9ngFRp3oacQLX84FVViyRJRn1B/49+9/919/eAfuoG+29S26f2ASDBAdED+R0AEgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="32" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WOw7DIAwGYGdp7tCt3ZobRd3aqcrWTFUvXyzVkoVwzMPAwi95iJD4IBDICgDvTnV3tblaO9mvv996DGRzv9UYuO37tcfg2yG/1hhCtuRjYU5gl5B95FvZ57mvT0nxP64eCfU09HPsDfTE+Ckuty38knn7bTz4/GUV8nPtmHlr76HEtvBTEzqnYiKdA618ipWPe0laIx6pvdS/TADXKaMDI//m7KWSj/1L9+gOeevOg3tR84/+AfZCH0D3re8/Cu0bzbcMffsY2je95k/R/NRzOackv4VN9+LIyMhIr/wAWrglyQASAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="32" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SsQ2AMBQD0Q8S2SPpSAdDswdsQibBXSRKELi5J7m+xhEA7rJWjP1Zq8b+oq3GPp7bpj7gb/wPb+z6zWH8zql2M/aHFDEmXz+rXYx9AMD3Lsg9q0QAEgAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="2369" source="Orre Tileset 2.tsx"/>
+ <tileset firstgid="6629" source="Pyrite Cave Set.tsx"/>
+ <tileset firstgid="8985" source="../../../../1.5 Client/res/maps/Interior - Pokecenter Pokemarkt.tsx"/>
+ <tileset firstgid="9385" source="The Under Set.tsx"/>
+ <tileset firstgid="15148" source="various1.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PuwkAIBBEwcstxy5szpYN5TD2BzOw+b4IAIBVL3OvanXfdOjQoUPHuZabfv8PAAAAAABkA6cdJ1YQJwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQmAMBRF0V+kcxQXsHAOHccRMldwKQVLq0Dwg5wDr78vAgDgrU7ZBWOc94/2ky89lvkZjHSs2QXwra1E7CW7AgAAAAAA6HEBxGWQuRAnAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SPQrCQBAF4GnFY6TTUguL6fVIliKW/pxDo4WmSnIARS/lDLvBIKyJuIyI74NH0Gx258ESAQAAwL/ZdJuzlKwk6xZr67F06zbn4me6tlhbT9Gx6aDnbJlox+63PgcJ0VAyT15/uwi8H/WJzj0Xyx5Hmf3Ero8+xzLf5IMeSrtoLHvkMnvBrk/Bj3epzLn3OSTh/0KmbNsj9fcq5+b175gZ98j8fUoj96j2t6DnlP4+ZT/eozqrjNyjvreVmGdWe1l3CM3wnDZrvj0/AAAAAAAAAAAAAEAsd4pDBkUQJwAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QsQ3CMBAFUG8SJDpm8D6kIt4GEENkiBSsxUmxRAoS6Byk96Tf+Fz8u5QAAH43Hls3WNdFt0Pk8qVjifn04c/z9M6/O+eU+ty6xewRt77V3Ovdr4u3LUPsUHayBwAAAAAAALB/L8onb3gQJwAA
+  </data>
+ </layer>
+</map>

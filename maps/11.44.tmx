@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="dayPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="fishPokemonChances" value="Magikarp,60;Chinchou,10;Lanturn,15;Horsea,15;"/>
+  <property name="fishPokemonLevels" value="15-20;20-35;40-40;25-30;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="nightPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value="Tentacool,60;Tentacruel,40;"/>
+  <property name="waterPokemonLevels" value="35-40;40-40;"/>
+  <property name="wildProbability" value="4"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="2369" source="Water02.tsx"/>
+ <tileset firstgid="2561" source="Cliffs02.tsx"/>
+ <tileset firstgid="2673" source="Cliffs01.tsx"/>
+ <layer name="Grass" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ0AIRADQfovjapelxI+WJzQrOTcM8ad5uHdiqOH4/R/jr04OBJxcCTi4EjE0ceRMnD8i4MjEQdHIg6ORBy9HGscvRwVB0cijl6OioMj0SuOioMjEQdHIg6ORLuODySTMbsQJwAA
+  </data>
+ </layer>
+ <layer name="Water" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQ6AIBQEUVrvfyjpsJPKknP47WxNFhd0SKbnZUNCWVIqhrZIeRwGHOM4jmiP6uQO9Q44cODAgQMHDhx/dlx/RPX/0OHotQUOHDhw4MCBA8fTWrTeykLXm46e+zgdTbiJ06HcBAeOLzpUb93tUG3iNuAYz6F4I26DahP3/XHgwIEDBw6n4wSnxbHwECcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2ZSw7CMAxEu+ZqZQd3oVs4OdlYiiz/UoIyNowUVUiEzOS5bmn3y7Zd28iuW8twb2MvliezqrGgPNlzUZ4KNZZdo7WEWnu8ljyf6LVH/i2fqCx6Rbigs5DUe0bnIPnLyEHyl4lDVOgcNGXf/0jP1eYgSfKf+XrYe9d8InLgiuwxMgcuvufoDHp/Vk2hM+j9oXu1hF4vUWVmIOnPBU9nmSCwlHqt1os1IbD0/n8gePxlIdT6DFWpo1k8VnD1epY3R9IKrl7Pis5ZrWrndtY83DdirUSU1XdlZT0nuD6prap7sCrX7HVn9o1H+50jOGat+41nds82/xUcszyMPrOz1iAO0QyUg1/LrXdRo5m171s5Rzj0OUiSfy1j9F1JZI/oeIaDlEPLFPnsybqfpuMZDjTe6qwZ4BAnAAA=
+  </data>
+ </layer>
+</map>

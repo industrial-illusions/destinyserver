@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="38" height="36" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Oddish,40;Girafarig,20;Doduo,10;Natu,10;Wobbufet,10;Pikachu,5;Gloom,5;"/>
+  <property name="dayPokemonLevels" value="25-27;25-27;25-25;25-25;27-29;25-27;25-25;"/>
+  <property name="fishPokemonChances" value="Goldeen,80;Seaking,20;"/>
+  <property name="fishPokemonLevels" value="20-35;30-35;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Hoothoot,40;Girafarig,20;Doduo,10;Natu,10;Wobbufet,10;Pikachu,5;Gloom,5;"/>
+  <property name="nightPokemonLevels" value="25-27;25-27;25-25;25-25;27-29;25-27;25-25;"/>
+  <property name="waterPokemonChances" value="Psyduck,100;"/>
+  <property name="waterPokemonLevels" value="20-35;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Path0.tsx"/>
+ <tileset firstgid="297" source="Buildings7.tsx"/>
+ <tileset firstgid="649" source="Daycare Johto.tsx"/>
+ <tileset firstgid="1580" source="Cliffs02.tsx"/>
+ <tileset firstgid="1692" source="Hoenn Set 12.tsx"/>
+ <tileset firstgid="3084" source="various3.tsx"/>
+ <tileset firstgid="3620" source="Trees2.tsx"/>
+ <tileset firstgid="3930" source="Grass01.tsx"/>
+ <tileset firstgid="4100" source="Tileset 5.tsx"/>
+ <tileset firstgid="5124" source="GrassFlowers.tsx"/>
+ <layer name="Walkable" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3FMREAAAgEIGeDv7W1gjsDR7pqTmzbtm3btm3brxf3i8IoYBUAAA==
+  </data>
+ </layer>
+ <layer name="Grass" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TsQkAIAwF0QzhAO4/paRUsEijF7gH6a/4iZBEN8d+FHbV0LrOHkJTIjYlYlOid0k/ELdH/Ql61+2obQRdukioXRXUTVK7kl11ndqk1xbTVuZBYBUAAA==
+  </data>
+ </layer>
+ <layer name="Water" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WOQ7AIAwFUe5/k0CVULEcLm7cRJYQUDhI86Tpf2eHAADAuS4pDkoOu27pGZTZxa5FRapS/9kupfusmuMuAMAZrP/O45/7sv4Cz3ur2DXH+lP4T7DrBbjKM1dgFQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XQQ7DIAwEOYfXpIe2T2z7xyrKTwoHJJTi2qwXeslKCCmxrWWEMKwxhEsaqzBLeqR/z/g9a3FWSfWlOr3+0TwpXsqz+vfmsXih/KxxKC+UnzXOWt/LSxNa18tL84LWte6znnXXHkbx6uHZ8gDv2yXFAeO12NaI7NfsaWvUt2gXvGX94mXR5vS1C7leXqN8nbz6fEke/82r1skrhHfKuUeMl4Ub6iv7Kd40T8h5nz1dU8ztMIqO38uwskL7Y8uTxVfx1uLD6o9MWfoj615XC7kLzeCF3IWYnLx3RW9/ZHLReDHEfPMy9xPzzdv7Hh8hhNeMc43Bawa/2qv2f3Zf8PIaxc/LaxQ/5hnNnJlnNHP+AIAInoVgFQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQdvoAAAAAAAeAxzuXqAYBUAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XSw7CIBCGZ1k0xo0Lj2FSPaCPaj2QhzGpnkUmdkFIMQzDFAx8yawa6M88yl+AOAwL3vpjA3DScdZxaeJoQtplvL1y58msgRQ7gRpw+83FdsNbT+0335rZujoFcFO0d1HwrZmta9Ca3oK6fLF1tTrPh4Tzwe0rKVLp6te/n9d80chVV65I3R9cSvIrFEryNo/VNyjMkZ8QXRL58aGkfkHQD16tkPSHLvBeN+929IMvI3qV1ofZulDPPrE3NEGfmpMeF/X+5OHKX5d4fl35w768jzPD+b+bOnfIt9rcJ8bMTJ075Fv9L/1XmYcPIFKWKGAVAAA=
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQdvoAAAAAAAeAxzuXqAYBUAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="38" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XSw7CMAxEs6ZbFhyjEkcsl+RzGLoBIuOxx4kTNowURZWSavzqxs52KOWyjw3M56W8dd2fb/u4K7Mla98D7EXrtX3rgv3Luda6lC9pcWvq5cVykO+x1lncJC8vDoZD/R60zvsO2j6GW4tqDxan0/EzZLxsnjH591LtwfoOyFckz5j80Dy08urVKz9QjFZeIV+ZQv+Sx2mkp1qSWySvRkr+SxavmYrwmin5LyFev1akfsxURv0YoUidmOkp2qfMyD2vPmqeRviK1sdZvpj6yPBCA6mlF2rJr6ivll4o0qd6/np7Ra8+MpKeMnpFjRfLCXmzemtPFi+WE5J3d0U56fWr7H0JyeqtZU/HcLZ4abH0KIsXcx/r9YU4R3n18mPPvV5eLfwYX17c0bMnS5lndOaceUZnzn/F9AR9Dc5rYBUAAA==
+  </data>
+ </layer>
+</map>

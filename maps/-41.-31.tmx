@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Sinnoh Interiors 2.tsx"/>
+ <layer name="Walkable" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3NWVYIYACG4f8KJZJcNdwSJVSnJEq0hqSQaQ2SoVBrSEWD4dCI0hoiY4M1mKKBFuDZw++cbv73nOfyO18IqVQq9f/amxfCPorYzwGKKeEgpRziMEcoo5yKvLjfHvv79NJHPw94yACDDDHMIx7zhKeRv1vyQ9jKNjLIZDtZ7GAn2ewih93ksic/7veafRvXaecGN7nFbTro5A53uUcX3ZG/X+2/8Z0f/GSZX/xmhVXWWOcPf9mI/G0sCOEMTZylmRbOcZ4LtHKRS1zmClcL4n5n7d/wljne8Z4PfOQTn5lngUWW+BL5W1kYQhVHqeYYNRznBLXUcZJ6TnGahsK432f2zxlhlDHGmWCSF7zkFVNM85qZyN9UKpVKbV7/AIaVpGYQDgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Su04CQRTG8VMBSgEaG9ndVsG7aIEVRN/JazQSfQbvF26FvIAKeEGxhWj0Eegl+AL+DVMZCQtDZeZLfjmzO3PmbLEiJiYm/zHXoyI3uEUBRZRwh3s84BFlPOEZFbygbvU286dvLCQyjjAimMAkpjCNGcxiDvOIYgGLIb25B/Qf4gjHOMEpznCOC1wihTQyyCKnOdcDL3wYwCD8v+4L8BzEEIbV3oilN3cVa1jHBjaxpe7bpu6o9S41qdZ71H3NuW7yybmGOtukflnd9fc6t9/9nfqqtkjNbq1fqW9q/U79sPszN+aILDl/n4vzPqH2lqkrjrvvdjP3irvybea66e+2r51O+3WN/9nExMTEpJVv9cA+chAOAAA=
+  </data>
+ </layer>
+</map>

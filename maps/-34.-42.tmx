@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="true"/>
+  <property name="pvp" value="disabled"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal9.tsx"/>
+ <tileset firstgid="1025" source="Tileset 1.tsx"/>
+ <layer name="Grass" width="30" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VSwrAIAxFUWnX4/630XZFjgI2JEjg9TO4FzJSOCiIrRER6ep7POd2n2iP0o2czFa4q7NFayo3u3Pv477j2l6Vu7JtXelWzqx+v1+51cHF/bt7JW/peOgfNNP/9/N4m4iIqNIAsylfHcASAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="30" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2V4QmDMBCFg7dB96yTSGfRLhLrJOoEcnAh19jonztE+j54BE3Ix0NDQgAAADs+zT5PCmFpclr6vc7Sy85Vudk5V9wW3uRZlZuZlbvsbuGdCrdGO0fjvpPkCHZ6eHl8y34P+h57mffy1jqPTt7Ulb2pY4KfI+XO1t6jbxyLf8rDW+sb6Zq+8MJ7N+8g6eQsvSi/8/IOJ7G8fwEAAPwfGxEGZtDAEgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="30" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SQQoAIAgFUakjdNzO0J3DVSC4lOA7D1znYGYAgApr/t6gXtao3B7blFs74r769njT4V13+McAAAEXhLrqGcASAAA=
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="30" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQEAIAwDsF7D29QiBUko4OZYoiAJAABT7Up6Jad+TwAA3i5EY+d9wBIAAA==
+  </data>
+ </layer>
+</map>

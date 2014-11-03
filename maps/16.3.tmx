@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="48" height="36" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Zigzagoon,25;Poochyena,25;Wurmple,25;Tailow,15;Shroomish,10;"/>
+  <property name="dayPokemonLevels" value="4-6;4-6;3-5;4-5;4-4;"/>
+  <property name="fishPokemonChances" value="Magicarp,60;Goldeen,40;"/>
+  <property name="fishPokemonLevels" value="20-30;20-30;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Starly,25;Bidoof,25;Budew,15;Shinx,15;Zubat,10;Kricketot,10;"/>
+  <property name="nightPokemonLevels" value="4-6;4-6;4-5;4-5;3-3;4-4;"/>
+  <property name="pvp" value="enabled"/>
+  <property name="waterPokemonChances" value="Psyduck,65;Golduck,35;"/>
+  <property name="waterPokemonLevels" value="20-30;20-40;"/>
+  <property name="wildProbability" value="1"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="set1" tilewidth="16" tileheight="16">
+  <image source="PGTileseti.png" trans="000000" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1025" name="set3" tilewidth="16" tileheight="16">
+  <image source="PGTilesetiii.png" trans="000000" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2049" name="set5" tilewidth="16" tileheight="16">
+  <image source="PGTilesetv.png" trans="000000" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3073" name="kantoroutes" tilewidth="16" tileheight="16">
+  <image source="PGTilesetzkantoroutes1.png" trans="ffffff" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="4097" source="Tileset 4.tsx"/>
+ <tileset firstgid="5121" source="Buildings7.tsx"/>
+ <tileset firstgid="5473" source="Path0.tsx"/>
+ <tileset firstgid="5769" source="Daycare Johto.tsx"/>
+ <tileset firstgid="6700" source="Cliffs02.tsx"/>
+ <tileset firstgid="6812" source="GrassFlowers.tsx"/>
+ <tileset firstgid="7132" source="Pokemon Mansion and Safari Remake.tsx"/>
+ <layer name="Walkable" width="48" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XSw7CIBBASXqGbrxfN6a6otZFUW+rx5AmECcTGKgVpo2zeIu2Jrz5AXYHpToGdKvUpV3+bSuIv/j/s/9k/W4RR+qbsI7e5vXkODPluF+x/twbd8tguTLFoN36387YHINxcdSYU1jzmXGlP4yjxpz6fGO2vsfhehvQu6X6ty88E7gWsAZHAtiHlJ92eSm1P8FaGNS/KX+dUTcdyQ0XIf+ByDGXP96jvFfMP+bof/OofIeAbnBtyj/kqBncqbpT/qH+4Lq75fhTs89N7F4D/bfOFMgttafuIa4c/9Jn7i/84btno9Sr+TzX/L+YymfO/QEz7sQfznjqHCgN7oFccAwp91jNPDVjhv2ee8fBZwaGwz+0zwqCIAh1eQPiOpPyABsAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="48" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PQQ0AIAwEwQrBvxOMAEKohj4gkJnk/nsRAJzU2+2CupHtM7ce/gAAAAAA/G8DIc9OywAbAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="48" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQkAIBAEQZuwYDs3EEGMDIT3cQYu3ysFAAAAgN+1OpbRbNcfY+2/sew/ImXt3p30vdoOvKMD94PARAAbAAA=
+  </data>
+ </layer>
+ <layer name="Water" width="48" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQmAQBQFwZeqkQoHav99egUY/EROZAY23wQAACCZWjIXWtro02dr/9oK7f5fcfSvs9D10X8AAOBfblYeU3YAGwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="48" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC81YS07DMBAd6A6kwoIFlNwDdnAVWFEKSIV9l/yPAeVzC1oEHAKpggLn4FkNyIrG43GdpH7SU6eZdvz8MrXjjheIPsBPcFxD3Fsnel+lf5jYzks5Lh6Cc4tE82ADfML7QX49NNbU4fTbeSnH1TdzsRHjraZOjP9cfa23X+A3+FOoY1/X1Inxn4tD+nYvI2qD+2AHPAAPwaNskp9V/2t9O4XOM/AcvAAvwSvwOtdv3wtXbD43sjSOCh5LuVj/b6DzFuyDd+A9+AA+5vq1LMLV49LvKHT9MeMOoHMIPmeT2i94fQXfMl6XFvY4Us7lv2a+Lv8kX7WI9T9kzeH0a7G0wl+P9V+znlcJe8ziHGP8rwta/137bxn+77SIdgX2G+7vavufu16W/+2WnO8I+RT6P0Z/VetPCLrQd1zgpqU5df85tJX6q9p/69Jf1f5bl/4U+j9Gfwrrv0//lrAvpLD++/S7YO6L62xnkMr6I+mXUGb/+54Rity2tG1Y+8IfTHzi0e8704X4r/HTBZ/PLvjOciH+z0L/8hpRU2CI/11HD2ho+sR31mk6zjcSqtx/OcScMzlUuf9yCNXv65+6z1+h+lM7/4bqL+v/txTi0Oef1GLuvmjmGOOPtua042rmGOOPtua046bS29PGv8T3yhoAGwAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="48" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YzQ7CIBCEOWnSXj1yUa/+P0br3ytqX9RpvGgCuCvQsoUvmYTSZlomzS6hq9QXD1w/oa7ijyk+Jlz3f/lLp1/XslZqBa1rdxYbrdQW2kF76AAdoZN+37f5hMrf5M+hwXe20Bm6QFfoBt01zyck1P85JtT8TWPpuOrGUOSeP7X++DJfmOenlL9tjTYk1R/TvHQk5e/bf1NEUv4S6g+X0n/HZcj+a6PU/3Hrj4tS/wsxKfmHY8bc+/ek0H9zJoX+6yKH/Y/PmXPssY2p5v9JqPN/iiflmRz2P5QzfE4+VM9/3yudFwEX520AGwAA
+  </data>
+ </layer>
+</map>

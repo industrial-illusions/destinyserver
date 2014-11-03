@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="18" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Swinub,40;Golbat,30;Delibird,20;Zubat,5;Jynx,5;"/>
+  <property name="dayPokemonLevels" value="21-23;22-22;22-22;22-22;22-22;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Swinub,40;Golbat,30;Delibird,20;Zubat,5;Jynx,4;Sneasel,1;"/>
+  <property name="nightPokemonLevels" value="21-23;22-22;22-22;22-22;22-22;22-22;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal9.tsx"/>
+ <tileset firstgid="1025" source="normal7.tsx"/>
+ <tileset firstgid="2049" source="Caveset 2.tsx"/>
+ <layer name="Walkable" width="20" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAtqDQ8yD27zBCABvs+rCoAUAAA==
+  </data>
+ </layer>
+ <layer name="Grass" width="20" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACzvEzMBwaJhg9kHghpGGR8N88GF6xgkpdoEANe2mtnmDEQMApLQ62qAFAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="20" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBjgws3A4ArEbtzUMS8FaE4qEKdhMW8ZUGw5ifa0ANW3AnEbFn3HgGLHqeRuegJ6hjk5AF+YD1dAzzghxy58cTLQ8X9yBKQTAG/QNwGgBQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC7WTSwoAIAhEc93979te5idYIGRNL1Ore059sD7UHhqJ3rH6fuex8+m64ykfvS/hJflFtUhrouqoeKoHXMyMx/yU53rHaZFG5Rdp0/eyGNF8wnP5ZXmd9ja7O63rFg/pXV9O/mAS36Y9AP8m66AFAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="20" height="18">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAtqDldwD7YKhBwDD3mp+oAUAAA==
+  </data>
+ </layer>
+</map>

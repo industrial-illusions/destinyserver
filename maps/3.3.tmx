@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="24" height="60" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value="Magikarp,10;Chinchou,40;Horsea,20;Shellder,23;Lanturn,3;Seadra,4;"/>
+  <property name="fishPokemonLevels" value="10-20;10-40;5-25;20-40;40-40;25-35;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value="Tentacool,90;Tentacruel,10;"/>
+  <property name="waterPokemonLevels" value="28-32;32-32;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="384"/>
+  <property name="yOffsetModifier" value="-2912"/>
+ </properties>
+ <tileset firstgid="1" source="Water02.tsx"/>
+ <tileset firstgid="193" source="Path0.tsx"/>
+ <tileset firstgid="489" source="Cliffs01.tsx"/>
+ <tileset firstgid="719" source="Pokemon Mansion and Safari Remake.tsx"/>
+ <tileset firstgid="1769" source="Buildings7.tsx"/>
+ <tileset firstgid="2121" source="Buildings3.tsx"/>
+ <tileset firstgid="2681" source="Buildings0.tsx"/>
+ <tileset firstgid="3131" source="Path1.tsx"/>
+ <tileset firstgid="3555" source="Buildings11.tsx"/>
+ <tileset firstgid="14979" source="Cinnabar Island Lab Remake.tsx"/>
+ <tileset firstgid="15014" source="Buildings8.tsx"/>
+ <tileset firstgid="15606" source="various3.tsx"/>
+ <tileset firstgid="16142" source="Cliffs02.tsx"/>
+ <layer name="Walkable" width="24" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2SQQ5AMBAAG39w9v9v9IwT4oB4iopIatPqakgcZpI5dmq7jLliX1byh35ZpKX/337tbBN3VMWhf6f2/+mcg3KWUD/1/bl97ft81bei3wj9nZjM/r7bPmJqJrnzUL+76Y+BmWKesz7p767OWeES6U/Kc1plP+ccAAAAAAAAAMAdG949nZWAFgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="24" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3RMQrAIAyF4dBewbmX6NbBiwrSq3mDbq2b7oqgVSzl/yBL4CWBiABl+9KedWu/O2pYLXLqObtHUdvsC77jOtJer5/fcfYTy2d21DAv8wAAAAAAAH8QAB2uwQOAFgAA
+  </data>
+ </layer>
+ <layer name="Water" width="24" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UIQ6AMAxA0Z4eHMOBAgfXZHNkghAyMLwmT/anqiki0smSTY2sVbsYo90M+vr6n/XLb5hf7Le8/c/9Lutv2Kv+9nAPAAAA4MoBOmfN1YAWAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="24" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+WXy0rDQBiFQwMKKriR4qpmKS7FVR7I+2N4rXfFK+rC+wtYXWkV9RG8LbR2oehC0YVrT8j8tA6TyYydlA4e+PgnTXrmzKUpk6t3nCNwDJLQCXxPQV7RvyHlOI0KNKXC50XZu13H6QG9oA/0gwEwCFpS8n7IN82qKPsQfIbBCBgFY2AcZMv8g0ptUuCZ5vxzgvnfgs822AG7YA/sgwPOPwPa2XUHqifwF81/Hj5n4NwNry9QL8EV8z/0Q+820Ml8uti1p5CfVGD+Rbf0GT8nUZLl5/VdV2pTblLQbhb0Sf4m9r5oTLL9I9M15v4G3II7cO/L/XXzP8DvERTAEyjG+Ovmf4bfix+2X1HfBP6tmej9k8XzE2ASTIFpMANmmec76gdrf6J++eI19yL2zxyenwcLzGMRdQks++pj5FU+hhX4rII15reOugE2/d/7VEe671BdyX7DJkT5qZ+4/vj7qvmoH36++O/z9+Oej+tfd33i+q9Uorwm11iU19QYonKayh+V00R+m7OXy9b9Y/v8256fZOs4ZPlMZJflM7kGts4/ydb8KvkqGYNKvv/+Hq32f1fgm+S+N/leTvIcUa0zRFJnoEC2j6GW8uueoXTv656hou6TbyVjk+kva16NvV4r+gG7OhiHgBYAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="24" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9vPzsBwAIhHwSggFUTY09b8BCqaryrLwKAGxOpArCFLPXNhYA7UzHlAej4NzBeWg9CiQFpMjvrmj4JRsIPG9QCsniHWnm1AddvZSXcXzB50/ej8fUB6Pztu9YQAun50PiH1o2AUjIJRMApGwSgYBaNgFIyCUTCcAbl9Olz68fXpyLGLlD7daH+OcgAAO+EhXYAWAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="24" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SOQ6CUBSF4RtINFGXAAsAnGpW4LwpJ+xtTdTe2egC7J1WYeUaPOWTaEQEYnH+5CtI4L4HvF1aZA9qti7iQB4KUIQSlHWJpArmVKEGdWhAE1oRzQ9aRhPJKnJasuuHbeY+X1s/7PuQwDe/pz7fMzdEFrCElRH/nsJ2xLc/wRkucFX+xcgUWWPvG9jG9A4W1rDBMeOZP8bcCUzfzG/jfTvQhR70wYOB70ze3NfP/1ND3x6DnFPGGGOMMcYYY4wx9l0P8suxfoAWAAA=
+  </data>
+ </layer>
+</map>

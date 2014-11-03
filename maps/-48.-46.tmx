@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 20.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 21.tsx"/>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Qyw0AIQhAQfvvwk+hu3YgMYqHmYRw5IVSAACA08Y/fXHXhL55swX3TdG2drnP//a8/r9oY5aX2wAAMnzmQ7gTABkAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2Otw7CQBAFbRqgg44Mv+tPIhWkgiiyEOFfGGMXJ8uACNrqjTQ669anHc8TQgghhBDiPR3sYttxFc/Wifse9o37hjjCgeMxnp0S92OcGLYFOMM5+r7nZfz0/7Lc53DB99Iu79G3xR3mn7SF7LHAfMp5MCmLCPvOeMHii74rlphvOG8mZRGB811mfwWrWItb65wNbGLLT39n1WfxzmqPZd+nu7558wuf7LNuS+51TZsJIYQQQvyTO9p9dpIAGQAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OwQ1AUBRE0d9/Q3QiWuCvUIApgCUv4ZzkrmYzrQEAwHdN1Qf4nSWtqd/s84tfrmxpT0fxD543pLH6BABAoRPJjZQuABkAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAAAAwJcBSxPzAQAZAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ROwqAQAwE0PUK/vb+J/I82ugIFiLYCGrzHkxSpAlMKQAA8Nz09wMXc7Lc3NZ9NN/9wjvadNgl/dHlkD0mVbcAAMDJBp5zf2EAGQAA
+  </data>
+ </layer>
+</map>

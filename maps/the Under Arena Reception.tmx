@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="The Under Set.tsx"/>
+ <tileset firstgid="5764" source="Pyrite Cave Set.tsx"/>
+ <tileset firstgid="8120" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="10488" source="Orre Tileset 2.tsx"/>
+ <tileset firstgid="14748" source="../../../../1.5 Client/res/maps/Interior - Pokecenter Pokemarkt.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PwQkAIAwEwSBYrL1alC34iRqcgfvfRgDwstnzpkOHDh06zrXcVP0/AAAAAMCO0XKnQ0flDvjJAjP6zzUQJwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SNW+VYRyH4bcCFHcSmuBFi8OGW9FinwF23CnFN9xdN6TFXTfcpVCguAW3DS4GQhhISIBzAn3u5ErOcJL/80veKAqFQqHCW0Z6vF/wZ5piR/Z/suVXGpQaRYNT4/2K3y/Hhtz/YEcoFPq3K50WRWXS4v2KUCgUCoVCoVAoFAqFfuxEQhSd5BSnOcNZznGeC1zkEpe5wlWucZ08bnCTfG5xmzsUJMRuR5vEKGpLO9rTgY50ojNd6Eo3MuhOD3rSi970IZO+9KM/AxiYGLsdm9zazBa2kkMu29jODnayi93sYS/72M8BDnKIwxzhKMc4HsMd1ZKiqDo1qEktalOHNOpSj/o0oCGNSKcxTWhKM5rTgpa0onVS7HbMcms2c5jLPOazgIUsYjFLWMoylrOClaxiNWtYyzrWs4GNMdzx+eut5ChKIJEkkilCUYqRQnFKUJJSlKYMZSlHeSpQkUpUpkpy7HYMcWsowxjOCEYyitGMYSzjGM8EJpLFJLKZzBSmMo3pzGBmDHcUuHWXe9znAQ95xGOe8JRnPCeTF7zkFa95w1ve8Z4PfORTDHd8Ky/l++/8lJ//r7CVVdV3VzXerwiFQqG/3xcb6fkWECcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3W11JTURiG4ZWAmjtwuASHGfXABja6AirgDdgbIIhygAUiYEMp6nXYS7DXs4BKb6FaDrBQxN7fjMm4h0nIHmUvgfm/mWdWsrPX/teXg0yUkkgkkqmZpMjQ4pGARBP3GulMSWRoTt+Zik3ca5Q3S0+HQHNcUUpVY1r02HtnhPg82POtSKA5bjrUTIEe/szmnHN85kYHv/a3zx/PWD1HekysOTp7WDXLymfrmOl/lu4Owc4wmpl7/vf5JRKJRCKRSCQSiURiPm6bUjWoxSM8xhPUoR4NaEQTmtGCVrShHR3woBNd6EYPetFn09djsV2pJViKZViOGMQiDvFIQCKSsAIrkYwUpGIVVmMN0pCODKy16+txhllncQ7ncQEXcQmXcQVX4UI1ruE6buAmbuE27uAu7uE+HuChph4HmFOIIjhxEMUoQSkO4TCO4CiOoQzHcQLlqEAlqnASp3DasFod10yl3jBnAIMYwjDeYgTv8B4f8BGf8Blf8BXf8B0/8NN73jClbLAjzLDq6OHNOmatxwZsxCZsxhZsxTZsxw5kIgvZ2Ikc5GIX8rAbe5BvWHX1qGNWPRrQiCY0owWtaEM7OuBBJ7rQjR70og9P8QzP8cKw6oi3y7zpSs3HAizEogBrFJLD+V0K/73Pv8fMPl09jPE4+L4df94X8Hov9mG/73ohaxGcDmUqo2dYkVAz+jnrS7zCa9+5B1gHMTSJevxL3BH8T4iY/D10z9BBIpko+QUL3JlHECcAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3RWw7BQACF4fNShoj3IhZRJGoB9uKyKpbivhyxAafRBwQRCZXm/5I/k850kulUAgDcS0ZFn+C5RSot3TF9/d7J6+M//o6y6fqu23md/N5bV3MAAAAAAAAAAKB8VpG0dhu3dbsHz/vodk+2/sm+b+pXpIGbBGnqZm7uhp6regyu5urh8n4jH5vhd2csUhJLvbjoUyBz4D8AeMMZCOUtvhAnAAA=
+  </data>
+ </layer>
+</map>

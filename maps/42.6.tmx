@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="42" height="36" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Pidgey,30;Doduo,28;Heracross,1;Aipom,1;Oddish,30;Poochyena,10;"/>
+  <property name="dayPokemonLevels" value="20-30;20-30;30-30;30-30;20-30;20-30;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Hoothoot,30;Noctowl,10;Houndour,10;Murkrow,10;Oddish,30;Gloom,10;"/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Path0.tsx"/>
+ <tileset firstgid="297" source="Buildings7.tsx"/>
+ <tileset firstgid="649" source="Daycare Johto.tsx"/>
+ <tileset firstgid="1580" source="Cliffs02.tsx"/>
+ <tileset firstgid="1692" source="Hoenn Set 12.tsx"/>
+ <tileset firstgid="3084" source="various3.tsx"/>
+ <tileset firstgid="3620" source="Trees2.tsx"/>
+ <tileset firstgid="3930" source="Grass01.tsx"/>
+ <tileset firstgid="4100" source="Tileset 5.tsx"/>
+ <tileset firstgid="5124" source="GrassFlowers.tsx"/>
+ <layer name="Walkable" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3FMREAAAgEIGeDv7U1hRMDR7pqTmzbtm3btm3b9tsLbnxNs6AXAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQoAIQwFUQ/hAbz/KcVKCwtDMPmBeWC5ZirJtoYoo++j7OxU7b01qjcvlTsVe6t0AgAALBV2lczdyjIzcw98nRf9z/Iy7zaTTlun9/uITu8dP6i/fQCQaQLO8hNpoBcAAA==
+  </data>
+ </layer>
+ <layer name="Water" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQsvoAAAAAAAgLcBvXrbmKAXAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC82Yyw3CMAxAfSiHEgkxBAwAB2A3GAB2gZWougmVwKJK87FdO82TIks0dclLmk8B6HTrb7y2ALc2Xq//1bs7gIf7Rz8PlZ5Zn5of8x6G/3Z00+un4bfzqCBnFy6XQI4Ufv7YczCv77E20GPMZy15Y+Myx24Y8/vEuJfmzeG3PxdD7ydeo9wvxW9/LqZySO+XQPUausfCYwyJV4rPmuD4tPadguNzSd8UjzivcX1y56VUpHjEeY3rkzsvpSIH6TjWiByk47iUT+l6VdqndL3S9KnRXi5a77vG/mFO/9TiE4nNy7X4RGLz8lyfPtbnCqlPH+11XuqzNFKfpeH6zJ37rOD6zH2XsYLrcynm7j9LobX/HMPpg+0KYDMqz2ZaXo3e/nOMdh+8G12fVmt9p+zT8ttJKrfFWYbql5PL4ixD9cvJ9QG9om8poBcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3KsQkAIBRDwXR/CS10/yG1FRQc4K57IQkAAAAAAPCrVdLr3MbuWff/ywKRXCSxoBcAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YMQqAMAwF0M6Kujh4DMFLeiEPI3gUByluEtq0TU3E/0BwkBp+oA11ro69qbSwsLnlf7t191Nb7D9HYba+N1R/Std9WhKypfjeUP0pXTeXdD61aOUDAHGhfcTSuRnaR1LOTUmW8gnRyocLOYKEddCuAFJNI/1ujdU6LdUS8pU64V/OXrsCGW/coUiwdIdC4cyiublKzrmcWTQ3V8y5QLkAFW8KKqAXAAA=
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVPbQsvoAAAAAAAgLcBvXrbmKAXAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="42" height="36">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC72YTW4CMQyFswJp2HbBqvQISByRng0KN4D2ME0WFtHIiZ//eFLkxSge5xvH46SUPD2XUn7r+Ft8fh7C/P3Ha2h0rn6/l5c97ewxNh13vF8uTjTetnbiSDZKnF8uRiTmY8duvX7JcqJn6HwtW46rZGc+kPltH3i4avn2PhCepLYPtHF6+FJ9QHl660kvju9IVB/6OTOe63qC5H2WUJ7cd4vkLUnKS1Kf02j91talmUXz0lK/tXVpZjlxnDieozyN5EhWI2seZ/HU8lnncQZXD0dtPntsxHpH+Wz9Puh+11pNHbVyzuI5krU/yeSJ9CooX08fO+OJ9lZofdByo/c9ljnPPi6kD5S4avj1fWjPYc3TcmaZ/e8knlIfP3qnZY6FJ8cvO04LT8o3zzlDijeCJ+WbJ8ZRrCNF8HyHJJ6ckP9L9FlJ4mlV9N2MhedMlrsXRNE8tXcvUb4zzjIoX42vjLMM0ktp+9Bstdpx2ZRyreOnjlsd943uHued+tyWcqjja2ub/w/N6impoBcAAA==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="35" height="60" tilewidth="16" tileheight="16">
+<properties>
+  
+ <property name="isCave" value="false"/>
+
+ <property name="pvp" value="disabled"/>
+
+ <property name="xOffsetModifier" value="0"/>
+
+ <property name="yOffsetModifier" value="0"/>
+
+</properties>
+
+ <tileset firstgid="1" source="Hoenn Interior Set 8.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 13.tsx"/>
+ <layer name="Walkable" width="35" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WwQkAIAwEwbQfq7aFKAmIzMD993kRAAD/WhebbMnDadHyQgsAQIXvrUULAADdNvLNXAfQIAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="35" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsQ2DQBBE0aU6SG1qAFmugE5M4gLAcoCJgOaYcAUEJNw6+E+a4CQk5i4aMwAAgGt8owucdMvM7kqpNFl0m3TyzV0Ld+6U3uWTrtauy6D8XMbEXbx/6jIps8sS2AUAAMR7RxeQx8kt/dR3lVJfvL23e9eL3rte1MYsDt6Hvbv3UtqgfwMAAMBsBTtP2YvQIAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="35" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OoQEAMAgEMZiO7j9RZRUWKhJ14sVHAAAAAACwpfL1yX434acvAABwAf3yl/LQIAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WQQrCMBBFpxcRdKdbdaUexmMVV0VxJZ7RgSRQipAq+bHS92CYTMj//dDNmAEAAMC/s2jMWu+3ON+9LhbuUg3nNuoUWTrvjzg/va4W7lIN506YpaZO4anOsvXzzms/4jvqLAc/H71OE8hSQzfG89yE+nWWb0uRpaZO4UmWsjqFJ1nK6hSeZCmrU3jOIQu79/ssNXUKT2WWpfdVxr//Rpll7X2T8e+/mcM/+nTvVmVJvrn9Wr13AwAAAEyJFy3cuZTQIAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsQnAMAwEQHm8xBsEEkIm8P5VNIILY2O4g+8Er/IjAADmO0rEmamZVlZ/AwAA410Tdu7b2fHl3Z15bG8AAGAjP1U9+FTQIAAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="35" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsQ0AIAwDwTAmgzECe1IwQOiioDvJ/ZeOAAB+sqsDoLk57gAAMqs6ABrzuwEAeHEA5X6499AgAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="dayPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="nightPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="4"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Cliffs01.tsx"/>
+ <tileset firstgid="231" source="Cliffs02.tsx"/>
+ <tileset firstgid="343" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="2711" source="Water02.tsx"/>
+ <tileset firstgid="2903" source="Orre Tileset 1.tsx"/>
+ <layer name="Grass" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DAQkAAAwDoMF7rH/M5Tgo2Euqqqqqqqqqqqqqzw9A+e5BECcAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PQQ0AAAjEMLTiXwQKeMMlbTIBqwIAAADI0EtpfPzi44/tIfEFAAAAgBsDEqAuORAnAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YQQ5AMBCF4V7AjWzZssNSXMChcE4VuhzRqE4r/5e8haSJeWkiLWMAAEjHXGhP8H+lwjvZVyBvGt8NAPcqm9pjfWfTCxmCT/dcY9N6rB+N3H0KMlEcRw+pe249JPSI7y89Fpv1iuOeN5WJgG9wxgaAE/8N3/G9G6bK926IdHHGAQCkYgfyluN2ECcAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YQQ0AIAwEwQoAPfg3RlDAD1JSZhTs414XAfC32bILzhg9u4AbquwTAAAAAF5Q5W/zBwMAwN4CAaeE5RAnAAA=
+  </data>
+ </layer>
+</map>

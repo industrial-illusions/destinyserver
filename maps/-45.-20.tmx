@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="13" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="yes"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Bruno Room.tsx"/>
+ <layer name="Walkable" width="13" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC83LRxFCARBEwW8KEWQLZAtkC2QLZAtkC2Q3tIItbjBVfZuXJL9d6stfmgxZcuQpUAyaEmUqVKlRpxE0TVq06dClRz9oBgwZMWbClFnQzFmwZMWaDdug2bHnwJETZy5Bc+XGnQdPXryD5t/2AUaltBukAgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC4XMOTNEQRSA0X62sYbM2Mo2OYOyzOQIkSNEjhA5QuQIkSNEjhC55UfgTBG8xOtbfYJ7q75OQgg11FJHPQ3kaKSJZlpopY0CnXTRTQ+94Xf66GeAQYYoMswIJUYZY/yvmWCSKaYpU2GGWeZC9syzwCJLLLMSaVZZY50NNtmKNNvssMse+xxEmkOOOOaEU84izTkXXHLFNTeR5pY77nngkadI88wLr7zxzgefGXv6/sV39aPES/7f0/d2OshTyNjT9x9k5VYFpAIAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="13" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB6Qo6JZo2AUwAAABnM1E6QCAAA=
+  </data>
+ </layer>
+</map>

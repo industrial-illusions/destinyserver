@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="23" height="27" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Clefairy,10;Cleffa,10;Zubat,10;Machop,20;Geodude,15;Nosepass,5;Meditite,10;Chingling,10;Bronzor,10;"/>
+  <property name="dayPokemonLevels" value="17-17;12-14;14-19;13-10;12-19;14-18;14-20;13-19;14-18;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Zubat,30;Machop,20;Geodude,15;Nosepass,5;Meditite,10;Chingling,10;Bronzor,10;"/>
+  <property name="nightPokemonLevels" value="14-19;13-10;12-19;14-18;14-20;13-19;14-18;"/>
+  <property name="wildProbability" value="7"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohCaveset.tsx"/>
+ <tileset firstgid="1081" source="SinnohCaveset2.tsx"/>
+ <tileset firstgid="1785" source="Ladder Cave Set.tsx"/>
+ <layer name="Grass" width="23" height="27">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9vLwMCwlwi8C4qJUbsXTe0uKmB8bqImHjUbf9gPNrPx6QPJ4QK0NJuUPEKu2djCj5hwJMVscuJiOJpNafoeambD9OIClLgZhkfBKBgF5AEAijlVWrQJAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="23" height="27">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIA7sRcL0BEfR6OEA9g20AwYp2EsGHgXUB7QM2wvsDAwX2Wlj9i+gub9pYDYoLFQ4GBhUOahvNsz8wZaWCbmHnLw6mm9HwSigHAAA5EHk2bQJAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="23" height="27">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UPQ6AIAwF4HpGr0ncdAI2mYxnkoEmjSKtBQcSXvIGBj7/qAYA9gaF23qJ9bGmgYtB1ybbgz7z9FzbZP8RtGvuWWK39ql9xK7KbgW71s09M/ctnaBv75OzJWc+KG3c45jrBKWNZm5/KRJbezZ7tCX/EzpTufkoRWLTs/xlpk7GrplX9EdGRnS5AFbFLtK0CQAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="23" height="27">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGPygh4V2Zk/BYnYaKwNDOivt7BwFo2AUjIJRMApGwSggFQAA+hVpQLQJAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="23" height="27">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoBw0szAwtABxKwsVDEMD3VAze9HMjmNlYIhnpczsyVAzp9LA3bhAHtDN+RS6exSMglEwCkbBKBgFIw8AAJBzqYO0CQAA
+  </data>
+ </layer>
+</map>

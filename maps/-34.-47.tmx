@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="80" height="80" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="true"/>
+  <property name="pvp" value="disabled"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Fire Red Tileset 2.tsx"/>
+ <layer name="Grass" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VYWrCMACG4fyw/rB3cEfqDueOtEPM02iYg1AKkn4wDTwPhNrSoDWvsRQAAAAAAAAAeG6ZSvmc3uc4msv9M39N73Mczat705/+6rrPj7E+n5s+5tV988bomb/1vqO5rJ7r+/A79lxL5tfXI2q7qOt/eox2X/q71u5TW/cl808Dtle1/dn/+q378//bR38Z/WX0l9FfRn8Z/WX0l9FfRn8Z/WX0l9FfRn8Z/WX0l9Ffpq77z31c9bfL0nx/+utX1/18LOXjqL899Jex/2WW5verv36v7m30/gAAAAAAAAD4Hzd9VL+zAGQAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OQQkAAAgEsHvaH+1rDEG2BEsAAAAAAAAAAAAAAAAAAAAAAP7qSqauFwAAAAAAAAB8tq93J5kAZAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2Y30pUURTGNzkTzRmyi6ARreugrCD1Tsh3aAIhxeoF+gtpd4G9QnkTqFjd+wR2E+RdgtplBDn9te6CuukDz2Zvl7PwwG6ss+b7wcc+Z7n2Ont9qGvmOEcIIYQQQgghhBBCCCGEEEIIIYTsz5Mjzh0/5FwD6oMuVZwbq4R7GdPyUvcv9+ycpWy8w5nHcf4JaBKaRU+PKuFexrS81P0/4d+VEvrXxJmf4vwL0CL0Gj2tVsK9jGl5qftHcf24pP69x/m3oBbUW3XuWDXcy5iWl7r/YYn9O90T7i+jp2Z1d07RWMr+VyX273+B/qVB/9Kw4t8bxNag7dpu/aiFnG957FfWXjLXx39D66i90ea5Vvw7gX4b0Ap6fZmFdSQLORfzuMzx1zI3zulH7YHa3uda8e8qepuAqnXnDtfD+iDy5H62E5c5/lrmxjlTqH3NsH/+969TbOKZbw3//Z6Ed6c66J9W34p/19HbjQ76p9W34t9z9PYi6k+bx9+Vmex/5lc5b2V9jxX/vqC3r1F/2jwebjNnh3INR6uct7K+x4p/Em0ez2R75+x0rplo1eatxKp/qfO42/2bR+8LCf4tYe+zLvbvA3rfglrQx2gtOj8+QZ+7yD/5+fYM/oedhQahc9FadH6chy5ken2PFf/k59ub6P0WdBu6E61F58dd6F4X+af197ew/v2j09/frL8/SJ23+6HNYyv+afNWeycaazvPl7lxHW0eW/FPm7dF3p8O5fkyN64j57HHin/avC3y/nQ6z5e5cR05jz1W/PtX0L806F8aZfRvDmc+mihPap25EvpHCCGEEEIIIYQQQgghhBBCCCHkYPgDyOuNYABkAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YQQqAIBBA0dl6/0uYXbI2QRiEhNJi3oNZObj9aAQAAAAAAAAAAADkUEvE1k07Zy/vO6O7/TkA8FRv3exnpMl6C5DblzddS9iNuriXq+8H4F9XP2f9n7akPQYAAAAAAAAAACCfAwvcz6kAZAAA
+  </data>
+ </layer>
+</map>

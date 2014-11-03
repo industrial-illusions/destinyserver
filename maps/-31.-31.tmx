@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="6" height="7" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohInteriorSet0.tsx"/>
+ <tileset firstgid="369" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="699" source="InteriorWalls 1.tsx"/>
+ <layer name="Walkable" width="6" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgwA2q0DC9xLEBAMnuNEaoAAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="6" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGDjwjpGB4T0Qf2AkrBYA74IFDqgAAAA=
+  </data>
+ </layer>
+ <layer name="LedgesLeft" width="6" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBoAAJQ86Q6oAAAA
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="6" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBoAAJQ86Q6oAAAA
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="6" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBoAAJQ86Q6oAAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="6" height="7">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgwA26mBkYuqG4B4hFoOJTgOypUDwNKi6CRT+54iJY+ABExA+WqAAAAA==
+  </data>
+ </layer>
+</map>

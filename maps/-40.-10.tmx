@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="85" height="60" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="disabled"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="331" source="SinnohInteriorSet0.tsx"/>
+ <tileset firstgid="699" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="999" source="SinnohInteriorSet4.tsx"/>
+ <tileset firstgid="1487" source="InteriorObjects1.tsx"/>
+ <tileset firstgid="1587" source="InteriorWalls 1.tsx"/>
+ <tileset firstgid="1887" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="2583" source="normal3.tsx"/>
+ <tileset firstgid="3607" source="SinnohInteriorSet5.tsx"/>
+ <tileset firstgid="4191" source="InteriorWall decoration.tsx"/>
+ <layer name="Walkable" width="85" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3aOw6AIBRFQd3/tuzclLG34HMDRGYSWiCnoPB5HAAAAAAAALS4z/a1whkj7l/r3ftqXCucMeL+tTTN0zRP0zxN8zTN0xQAAAAA9jNzFvlXJd8qqaNpnqZ5JU17/gvZ8W3umf2YF33TNE9TAAAAmOcBMKoW57BPAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="85" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZQQqDMBAF0GC2Ljxx22voJXuFugxFhGISJvY9yEbE/Hyzm5QAAAAAAAAgjjWntOX6717J8ss+76ldHuIq//tId+A7a6TsrTo9+lbPc496VyK7Y6etzxG9p8e+nvt6DbpHj/wAAAAAAPSxFHPi3HA2/U/KHpeTTqe5znOAuzKXBAAAgL4+HXRmNbBPAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="85" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3a32rCMBTH8ePaURizg72Bu9lu5+Xu5kvu3fY0S5FgFGdO/jbE7wcCUtKT5keNpVEEAAAAAAAAAID2PEwiQ0QbpzbGqHH9ITamPZva24g2T8fz1xyjxvWHSq2pzbTUGDWuv3bNjaIGmYafXyLT38dT6ynT90HkY/Cfz32qr/lp8twrMk0ZQyN3pu690up3f80xYmq79wqZ1q2dUtP+FoTQ/H64Y6TwZfqT8OxeKtNbTdtnrTFqXD8AAEBNPJ/kR6b5kWl+ZJofmeotWfn2KMdC+2a90uxRltqL7JXN6r/3gvY4merZd62aftBZstrNIm/z6dg0ijyN5/1i/xdyj2uznd/eyfTF5Pl6kenlmru4tvb6jt/D2mzn9zXf7FZkzF4t8/s2eR7INJs15kem59xnhNjPPWXq22sM2ZdMbb1oZZ49ZdoKMgUAAACu+wNVsgNXsE8AAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="85" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZvU4CQRiF4Q/YhBDogUrshEqUQrAR7JYLsTTaaqstXhK2ehXgjXiSZULczAKbZSTK+yQnhPllvuxOgxkAAAAAAAAAAPgtw8hspFxHP9vPamZdpVcLu/9LxexVmZfN3sv+Ma7Pjc3rQXMela7S88xPr593n6Zq11Kd2qtajfV9otyuanpXTXKu/r5yEbimM/32N+VDZ/rMqKnrc2PzetKcZ+VSGXjmp9ffdR+33olq11GdTjNqdV9NcqX+oTIKXNNjcqNajpUJNd1J+h3Ieif+E98Zj+Hch+bu1U13exGx7t1ptH3cXxH6meSZ9wv9nAIAAAAAAAAAgLV4w387i7rZUvmqF2vHWqmRfFYaxdoBAAAAAAAAYF++AUa7geewTwAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="85" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3aTWrCQBQA4EeiiJvgtoW6rfUG3q9Lt117lbrpUrxRf7AQlRQxJmaSfh+EyRsy8GZ4kDCTCAAAAAAA6IePyaF9m53GqXseRSxGXWdRbfe7hpvZaZyilzximXedBf/Rflxe1ziv2dRq+Ok7l3nD+VTNMbV5D9F7FrHNyrZpbdRKl9quSTVfre06vYc674I6YwAAAADgVn09V03Vzx5f1bmqvb96rFvzHoqIx6KMP/OILNF/FIboddpMP6X1H2t0bf/QrYrLz0CfHH8j3HIPAAAA0JYvkbqSE7BPAAA=
+  </data>
+ </layer>
+</map>

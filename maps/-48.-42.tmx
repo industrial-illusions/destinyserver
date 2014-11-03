@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 7.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 8.tsx"/>
+ <tileset firstgid="513" source="Hoenn Interior Set 13.tsx"/>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQ2AMAxFQbMAJfuvCUkBdBQgWWlMpDvpNW78IwAAxvVkVe7f7VF/ubWydfPt+6rK3/dtS8SaqMpxtScCAACY0QniTpeyABkAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SsQmAQAwF0JgFdAxHdDvdQguHMZ2NVoIcx3vwISkCKX4EAMA3e0Ycee9nzWtlqyz5fve3eXieW9H6f/RtrM5NegcAAHTkAvDgOHUAGQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OuwqAMAyF4bTopoPddFPQTd//8SxYIUgFwXrD/4MDoQ3kiAAA8G+VEclCcjXrOPNcv9rfLkJKNes0D/VzPu2B251Zdu8Wu9lbkcEe271a7Obou00v7pdiNxX6nfOFfjp779t/AAAAAFjNZImPGQAZAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQmAQBAEwOMrtjPNtAMNBA0syM00MZUPZmBhLzjYKgBgbVVbe+49fUym9v3zpyM7zteWK31OlmToZCMAAABAT27r0G3xABkAAA==
+  </data>
+ </layer>
+</map>

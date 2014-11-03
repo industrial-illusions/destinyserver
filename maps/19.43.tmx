@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="dayPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,20;Sandslash,10;"/>
+  <property name="nightPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="4"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="2369" source="Orre Tileset 1.tsx"/>
+ <tileset firstgid="3452" source="Cliffs01.tsx"/>
+ <tileset firstgid="3682" source="Orre Tileset 2.tsx"/>
+ <layer name="Grass" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DMQkAAAwDsO6tf8HVMUggvaSqqqqqqqqqqqr6/AD0JHdJECcAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PsQ0AIAwDsD7Qd/iSn5kY2NhQiy1FWZMIAADg1sjXCwAAAACgp5lnqur0Y3flHwD8ZwFYopygECcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XSwrCMBRFO7ddi//NuJzqsHUYRdyHI62/gW7Iv+AtWIghYAu2TeI9cEbN4N7wHqGeRwghxCQWQd0JzGaF+0kcuKMDOhwd6KFj0Kg7gZ0sfcw3TOAabuAW7uDerztdfk7IeoYXeIU3eIcP+LSoRxP72YJt2IFd2IN9x/aWbw4hxeAbR/6Bsuece0QIIcTF/xC+b7/DxfkgpCxC7MuwoCNlx0zYuQgZYslQyRtrHBuQW0Ug0+TtPPjsleadSd+zMyb2kEk7yL2mmsyRJT2+zRB7VIdQdiGbLRkbeuRBaLoRQqrjBWa2890QJwAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Wuw2AMAxAQdeQJdiVP4syBmYBuhCQ7qTXRi4sOREAwBecXesJ/mksEVM2Z0u2Zlu2Z0dpPR0ANzeOJ7X34639G/p/vw8ALfgnAgAAUMMFXEAQJBAnAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="33" height="33" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Nidoran-m,35;Nidoran-f,35;Tauros,10;Rhyhorn,10;"/>
+  <property name="dayPokemonLevels" value="22-25;22-25;35-35;35-35;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Sandshrew,30;Sandslash,20;Cacnea,10;Zubat,30;Golbat,10;"/>
+  <property name="nightPokemonLevels" value="22-25;35-35;25-25;22-25;35-35;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Path0.tsx"/>
+ <tileset firstgid="297" source="Cliffs01.tsx"/>
+ <tileset firstgid="527" source="various3.tsx"/>
+ <tileset firstgid="1063" source="GrassFlowers.tsx"/>
+ <tileset firstgid="1383" source="Trees3.tsx"/>
+ <tileset firstgid="1671" source="Fire Red Tileset 7.tsx"/>
+ <layer name="Walkable" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VsQkAIAwF0eAMWjqK7j+WsRIsRG1+igtcGx4pNJlZE9a95BVx0/A6p30/u1R3wIABAwYM92UMGDBgCGyI8E4q/wsMazBgiGiognbDAEoiq+4EEQAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAMC/ASB3lP8EEQAA
+  </data>
+ </layer>
+ <layer name="Grass" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2UzQqAIBCE9+Y7aJd+Ttb7P18EChFo2o4VMh/MycN87qIihBCCwxoRl8lg2vfOBUG72MLeaxaQw9N+lIOmH+Uw0UG9B4SDdgYIBw9wOKL9I3qZxR/exvaxA6K/xmENQe7gziHV58MZagYph9jZoq/W4S3iXc/R3HvEqRHSNTsk0YScBBEAAA==
+  </data>
+ </layer>
+ <layer name="Water" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAMC/ASB3lP8EEQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XTQ6CQAyFSebcusOd7mTHBdAVulIPZ1kQ6qS0HeQxGGnyQkIy5cv0lyYUxSWjrqSWdMuo+8YwyrAjPYHaOxi6d0iTvrdmhiM9TwCeFIYzPavMDChDMzThs//lYGgdfr5lqA0+iSHObdQ99GwSQ5zb6Fg8wtAPXwmx4Oe0s3PZ0nWIZOA1KO0kKAZeE9q8t3zOdQ9xDvGZvBSD5nsKQxzbLp5TZmZ/N1ZdefuDNjOtXmnZP8zNNTB48gjN4Nm9fiUWZbD/DyXT+jfXwcFgybsfpfjbGOQdxtJYL071w/29AQe564AEEQAA
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAMC/ASB3lP8EEQAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAMC/ASB3lP8EEQAA
+  </data>
+ </layer>
+</map>

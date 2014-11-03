@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="dayPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Cacnea,20;Baltoy,20;Claydol,10;Cacturne,20;Sandshrew,10;Sandslash,20;"/>
+  <property name="nightPokemonLevels" value="35-35;35-35;65-65;65-65;35-35;65-65;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="4"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="2369" source="Realgam Tower Set.tsx"/>
+ <tileset firstgid="11009" source="Orre Tileset 1.tsx"/>
+ <layer name="Grass" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DMQkAAAwDsO6tf8HVMUggvaSqqqqqqqqqqqr6/AD0JHdJECcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VAQkAMAhFQXOsw/rXW4YJouBdgg/CMwIg59zuBcAWnb3ROqCazgDAXP70Pm4O8Ec3gSz9AKDSA/0z298QJwAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3V2VZIYRiA4W04q7sgSkWZMkSi0XxDSkjmSgMSZYi4IfPQgAZDkwakHme1OOFArfretZ6T/+j/1l77+5MkiqL/XWfWQt8giqLl0kLum9h1UbR4Wyr/Z9cSmSOKoiiK5hbv9PIrvnkURdHfFXsziqJ/LfZHFEXR4m1NSpKsJY11rCedDDaQSRbZbGQTOeSymS1sZRvbyWMHO9nFbvLZw14K2Ech+zlAEcWUUEoZ5RzkEIc5wlGOcTzl9zlOOKugkpNUcYrTnKGas9RwjvNc4CKXuMwVaqmjnqs00EgTzVzjOjdo4Sat3OI2bbRzh7vc4z4dPOAhnTzi8R/meOLsKc94zgte8orXvOEtXXTTQy/veM8H+uhngEE+8onPfGGIYUYYZYyvjDPBJFN84zs/mOYnM7/unJokK1jJKlanzp9hFoClYm0QJwAA
+  </data>
+ </layer>
+</map>

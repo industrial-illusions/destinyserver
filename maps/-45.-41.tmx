@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="35" height="55" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 6.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 7.tsx"/>
+ <tileset firstgid="513" source="Hoenn Interior Set 13.tsx"/>
+ <layer name="Walkable" width="35" height="55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsQ0AIAgAQfbf1C1sbYwkFqLeJcSS7zACAPa0xMTwvtyS2T9r0qJFCwCwUulOn26p9H/RouXWFgDgHx3Bkv36FB4AAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="35" height="55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ5AQBCF4aVAhQoXpHAQDsDx3IOoDNVmQxSsJf4veYWV2Ek0b5QCAAC2Df7+eSfn/cG7O8z2Pn1Z4CkVaok8d7PEcneiJWWWTSZ351oKh7MAAIDvKaXnVpL6p333jda9pJG0Fv/JGXMPcLkPmN37yQ4+Sibt2ezedHAAAHC3BdZWmBIUHgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="35" height="55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OoREAMAgEQYbWQv81RUZFwiB21YkXHwEAAAAAMOPk68r/bsKmLwAAnS4edWHlFB4AAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WQQqDMBCF4STg0nPorp6wnknP4kXEbkq76JS4jMJggqP8HwxBZMIjq+ccAADHvBRT2lcxJczruWgXfeYg4r2eH+1i7izK+4bg3BhsZMm2m/u+u2c5MgAAFPDvsZWPY6Hv1j4OfTey3ncn6bZPmT4kft691+1o5D3a1JuckOUhOTojWYrtbt3nE98Wu7eFDAAAXNwPuXZ0/BQeAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsQmAQAyF4ZAxBS2cRNBC0B2084axdCADHpheiCn+D448rskrIwIAwHe7PvPU929webQ8qYQodc9lc6t5drsXy2tQF+/4YScAAADiNAnuvdY6dPb6BF0AAAAA5HEDf0S8/hQeAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="35" height="55">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQ0AIAwAwab+DYEG1KCAmb1JIblT8ONHAACVdncAZUZGzOyuAAB4yw+/uzwcAABcDhV4o14UHgAA
+  </data>
+ </layer>
+</map>

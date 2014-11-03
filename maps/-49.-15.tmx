@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="35" height="38" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Raticate,30;Koffing,15;Grimer,15;Rattata,15;Growlithe,7;Vulpix,8;Weezing,2;Muk,3;Ponyta,5;"/>
+  <property name="dayPokemonLevels" value="37-37;30-32;30-32;30-32;34-34;34-34;37-39;37-39;28-34;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Raticate,30;Koffing,15;Grimer,15;Rattata,15;Growlithe,7;Vulpix,8;Weezing,2;Muk,3;Ponyta,5;"/>
+  <property name="nightPokemonLevels" value="37-37;30-32;30-32;30-32;34-34;34-34;37-39;37-39;28-34;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal7.tsx"/>
+ <tileset firstgid="1025" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="1355" source="Caveset 2.tsx"/>
+ <tileset firstgid="2379" source="InteriorWalls 1.tsx"/>
+ <tileset firstgid="2679" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="3375" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="3675" source="Ruin Of Alph Set.tsx"/>
+ <layer name="Grass" width="35" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3USw6AIAwE0C5MiPe/sCs3jQMCLS06JF0p5KU/EZFyxMd9oh2ZLWdw9Fo8zbTEW3SvRlsy5WU3y8x7qAee9tkKy2iuUI1asdKSKS9ePflXi1VktyDXm/1RGt9qb2gL2knoHcsemqkRLXtbRu5mt/TMNPqvNsP6rvdMf7FGtNBCCy2WliznAuS+zmPIFAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="35" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XwQrCMAyGg44OhJ2rN59UfY8+WOeTdN5ccYUiro1NSoruh1wGS7+2yb8MYFMNWQUwznFX0iQAugcw6hVjA1wxj48HkcUS9+MYWRwxhz+b4xKnns5iGrhvL859/aOoNc6pkhrfHWRZLMH7fO1OiHU0srY980TwG+w6GMUshrnGvr1z7u8CVZtn8anUv2r4RvCM/Uru8Jziudj5D+tflLki1HFuFnBID0ixYM9MZ/oqsOT6LuWF1FmMMw+XZ3N6f2s6D/QcuZ6WUCuzm12+9VMD/wQuYgkhxfOJJdfvte70nQUze2iEt68ptY/S+Sfn7an3ftXbauvSAVznuHXSJDJ6Ai8IczXIFAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WSw6CMBCGC3HDAq/gUq/IUYy61Dt4JpQdijvbkIZmMm2nLx5JJ5lACgNfO/NPW+wYayvGXgv6m7uwgrP0/P6zoH+rkUP4GmyrLE3p/x9KLMZy24/XS83YtZ7GzwEsIharVRuLtDvneERkgbXqwoJ9Dxo1b5R5hLJQ1+o5E4uuBtT+2SE5ScGiqwG1fw4OLLY9QMw5JEcUkyy2PUDMGct5CAvsGS45wnIewgJ7hgsLlvMUOfK1NbFQ+kZqlqac+gbUXFPaz0zSVP36ssi+MiCag3uPaR9S9QtZfpqeBMdNdeJbQyHrklm2y+Kr8xQsnUXD8PzVRtC0zgaLhmFsn1DTh1r/zBSbYl2OnOVk4JmTxTc2s2SWzJJZUrPonPJOTP8DSxeSXMgUAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WQQqAIBBFB1oEgeu6/wnsQLXsHCEhLWyROo0v8IGbQeQ7/q+KXOyTJLSqHaBaKet4j9YEDR6go2MLxX8BD8pDS2pyqNm7nLPYhrRGuU8sPEXz7Bc+IOwxvlMELQFSb/4OqYc5HivVre3lGh9qe5iUUQtI/2fNs5ydyOJ01urwIWX2SQtFH+l+e5v3OOcr3bnr9n9Tx5ITVLDH98gUAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="35" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UvQqAMAwE4Kwd6oO76RtWcdXV0aGDRbwIEjEt90EpdOgPzUWE6L2+y/MQRcZot+8UzjEHu32pLqgGUlEftSrfcDdar3vrnvGX1dE/7Y7u4lUq+sZTBrU8aj1oAf+A1r+0gTPROlFrtAyjXF8x00RERL4czc3wrcgUAAA=
+  </data>
+ </layer>
+</map>

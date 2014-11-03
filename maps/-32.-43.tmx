@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="65" height="65" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Mahogany Gym.tsx"/>
+ <layer name="Walkable" width="65" height="65">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Z1bNWdRgF4AOHc+gWpERUukssQkWluxRBQgSlu6SkpLtLQWlQQgVRxAClpFsFTBrFIATFxxn/hHPmG3/zrZnnbl+8a93s2bNjYqKJJppoookmmmiiiSaaaKKJRJKQlFiSEUc8yUlBSlKRmjSkjcyZiZq85CM/BShIIQpThKIUozglKBmZMxM1VahKNapTg5rUojZ1qEs96tMgMmcmatrTgY50ojNd6Eo3utODnvSid2TOTNSMZwITmcRkpjCVaUxnBjOZxezInJmoWcNa1rGed3iX99jARt5nEx/wYWTOTNQc5BCHOcJRjnGcE3zF13zDSU5F5sxEzVWucZ0b/MlNbvEXf3P73we9RJOQNEmEDk3EZNcpBznJxV3k5m7ycA/3ch95yRfgBuV1qkBFKvEoj/E4lXmCJ3mKKlQNcIMWOrWkFa15nja8QFva8SIv0Z4OAW4wVKdhDGcEI3mVUYxmDGMZx3gmBLjBYp2WsJRlLGcFK1nFat7ibdawNsANtuu0g53sYjdfsoe97GM/BzjIoQA3uKDTRS5xmZ/5hSv8ym/8zh9c5VqAG6Tz4ZyeDGQkE5m5gyxk5U6ykZ0cSSN9ccKnlE6lKUNZ7qccD/AgD/Ewj1CeCgFu0FCnRjSmCU/zDE15lmY05zla0DLADfro1Jd+9OdlBjCQQQxmCK8wlGEBbjBHp7nMYz4LeI3XWcgi3uBNFrMkwA026/QRW/iYT/iUz9jKNj7nC7azI8ANTuv0Ld/xPT/wIz9xhrOc4zwXuBjgBrGxMTHJiCOe5KQgJalITRrSko70sZG+OOGTX6cCFKQQhSlCUYpRnBKUpBSlA9ygmk7VqUFNalGbOtSlHvVpQEMaBbhBR5060ZkudKUb3elBT3rRmz70DXCDiTpNYjJTmMo0pjODmcxiNnOYG+AG63Razzu8y3tsYCPvs4kP+JDNfBTgBod1OsJRjnGcE3zF13zDSU5xmm8D3OC6Tjf4k5vc4i/+5vZ/P2KTkJRYkiWL9MUJn5w65eIucnM3ebiHe7mPvOQjPwUC3KCiTpV4lMd4nMo8wZM8RRWqUo3qAW7QSqfWPE8bXqAt7XiRl2hPBzrSKcANhus0gpG8yihGM4axjGM8E5jIpAA3WKrTMpazgpWsYjVv8TZrWMs61ge4wU6ddrGbL9nDXvaxnwMc5BCHORLgBpd0uszP/MIVfuU3fucPrnKN69wIcIMMcTExGclEZu4gC1m5k2xkJwc5yRUX6YsTPmV0Ksv9lOMBHuQhHuYRylOBilQKcIPGOjXhaZ6hKc/SjOY8Rwta0orWAW7QT6f+vMwABjKIwQzhFYYyjOGMCHCDeTrNZwGv8ToLWcQbvMlilrCUZQFusEWnj/mET/mMrWzjc75gOzvYya4AN/hOp+/5gR/5iTOc5RznucBFLnE5wA3i4mNi4klOClKSitSkIS3pSE8GMsZH+uKET0GdClGYIhSlGMUpQUlKUZoylA1wgxo61aQWtalDXepRnwY0pBGNaRLgBp116kJXutGdHvSkF73pQ1/60T/ADSbrNIWpTGM6M5jJLGYzh7nMY36AG0QTzf8p/wBpXwVrBEIAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="65" height="65">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Xa0zVdRzH8cPlIGWIlltxKV3cNUsFmZpAasVN7aKCminemHETjJTbKkDUVoCXyhSwLa66uQC7aSnYloK3WYDaVirg/VZtJfis94P/g7P//pwzHvA/O9/9v9tr//O7PPh9Pk8YJpMxxhhjjDHGGGOMMcYYY4wx9hgnOMMFrjDDDcPgjkfwKIbjMXjY55lDOv4IQCCCEIwQjMN4PIcJeB4vYKJ9njmkE40YxCIO8ZiDuZiH1/A63sCbmG+fZw7ppCAVaUhHBtYhU3UvG+9hg66v02dKUYZybMN27MBO1b1d+AK7dX2dPtOIJjTjIL7Bt/hOde8wfsRPur5On+lAJ7pwHhdwEb9b3PkDf+ISLuv9QB3mAfrQj4fWLvJH1AnOTro8S9fxIpM3fOBrJZ8fZ/4IENjBDDJFIBJRqnyzVeto1jECO1hOpiRVrtXKOlm1n8I6VWAHRWQqVuXaMkDOUvbLBHZQS6Y6i1z7VBkPWKwb+d0ksIM2MrVbyXWOs1/xGzrQKbCDO2S6ayPXv5z/hwfoE9jBCP5x9nS2fudJzp+CF7xt3HXEmUSmyQhFGKYgXMk5le80TMeLmIEIgR0sINNCJCARi7AYS/AWluJtLMNyJAnsYCOZcpCLPOSjQMn5Pt8P8CEKUYRigR3sIVMFKlGFvaqMX7GuRg1qUSewgyNkOooWtOKYKuMvrI/jBNrQLrCDK2TqRg96cRXXlJw3+N7ELdzGHdwV2IGLi8nkCrOL9XsenI+Ap417jjiBZApCsI1sEzmfhMkCO4glUxzibWSbz/kCLBTYQZpGpiyLvWzVeY7ADsoHmalCYAfNGpm+Z+8HHMJh1flRgR10DTJTt8AO+geZydV1aN5hz/Ehky+exjMYg7FKzmf5+sEfAQhEkMAOIskUhZcwE7MwGy/jFbyKaMQgFnECO1hBppVYhdVYg2Ql51q+7yAFqUhDusAONpGpBJuxBVvxkZLzY76foBRlKMc2gR3Uk6kB+7BfI9/X7DWiCc04KLCDk2Q6hdM4g7MaGTvY60QXzgvs4B6Z7uMv/I1/BsjYx34/HgrsYKTZZBqFx/EERpu173mz7wPfAc4deULJFIYpCFflm26xjuB3JKIEdpBApkQswmKNfMuUvSS+K7BSYAe5ZMpDPgo08hWyV4RibEKJwA4qyVSFvfhSla+adQ1qUYd6NAjsoIVMrTiGnzXynWCvDe04iVMCO+ghUy+u4hqu4wZuamS9x959gR2Y3UwmNwyDu5v1uyM5H2XjjiNOMJlCMA7jbeQL5TxMYAfxZJqDuZhnI18C54kCO8gg0zpkIgvr8S6ylawb+G5EDnKRJ7CD7WTagZ34FJ/hc+xSsu7muwcVqESVwA6MMcaR5n/OH+fYBEIAAA==
+  </data>
+ </layer>
+</map>

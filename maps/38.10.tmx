@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="33" height="33" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Geodude,30;Magnemite,30;Graveler,20;Rhyhorn,10;Aron,10;"/>
+  <property name="dayPokemonLevels" value="22-22;25-25;30-30;35-35;20-20;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Geodude,30;Graveler,30;Rhyhorn,10;Aron,10;Bronzor,20;"/>
+  <property name="nightPokemonLevels" value="22-22;25-25;30-30;20-20;20-20;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Path0.tsx"/>
+ <tileset firstgid="297" source="Cliffs01.tsx"/>
+ <tileset firstgid="527" source="various3.tsx"/>
+ <layer name="Walkable" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QQQ6AIAwF0e/BcCdXM+HUunCLlaZJGzNNZgk82iS1xPa7I7ku37zduTo9+E8rYcCAAQOGb2HA8EfDudlhyDWMAoYKe7AMet6PMowCBu8eFGSwHLMz0QZPGDDMDBdXCfauBBEAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OwQkAIAwEwYP0X4+xO+1CAzOw/00AAADgX6uSvu16fcJ0B05yn1YEEQAA
+  </data>
+ </layer>
+ <layer name="Grass" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3POw6AMAwE0VyFEqggFeH+9woNjZVPlXUE86StPQ4BQM/6bDPbxffPylQdR6Mh0vC7hqvRcIsa3o5kprwPfMVSmPd9dYPt8OD9Pw1zNQAYIwOaOcMeBBEAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="33" height="33">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2Xuw7CMAxFm99rqboAYymCDVaYeIgFMdJ+MYmQ1ciy826QUK/kybFzSLCdVqIoKg9bSKNUeubR8608bc0wLANyQb6ZYWSopW0crWMYWsf4hmHgflus9kRefF5TM1D6dwauP+B+kpLhIGOOWhxXF3pu9f9IyXCSMWdPBmpdyruYGb7CParJwED1H2qvnOfA1QnOjc+rI9bhXK7CddIK83zRhRlwrhyKvYuLjL0a7BZwDr77u8jG4cLA1cDTkeGVgIETxYBnl5pZOgPlT81A1b/OYOsPpbC/4adkgP3BtzWwQA8xMcAbtfNgcJ05StBDKAaqN03BAAqpi9QMb+l7WDju0j9EMNTC3u8VR4/W9GK0AflMDOoeqe+P1LLVJjVXsWzvhlAGqMMctmMYfmmK4QOikVsFBBEAAA==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="90" height="66" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="disabled"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="7"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Sinnoh Ruins Set.tsx"/>
+ <tileset firstgid="1396" source="normal12.tsx"/>
+ <layer name="Grass" width="90" height="66">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SsQ2AMAwAwbAM+4+Yip6Gl4E7ybXll9cCAAAAAOBp53F/3rBnKp0bOjd0bujc0Lmhc6O+/299L5P++ct0bujc0Lmhc0NnAAAAAAAAAAAAAAAAYKINTjqynNBcAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="90" height="66">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQrAMAgFUCGX7QVyoN40S6FTydCQVnkPHNzk62AEAAAAAADAWv0qqMI953NOet57ylTWZHS0ryf4L39dDfZ4k0MN9ggAAAAAAAAAAAAAAACw3wCAB+Bv0FwAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="90" height="66">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQrCUBAE0CXX1EpBr6KVgl7FVAbiVfQiLth9frotDLzXbTPFbDMRAAAAAAAAtTZDxHaoydplzr7JOuR9LMpfs1N2cC7q4ZI51ybrlvddz/HIDsaiHp6ZMzVZc94vPcc7O/joAeDvVO46llXuut5+9sefyl3X28+Vf1yzyl3X28+Vf2SZfQ4AAAAAAAAAAAAAAAC0vimKJ47QXAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="90" height="66">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQ6CQBAF0EloPJnaWHoS40WsLCzQkypREjQGLWBdd99LpqL44S9ZJgIAAAAAgLktb7P6YtZ/kpOrXXzuoHv3/Z/k5Gr3mBxy9lFXz9tFmpxXtfX8q5zSe25vcx6ZS0xzP/c5x+b52aGZLidXbYx3POx6ipyu49fvuut22HWJUu1bm+Y+7+6Pku+LXqp9q884Rb09p/oPDrseqrHnOXa6dzm1yWmvK1nKva7mnttIs9eNnWfJe3Nqbcx7jgAAAAAAAAAAAAAAAJDKFUlflrbQXAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="90" height="66">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAOzRiHA0FwAAA==
+  </data>
+ </layer>
+</map>

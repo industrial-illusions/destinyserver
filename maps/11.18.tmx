@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="101" height="60" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value="Magikarp,10;Chinchou,40;Horsea,20;Shellder,23;Lanturn,3;Seadra,4;"/>
+  <property name="fishPokemonLevels" value="10-20;10-40;5-25;20-40;40-40;25-35;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value="Tentacool,90;Tentacruel,10;"/>
+  <property name="waterPokemonLevels" value="28-32;32-32;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="-1568"/>
+  <property name="yOffsetModifier" value="960"/>
+ </properties>
+ <tileset firstgid="1" source="Cliffs02.tsx"/>
+ <tileset firstgid="113" source="Buildings7.tsx"/>
+ <tileset firstgid="465" source="Water02.tsx"/>
+ <tileset firstgid="657" source="Cliffs01.tsx"/>
+ <layer name="Walkable" width="101" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XS2rDMBQF0JAdhozcjpyO3I5C19e91R4YhJBSS81HMueAIDZJ0NO1nu3DAQAAAAAAAAAAAAAAAAAAAAD68XO8fczzLRmEOeQyGebzb5nx3nmOQ2N1hJmsn1Pr/j2Py43RSj2lhqC26wuzuSRySGWzfnfr6DGXMVHH9QW1rPNI9anaPJbxsZNMTvP4qqgl7u8lua7zWOTu8bfWPtR7JtM8589o1OSxiPMt2W/xb2N/5ZE77jGTe0rtua1rslwb58K+tNfedU/rnjtXZpLKdO2l8V62T8qE/bCkD6b6aO4/4rXPndtzJq29w4yZPRJnVHtvfJb/rOt4rH8ee4RpQ+9qZa454bthzX6eGqwxd//pIY9FbY9vWVhTzXMFj7XHaw5KnVz7bPQL34xgrbBeAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="101" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3W0QnAIAxAQXH/lTpJl/GzoQT0x5rCHbiAj0RbAwAAAAAAAAAAAAAAAAAAAAAAgP+5+nPY516839hClxpiA01qeDeIM8O34huSvSeanJHtKvvrrGw29Khj9Z8GADAzAFUoiDGwXgAA
+  </data>
+ </layer>
+ <layer name="Water" width="101" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UQQqAMAwEQPGjvtS/efWo1LixzsBeS5KFLgsAAAAAAAAAAAAAAAAAAAD0t60iueynpGcRf0Sn3P2/Z/7rO+xRJX3bJ2/RZY4/9tJlF53UdDLyRqX0jZ/q5O23KqVv/NV+ddKvk8pe0nfpkIpORvpL3+ONO6dnmamTkTm77ThbHyOdpPe400t6vupOOubLffwhOhERuZ4D82vhMbBeAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="101" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2ZX07DMAyHq10P3uA8HIo/4mXbI2XiBojD0IpGBKuO7TRBg32fFGVaMif2L+ncZBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALperqVx3sFdr9343DA9Zedz9tNt6vN/E68PNVG4L/S17sj3Zk3Y9MZv1eNt96zLrcVpqzd6W8SJssafFWvMhofW37Ml2iRYzSa7HXB8yPU7ZftHmb40nx/WusZL/XrRYaz5ov7e0s+xqPq9pM+uwX3RIdSrHrE66RNA08q6xkv8lPwdnu7dPC6Qvcty8fZ9p8TKV5+Xz01ReM02OFZpY89qyxqLPD2ud1lKr6drcUr0XWsyfx0yPpE0LTWpZi1tU262xj8yt1kaqkx65LgehR6olWp4GfrR9lusyLnEdHXpoeRr4Ke2zpMf7EtOP7Bl2J/p68zSwaZFj9MzTLpEW/0eRPO0vvN+fA1vjFM3TSjk5fFG7V1I8o3larkOvfPS/4F2za+9fkTyttw5RP84Z6x24dJY252GlPE0SPe+q8aNVv954fNfegVv6oJ13Rebp7df6bLr1Pjy3taFpEV3ra+fC1v2B7Gdp571PsfrVno33wnuXoP2udG4Yva/QNLPuVTQ73n61Z+O9au/6r7krq70Hsdpb97O+t/47WtdeondlM59CeaTusF4AAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="101" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsREAIAgEQcai6dOOjKEBHN3NPvvwIgAAAAAAAAAAAAAAAAAAAAAAAOAOe9WdMzcAAL7XO6x3GgAA7zji6vnQsF4AAA==
+  </data>
+ </layer>
+</map>

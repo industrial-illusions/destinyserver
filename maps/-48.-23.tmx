@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="21" height="20" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Lost Tower (Sinnoh) Set.tsx"/>
+ <tileset firstgid="205" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="535" source="SinnohInteriorSet5.tsx"/>
+ <layer name="Walkable" width="21" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGB6gBAumplnkmk2MWaSYTY55+MylxDxc5lLbTGqYh27uqJmDM57QAS3MpNRcQoCaZhFrPjUAtc0jBwAA0KomtJAGAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="21" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSQA6oH2gGjYBRQEXgxMjB4A7EP48C5AQBssnc/kAYAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="21" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgwA9YsWByAUy/GBZMqtnoZmEDpJhNyCx8ZuMzjxyAy1xyzcOln5K4xGUOpW5ENiceiqkJqG1mDZXN7AHiXih7MPldnomBQQELhplJjrnqTGQ6hgIzyXGrPhHuJDUcbEjwezwDYfMpSSvYzKVGmkY2g1jzABWE2t+QBgAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="21" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYPiDLCDOHmhH0AmIMzEwSACxJBoeBaNgsAMAQDT6cZAGAAA=
+  </data>
+ </layer>
+</map>

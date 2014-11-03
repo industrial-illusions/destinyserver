@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="12" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="331" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="631" source="InteriorWalls 1.tsx"/>
+ <tileset firstgid="931" source="InteriorObjects1.tsx"/>
+ <tileset firstgid="1031" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="1727" source="InteriorWall decoration.tsx"/>
+ <layer name="Walkable" width="14" height="12">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGDwJxHDALn6IknEyPrItW9U38DrIwcAAC6Okq6gAgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="14" height="12">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAW0BjcZEexbjLjVoYPHSGqfkKCP3qAOiOuBuIEGZgMAZOXNlaACAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="14" height="12">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGBYysTAsIxIvByIGRkgeD2QvYFIvBFJH6kApm8dM/F6QGoptY9cfcpsmHKJLAwMSSyY4iC1+PRVAvVUEdBHrjvJ1UduPGDDDHjkQBgAqUpRXqACAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="14" height="12">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgQIBvbAw4AT45BnYIFcDIwBDIiKCR5fCBKKDaaEYEPQpGAQwAAOv+fCagAgAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="14" height="12">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoD9YwkwbtdQG0mzkqSVXH73BUIgHAH46hmygAgAA
+  </data>
+ </layer>
+</map>

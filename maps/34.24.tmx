@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="57" height="50" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="fishPokemonChances" value="Magikarp,60;Tentacool,20;Wailmer,15;Sharpedo,5"/>
+  <property name="fishPokemonLevels" value="10-30;10-30;10-30;30-35;"/>
+  <property name="isCave" value="false"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value="Tentacool,60;Wingull,35;Pelipper,4;Wailord,1;"/>
+  <property name="waterPokemonLevels" value="5-35;10-30;25-30;25-30;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Cliffs02.tsx"/>
+ <tileset firstgid="113" source="Water02.tsx"/>
+ <layer name="Water" width="57" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SOQ6AIBRFUdZhyf73iL3Bj0NQIKc4hUPMu8GSUioAg9oa17PLwf2zZ7OJWlbrvHq+AAAAveWDv/f06It6V+hu7c833v1ia+1M3raO3vi0t/bdUf7ZaM8I+3r0rt4IAAAAAL3tfcSOG4gsAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="57" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YS27DMAxEdY02K8er1u1J2l1z/7NUAkJ0MCGlyNbHBfgAArHhWBxRImmFMI6vaN8DxlmiXe+2DhgP+Yl2GzDODI2j4ifM0Cjx87XajhqNL9FeyfjeRbm2OEsc0Q98Npnow3uoja/5nb3jKOO8RfsMfxp5btEPfPaqXIt9RNvg9/v9epS2NPcXGkfis9J91ItzknwWbXKNhvo2GHvk/uO1s5A/2nyzf5o2TesMMGZC8nfGfLcG818uh2rr87+AOZH3CZJbnyPZM7+1tZ7H0OpgD47kXtGYi2FuDK4TVs3bA/73yNrRco2GVTsSrHM1/lfL0f6Va31JY2lOsWZs4dGvGj9z/UYNXOtLe0kbJ+c3x6DGzx457ZlYiq+1e2Svv63qE76H6z0jvo6qG63GOVPfgjXomfpTivOZ+hTus7T6g/D+tnLbGeKH2jiG+H3JsWXfj+S2HoiW5K/kOf6eZm18hmDFt4W23PrWzjo0n0SX3F/C43enZqy1V79orX/Rp+nUznBE00b6rO9O7p+sc5IWWHtdekHtfEPTq/mV08f9E5+TtMTa61YsWO8ayn2x1gfzu0rfDj1hfRwbiUFOo5U3OJZnwMojM2PQCy2WjuM4juM4juM4juM4zhh+AbTy+7uILAAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="35" height="85" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Hoppip,100;"/>
+  <property name="dayPokemonLevels" value="6-16;"/>
+  <property name="fishPokemonChances" value="Magikarp,90;Qwilfish,10;"/>
+  <property name="fishPokemonLevels" value="5-30;15-25;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Hoppip,100;"/>
+  <property name="nightPokemonLevels" value="6-16;"/>
+  <property name="waterPokemonChances" value="Tentacool,65;Hoppip,30;Tentacruel,5;"/>
+  <property name="waterPokemonLevels" value="5-40;5-15;35-40;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Tileset 5.tsx"/>
+ <tileset firstgid="1025" source="Sevii Island Set 1.tsx"/>
+ <tileset firstgid="5075" source="various3.tsx"/>
+ <tileset firstgid="5611" source="Deep Water.tsx"/>
+ <tileset firstgid="5706" source="Path0.tsx"/>
+ <layer name="Walkable" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YQU7DMBAF0CgS625Qj4M4ScVJKGcorCgrygk4B4ciWVi4bsaZGfuP3TJfmkXbqH510sSeYZDnbsMri3AtFiapBenRWG7xnGnnoYYHMbbGZe2gLC0cS5bW88n9Lk4sLCXReBAOjYk6tmbcUmZBO0o9yLil3IJObjy3LI/pFt49txeLVdYslml9X+F4NHkYh+HnnlePI9ayE1ie3NLE8r7ty3KMqqXlcxr/NNU3w4O2pKZTB5aQ3PVjbaH+Vx+T8YVpCe8hLNR8rFlKPW65Tst83fZimest47G25ObmP1ieJ8t+vHwWtLDEiZ8Hbjm3hHVEa0u8jvhqbOHGLddnqb2+u0WLtcctbkFaOH0EtEXSA5uL6oOVeEIk/RXO/sPSoj1XKIvGg7RIzhf32j10ZOlpXkosr9u/kuxhJZY5udehjsp9AGJeEJaQtXlAWg5JH5nTU46dNS1pTzuuEOrztJAWaVGWNUewxHtQqtIxqeOW9rAcx9L6hcp+PC9JuBaJRxOJA+XRGGq7rQw5m/a3tHbH+QXnuGvlfC4AAA==
+  </data>
+ </layer>
+ <layer name="Water" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3awQ6CQAwEUBL07A38BfSP/VrlwMV0sS2d7bJOkzm6eQysbojzNAwzwzB/k4chSMPzk+tNnwnguBsNWxZAZ9Y+UJ15O+ndgrg/HguqE+m5zrRYe0LdH6ulZidnstS8P3uW2p3sWWp3UrJkdEILLRGWjD1UsmQ4erZoh5Ycy2tqx2KZ0hpLQxapG+/zojXVsmhcp7UEeSyGkiWqG1rOZ9F4alqs+4gWrMXzzKDPmRZL1G91hEXqhha8xRpaaKEFYEn09PruA2JJ8mjfIWrmiGMUHJLFMpGd0IKxeD0oi8eksRwZi0U6e2dZNN8vkUNL35bo8eylLIvUDS37loy0bGntnIn2rGfKixDJYfF8r6v5jPc/ktLa449rka5Ze/1r3n0AHpR8LgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ5AQBAF0L0Ep9KiQoVDiLtbyZaikgzxXvKT7eZPt5MSAAAAANzbqpT2KroFAMAz/G0AAN6rqa/fET3anK6kr2P7DHn2WDIF9jjNef5SsgZ3eYO7++LPt8cXd/9iZ4AIB67jqN98LgAA
+  </data>
+ </layer>
+ <layer name="Grass" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SsQnAMAxFQU+RIbP/ACnSCCNcRp9wBwKj6mF7LQAAAIAc9/VOPdfd1y3dbqplv4upllPPlO7PTHV0k9IyJaGhtqRIeZ/klgQpLalvlNYy3bM3AQAAAAD8zQNwOqqlfC4AAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2ZPW7DMAyFfQjnIO3W3qbHc7dkSNulLdBfIMiU5D61AAtgCUnko6gkgz5ACBxY1BNJW5Q8DJ1Op9PpdDqdTqfTuWZuVsNwu6rvY7HDuZv734M2Un0sdjTwOdbMWeqbGyv+xjnyawtS39xYvB+9/hiH4VPZvkZ/zZQdYH9v0IJg0eLxbHlpafVsHYiWtaCrdYwoQVdJzzm1BEoxa50vFi2t8sWi5VyktGzm/45zO12BlpQ/0PWopRbtelSjTdKC2qxZhyUtqM2aZ04bIwRr3ZTSMhnrhUipZkG1BGpyxtpPowXJATo+mjuH5b12ZOukdS3KjV/jI3Qtyo1lfcZpbRPe/8hccmN5raue67PHGuFVu/A9y6VspOxd0oZ3baixl7vHuzbUxEsa09s/LfflFkrzk9573pTm1/q9x2l5loNS895p5R+NXenMp6Zui0g+iRoex7yeoGNy0CT5ZDf+15OC6rDW2Zo8CVpiTfSQuTf+v6/QoskTqkWiRktA8g2qZRrxfNbWjYgWrkPrI2S/E1ouV1KEe9F4oblLx5LQakHqeiRGFi3ouXbcf0X4WeWGXMd92gmIEbJX5zGhe8PS2ZekBd130XEja2UuS1qQ+GxnW09LeyZ2S/lD46U5K9TG53W29ba0d2KXx0gTrxxa33zPdn+W9psZY5vwGwpSP5Xujb57MeixnBmU7tX4zmI3BbJX4N8nvc+TSzVx7kyP/+Y0W2tm2q92Ph51u+d8ajnXd5/AH6lL9vh8LgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OUQ0AEAAFwDeZaEL/Kmz+FGBzl+ASAAAAAAAAAAAATrUkrdxebH09xiMXAOBfEzRgd6R8LgAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="35" height="85">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQEAEBAEsGMG9l+SXqHVfyGZIAkAAAAAAAAAAPCz1ZLdqhfX6Mns1QsAAF4O9Jn3pHwuAAA=
+  </data>
+ </layer>
+</map>

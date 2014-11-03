@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="16" tileheight="16">
+<properties>
+  
+ <property name="isCave" value="false"/>
+
+ <property name="pvp" value="disabled"/>
+
+ <property name="xOffsetModifier" value="0"/>
+
+ <property name="yOffsetModifier" value="0"/>
+
+</properties>
+
+
+ <tileset firstgid="1" source="Battle Arcade Lobby.tsx"/>
+ <tileset firstgid="109" source="normal1.tsx"/>
+ <tileset firstgid="1133" source="SinnohInteriorSet4.tsx"/>
+ <layer name="Walkable" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3NuVICURRF0f4BNVahEEFFQCZxQANnSB0IAUtlxv+PXQGBgVFjJ9TbVSu5wT1RFAqtVxtsspXgxjY77JIivbxn2CPLPjnyMTcOOOSIAscUKVHmhApVajE36jQ4pckZ51xwSYsrrmP+/90Nt9xxzwOPPNGm8w8bf/XMC6+80U1go0efAe8r/Pngky+GjBgzYcqMOQu+V9gJhULr0Q9N1fuMxAkAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAuyglGWgXTAKRsEoGAWjABcAAMaaitzECQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ROQ7CMBBG4YGYnQIIW8VJgJqdKpCEhgv4SpyVV1CksEQYyRLFPOnrxvojRcSyRPxH7I0Gmkjg0EIbHXTRQx8DDJUb1UYYY4IUU8wwxwLLwBttqx++61t17r2Lv1FtrdzYYFvzfqfc2OOAI04444Jr4P7ldBsZbrgjR4ESj8D9U+L/D80br2RZ1n/2BsemRvrECQAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="28" height="51" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="WildProbability" value="0"/>
+  <property name="isCave" value="false"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal12.tsx"/>
+ <tileset firstgid="1025" source="SinnohSet7.tsx"/>
+ <tileset firstgid="2801" source="normal7.tsx"/>
+ <tileset firstgid="3825" source="Ladder Cave Set.tsx"/>
+ <layer name="Walkable" width="28" height="51">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YTQoAEBRFYZKNWZkVWLOhgejF6+Xn3Doz+cY41y8FvSTDW/c076Z/y3HcyrkdTxoeHh4eHh4eHh7eqd6s4ltad9IdWbzlLf4lJB5j7O1VXUm8yFAWAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="28" height="51">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XPQ5AQBBAYVuSuJd7KHAZLU6EWxmFCJHY31F4XzLR4G2hGFlmrzION3u4vz9lb3+3bS/WOZ6aqYU2j+ffJuZZNZqurZCmb+uL7wUIVefXKwAAwN+47Pca/wK9OUdDI3tgK9Mp7YODdEaZSak3S2eRWRX33aLUawGAjQ2K1sDPUBYAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="28" height="51">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XsQ2AQAiFYa68zZxDrB1GnUgdTKws1CNGYjT+X/I6AhQ0iODLqrQP/uvoHrzb8O6mTVu82XifOouopclxPTWfp7P0lqFQo4G7jNZrssyBPQEAAICneX/clR/v7rzSDgCwWgDgEbq8UBYAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="28" height="51">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YS07DMBRFnUk/3gDfObAMRoEBCLaAkCgDWAcM0gFiCtugBdodwDb4LoIbiScs9/n3agqUXOkOEifv+PoT1VVqUtvFpMtPbzHmnifH6LfwjuAe4+Nv4LlYIWaMNjP1k9N6wdtmpvJccvFsZgrPJx/PZMbyQgrxiBkrVw0St59qHbTiGZwOW+76HO9iSt5lIq/J59es86Xy/lu+q65S1113fbt92nwPqPXo4dntf3X+TpDh1MpZ4bpv3ZPk4+asYu6NcD3OwLPnpM42CswjZc0xnqE1amZN/Z6ZPJoz3xq1+yL5fu5ppfZ1XC67L5J8xAntPU4SnoRDkqzPm7ZSA3gI38J38H2br19h3PtazqvzPaH2M/wCv8Jv8LuDNwJrrL/2g2S9LHSUWoSX4GV4BV7t+MeR9sO8/p44w5ie69nlG4A11On5cumneT2BTUnet72bIeNOAqvMwKvPZiEmsXLxOKap0uCtFf4zYS1X20YRd7Y2eZQxJSvVlvzX0KhRo/nTB52EvKVQFgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="28" height="51">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YyUoDQRRFXzbdnayyc/oAdZnBH3Dj2k+I6FI/xIDgwmWycPgGJxCcdiZ+htPKae+FTuBh10teVVeBQl04dKi+/S5V3AQ6REWtVYqEVMxz11KliCnTRavCbEll8kxZ0/J4po8sTd4400eWNs9XlpTXSIiaoCXAJXnaYCUxz/+tDnwbSq+kTTy/pZyxz3yHdaIjcAxO6mZ/ivUMVEGNeQ4s9jfWA54fgCF4FPIaWG+CFmgzz73D/spIe54dT3na8/S1P+15+tqfSz/LyKWfZRT7mesv9XO9ps/z0c+9qj7PRz+vpuTtpkTdNP8cqp+nmH8GzsEFuBzlhernE+Y/gxfwCt5GeaH6OZMRzYI5MA8Wsnw9/n7mst3fNjq7Y+itbT/5nB6ufeG7IN2z7SefM8B1KORJ92z7OSlDI+15XsN3A24FuCTPXaLPe4fvA3wKcEmeL/DtqedR/0eLFu+Iy4H/x4iKioqapB+MjtVLUBYAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="28" height="51">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2VyQ3CMBBF52aSS1IAB5BYTtABlMBSCJxZCoAs3bCcaIWlAA7QAf9iEaGYmNhEUTRPelIWa741IydEDMOUlZZP1IYd2PXT1wQeUQgjGHtmeSNkjOEEThV5O2Ts4QEeDfMWyFjCFVwr8s7IuMArvBnmMdVg4BANnfzvf2WGWvMv9bLeM+mkzamH+76FXn7WeeD6mVFXZ40uDZeo6ZqvKQuyNzrzsXH+dHuzEURbGIj3s1io1/+DU8F59xx5yT6FMBLqPskZy5nXa2b71aWI82Dr35CsY+ubZZuy7othGIZhmOrwApaR8dpQFgAA
+  </data>
+ </layer>
+</map>

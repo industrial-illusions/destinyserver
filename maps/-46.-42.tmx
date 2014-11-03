@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="50" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 11.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 13.tsx"/>
+ <layer name="Walkable" width="40" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QOw6AIBBFUfa/A/w2uk8tLCZAjZCck9xqmpdJCQAAAPrZ37ZQDpW384d9uWgJe47GvbfyR/GHV6Pe1lT/aMZ999eo+0b8XysAAIDZPHoOTJpAHwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="40" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QsQ2AMAxFQbP/IGENRqBMmU1IHwkarLi4k37n4skRAAAAZLmP3QXveuG+UbitguunG1b+9q3NnbsjAAAAEjywMtuEQB8AAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QuQrCQBRG4XmEvH+nVu4Lxg0LCy1cGpe8j//ALYaQBBNlTHE+OIRJcplhnAMAAAAA1DFSHdVVPTW2JmoarH2zP5xvqfpqoIYqtVZqHax9m8hnS9RendXFnteK/w82E4vf62497Pn8YCaWJnu19Xxztag58y2/16nk2zG33qqda8/93RrM/FrV/b1UVlCs8yW5yt4XBQAAAAChN5gArKFAHwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OIQpAIRREUd3/nn4RBOOP7kZBg8Eqr5wDt0yalAAAAHjhz9EPljL7dqce9K9dtroDAAAAiDQAjZT+CkAfAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="40" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QAQkAAAzDsPn3dG83cRiHREFpAgAAAHBj2gHP+QcAANC1dR0TrEAfAAA=
+  </data>
+ </layer>
+</map>

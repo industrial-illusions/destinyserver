@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="36" height="62" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Caveset 2.tsx"/>
+ <layer name="Grass" width="36" height="62">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WwQ2AIAxAUdI53Ez2n8N482BLBS3F/Cb/gIn1xRNVStkc1cb52t44W+9Ze/Hg+asnooye2QYiIrqvJjDgwbO6R7vr4MEz4pmV5jkni0ebKI938Mw3fTGR38KDBw8ePHjw4MGDZ2WPGHd1GTBpO63EWc/u3n/jKWrwPDNZz5h35wDUlk+t4CIAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="36" height="62">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Y0Q2CMBCA4bOswShughO4gziJOok6mJB4ib5oCnKk5Ur8/+RCGpr2eyNBhIi824bP55S9Q+uxHhuRzjhTs57bG84mIp/276H/a2f4tuSuCXHPEsYmcgcePB6eOrxm7ns8eHJ5Ynl5hsKzLs+vUnhShgcPHjx48ODBgwcPnnV6xu75/ie+hMlyh5fnUIm0OseqDM9JHWedSyGeqzpuOvdCPCn2zi235wmRqbFg4CIAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="36" height="62">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZbQqDMAwG4NprdD2J8yR6FG8+hZEfhSGxSVYbmHtfyA8hlkfr19YxhvBU1Chsf9YkbNf2q40LDzzwtHleQzCF+jdl7caxqT9F2z6W/mwcm/rhgeefPdxzp4R7nvT29Aw89eST99DiYJwN71OPc5bhua1H841Wu+a5a1X6ZmvxLMI5pGOXTFd6ksLDzQc88PT2cPHyaAPPb3mkaD1egQceeOCBBx544IEHHi+Pdu3ouI4keSzrUi1FlrP/QSnlt0P60vSIttLORZlT6/jwXO/h5v14b6yOHm3vHTxv2c7fZOAiAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="36" height="62">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OoQ0AMAgAQRL2H6lhNQQTVCG4M28/AgAAAAAAAACAXy+nlbsfFzRTS7lu4CIAAA==
+  </data>
+ </layer>
+</map>

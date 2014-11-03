@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="SinnohInteriorSet0.tsx"/>
+ <tileset firstgid="369" source="SinnohInteriorSet1.tsx"/>
+ <tileset firstgid="2737" source="SinnohInteriorSet2.tsx"/>
+ <tileset firstgid="3209" source="SinnohInteriorSet3.tsx"/>
+ <tileset firstgid="3553" source="SinnohInteriorSet4.tsx"/>
+ <layer name="Walkable" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBQMRlCFhhsJYHIAITOpZQe6X/DhUTtG7RgFo2AUEAcAmBLJnMQJAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QOwqAQAyE4YEk2uqZfR1Md72WU6TVKhCQfPC3m2GBUkr5NgkwS/aKdwu3rd7GdnYE7z353uU11tkdfEMUUGbewEaNvZGhG//KsleU8j8PQwrFXMQJAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMgqEPtvJhZw81O0BgNg8Dwxwe2pk/CkbBKBgeAAAwcSTpxAkAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSQCty4GRjcicQe3OTZ4QfU508kDgBiERLNJ1U9OXrobUc3DwNDDw9t7ZgMNH8Kje2glR5S1QvxDV5/oGN8cuhqRsEoGC4AAI9puVjECQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBQMVnCQkYHhEBAfZoTwl/AxMCwF4mV8CDUXmBgYLjKRbwcjUC8TEDNDzVgDNHstEK/jw69vFIyCUTAKRsHAAgBKjWiUxAkAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="25" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAvxgEjMDw2Rm2tpxCWj+ZRrbMQpGwSgYBcMJAABrt2NvxAkAAA==
+  </data>
+ </layer>
+</map>

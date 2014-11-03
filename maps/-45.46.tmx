@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="21" height="13" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 27.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 28.tsx"/>
+ <layer name="Walkable" width="21" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAVDAbgAsSsQuwOxM5R2RaJdCPCR9cGAJxA7AbEjEHtBaSck2pMAH1kfDGAzB5n2JCCPbA+6O2H+cETzlxuSfncc6jxIdCcpNLbwpJSmpTupDQDrsfMNRAQAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="21" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXDAdQCcR0Q15Ogp5NGbqEl8AZiHyD2JaDOD4j9gTiAxu6Jp4GZ6SSqDwfiCAJq8sl0CzEAAPF/Aa9EBAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="21" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+XPOwvCQBAE4PuLahWt4gsuPiCxNIVFfBSJpjX/M71zMMK4kAPBzoOP210mm6R3zo1gDBPettdZLBf6nhKYwoy37XUWyyWyM4U5LHjbXmexXCo7PWSwgSWsYM0+Iy/1UM7LzhwKOMAWdrBnX1Au9VAul53hdFC6z3OEk5mVnNtcR7oznAourK9whpt5vuJcc5qxO2u4s35AAy3f//6XmnPNtZGdvzj/tPNp7v4L9jtiXnhdRNZEBAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="21" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGB4gBIhDkXAYFcyMAeJYJBxHpL5KKF2CRa4CiEuBuAyIy/GoQQeNRNqNCzTgkWum0GxsoJsGZo6CwQkAjnOPLkQEAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="21" height="13">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAW0AJOooJ9SMygFk9DoUUA7MBGNHkoAAB3DXQFEBAAA
+  </data>
+ </layer>
+</map>

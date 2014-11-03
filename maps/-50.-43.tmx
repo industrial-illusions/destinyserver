@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Zubat,30;Golbat,5;Geodude,30;Graveler,10;Wobbuffet,10;Teddiursa,5;Ursaring,10;"/>
+  <property name="dayPokemonLevels" value="23-23;23-23;23-23;25-25;20-25;20-20;25-30;"/>
+  <property name="fishPokemonChances" value="Goldeen,70;Magikarp,20;Seaking,10;"/>
+  <property name="fishPokemonLevels" value="10-40;10-40;40-40;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Zubat,30;Golbat,5;Geodude,30;Graveler,20;Wobbuffet,15;"/>
+  <property name="nightPokemonLevels" value="23-23;23-23;23-23;25-25;20-25;"/>
+  <property name="waterPokemonChances" value="Magikarp,100;"/>
+  <property name="waterPokemonLevels" value="5-15;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Caveset.tsx"/>
+ <layer name="Grass" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC/NnYGDwH8WjeACxPJl4IOwkx15SzWGgcbiSYgY6oFeaGLWXvvaN2js07KUUjNo7uO0l5A5ap1d89lKz/h1K9vojidED09Kf1A6zgXbDKKYuBgDEAF6qEA4AAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAVDGbABMTsQcwyA3fwDYOdIANwD7YBRMApGwSgYBaNgFIDBYK2TR9t/o4CaAADBue7IEA4AAA==
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQEAAACCIP+vbkhAAQAA8Gh7blyXEA4AAA==
+  </data>
+ </layer>
+ <layer name="Water" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAuzAEIiNoNiYjvZaArEVFFuP2kt1AItXLTrbi+zPUXtJB8j5ER9Gjldq2IvNH8TioWivIxA7IWElJHMV0eTQsTMF9qKDkVIeDbS9yPFNzfgbBaNgKAEA/1PKrxAOAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WyQ7CMAxEkztFXICeaE7Q//9CUqmVBtf2uCnLBUujIlr7ZXEcDyml4cfqqh5Ehw/4l6o8Cy2Dbg63KL4yDvov4xwNP+TenbmMDlPjFvLtpEvVdYOOs/+pqod4jJvTen1bDeMzrja/b3C9+Vl5m4z/cd/3cKfvcT164zstRxmX5W0kLxn3TMa9xLDOsTZvrQ5IbvTcYzzLv5XLmLivlr839gg3w1Obp8zrUfi1cLXz26d1Pll1NcLF+szGhXmu1WNrX7W4hbyP7n/E/txX0+oVu1/3cLVeA3+zumKdA8bdYlY9klbE+y3cyP3TwrXWT6tT3jiR281PrGNeHKuX8sap9UMyLuN6varX705m1TPtPpH9H+vvvXy1jM2lRYUwWb/fqmhP/W5ui54Yk2WDEA4AAA==
+  </data>
+ </layer>
+</map>

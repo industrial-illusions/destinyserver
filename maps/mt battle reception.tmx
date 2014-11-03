@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="Interior - Pokecenter Pokemarkt.tsx"/>
+ <tileset firstgid="401" source="Hoenn Interior Set 0.tsx"/>
+ <tileset firstgid="657" source="SinnohInteriorSet1.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PwQnAIBBFQSuzh6QH038JQchBBIMBD2uYgXfY2/6UAAAAAIDIjo9FVX/LXefLHVW7ozxdg3uXHTNF9ZcdAAAAwBo3Z3eS3xAnAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQkAIBAEwcPg27R7bcPAIh50BjbfBAAAAAD+MccNeNeqZFf3BQAAANDhAD83BI0QJwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PMQoCMRAF0JDScg+nVrK1eJvFE+SiphA0MewugjDIe/CLMBn4kxIAAAAAtA65zbHm9Mw5f84jKrXX1OXy1nUezCMqXa/r4M9tYyeCvtNSc195j3Yi+KaTO37nn+4YZe8cAAAAeHkA392zphAnAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQ2AMAxFwUyJ2AZFGYIhsiQuU9BYkTDFnfQLu3qtAQAAAEDeXR2QdLz8ztj8OmTTiPXlvqpCAAAAAOCHHnaePeIQJwAA
+  </data>
+ </layer>
+</map>

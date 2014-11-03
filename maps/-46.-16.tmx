@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="10" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="301" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="631" source="InteriorWalls 1.tsx"/>
+ <tileset firstgid="931" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="1627" source="InteriorObjects1.tsx"/>
+ <layer name="Walkable" width="13" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGBoZSQewwA99dQSiUf1MJANAHrieEcIAgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="13" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9XMSQqAQBAEwRq0VXAFxwVc368+0nyBA+LFhjgV2dJ/LjIphiFBisyem5y9QIkKNZpA07J7dOgxYAw0E/uMBSs27IHmzR1OOnG5b//e1jPUyQgCAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9NlZGBYysTAsIwIvByIdRkheD2QvYEIvBFJTykDA0MZEHcCcRcDBLQCcRsDJoDpIQXg0yPIysAgxEqaHkmgeikS9ZDjNkJ60tiIUw9SB9ODjpHNw4YB966V7wgCAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="13" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIAxOsjIwnGIlQiESuAhUf4lEPbQCPjjY1NYzlAEAVxjPcQgCAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="13" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIA9kA3EOENcDcQNUrBqIa8g0jxTAycrAwMVKB4toAGLYqKuOWgAARIyMYAgCAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Cynthia Room.tsx"/>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ONxIBYBgGYZeQtbJW1spaWStrZa3s0Lb5L6D5xsy7M0+/Ho9SSimllFK/5YUPfgQQRAhhRAy/XFHEEEcCSaSQRsbwy5VFDnkUUEQJZVQMv1xV1FBHA0200EbH8MvVRQ99DDDECGNMDL9cU8wwxwJLrLDGxvDLtcUOexxwxAlnXAy/XFfccMcDT7zwxsfwSymllFJK/U9fQwnYpAAZAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OuzuCcRyG8RByCMWaU1bltIZkdbY6pFYprEJaHXI+86e6l/ddWn7L970Mz31dn+0ZnlBIKaWUUkr9l1rQijaE0Y4OdCKCLnSjB72Iog/9GAjgXwxxDGLIYZ/AMEYwanfLbwzjSGLCYT+JFNKYMvzlNY0ZzGLOYZ/BPBawaHfLL4sl5LDssF/BKtawbvjLawOb2MK2w34Hu9jDvt0tvzwOUEDRYX+IEo5QNvzlVcExTnDqsD9DFee4sLvld4karlB32F/jBre4M/zl1cA9HvCIJzzjBa94wzs+8IkvfOMHvwH8U0oppZRSzf0BYBEzzgAZAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAAAAwJcBSxPzAQAZAAA=
+  </data>
+ </layer>
+</map>

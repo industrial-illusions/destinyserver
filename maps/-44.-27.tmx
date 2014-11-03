@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="38" height="24" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Psyduck,20;Slowpoke,20;Zubat,20;Seel,20;Golbat,10;Golduck,5;Slowbro,5;"/>
+  <property name="dayPokemonLevels" value="30-32;30-32;22-24;30-32;26-30;32-34;32-34;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Psyduck,20;Slowpoke,20;Zubat,20;Seel,20;Golbat,10;Golduck,5;Slowbro,5;"/>
+  <property name="nightPokemonLevels" value="30-32;30-32;22-24;30-32;26-30;32-34;32-34;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal9.tsx"/>
+ <tileset firstgid="1025" source="Caveset 2.tsx"/>
+ <layer name="Grass" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3GQQkAQAgAMEE4+1cymQHOBu4xWL+IBuBTuR8A4KoBqaeMvEAOAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+WWbQrCMAyG5x+9/xHUk2wDd4466K5hBw2EmK9tKSq+8P6RJnnM2rTDueuGjZ6Kn4wfO2M9cVbt1XPx6fLupMRosUnhoxxS7ZZODNtYTLWujdS11LgJvtc+9A6uaPVKjfGHuKa6n7yyvkcUF/zmFc2PY7W+0/MKwucsmgvipfPjyR/NhdWCS9s32FnhWnbuPeDCM2ypMVofImSdeegr7dk/c0l7BeY9x8XduyDrPoZ71+KS/jve4zl43lv99nAdmfeSktHn2eDiehX9dpCkcXF3dksunPsTXJ65Lr1pZ4YL5mrk29MzD6gpF7BpsbSOlB/WZaYG/jZcTimGY5RipHtwS25r7Tf6BZae6XZADgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjgHKwjJ2BYTk7aXpOkqieHHAMaMdxOtgzCmgHUpgheKQBeuSPUTAK6AlonZdH8wwE0Cqcyann6WE+rev5wdCOGE3bo2CwAQCaKl7UQA4AAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIAwY2YlQhEcPsfpxqSPH/pEECIXPSjqE3zKgHctH429YgsEcf9RwGz3yxygYBdQEA50nR/PM8AUDnbYGGgyHtD0U4pBWbiSn70GJPeTagU0fKWaB1FLaNyMHIOsHAEIl6HNADgAA
+  </data>
+ </layer>
+</map>

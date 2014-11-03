@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="11" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="false"/>
+  <property name="pvp" value="disabled"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Underground Shop Tileset.tsx"/>
+ <tileset firstgid="199" source="SinnohInteriorSet1.tsx"/>
+ <layer name="Walkable" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB8oIAEj68kjEo/qoUwPqQAAPsKHaTwCAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoD8oAeJSIC7Dwx4F1AEyrAwMsqy0MRsAg0DxODwCAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACytiYGBwBmJXIHaD0i5ItAsSHyRfBMWhQBwOxBFQOgyJDkPiRyDpAYHpDMQBZD0rydCzG01uLhDPQ8LzsehBB+uBeAMS3kiEHmLchg3A3DcfSYyQHpj7NiKJUeI2dL3o4ugYABk+jWw8AgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgQIAAIA4E4iA8bGTQCsRJQJwMxCl42LQCy4C4hwT1s4B4BxDvpI1zKAJ6QKwDxLID7RASAAAli92UPAIAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="13" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGHqgG4h7oHg5EPcOrHMwAMx9g81d1AYANrTwRTwCAAA=
+  </data>
+ </layer>
+</map>

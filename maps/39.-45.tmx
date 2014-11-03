@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="45" height="38" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Machop,15;Geodude,10;Ponyta,10;Meditite,10;Bidoof,20;Chingling,15;Bronzor,10;"/>
+  <property name="dayPokemonLevels" value="14-15;13-13M13-13;12-14;14-14;13-13;16-16;"/>
+  <property name="fishPokemonChances" value="Magikarp,35;Finneon,18;Gyarados,27;Lumineon,10;Staryu,10;"/>
+  <property name="fishPokemonLevels" value="10-20;10-20;40-40;20-40;40-40;20-40;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Machop,15;Geodude,10;Ponyta,10;Meditite,10;Bidoof,20;Zubat,15;Bronzor,10;"/>
+  <property name="nightPokemonLevels" value="14-15;13-13M13-13;12-14;14-14;13-13;16-16;"/>
+  <property name="pvp" value="yes"/>
+  <property name="waterPokemonChances" value="Tentacool,60;Shellos,30;Tentacruel,5;Gastrodon,1;"/>
+  <property name="waterPokemonLevels" value="20-30;20-30;;20-40;;20-40;"/>
+  <property name="wildProbability" value="7"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal12.tsx"/>
+ <tileset firstgid="1025" source="SinnohSet7.tsx"/>
+ <tileset firstgid="2801" source="normal7.tsx"/>
+ <tileset firstgid="3825" source="normal5.tsx"/>
+ <tileset firstgid="4849" source="SinnohSet10.tsx"/>
+ <tileset firstgid="7313" source="Sinnoh Exit Cave.tsx"/>
+ <layer name="Walkable" width="45" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DQQ0AAAwDoTNX/5YmYx9IWDVVVVVVVVV9fhzG1Mq4GgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="45" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TTQqAIBCG4ZFu4NaO0c++w1SXqQ7RrlNmkJtAckhzhO+B2corOkQgxVCFjxRolmNVuQv40PwPic2cPcy5l186c9whVW/K9hKbncXu1qb4LY0mau10dnqd559zm0dDNN0zG/8Zkpp93LvFsNf/NMd0vDRfpDWHcD0lNTsltT6V2AwAAAAAAPKdNu68YbgaAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="45" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PwQkAIAwEwWBt9l+TNYgQEzID99+LAAAAAKra624VTGiu8klzn+Zs03o15zT/0LEZeHMAx1LCI7gaAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2XXQ7CIAzHp4neRI0ncb54DbeT6U30HJ5EfGhCCB8FSksN/6QPDNL+2jHK5s00zcPErVStmQazPHMuN9ZnT8wteF2fvrGvbtyqYYZ5ithcdaYW5f61n4M+23R8rEK+Sutcw1IrKmYqpd6TNHOpL43MWN+c5wToLnTOa9bO1GyvrG4Hw3tUxgzynWWLyWVVls/D8D6VMb8M71uwj/auUP/pWT0yx3p5aB50itwFzow9G8MM85cI85WJGcbYnH53hcWxGzGzby/mMNvjkCCPlv0jxWyvcddLfZf/zpz6Z+Dm7ZEZG1cbcyh+Tr5UVsNMydHaBjOPfQG3ZCbBuBoAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2YW47CMAxFicRsgS0Ayyg/0A9mG4WVMCudddB8WPJYN47zbKThShaPtMmJ4zhuj263O1W282qlmh3+7nWN9H/M4JVj9GaOtaOxPsz/g3lZ2x8G8/KfzwGY74nMxN2TWTL68S3cnLmG8XnHmGfAaOFGzN8V/G1lDnGnSu6F3DlIZtkv7aHYPqKzJuXMy52DZEFrbtn7fn1uhTnCmkflGCgOLLGwNXOI+8Guleu4sLnJOEF9oTgoZab/f/f4Pq1/apvFZ+x+63kl11wyH77ymO+sb8TsfcHXrSR3W+sDjXlx+hngFfJFjmowoz5bSsZGSBR7lpw6CjNJ87eP6ddqP4Mxa/5u7V8+Tk6djvJUjRrUIuK9uDbPzy2k+bjXWqdqVGbtHYWVOXR/K8n8xGuaUf0smXlNQ8bX4szaewg9P1iY+TVafdZCqBbPZe6V/3gtXsqM1NP36PeHOU+hPDy5v+1ThPmixG1t5tR3nCFmjQ3tyxKbOjD3lvbOSDJr8bG1iHnLejhVb9fooYq4GgAA
+  </data>
+ </layer>
+</map>

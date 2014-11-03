@@ -1,0 +1,29 @@
+[npc]
+Youngster Neal
+down
+353
+32
+6
+Trapinch,18,Linoone,20
+2
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Ninja Boy Lao
+left
+261
+29
+3
+Koffing,17,Koffing,17,Koffing,17,Koffing,19
+4
+-1
+0
+false
+false
+false
+[/npc]
+

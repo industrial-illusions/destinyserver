@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="38" height="24" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Slowpoke,23;Psyduck,22;Zubat,34;Golbat,11;"/>
+  <property name="dayPokemonLevels" value="26-33;26-33;22-26;26-30;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Slowpoke,22;Psyduck,23;Zubat,34;Golbat,11;"/>
+  <property name="nightPokemonLevels" value="26-33;26-33;22-26;26-30;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal9.tsx"/>
+ <tileset firstgid="1025" source="Caveset 2.tsx"/>
+ <layer name="Grass" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3KsQkAMAgAMEGo/7/kZUJvcJIM2dIvogH4KncOAMBFA+DohO5ADgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WbwrCMAzFJwM9t3gS9STbwJ2jE/QatrhAiS9p6rbWDz54HwZp8uufrO33TdMbPHpPwLfMcan4nNrBd+/d4dNOGYPGoXiNdVRqb20n8BHT2ftSwFdvpI5xDfM6dUL8WqL1GQxc8f6V4AqycNFarcFFeVKSuFx0xhCXJbfWu9ykuEeleXULuaQ5o1rat8T1nPsjdx9zuCzz5Fy8Hy05tJ6qyRVUmsuqX+NK/YO24EJ3KgndxzlcViOuLbRkvehfUZsrvBse4O6uzcXfE3+ufK74PkJ5Y2vvR8phMa+DuKS+RCz8bPL5WTmtXJTz2L5jT62NRTPnjM3rfFujpF/alnQFQA4AAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjgDKwjJ2BYTn7QLsCExwDuuk4he4azn4bbCCFGYJHwSgYBcMTjObxUTCUwGj9Tz/ABvQPOxBz0NhfpNqjBlSnDsQaNHYXveyhJgAAEovV7kAOAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="38" height="24">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BgQAAAADDoPlTH+ECVQEAAMA3PcIq6kAOAAA=
+  </data>
+ </layer>
+</map>

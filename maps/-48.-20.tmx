@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="21" height="19" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Gastly,86;Cubone,9;Haunter,5;"/>
+  <property name="dayPokemonLevels" value="18-24;20-22;25-25;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Gastly,86;Cubone,9;Haunter,5;"/>
+  <property name="nightPokemonLevels" value="18-24;20-22;25-25;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="6"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Lost Tower (Sinnoh) Set.tsx"/>
+ <layer name="Grass" width="21" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGB6gBAumplnkmk2MWaSYTY55+MylxDxc5lLbTGqYh27uqJmDM57QAS3MpNRcQoCaZhFr/kAAAL65NqE8BgAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="21" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBRQCyRSqN+JKq4YBaOA9gAAIxxtvjwGAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="21" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC7WS0QmAMAxE++MKXcgR9D+uoDM5qP2wEI67pBU8CMaSvFyjpcRaSHxV768kZtnIYpphZ6yIHfGYbvLuQ3Gr6CnwRH4/Rz/ZThiHzfAcnIE+8UzNYHed9cl8/Mk8ghp1f6bV5WeLK/GWed1a7G9uombUJ/t2BtyR3SmZyD2X7S76p5CpdoBzIo/IMBfKh/KWebLC+VHNjLB3lPMAqqcObjwGAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="21" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYOQBfyAOoNAMQyA2ooJbRsEoGIoAAA1UdgA8BgAA
+  </data>
+ </layer>
+</map>

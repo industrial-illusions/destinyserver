@@ -1,0 +1,56 @@
+[npc]
+Sailor Huey
+down
+395
+20
+9
+Machop,14
+1
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Tuber Ricky
+down
+339
+18
+7
+Zigzagoon,14
+1
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Sailor Edmond
+Left
+395
+23
+20
+Wingull,12,Machop,12,Wingull,12
+3
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Tuber Lola
+down
+360
+27
+14
+Azurill,13,Azurill,13
+2
+-1
+0
+false
+false
+false
+[/npc]

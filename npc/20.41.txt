@@ -1,0 +1,14 @@
+[npc]
+Wes
+down
+187
+19
+3
+Espeon,150,Umbreon,150,Togekiss,150,Flygon,150,Tyranitar,150,Metagross,150
+6
+-1
+0
+false
+false
+false
+[/npc]

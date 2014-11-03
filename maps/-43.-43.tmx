@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="16" height="17" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Rattata,55;Koffing,30;Zubat,10;Raticate,5;"/>
+  <property name="dayPokemonLevels" value="13-15;14-14;14-14;15-15;"/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value="Rattata,55;Koffing,30;Zubat,10;Raticate,5;"/>
+  <property name="nightPokemonLevels" value="13-15;14-14;14-14;15-15;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal7.tsx"/>
+ <tileset firstgid="1025" source="Daycare Johto.tsx"/>
+ <tileset firstgid="1956" source="Caveset.tsx"/>
+ <tileset firstgid="2180" source="InteriorFloor 1.tsx"/>
+ <layer name="Grass" width="16" height="17">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC5vMwcAweRSP4lE8IjGlAACxmfYEQAQAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="16" height="17">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBQMN8DIycDAxEl7ewDKovNcQAQAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="16" height="17">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjgPrgwEA7YIiCN+wMDG+B+B07efq/APV9BeJvUP1MnAwMzJzUcx86AABB9wwHQAQAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="16" height="17">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+tgY2BQIRN3AvESdgaCAKQGXR1MDF2OkFpC4tjcg8uN2MxUxuGvDqCYKhthN4Ww4bYzjA2VT0g/ulwYCfZjcwMh/SA2uv3Iagi5H1k/NvlwPPph7BA0NYTci85vBepvQ8PI8YlNPzFpGJ+bSQXo+skxgxL7kfX/YsGNYQCfGgBmu/k9QAQAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="16" height="17">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAvIAAFiC/sZABAAA
+  </data>
+ </layer>
+</map>

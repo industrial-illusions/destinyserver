@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="19" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="isCave" value="false"/>
+  <property name="pvp" value="yes"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="Untitled" tilewidth="16" tileheight="16">
+  <image source="PGTilesetxi.PNG" trans="000000" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1025" source="Water02.tsx"/>
+ <tileset firstgid="1217" source="Cliffs01.tsx"/>
+ <tileset firstgid="1447" source="Cliffs02.tsx"/>
+ <layer name="Walkable" width="60" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2VDQqAIAxGhQy6Rfe/TlfoHhEjRmPIckXEt/VARB3C4/OnlG+Yx+sWiSy+PZ4R3O96/r4YWC7rEMt3qUefKV8igy9nSzzxlfugkCFfpucOa1BdJZ78EH0pV87WypjXtnqOEX2ZHmdqUyN3xLdK4vmPuR7V2fM/6XpkrIx1DTrWXeZ56RrBW5/r1vwb7D5y4R3QEQAA
+  </data>
+ </layer>
+ <layer name="Water" width="60" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TMQrAIAwFUAd7/lyra+mFpINQRKyW+H/EBLIYxDwSJYYgpPwKVl/aeXVYn7gN9Ipwrj5v7WB7kFbL3pnBtqHNbJd73WvRex7tWqu+qrdmyuc7eXt2AOFF/MP3fJkzRlgtuXfyoq2lefSee/Hecj9H8s977NkmPN1MLNARAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="60" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9XWWU7DMBAGYEtJhDgW20HYDsJ2ELZz0EBRmsc6jw2qQHAE3orgt+JRRyM7cYrVNiP9suqkUT5N7ESp9VeRKjVB9hKl9pED5BA5Spp5Splu4OYiVsEspo7hO0FOkTPkPGnmF/b4UO3SSXUB3yVyhVwjN4n/GtVA3MY6FfdI/buF7w65Rx6QR4eXzjVenTbjtprJKr1UOXzPyAsyRl6ZdyH+w73VlnqnHq+xmLzD92GNnxi/kuUxWUPyzozN3qPL4qoh91fbMdRKxc8fipd661vDXWXMc+SNjbG8T5lSo47kWfj1uDXEy99bZerem3VEb5G1m/MV/K417LN+W49878T0yvv3mY2rRCYiZaBXt/S4YOdwb7UGL5ldLm6n+a4e8976ekzn/Nhjv2KdVo41HNM7cnjb+tzWY2l1mc1cjezY6+xmzW+5R/3Xakq6uuLqc1ePQ8y85Hso5r7c1+vrc9c6ltaQ/Tp2b1fxcl8frym+b7l6TH2dp8vnOfY3Rixv6LtJi+e6Fm6+L9XMvclvKpe3zzOthXUmbNRTaY5Rfz8yzBvQEQAA
+  </data>
+ </layer>
+</map>

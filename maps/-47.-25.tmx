@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="yes"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Pewter Gym.tsx"/>
+ <layer name="Walkable" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WVbNQZRiGYdmbBulO6QbpLulGpRuVblC6xaBT6cai26DTpFPpBoNuCS/+A+vAmfXMXKfvrPvkm/XKK+HChQsXLly4cP+fRSGCSKISjejEICaxiE0c4vIq8YhPAhKSiMQkISnJSE4KUpKK1KQhLekC6MhEZrKQlWxkJwc5yUVu8pCXfLxOfgpQkEIUpghFKUZxSlCSUpSmDGUpF0BHJSpThapUozo1qEktalOHurzJW7xNPerTgIY0ojFNaEozmtOClrSiNe8E0NGO9nSgI53oTBe60o3u9KAnvXifD+hNH/rSj/4MYCCDGMwQhjKM4XzIiAA6RjKK0YxhLOMYzwQmMonJTOEzPmcq05jODGYyi9nMYS7zmM8CFrKIL/gygI4lLGUZy1nBSlaxmjWsZR3r+Zbv+J4f2MBGNrGZLWxlG9vZwU52sZsf+SmAjj3sZR/7OcBBDnGYIxzlGMf5nT84wUlOcZoznOUc57nARS5xmStc5Rp/BtBxg5vc4jZ3uMs97vOAhzziMf/yhKc84/mLIx7vKEQQSVSiEZ0YxCQWsYlD3CgvvyOhm4lITBKSkozkpCAlqUhNGtKSjvS8RgYykonMZCEr2chODnKSi9zkIW8AHQXdLERhilCUYhSnBCUpRWnKUJZylOcNKlCRSlSmClWpRnVqUJNa1KYOdQPoqO9mAxrSiMY0oSnNaE4LWtKK1rzDu7xHG9rSjvZ0oCOd6EwXutKN7vSgZwAdfdzsSz/6M4CBDGIwQxjKMIbzISP4iI/5hE8ZyShGM4axjGM8E5jIJCYzJYCO6W7OYCazmM0c5jKP+SxgIYv4gi/5iq/5hsUsYSnLWM4KVrKK1axhLetYH0DHBjc3sonNbGEr29jODnayi938yE/8zC/8ym/sYS/72M8BDnKIwxzhKMc4HkDHKTdPc4aznOM8F7jIJS5zhatc40/+4m/+4To3uMktbnOHu9zjPg94yCMeB9Dx/MVNP+5RiCCSqEQjOjGISSxiE4e4vEo84pOAhCQiMUlISjKSk4KUpCI1aSJefkcGNzOSicxkISvZyE4OcpKL3OQhL/l4nfwUoCCFKEwRilKM4pSgJKUoTZkAOiq4WZFKVKYKValGdWpQk1rUpg51eZO3eJt61KcBDWlEY5rQlGY0pwUtaRVARxs329KO9nSgI53oTBe60o3u9KAnvXifD+hNH/rSj/4MYCCDGMwQhjKM4QF0fOLmp4xkFKMZw1jGMZ4JTGQSk5nCZ3zOVKYxnRnMZBazmcNc5jGfBSxkUQAd37i5mCUsZRnLWcFKVrGaNaxlHev5lu/4nh/YwEY2sZktbGUb29nBTnaxO4COX938jT3sZR/7OcBBDnGYIxzlGMf5nT84wUlOcZoznOUc57nARS5xmStcDaDjHzevc4Ob3OI2d7jLPe7zgIc84jH/8oSnPOP5i2+L9H4TQSRRiUZ0YhCTWMSOfPkd8d1MQEISkZgkJCUZyUlBSlKRmjSkJR3peY0MZCQTmclCVrKRnRzkJBe5A+jI72YBClKIwhShKMUoTglKUorSlKEs5SjPG1SgIpWoTBWqUo3q1KAmtagdQEe4cOHChQsXLly4cP/X/QeL9Ar4ECcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="50" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WZ2xWBRQGYGlZBRQooxRwsAplKbNslNEyCyp7a1T2crC3RtlbZW+Myh5qZG+MbBA1UVE2GtnDlaiPCYlfjP7AcH+Q3Dd58p3c5J573j9N77svTJgwYcKECRPm3kkaoogmLelITwYyEkMmMpOF+3mArGQjO7HkICe5yE0ceYgnL/nIz4M8FECPQhSmCAkUpRiJFKcEJSlFaR7lMcpQlnKUpwIVSaISlalCVapRnRrU5PEAetQlmRTqUZ8GNKQRjUmlCU15kqd4mmY0pwUtaUVr2tCWdrSnAx3pxDM8G0CPznShK93oTg960ove9KEvL/ISL/MK/ejPAAYyiMEMYSjDGM4IRjKKV3ktgB5jGMs4xjOBiUxiMlOYyjSm82bEuzOYySxmM4e5zGM+C1jIIhazhKW8E0CPZSxnBStZxWrWsJZ1rOcDPuSjiHc3sJFNbGYLW9nGdnawk13sZg97+SSAHgc4yCEOc4SjHOMzjt/hvpOc4jRnOMs5znOB7/nhbhz+j1zmCle5xnVucJNb/MTP/MKv/Bbx7u/88dfgj3caoogmLelITwYyEkMmMpMlzd3vkd3OWHKQk1zkJo48xJOXfOTnwYgbHjEXoCCFKEwREihKMRIpTglKUorSAfQoZ2d5KlCRJCpRmSpUpRrVqUHNiBtqmWtTh7okk0I96tOAhjSiMak0oWkAPZrb2YKWtKI1bWhLO9rTgY504pmIG54zP88LdKYLXelGd3rQk170pg99eTGAHv3tHMBABjGYIQxlGMMZwUhG8WrEDa+b32A0YxjLOMYzgYlMYjJTmMo0pgfQY6ads5jNHOYyj/ksYCGLWMwSlkbc8K75Pd5nGctZwUpWsZo1rGUd6/mADwPosdHOTWxmC1vZxnZ2sJNd7GYPeyNu+NS8j/0c4CCHOMwRjnKMzzjO53zBlwH0+MbOE3zLd5zkFKc5w1nOcZ4LfB9xw4/mi1ziMle4yjWuc4Ob3OInfuYXfg2gxx9/7fSPexqiiCYt6UhPBjISQyYyR/397gPmrGQjO7HkICe5yE0ceYgnL/nIH/Wf5/zvFLCzIIUoTBESKEoxEilOCUpSKuKGx8xlKEs5ylOBiiRRicpUoSrVqE6NAHrUtrMOdUkmhXrUpwENaURjUmkSccNT5qdpRnNa0JJWtKYNbWlHezrQkU4B9HjezhfoTBe60o3u9KAnvehNH/pG3PCy+RX60Z8BDGQQgxnCUIYxnBGMZFQAPd6wczRjGMs4xjOBiUxiMlOYyrSIG94yv80MZjKL2cxhLvOYzwIWsojFLAmgx3t2vs8ylrOClaxiNWtuf3Od3/X/8v2PPdtw+/kmv5vZwla2sZ0d7GQXu9kTQI99du7nAAc5xGGOcJRjt7953O/n//L9rzz7+vbzE36/5TtOcorTnOEs5zjPhQB6XLTzEpe5wlWucZ0b3LyTb0b7+00U0aQlHenJQEZiyBR993tktTMb2YklBznJRW7iyEM8eckXccND5od5hAIUpBCFKUICRSlGIsUpQckAepSxsyzlKE8FKpJEJSpThapUozo1qMnjPEEtalOHuiSTQj3q04CGNKIxqQH0CBMmTJgwYcKECRPmXs2f/xEWkBAnAAA=
+  </data>
+ </layer>
+</map>

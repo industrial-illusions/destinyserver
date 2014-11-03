@@ -1,0 +1,37 @@
+[npc]
+Rocket Grunt
+left
+180
+17
+28
+Purugly,56,Skuntank,58,Golbat,53,Mightyena,54
+4
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Rocket Grunt
+right
+179
+12
+31
+Weezing,56,Arbok,58,Golbat,53,Houndoom,54
+4
+-1
+0
+false
+false
+false
+[/npc]
+[warp]
+14
+40
+8
+2
+2
+-39
+0
+[/warp]

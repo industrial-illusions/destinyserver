@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="45" height="45" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Sinnoh Interiors.tsx"/>
+ <tileset firstgid="17826" source="InteriorObjects1.tsx"/>
+ <layer name="Walkable" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XR07DUBRG4bcHepOA0BaQMqcnBFKAJNR10CFI9LIVOgzosA56CqTRNsCxMPIKkN/gHukbWPLgn1jyVUqSpL9anUq1oR0d6EQXuuGFDz3wO+1eanXHlns84BFPeMYLEkgihbRGmydcSk1iCtOYwSzmMI8FxLHosnupVZFbqWKUoBRlKEcFKlGFatS47V5qZWzewS72sI8DHOIIxzgxn3XJ2Ozz8J3Bj170IYAgQgh7ft/RpQRbkkghjVe8IYMscsijoNFmSZIkSZKk/y7A/RFECGH0YwCDiCCKmEY3ilGGPVnkkEcB7/jAJ77wrdnmJW6mZaxgFWtYxwY2sYVtje4qo1r++etQDwca0IgmNKPFpFOn7DnDOS5wiStc4wa3Jp2KcH9EEcMQhjGCUYxh3CRJkiRJkiRJkj39AE9jA2SkHwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XV0oDYRSG4XMr2BuYWJJsQMn8jCuICgreWLIJt2AvS7FHBRNLksUoqKCb8P0JYsCRGcFyIueFB4aZc/HdjoilvZVxkfZApAOd6EI3etCLPvRjAINB4/6v8xv22XKAQxzhGCc4RQlnOMeFos3NFZzIFKYx497fz/I853Ru9t2x7b5p7wPPj3hSvPk773+iuA2pUCQdJr//jeI2lNlbUbi5VEh26++0bI4S982yLMuy/kNtEyKreZE1rGMDm9jCNnawi71841ZDfscQ/x8ppDGMEYxiDBlkkQt0bb5kTxkVXOEaN7hFFTXUlW2edx/fL/BuEUtYRtHp2vzMnpeI3VG3GvrKDk2bM/yHZJEL42815HdU2VpDvYU2vylOfn7n/6s0bk7CsizLsizLslq9V4u8WZekHwAA
+  </data>
+ </layer>
+ <layer name="Walkbehind" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XMQ0AAAjAMMzhFKEY4CHhIu09A4sA4KPK2w4AAICZrwIAADYaLeU9mKQfAAA=
+  </data>
+ </layer>
+</map>

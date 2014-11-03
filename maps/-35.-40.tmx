@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="19" height="10" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Krabby,40;Zubat,30;Seel,25;Golbat,5;"/>
+  <property name="dayPokemonLevels" value="22-24;23-23;22-24;25-25;"/>
+  <property name="fishPokemonChances" value="Magikarp,35;Krabby,28;Kingler,27;Horsea,5;Seadra,5;"/>
+  <property name="fishPokemonLevels" value="10-20;10-40;40-40;20-40;40-40;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Krabby,40;Zubat,30;Seel,25;Golbat,5;"/>
+  <property name="nightPokemonLevels" value="22-24;23-23;22-24;25-25;"/>
+  <property name="waterPokemonChances" value="Tentacool,60;Horsea,30;Tentacruel,10;"/>
+  <property name="waterPokemonLevels" value="20-24;15-19;20-24;"/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Caveset 2.tsx"/>
+ <tileset firstgid="1025" source="Path0.tsx"/>
+ <layer name="Walkable" width="19" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACytlYWAoHcVDFoPAQLthKGIAJ3vqovgCAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="19" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoD4oZYFgdDFyzbrMyMBwhRFhLi6zYHLI6tHlPwPFv5BgFrJ6bPLomJBfcIUNtczCZR4xAJdZQUD/BwNxCJZwIMUsECgCmlEMxCWMxJlDKwAACzIn2vgCAAA=
+  </data>
+ </layer>
+ <layer name="Water" width="19" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoC94xYiKqWXW60Fi1ks0//EwMTCcAtKnyTAT3SxK3YfNrJEKAIsAXPL4AgAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="19" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+NjZGDgoyIWBmI9NCxEQB6XWn4gRgYeQD4vAXlkQEitLpK9+ljkkc3DZxapAN0sdHeTa5YxEL8Dir1HU/OWASJODEaPT3S/8jKSnzZA7iuCmldC5XRHKgYA77qnj/gCAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="19" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYOQBAIFj3874AgAA
+  </data>
+ </layer>
+</map>

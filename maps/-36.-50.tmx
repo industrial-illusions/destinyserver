@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="28" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Ruin Of Alph Set.tsx"/>
+ <tileset firstgid="267" source="Caveset 2.tsx"/>
+ <tileset firstgid="1291" source="Path2.tsx"/>
+ <layer name="Grass" width="20" height="28">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoD6oYKcOHjVv1LxR80bNGzVv1LxR84aPedQEANx3dpfACAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="20" height="28">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMAtJACPNAu2AUjIJRMNIBAIFSTwLACAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="28">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC9NlYGDQphIGAV0gtqMS1oViagFk85yRxMll08p9oLDUQRLXYiAvPmDmgcLSHsk8W4bR+CAGIMcHqRhb/CHHB6kYW/zRKz5IBaP5g7r+BYHR/DF488dwiA9C+YMaGOZGagIAyq/bacAIAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="20" height="28">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+WV3QqCUBCED/RCXfROlVl6XZl/L94O7Qebqd14Iw4M5O45IPM5lFJKZ/PRfDLn5qv5Zs7MF5+xZ1cO5pqhp/lufphrc2NuzZX55TP27PrBvE3f2i/0ew1StkV4FgMxgknMPvd96bvCz+bhvrLtwrMYiBFMYva173vfdX62HrzjlnjwjSvX2Am6oMzLkTniLuIbV66xE036MFHm/cgccTfqX6aH3fRubTzIGM31AF5wgmUW7pMxmusBvOAEy2rwjlvqh3JVnrEPsTMwmeoHZ5FyVZ5N+s1ZDGAy1Q/ORm2Jxxr+z5fSG9UBvRjACAAA
+  </data>
+ </layer>
+</map>

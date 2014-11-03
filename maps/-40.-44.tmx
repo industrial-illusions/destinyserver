@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="35" height="35" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Golbat,40;Claydol,25;Mawile,30;Altaria,5;"/>
+  <property name="dayPokemonLevels" value="54-56;54-56;54-56;54-60;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Golbat,50;Sableye,10;Banette,20;Dusclops,20;"/>
+  <property name="nightPokemonLevels" value="54-60;54-56;58-62;58-62;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" name="Untitled" tilewidth="16" tileheight="16">
+  <image source="PGTileseti.png" trans="000000" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1025" name="Untitled" tilewidth="16" tileheight="16">
+  <image source="PGTilesetxi.PNG" trans="000000" width="512" height="512"/>
+ </tileset>
+ <layer name="Grass" width="35" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2USwqAMAxEuym9q+BZnZt4BRduYmhrVTIozoPQtAQ65JeSEEII8V3mcrxPpe5HseR7FgHybutFi8D/AXPCvbG19OJg7A9abC1G4iJrNKqF0S9v1HLWL8w58rML5zP6pbVfWvuGmZdafhhahBBCPGcDY3JIzSQTAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="35" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2UWwrDIBBFk4/gzvp+7KJpKbS7aLu97sQldCQZEgYbk+JNf+6BC0p0PFGxKAghhJBhSsnRNdlJ9pJD219LNpJt5FsIwuXumlza+tdIX9s3141HuKTw1e9zp2Drvasu3rStH8JF10thfVD70l9nIXdhabKK3A/0GQVOsm5tcp7ZRc/JemgU3UOkix/pomNRd3eqi/2P3C7KQ9Z99hI8Xn+6u4HYezKny7f3dczcHKTqDfnldCkzBAG6PiGEIPgAFdWQaCQTAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="25" tilewidth="16" tileheight="16">
+<properties>
+  
+ <property name="isCave" value="false"/>
+
+ <property name="pvp" value="disabled"/>
+
+ <property name="xOffsetModifier" value="0"/>
+
+ <property name="yOffsetModifier" value="0"/>
+
+</properties>
+
+<tileset firstgid="1" source="Battle Hall Lobby.tsx"/>
+ <tileset firstgid="193" source="SinnohInteriorSet4.tsx"/>
+ <layer name="Walkable" width="30" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3NyTPXcRzH8d+f4NiMFhJJSGStiCxFyU2R5RTK0qCs2YfKUtGULWUZ+TN7HH4HDk6fXMz3OfOY+cz78HnFYlFRUVEnSzijfy8ceydykUtc5gpJAX8nc5UUrpFKGtdJ5wYZ3CSTLLK5RU7A7m1yyeMO+RRQSBHFlHCXe9ynlDIeBOyWU8FDKqmimhoe8Zha6njCU+p5RkPA7mk18pwXNNHMS1popY32/7z5ig466eI1b+imh176eBuwMU0/AwzyjvcMMcwIo4wxzgcmmGQqYPcbM8wyF7/Ns8BHPvGZRZZYZoUvfA3cXWWN7/HbD36yzgabbLHNL3b4zZ+A3V322OcgfjvkL0cB/0ZFnbf+AazLIpu4CwAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="30" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Nyw2CUBRFURBUUIT4AYJdgcJcPqVYAiXQJ3tABy9594XcnazRGRzP0zRtj/k4IECII044I0KMC65IcEOKzPD3jgeeeCFHgXLbK7wNPzS5ajT44IsWnYXfH3oMGDFZ+HSpv9DvLPS7CP1qmuutJfnxsrgLAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="30" height="25">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3FoQEAAAgDoPl/9l+zWSMUEgCuuvYA8G0AwLyQlLgLAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,14 @@
+[npc]
+Guardian
+down
+36
+14
+15
+NULL
+0
+-1
+0
+false
+false
+false
+[/npc]

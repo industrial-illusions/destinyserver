@@ -1,0 +1,56 @@
+[npc]
+Youngster Calvin
+down
+353
+43
+11
+Poochyena,5
+1
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Bug Catcher Rick
+down
+354
+33
+16
+Wurmple,4,Wurmple,4
+2
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Youngster Allen
+down
+353
+25
+11
+Zigzagoon,5,Tailow,3
+2
+-1
+0
+false
+false
+false
+[/npc]
+[npc]
+Lass Tiana
+right
+272
+18
+18
+Zigzagoon,4,Shroomish,4
+2
+-1
+0
+false
+false
+false
+[/npc] 

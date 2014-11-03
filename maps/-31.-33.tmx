@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="18" height="11" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal8.tsx"/>
+ <tileset firstgid="1025" source="SinnohInteriorSet0.tsx"/>
+ <tileset firstgid="1393" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="1723" source="InteriorFloor2.tsx"/>
+ <tileset firstgid="2419" source="Interior - Furniture.tsx"/>
+ <tileset firstgid="2719" source="InteriorWalls 1.tsx"/>
+ <layer name="Walkable" width="18" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGL6gigWB0fn48DwGhB5S9OHCo+bQ1xxqAAA/2CMZGAMAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="18" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBngCQft7ZBip70dMMDIBaGZuCgzhxuqn4dCc2jtnnZg2HbQMXwBPwuFyxgDAAA=
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="18" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSgAwA9/TNpGAMAAA==
+  </data>
+ </layer>
+ <layer name="Collsions" width="18" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGFygkBXBzudGYGIATB3IDGRzKrlRaVLcgmwOuWDUHPqagw8TqxYApAABsxgDAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="18" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGHwgnxuCb3MwMNwB4rscCDF8GAQKuBHmVHJD8GMOCP8pB0IMHwaBKm4GooE4O3X8LQ80RwGKpfGYeZ2DOvYNV3OoAQCCsvKTGAMAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="18" height="11">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGB6gFojrgLiBBD3s7Jhic6H0AhLtlwCaJQnEwljMhIHzHCQaOsLMGUwAACoX7/EYAwAA
+  </data>
+ </layer>
+</map>

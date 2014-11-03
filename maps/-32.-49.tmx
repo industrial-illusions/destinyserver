@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="9" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Swinub,40;Golbat,30;Delibird,20;Zubat,5;Jynx,5;"/>
+  <property name="dayPokemonLevels" value="23-25;24-24;24-24;24-24;24-24;"/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Swinub,30;Golbat,30;Delibird,20;Zubat,5;Jynx,5;Sneasel,10;"/>
+  <property name="nightPokemonLevels" value="23-25;24-24;24-24;24-24;24-24;22-26;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal9.tsx"/>
+ <tileset firstgid="1025" source="Caveset 2.tsx"/>
+ <layer name="Walkable" width="20" height="9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWDFRxipq364QgA4A2LQdACAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="20" height="9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXUAifZB9Y8ats/FAEAzWVdRdACAAA=
+  </data>
+ </layer>
+ <layer name="Grass" width="20" height="9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACzvEzMBwaBQPSgwCtFQ/HDEAqsiGddACAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NkZ2BgpCPGBUjRi88cYs0lRQ+p8tjU4uJjM5OQecSKYTMPWYzYcCUnLvCppyUGAL52o9DQAgAA
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="20" height="9">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXUAivZaat+FBAGAFNYi+/QAgAA
+  </data>
+ </layer>
+</map>

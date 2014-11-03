@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 11.tsx"/>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TQQqAMAxE0VyzWjFL738CBTvQRRWhGLL4D4YKCh0kMQMAAJhTJkI/s/3KOsjSUrpnRd9E8NZB59d40n6H3f+uJu0XPX+aqaz9tB/bS49Rdw/q93R/v7/Z+mkHlDp4F7UfAAAAwJ9ObRrcsgAZAAA=
+  </data>
+ </layer>
+ <layer name="Walkable" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQ0AIAwDsH4O/Rxe6ABVJVvKkiWJAACAmiz2L3VswjTrZnefAACAzw5/vUFdABkAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2TywoCMQxF5xP6i76Q8YGIiDDgLARn4U6/2AQSKCHqDDVd3QOHaVNumkWnaQAAAAAAypiRS3IuLrI1uzJ7dV1pvpbckRtxm63ZvdmrhwqzJfJoaqeR2cufZ/FI8u0mZAYxz0eh/W+F+Si0/6MwHwX3f5Iv5+ws/spH8ql/T17F3jnTWo357P0Mv/+7ODhnNf8Pe//UfCQp06uNEQAAAAAAgG+8ARBwL5UAGQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3FIQ6AMAAEwf4bHHVAEJTw3Z6swiI6k2y2FACA+VxpSWs6056O4X9705ZqetKd2nAAAADgWwfu6JJPABkAAA==
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="40" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OQREAAAgDoNW3tSl2PoQEJAAAQMtcBwAAAJ5aKMkwewAZAAA=
+  </data>
+ </layer>
+</map>

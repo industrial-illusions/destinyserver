@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="45" height="45" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" source="Hoenn Victory Road.tsx"/>
+ <layer name="Grass" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YSw6AIAwEUK7kIVh6/+u4NwJT7PRDuujOyGMYYmJvrXXyXIrDtvbXOmUu82idTOYMd7DMvn2e7Qfda0QzyxTFbNHB1TOoWaNDN5AhakYsGh0avYN1ZqeY0U7MzMy78V4P7SRi1rg3qFmaK8ssyRlZ4+u9f3uxY9boGrPLDLPFZDRbnmmZyxzNbPFtPtnM2L9kX6dlkCFz7ylzmVfmTFl55SsxZ+wCOztvA+OcozgzmFf/KGr2M/V2zM55txMeHUH/j6HzAEN3ImykHwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZMQqAMAwF0Mzex010kR7F+x9BOhREYm21SRr9b5RQPxR+EIkAAL5jsA4AAL8xWgcA1wLzbGVmuLk0OzVNdK9F5vO8lEXpPS1JZpY622NmSR4zQ18C8T1q0fmlcpm1Ot/aTNe7L9K4v9r+ye3rSOP+SjI/6VXrLvaYGXTg+/E9rrs28rEnj1LmnvZkbQ/10FseM1tDD/mDfx3ftwPkpPRqpB8AAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC8WZTW4CMQyFva16HFi2rOisKKvpDu5/jRJprL4+bMeeP54UlQ6Z5Evi2E4Q2Vbjo3yvVH42ZlUN8HkJf+M9v4B5mMmtvK9iHryKhg6PcpQ/3i2ZcS6v8LzK3NS492D2bOAqdea95lnn0+NGfTzKp1Hepu/fH+W+I/NgMJ2o7jngxqLcezBzP2wbOH899vtGvMo1h3kvX2ZpL+Y1Y6z6B2Ye5XkPzmFW1tZWZEtt73j2dgq4kcPyc8h8Mdqx8o2sv7TWOWLR58jBc6zMPVbON7Zkvkns56TIGzGP8pz3VZktv+yNLfJxJ3mOg9yO7hMePz7bKo+1eHWuIuaMreyZE1aYPd/X5ljnW+RvDUanTiY/8nKJDLPaBf71eJGZfYK3ryy/gczYn8h/f+kxay6G3ChmEbHZquc35cFcUNu+JpiRe6mydq8+Wud1nJ6zn7tM/1vM1bzcU+R7cQ04Vg70HfKeZVvmSMjJsZKZkTfLHOUZazCzsH/mZeaesnEtoyyz1p3LzO3iu9W1sM5UWrfC7NmG5fOtvcIMkbA9XrcMM+bQHvNl+hztlUpMj+Ygw2xxozhWW3HNG5fmo9Z5G9/BfrPMzF2R3ptwLEB5a8cxr8o8dz82O77Ls630mD3twaxzzLbS4/A0l7niuyyf2WOO4rp3Nu8xe/7TOzvz2Q/vfJbmXBXm6nnEWo+lvLpXtmJGrZXT6nojd8TciyNcl/1WdU9bewjvQ3vMmTjCdaPzVob3HnBnmFHHQt8ZNu+eVrk9VZj1t5g1ZPmj7P2yxRzdVR0KXNG9kNpn5m7fezfi5Wda8LeOaJ17fWfGaL2LvI3zayoeb6XtaO5xXD2bYN2AdSlnZQxNc/3/L11fTPqkHwAA
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQ0AIAgAQTobMe4/rUwBFnfJ9x8BAAAAAHTaVVZnegQA+MKq7vQE0OYB9BvCfKQfAAA=
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SUQkAIBBEQb+MaAT7RzCDCh4rMwkey7YGAAAAAMCOUR1wYFYHHND8RmIzbyR+I7G5VwdcSNw7sZn/LJ8xyiCkHwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="45" height="45">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VMQqAMBAEwHxFO/3/A60O4QhJGk0gM7Bcs/VeKQAAwJ+OSs6BTqv/tauSe6DT6gPwim2Pm7Oi2Pa4OTvo/esZP7un96/9bGBFeVfzXVHe1XwB2NsDQW12/KQfAAA=
+  </data>
+ </layer>
+</map>

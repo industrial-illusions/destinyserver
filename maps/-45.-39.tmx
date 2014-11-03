@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="45" height="35" tilewidth="16" tileheight="16">
+<properties>
+
+  <property name="dayPokemonChances" value=""/>
+
+  <property name="dayPokemonLevels" value=""/>
+
+  <property name="isCave" value="false"/>
+
+  <property name="nightPokemonChances" value=""/>
+
+  <property name="nightPokemonLevels" value=""/>
+
+  <property name="pvp" value="disabled"/>
+
+  <property name="waterPokemonChances" value=""/>
+
+  <property name="waterPokemonLevels" value=""/>
+
+  <property name="wildProbability" value="0"/>
+
+  <property name="xOffsetModifier" value="0"/>
+
+  <property name="yOffsetModifier" value="0"/>
+
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 9.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 10.tsx"/>
+ <tileset firstgid="513" source="Hoenn Interior Set 13.tsx"/>
+ <layer name="Walkable" width="45" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2U2wqAMAhA7VP6/6/LGvXYQwVjbEIXzOIcEHE+7CBuIgAAAPB3hofii86e/sc948WY9uzprHJvpmnPmkVkZ82co81ZjYjqHO0N5s7l3PquPcuoztbOtnrpZWdrZ8teXns51/ws51m2f3mp1F7OpUPrLMI+AwAAAJxhBQRBVmCcGAAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="45" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3QSwqAMAyE4cSlt1DwAbqr97+aTVeWQkERJMX/g8liVmFEAAAARDqtx6te68G3Ntt8Z/dXJttvtixFVnZ9JNheg2W0HHp1Sd55Uvu57DwJ2U/lznnnSYs/33Wm0/D/AADgnyI6P6KvnBgAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2UyQrDMAxEo0AXCt1b0pWuP9ZT/v8POpcQI1RiN8F1yjwYsIU0Gl+cZYQQQgj5d3Jpls98TCbSrAE0hEZKY6fH941tKQ3/V16rYoq+GTRXWjjz7htjZ7bYoq8wtPsw7+v7Db7eZ/RdDF0TzpyKr/Ze4rxSu6xaqG/XtMm8Rn0j9j3VzEfUT2LfY2Xe43xQu6xaxQP1p9j3WJlvON/VLqsW6ts1ff03QhQy92tCcqSQlxBCCOkLb0pjYYmcGAAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="45" height="35">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQkAIRAEwDu7UfhAu7H/RjQzNBV+BjZY2GAjAADeUzOi5emznLyq779j58v7FgAAAP5sAQMBdLWcGAAA
+  </data>
+ </layer>
+</map>

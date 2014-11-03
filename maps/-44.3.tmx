@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="75" height="75" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value="Zubat,10;Golbat,25;Whismur,5;Loudred,10;Makuhita,10;Hariyama,25;Aron,5;Lairon,10;"/>
+  <property name="dayPokemonLevels" value="36-36;38-40;36-36;40-40;36-36;38-40;36-36;40-40;"/>
+  <property name="fishPokemonChances" value=""/>
+  <property name="fishPokemonLevels" value=""/>
+  <property name="isCave" value="true"/>
+  <property name="nightPokemonChances" value="Zubat,10;Golbat,25;Whismur,5;Loudred,10;Makuhita,10;Hariyama,25;Aron,5;Lairon,10;"/>
+  <property name="nightPokemonLevels" value="36-36;38-40;36-36;40-40;36-36;38-40;36-36;40-40;"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="10"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Hoenn Victory Road.tsx"/>
+ <layer name="Grass" width="75" height="75">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ZQQ7CMAxE0V6JQ3TJ/a/DElS1zTh1PE35T8oKCZSPE0AsCwAAAAAAAGayFqxX4lrHZJBUdMpsRita0Sp+P9Gq5i6nFa1olXdfnXVUG9Pq+5jy/C600lXdMa3XmKFVZK9H6720Z0Ztdef7Sn0vW2dOOYuzfw7SSre3T/XsnbUaefe5bPep3jlKq2g79TPVRdm30mFEqxnmStnb3n6unr+ZWmXcJSPvqie1qli0ii0XWulopaOVjla6SKuK3zC0ek6rzNXTM9rexTkf/z5XV2eMVrSiFa2OVLTKfl6XkbMx6nuYS2arqu+qLiP3lLl++7u4G/TMqou7RasPreKdaNW3XO4wQ7TS/htVzt52uVTNz1G7SCN3KwAAAAAAAPT5ADHf9CnkVwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="75" height="75">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3aMQ6CQBAF0K29j53RxnAU738EQ2Fj1nUXMQPDeyXZYvIhmQ+hFAAAAAAAAH51ih4AAOh2jh4A+GqqXLtXztTOvc5eVp1ou9bI6v18NrfoAXbkn1lluw+y2gZZAS1TqfegI3XFXq2ssnfFaNfyuavPMj+vo3u89V4zy/y89mS1pBcdtUvJCmL5Ps+oWgd4lNw9aalWVll70ojRfX7k/S+r/bBXoc6/nAAAAABApCe9FEh75FcAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="75" height="75">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2ay27jMAxFuR30c9rlNKtOVpms0l3z/7/RCDARzi1JSX7SHh5ASODID51QMiWbKEmSJEmSJEmSJEmSJEme3B7l70zlc+VrX5uz+D7FW/H0sdpVb8MZvo/xxZ7+N1dnq6LC66O80dPTEV3J2LmK7b2uCsXXkV1Zfe1K/a6OHlccP5Yvye9HeVfKr+H3l0e50/FdlYIuTlD3Q6mjFfZ1NKQrbB/2QRkvNWf3ha53S8a6OmLc1Di6qznnIny/Q1c3+jm278kVOypt8MaKMiZb48mJbF+y/Vq+IF1dlONEmg+25jtaf6odo2yX7ceYouGYNUdR5oNLuvoiP18o9HiK6Kr0S4z3XldaXmU59XKFE8XJ2/H6efzF/1tuW2rc0DzxfxTRVUufXOua5b00sisrhygxxfFF9Iy5m1GnZd5seYjsivuf/LQ8SVd4j7PGa+0+WGAP8nxE/+Yd0Vzx2oD0JUEHRLqT3nyIPci1CT72leK6kr6m0to2zrE4jm7DdswXLrRtPqq56l2Ps/ByJ9lmzO3P8Jv0tGVsLenKQ7YZc3t0JT1Fd+XNA8fitVmeHz1FcVWjNQ9vodUV192bK9xP7tsbe9raMdfdgyurD2rXqI3B2HYPeTyM08iu5BqW5eoyfPfG4J52eO4ju9J8SXBOo+Xhlk9el9Ge38h95Hmju0JfPfDzTswh8TwSucbH+1ydutFcjR3nyzh1p599Es9Dzu+1ukdxxTGFfRLPg/t414R1I7vqyQF43ovb8DwSb/5jPeuJ6srKf6xnMbi2Lp8RT52L78FV73Vp8TfVE4+FR3OFx51jbYfjO8K7Mp6rWv6JdfH+33uv0MZI+X5MVFct+SfW9daVa3DsWL4KUV1J3mY8n3V/ZU/ee0N7cMXvuM6Bdn9tfb8qkivvmfprxzG958g8/rS8yxft3T7PE27jIt/l9PpTa5t7vNVib0mkp+Lnz1AsT2PbhD6kzy3b30Nxwo6m+umNh62f9yVJkiRJkiRJkiRJkiTr8A2zJIT85FcAAA==
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="75" height="75">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQkAIAwAwXQ2Ku4/rVkgrUG4g+8/AgAAAAAAAAAAAAAAgF/MbGW7ewQAAIDSyE73BAAAAAAA8MwFCvXDNeRXAAA=
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="75" height="75">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TQQ0AIAwEwb6QiAT8S8DC/UrJjILLpq0CAAAAAAAAAAAAAAAA+MvuHjDI6R4wiFY5rXJaQS8/mNMqt7oHDOS+cloBAAAAALzpAkLF0A/kVwAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="75" height="75">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XwQnAIBAEQFtJfkn/BeZ1CIeoHyHoDCz32QL2SgEAAAAAAAAAAPiPq5F7otPr7+pp5J3o9PoAADuITRg3hyo2Ydwc1hn9NSf9NiOjv8ZvAwB7yrsoX6q8i/IFAAAAAAAA1vsAkBr04ORXAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="22" height="20" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="normal2.tsx"/>
+ <tileset firstgid="1025" source="InteriorFloor 1.tsx"/>
+ <tileset firstgid="1355" source="various1.tsx"/>
+ <layer name="Walkable" width="22" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgoB1gYqEuJtZcUt0xXM0F4UpGBoYqRuqGL63ibdTcUXNHzR255tICAAD3Yaan4AYAAA==
+  </data>
+ </layer>
+ <layer name="Walkable" width="22" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAXUBHqsA+0CBKhjYWCoh+IGloF2zSgYBaNgFNAXAADll4kz4AYAAA==
+  </data>
+ </layer>
+ <layer name="LedgesLeft" width="22" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMglEwCoYfAABGqpj94AYAAA==
+  </data>
+ </layer>
+ <layer name="LedgesRight" width="22" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMglEwCoYfAABGqpj94AYAAA==
+  </data>
+ </layer>
+ <layer name="LedgesDown" width="22" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAWjYBSMglEwCoYfAABGqpj94AYAAA==
+  </data>
+ </layer>
+ <layer name="Collisions" width="22" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC8WSzQ3CMAyFLVC9CNw5UykjsAAVg7Ah9ERzgkxDntRIJjh/FRVPstTGyecXx0Trqd8SnTZ6aDmT2Y+c5EqNTHRjPQcZZW3XEe27PNd65qORCx0KXOeZz0bu0TP7DFfr5yDy+MbZQUScS3FLSvUhzv2bixnBrFyVPSMv52JGLH/Wuc+1bIErvYRzQZgRJ/5RZ5qZrsCN/U38vR72o84rqlXDDeekcOc15gF3PkfzK2Mp1yl9qfGb8pHyBMn3relvjSdIvu8vufJ9TePda+PS6LFVbyjsf5DgBgAA
+  </data>
+ </layer>
+</map>

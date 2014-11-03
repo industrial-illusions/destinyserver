@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="40" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="dayPokemonChances" value=""/>
+  <property name="dayPokemonLevels" value=""/>
+  <property name="isCave" value="false"/>
+  <property name="nightPokemonChances" value=""/>
+  <property name="nightPokemonLevels" value=""/>
+  <property name="pvp" value="disabled"/>
+  <property name="waterPokemonChances" value=""/>
+  <property name="waterPokemonLevels" value=""/>
+  <property name="wildProbability" value="0"/>
+  <property name="xOffsetModifier" value="0"/>
+  <property name="yOffsetModifier" value="0"/>
+ </properties>
+ <tileset firstgid="1" source="Hoenn Interior Set 12.tsx"/>
+ <tileset firstgid="257" source="Hoenn Interior Set 0.tsx"/>
+ <layer name="Walkable" width="60" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3RoQ0AIBAEwbcYQBH6rxQKQCDIY2aSK2BzEQAAAMCN8mm/1L2WvJ5SdjYi/9uZUnamV69evXr16gUAAHhjAaHAYuaAJQAA
+  </data>
+ </layer>
+ <layer name="Walkable" width="60" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SsQ2DQBAEQOjDNEBJWBQBLspkdkmUwgWQEDj61xkxI23w0ku7wTUNAAAAUEpf6e+VrW32gvKmyBwZIs/IuL9fmaP46Z3QuSR0Hj4Jnd+Ezrtyz/W55//1iHTZIwAAAE42xVXq3YAlAAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="60" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SQQqAIBCFYT1C7WpXbYo23b7r1SJBZCwwTJz+D4YIXr6GMgYAAAAAgDSNN61wHc4Zz5mCrDR+VjrL5eZPNpN13vTCdblya5CVxs9KZ7nclnmnGFuot1Q3++ruztW5P9zn7L7D99Xdzf+su5t9dXfbhHnzbOysWtT87gAAAPifA4FEjEuAJQAA
+  </data>
+ </layer>
+ <layer name="Collisions" width="60" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OsQ2AMBAEQdMiiAIQkXHDLocLSMnQk8xIG/xH1xoAAADwtePlf6a5VC6p0dOV1rSl/bnHn6MAAAAAAArcfIMbuoAlAAA=
+  </data>
+ </layer>
+ <layer name="WalkBehind" width="60" height="40">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3KMQ0AAAwDoGqZf5FT0aQH3CQAAADQc6ULAAAAAAALHk9akvyAJQAA
+  </data>
+ </layer>
+</map>
