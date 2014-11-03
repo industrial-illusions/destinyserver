@@ -611,6 +611,7 @@ public class WildBattleField extends BattleField
 					break;
 				}
 			}
+			@SuppressWarnings("unused")
 			ArrayList<StatusEffect> temp = getActivePokemon()[party].getStatusEffects();
 			getActivePokemon()[party].switchOut();
 			m_active[party] = switchin;

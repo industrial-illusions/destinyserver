@@ -15,6 +15,7 @@ import org.jboss.netty.channel.SimpleChannelHandler;
 public class ConnectionHandler extends SimpleChannelHandler
 {
 
+	@SuppressWarnings("unused")
 	private String name = "";
 	private LogoutManager m_logoutManager;
 

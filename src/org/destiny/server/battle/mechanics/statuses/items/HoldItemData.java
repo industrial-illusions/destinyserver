@@ -71,7 +71,7 @@ public class HoldItemData
 	/**
 	 * Get an item set corresponding to the named species.
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public SortedSet<Object> getItemSet(String species)
 	{
 		Object o = m_exclusives.get(species);
@@ -86,7 +86,7 @@ public class HoldItemData
 	 * Read item data in from an arbitrary input stream.
 	 * To be only only by the client - does not initialise for battles!
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public void loadItemData(InputStream input) throws IOException, FileNotFoundException
 	{
 		ObjectInputStream stream = new ObjectInputStream(input);
@@ -104,6 +104,7 @@ public class HoldItemData
 	/**
 	 * Remove an exclusive item from a pokemon.
 	 */
+	@SuppressWarnings("rawtypes")
 	public void removeExclusiveItem(String name, String pokemon)
 	{
 		Object o = m_exclusives.get(pokemon);

@@ -178,6 +178,7 @@ public class PokemonMove implements Cloneable
 	 * of the status effect is returned by this method. Otherwise, the method
 	 * returns null.
 	 */
+	@SuppressWarnings("rawtypes")
 	public Class getStatusException()
 	{
 		return null;

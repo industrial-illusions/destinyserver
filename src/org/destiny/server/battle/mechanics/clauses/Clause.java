@@ -28,9 +28,11 @@ import org.destiny.server.battle.mechanics.statuses.items.HoldItem;
  * 
  * @author Colin
  */
+@SuppressWarnings("unused")
 public abstract class Clause extends FieldEffect
 {
 
+	@SuppressWarnings("rawtypes")
 	public static class ClauseChoice implements Serializable, Comparable
 	{
 		private static final long serialVersionUID = 1L;

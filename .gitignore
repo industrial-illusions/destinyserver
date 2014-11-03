@@ -3,3 +3,5 @@ server.jar
 bin
 updates
 logs
+errors.txt
+conf/database.txt

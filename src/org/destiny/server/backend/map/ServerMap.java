@@ -682,7 +682,7 @@ public class ServerMap
 	public void loadData()
 	{
 		/* Load all npcs and warptiles */
-		File f = new File("res/npc/" + m_x + "." + m_y + ".txt");
+		File f = new File("npc/" + m_x + "." + m_y + ".txt");
 		if(f.exists())
 			try
 			{

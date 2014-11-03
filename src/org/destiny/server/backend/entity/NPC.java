@@ -188,18 +188,18 @@ public class NPC extends Character
 					else
 					{
 						lvl = 7;
-						poke = Pokemon.getGymLeaderPokemon("Onix", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Stealth Rock", "Earthquake", "Stone Edge", "Taunt");
+						poke = Pokemon.getGymLeaderPokemon("Onix", 14, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Tackle", "Screech", "Tackle","Tackle");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Golem", lvl, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Stone Edge", "Earthquake", "Explosion", "Sucker Punch");
+						poke = Pokemon.getGymLeaderPokemon("Geodude", 12, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Tackle", "Defense Curl", "Mud Sport", "Rock Polish");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Kabutops", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Rapid Spin", "Stone Edge", "Aqua Jet", "Waterfall");
-						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Omastar", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Stealth Rock", "Spikes", "Surf", "Ice Beam");
-						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Aerodactyl", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Stealth Rock", "Earthquake", "Rock Slide", "Taunt");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Tyranitar", lvl, PokemonNature.N_NAIVE, 0, 0, 0, 0, 0, 0, "Flamethrower", "Ice Beam", "Crunch", "Superpower");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Kabutops", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Rapid Spin", "Stone Edge", "Aqua Jet", "Waterfall");
+						//party[2] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Omastar", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Stealth Rock", "Spikes", "Surf", "Ice Beam");
+						//party[3] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Aerodactyl", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Stealth Rock", "Earthquake", "Rock Slide", "Taunt");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Tyranitar", lvl, PokemonNature.N_NAIVE, 0, 0, 0, 0, 0, 0, "Flamethrower", "Ice Beam", "Crunch", "Superpower");
+						//party[5] = poke;
 					}
 
 				}

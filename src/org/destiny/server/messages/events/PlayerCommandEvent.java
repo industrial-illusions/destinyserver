@@ -53,6 +53,12 @@ public class PlayerCommandEvent implements MessageEvent
 			if(checkPermission(session, UserClasses.SUPER_MOD))
 				processPlayerWarp(session, playernames);
 		}
+		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("item "))
+		{
+			String playernames = input.substring(5);
+			if(checkPermission(session, UserClasses.SUPER_MOD))
+				processGetItem(session, playernames);
+		}
 		else if(input.length() >= 6 && input.substring(0, 6).equalsIgnoreCase("reset "))
 		{
 			String playername = input.substring(6);
@@ -257,6 +263,23 @@ public class PlayerCommandEvent implements MessageEvent
 		session.Send(message);
 	}
 
+	private void processGetItem(Session session, String string)
+	{
+		//String[] text = string.split(",");
+		//Player player = ActiveConnections.getPlayer(text[0]);
+		//Player player2 = ActiveConnections.getPlayer(text[1]);
+		//ResultSet player1Result = m_database.query("SELECT `username` FROM `pn_members` WHERE `username` = '" + players[0] + "';");
+		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
+		message.addInt(4);
+		//m_database.query("UPDATE `pn_members` SET x = " + player2.getX() + ", y = " + player2.getY() + ", mapX = " + player2.getMap().getX() + ", mapY = " + player2.getMap().getY()
+		//		+ " WHERE username = '" + players[0] + "';");
+		message.addString("Command not yet available.");
+	}
+	//else
+	//	message.addString("Player " + players[0] + " does not exist.");
+		
+	//}
+	
 	private void processPlayerWarp(Session session, String playernames)
 	{
 		String[] players = playernames.split(",");

@@ -49,7 +49,7 @@ public abstract class BattleField
 	 * A wrapper for a pokemon and a turn. Can be compared on the basis of
 	 * move priority, or, failing that, speed.
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected static class PokemonWrapper implements Comparable
 	{
 		private int m_idx;
@@ -962,7 +962,7 @@ public abstract class BattleField
 	/**
 	 * Determine the order in which pokemon attack, etc.
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private void sortBySpeed(Pokemon[] active)
 	{
 		/* Sort pokemon by speed. */
@@ -979,6 +979,7 @@ public abstract class BattleField
 	/**
 	 * Tick status effects at the end of a turn.
 	 */
+	@SuppressWarnings("rawtypes")
 	private void tickStatuses(Pokemon[] active)
 	{
 		sortBySpeed(active);

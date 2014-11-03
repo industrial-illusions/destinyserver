@@ -5209,7 +5209,7 @@ public class MoveList
 			}
 
 			@Override
-			@SuppressWarnings("unchecked")
+			@SuppressWarnings({ "unchecked", "rawtypes" })
 			public int use(BattleMechanics mech, Pokemon user, Pokemon target)
 			{
 				BattleField field = user.getField();
@@ -7602,6 +7602,7 @@ public class MoveList
 				return true;
 			}
 
+			@SuppressWarnings("unused")
 			public void beginTurn(BattleTurn[] turn, Pokemon p, int index)
 			{
 				if(p.hasEffect(SleepEffect.class) || p.hasEffect(FreezeEffect.class))
