@@ -65,6 +65,7 @@ public class GameServer
 	public static double RATE_EXP_POKE = 1.0;
 	public static double RATE_EXP_TRAINER = 1.0;
 	public static int RATE_WILDBATTLE = 8;
+	public static int RATE_KICKDELAY = 10;
 	public static final int AUTOSAVE_INTERVAL = 2; // Autosave interval in minutes
 	public static int REVISION = getServerRevision();
 
@@ -289,7 +290,8 @@ public class GameServer
 					RATE_EXP_POKE = Double.parseDouble(s.get("EXP_POKE"));
 					RATE_EXP_TRAINER = Double.parseDouble(s.get("EXP_TRAINER"));
 					RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
-					}
+					RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
+				}
 				/* No else since it's set to default 'false'. */
 				boolean autorun = line.hasOption("autorun");
 				GameServer.initGameServer(autorun);

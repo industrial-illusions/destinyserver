@@ -38,7 +38,7 @@ public class TimeService implements Runnable
 	private int m_forcedWeather = 0;
 	private boolean m_isRunning = true;
 	private long m_lastWeatherUpdate = 0;
-	private int m_idleKickTime = 10 * 60 * 1000;
+	private int m_idleKickTime = GameServer.RATE_KICKDELAY * 60 * 1000;
 	private int m_weatherUpdateTime = 15 * 60 * 1000;
 
 	private Thread m_thread;
