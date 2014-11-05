@@ -20,6 +20,7 @@ import org.destiny.server.constants.ClientPacket;
 import org.destiny.server.feature.TimeService;
 import org.destiny.server.feature.TimeService.Weather;
 import org.destiny.server.protocol.ServerMessage;
+import org.destiny.server.GameServer;
 
 import tiled.core.Map;
 import tiled.core.TileLayer;
@@ -664,7 +665,7 @@ public class ServerMap
 	 */
 	public boolean isWildBattle(int x, int y, Player p)
 	{
-		if(m_random.nextInt(2874) < m_wildProbability * 16)
+		if(m_random.nextInt(2874) < m_wildProbability * GameServer.RATE_WILDBATTLE)
 			if(p.isSurfing())
 			{
 				if(m_waterPokemonChances != null && m_waterPokemonLevels != null)

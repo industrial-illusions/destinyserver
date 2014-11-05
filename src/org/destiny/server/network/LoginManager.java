@@ -180,7 +180,7 @@ public class LoginManager implements Runnable
 	 */
 	private void attemptLogin(Session session, char language, String username, String password)
 	{
-		System.out.println("INFO: " + username + " attempting to log in.");
+		//System.out.println("INFO: " + username + " attempting to log in.");
 		/* Now, check that they are not banned. */
 		try(ResultSet rs = m_database.query("SELECT * FROM `pn_bans` WHERE `ip` = '" + session.getIpAddress() + "' OR `playername` = '" + username + "';"))
 		{
