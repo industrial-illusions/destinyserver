@@ -33,19 +33,19 @@ public class SaveManager
 		for(BagItem item : bag.getItems())
 		{
 			if(item != null && item.getQuantity() > 0)
-				m_database.query("INSERT INTO pn_bag (member,item,quantity) VALUES (" + bag.getMemberId() + ", " + item.getItemNumber() + ", " + item.getQuantity()
-						+ ") ON DUPLICATE KEY UPDATE quantity = " + item.getQuantity() + ";");
+				m_database.query("INSERT INTO `pn_bag` (`member`, `item`, `quantity`) VALUES (" + bag.getMemberId() + ", " + item.getItemNumber() + ", " + item.getQuantity()
+						+ ") ON DUPLICATE KEY UPDATE `quantity` = " + item.getQuantity() + ";");
 		}
 	}
 
 	public void updateBagItem(int memberId, int itemNumber, int quantity)
 	{
-		m_database.query("UPDATE pn_bag SET quantity = " + quantity + " WHERE member = " + memberId + " AND item = " + itemNumber + ";");
+		m_database.query("UPDATE `pn_bag` SET `quantity` = " + quantity + " WHERE `member` = " + memberId + " AND `item` = " + itemNumber + ";");
 	}
 
 	public void removeBagItem(int memberId, int itemNumber)
 	{
-		m_database.query("DELETE FROM pn_bag WHERE member = " + memberId + " AND item = " + itemNumber + ";");
+		m_database.query("DELETE FROM `pn_bag` WHERE `member` = " + memberId + " AND `item` = " + itemNumber + ";");
 	}
 
 	/**
@@ -70,10 +70,10 @@ public class SaveManager
 				poke.setAbility(IntrinsicAbility.getInstance(ab), true);
 			}
 			/* Insert the Pokemon into the database */
-			m_database.query("INSERT INTO pn_pokemon VALUES (NULL, '" + MySqlManager.parseSQL(poke.getName()) + "', '" + MySqlManager.parseSQL(poke.getSpeciesName()) + "', '"
+			m_database.query("INSERT INTO `pn_pokemon` VALUES (NULL, '" + MySqlManager.parseSQL(poke.getName()) + "', '" + MySqlManager.parseSQL(poke.getSpeciesName()) + "', '"
 					+ String.valueOf(poke.getExp()) + "', " + poke.getPokemonBaseExp() + ", '" + MySqlManager.parseSQL(poke.getExpType().name()) + "', '" + String.valueOf(poke.isFainted()) + "', "
 					+ poke.getLevel() + ", " + poke.getHappiness() + ", " + poke.getGender() + ", '" + MySqlManager.parseSQL(poke.getNature().getName()) + "', '"
-					+ MySqlManager.parseSQL(poke.getAbilityName()) + "', '" + MySqlManager.parseSQL(poke.getItemName()) + "', '" + String.valueOf(poke.isShiny()) + "', '"
+					+ MySqlManager.parseSQL(poke.getAbilityName()) + "', '" + MySqlManager.parseSQL(poke.getItemName()) + "', " + poke.getCaughtWithBall() + ", '" + String.valueOf(poke.isShiny()) + "', '"
 					+ MySqlManager.parseSQL(poke.getOriginalTrainer()) + "', '" + MySqlManager.parseSQL(currentTrainer) + "', '" + poke.getContestStatsAsString() + "', '"
 					+ MySqlManager.parseSQL(poke.getMove(0).getName()) + "', '" + (poke.getMove(1) == null ? "null" : MySqlManager.parseSQL(poke.getMove(1).getName())) + "', '"
 					+ (poke.getMove(2) == null ? "null" : MySqlManager.parseSQL(poke.getMove(2).getName())) + "', '"
@@ -82,9 +82,9 @@ public class SaveManager
 					+ poke.getEv(4) + ", " + poke.getEv(5) + ", " + poke.getIv(0) + ", " + poke.getIv(1) + ", " + poke.getIv(2) + ", " + poke.getIv(3) + ", " + poke.getIv(4) + ", " + poke.getIv(5)
 					+ ", " + poke.getPp(0) + ", " + poke.getPp(1) + ", " + poke.getPp(2) + ", " + poke.getPp(3) + ", " + poke.getMaxPp(0) + ", " + poke.getMaxPp(1) + ", " + poke.getMaxPp(2) + ", "
 					+ poke.getMaxPp(3) + ", " + poke.getPpUpCount(0) + ", " + poke.getPpUpCount(1) + ", " + poke.getPpUpCount(2) + ", " + poke.getPpUpCount(3) + ", '"
-					+ MySqlManager.parseSQL(poke.getDateCaught()) + "', " + poke.getCaughtWithBall() + ");");
+					+ MySqlManager.parseSQL(poke.getDateCaught()) + "');");
 			/* Get the pokemon's database id and attach it to the pokemon. This needs to be done so it can be attached to the player in the database later. */
-			ResultSet result = m_database.query("SELECT id FROM pn_pokemon WHERE originalTrainerName='" + MySqlManager.parseSQL(poke.getOriginalTrainer()) + "' AND date='"
+			ResultSet result = m_database.query("SELECT `id` FROM `pn_pokemon` WHERE `originalTrainerName`='" + MySqlManager.parseSQL(poke.getOriginalTrainer()) + "' AND `date`='"
 					+ MySqlManager.parseSQL(poke.getDateCaught()) + "';");
 			result.first();
 			int pokeId = result.getInt("id");
@@ -93,10 +93,10 @@ public class SaveManager
 		}
 		catch(Exception e)
 		{
-			System.err.println("INSERT INTO pn_pokemon VALUES (NULL, '" + MySqlManager.parseSQL(poke.getName()) + "', '" + MySqlManager.parseSQL(poke.getSpeciesName()) + "', '"
+			System.err.println("INSERT INTO `pn_pokemon` VALUES (NULL, '" + MySqlManager.parseSQL(poke.getName()) + "', '" + MySqlManager.parseSQL(poke.getSpeciesName()) + "', '"
 					+ String.valueOf(poke.getExp()) + "', " + poke.getPokemonBaseExp() + ", '" + MySqlManager.parseSQL(poke.getExpType().name()) + "', '" + String.valueOf(poke.isFainted()) + "', "
 					+ poke.getLevel() + ", " + poke.getHappiness() + ", " + poke.getGender() + ", '" + MySqlManager.parseSQL(poke.getNature().getName()) + "', '"
-					+ MySqlManager.parseSQL(poke.getAbilityName()) + "', '" + MySqlManager.parseSQL(poke.getItemName()) + "', '" + String.valueOf(poke.isShiny()) + "', '"
+					+ MySqlManager.parseSQL(poke.getAbilityName()) + "', '" + MySqlManager.parseSQL(poke.getItemName()) + "', " + poke.getCaughtWithBall() + ", '" + String.valueOf(poke.isShiny()) + "', '"
 					+ MySqlManager.parseSQL(poke.getOriginalTrainer()) + "', '" + MySqlManager.parseSQL(currentTrainer) + "', '" + poke.getContestStatsAsString() + "', '"
 					+ MySqlManager.parseSQL(poke.getMove(0).getName()) + "', '" + (poke.getMove(1) == null ? "null" : MySqlManager.parseSQL(poke.getMove(1).getName())) + "', '"
 					+ (poke.getMove(2) == null ? "null" : MySqlManager.parseSQL(poke.getMove(2).getName())) + "', '"
@@ -105,7 +105,7 @@ public class SaveManager
 					+ poke.getEv(4) + ", " + poke.getEv(5) + ", " + poke.getIv(0) + ", " + poke.getIv(1) + ", " + poke.getIv(2) + ", " + poke.getIv(3) + ", " + poke.getIv(4) + ", " + poke.getIv(5)
 					+ ", " + poke.getPp(0) + ", " + poke.getPp(1) + ", " + poke.getPp(2) + ", " + poke.getPp(3) + ", " + poke.getMaxPp(0) + ", " + poke.getMaxPp(1) + ", " + poke.getMaxPp(2) + ", "
 					+ poke.getMaxPp(3) + ", " + poke.getPpUpCount(0) + ", " + poke.getPpUpCount(1) + ", " + poke.getPpUpCount(2) + ", " + poke.getPpUpCount(3) + ", '"
-					+ MySqlManager.parseSQL(poke.getDateCaught()) + "', " + poke.getCaughtWithBall() + ");");
+					+ MySqlManager.parseSQL(poke.getDateCaught()) + "');");
 			e.printStackTrace();
 			return -1;
 		}
@@ -119,7 +119,7 @@ public class SaveManager
 	 */
 	public int savePlayer(Player player)
 	{
-		try(ResultSet data = m_database.query("SELECT lastLoginTime FROM `pn_members` WHERE id='" + player.getId() + "'"))
+		try(ResultSet data = m_database.query("SELECT `lastLoginTime` FROM `pn_members` WHERE `id` = '" + player.getId() + "'"))
 		{
 			fail = 0;
 			/* First, check if they have logged in somewhere else. This is useful for when a server loses it's internet connection. */
@@ -138,7 +138,7 @@ public class SaveManager
 						badges += "1";
 					else
 						badges += "0";
-				m_database.query("UPDATE pn_members SET " + "muted='" + player.isMuted() + "', " + "sprite='" + player.getRawSprite() + "', " + "money='" + player.getMoney() + "', " + "skHerb='"
+				m_database.query("UPDATE `pn_members` SET " + "muted='" + player.isMuted() + "', " + "sprite='" + player.getRawSprite() + "', " + "money='" + player.getMoney() + "', " + "skHerb='"
 						+ player.getHerbalismExp() + "', " + "skCraft='" + player.getCraftingExp() + "', " + "skFish='" + player.getFishingExp() + "', " + "skTrain='" + player.getTrainingExp()
 						+ "', " + "skCoord='" + player.getCoordinatingExp() + "', " + "skBreed='" + player.getBreedingExp() + "', " + "x='" + player.getX() + "', " + "y='" + player.getY() + "', "
 						+ "mapX='" + player.getMapX() + "', " + "mapY='" + player.getMapY() + "', " + "healX='" + player.getHealX() + "', " + "healY='" + player.getHealY() + "', " + "healMapX='"
@@ -166,12 +166,12 @@ public class SaveManager
 						}
 				// Save all the Pokemon id's in the player's party
 				if(player.getParty() != null)
-					m_database.query("UPDATE pn_party SET " + "pokemon0='" + (player.getParty()[0] != null ? player.getParty()[0].getDatabaseID() : -1) + "', " + "pokemon1='"
-							+ (player.getParty()[1] != null ? player.getParty()[1].getDatabaseID() : -1) + "', " + "pokemon2='"
-							+ (player.getParty()[2] != null ? player.getParty()[2].getDatabaseID() : -1) + "', " + "pokemon3='"
-							+ (player.getParty()[3] != null ? player.getParty()[3].getDatabaseID() : -1) + "', " + "pokemon4='"
-							+ (player.getParty()[4] != null ? player.getParty()[4].getDatabaseID() : -1) + "', " + "pokemon5='"
-							+ (player.getParty()[5] != null ? player.getParty()[5].getDatabaseID() : -1) + "' " + "WHERE member='" + player.getId() + "';");
+					m_database.query("UPDATE `pn_party` SET " + "`pokemon0` = '" + (player.getParty()[0] != null ? player.getParty()[0].getDatabaseID() : -1) + "', " + "`pokemon1` = '"
+							+ (player.getParty()[1] != null ? player.getParty()[1].getDatabaseID() : -1) + "', " + "`pokemon2` = '"
+							+ (player.getParty()[2] != null ? player.getParty()[2].getDatabaseID() : -1) + "', " + "`pokemon3` = '"
+							+ (player.getParty()[3] != null ? player.getParty()[3].getDatabaseID() : -1) + "', " + "`pokemon4` = '"
+							+ (player.getParty()[4] != null ? player.getParty()[4].getDatabaseID() : -1) + "', " + "`pokemon5` = '"
+							+ (player.getParty()[5] != null ? player.getParty()[5].getDatabaseID() : -1) + "' " + "WHERE `member` = '" + player.getId() + "';");
 				else
 					return fail;
 				/* Save the player's bag */
@@ -210,7 +210,7 @@ public class SaveManager
 		}
 		catch(Exception e)
 		{
-			System.err.println("UPDATE pn_members SET " + "muted='" + player.isMuted() + "', " + "sprite='" + player.getRawSprite() + "', " + "money='" + player.getMoney() + "', " + "skHerb='"
+			System.err.println("UPDATE `pn_members` SET " + "muted='" + player.isMuted() + "', " + "sprite='" + player.getRawSprite() + "', " + "money='" + player.getMoney() + "', " + "skHerb='"
 					+ player.getHerbalismExp() + "', " + "skCraft='" + player.getCraftingExp() + "', " + "skFish='" + player.getFishingExp() + "', " + "skTrain='" + player.getTrainingExp() + "', "
 					+ "skCoord='" + player.getCoordinatingExp() + "', " + "skBreed='" + player.getBreedingExp() + "', " + "x='" + player.getX() + "', " + "y='" + player.getY() + "', " + "mapX='"
 					+ player.getMapX() + "', " + "mapY='" + player.getMapY() + "', " + "healX='" + player.getHealX() + "', " + "healY='" + player.getHealY() + "', " + "healMapX='"
@@ -248,7 +248,7 @@ public class SaveManager
 		/* Update the pokemon in the database */
 		try
 		{
-			m_database.query("UPDATE pn_pokemon SET name = '" + MySqlManager.parseSQL(poke.getName()) + "', speciesName = '" + MySqlManager.parseSQL(poke.getSpeciesName()) + "', exp = "
+			m_database.query("UPDATE `pn_pokemon` SET name = '" + MySqlManager.parseSQL(poke.getName()) + "', speciesName = '" + MySqlManager.parseSQL(poke.getSpeciesName()) + "', exp = "
 					+ String.valueOf(poke.getExp()) + ", baseExp = " + poke.getPokemonBaseExp() + ", expType = '" + MySqlManager.parseSQL(poke.getExpType().name()) + "', isFainted = '"
 					+ String.valueOf(poke.isFainted()) + "', level = " + poke.getLevel() + ", happiness = " + poke.getHappiness() + ", abilityName = '" + ab + "', itemName = '"
 					+ MySqlManager.parseSQL(poke.getItemName()) + "', currentTrainerName = '" + currentTrainer + "', contestStats = '" + poke.getContestStatsAsString() + "', move0 = '"
@@ -266,7 +266,7 @@ public class SaveManager
 		catch(NullPointerException e)
 		{
 			e.printStackTrace();
-			System.err.println("Database is " + m_database);
+			System.err.println("Database is `" + m_database + "`");
 			System.err.println("Pokemon object is " + poke);
 			System.err.println("Database ID is " + poke.getDatabaseID());
 			System.err.println("Pokemon name is " + poke.getName());
