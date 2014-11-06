@@ -15,9 +15,13 @@ import org.destiny.server.network.MySqlManager;
 import org.destiny.server.protocol.ClientMessage;
 import org.destiny.server.protocol.ServerMessage;
 
+
+
 public class PlayerCommandEvent implements MessageEvent
 {
-
+//private Bag m_bag;
+private int m_money = 0;
+//private final Player m_player;
 	private MySqlManager m_database;
 
 	@Override
@@ -34,6 +38,7 @@ public class PlayerCommandEvent implements MessageEvent
 		else if(input.length() >= 4 && input.substring(0, 4).equalsIgnoreCase("help"))
 		{
 			/* TODO: Think of a practical way to implement help. */
+			processHelp(session);
 		}
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("mute "))
 		{
@@ -53,11 +58,28 @@ public class PlayerCommandEvent implements MessageEvent
 			if(checkPermission(session, UserClasses.SUPER_MOD))
 				processPlayerWarp(session, playernames);
 		}
+		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("warp "))
+		{
+			String playerstring = input.substring(5);
+			if(checkPermission(session, UserClasses.OWNER))
+				processWarp(session, playerstring);
+		}
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("item "))
 		{
-			String playernames = input.substring(5);
-			if(checkPermission(session, UserClasses.SUPER_MOD))
-				processGetItem(session, playernames);
+			String[] playerdata = input.substring(5).split(",");
+			String playername = playerdata[0];
+			int itemid = Integer.parseInt(playerdata[1]);
+			int qty = Integer.parseInt(playerdata[2]);
+			if(checkPermission(session, UserClasses.OWNER))
+				processGetItem(session, playername, itemid, qty );
+		}
+		else if(input.length() >= 6 && input.substring(0, 6).equalsIgnoreCase("money "))
+		{
+			String[] playerdata = input.substring(6).split(",");
+			String playername = playerdata[0];
+			int mny = Integer.parseInt(playerdata[1]);
+			if(checkPermission(session, UserClasses.OWNER))
+				processGetMoney(session, playername, mny);
 		}
 		else if(input.length() >= 6 && input.substring(0, 6).equalsIgnoreCase("reset "))
 		{
@@ -152,6 +174,42 @@ public class PlayerCommandEvent implements MessageEvent
 		}
 	}
 
+	private void processHelp(Session session)
+	{
+		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
+		message.addInt(4);
+		message.addString("List of available commands:");
+		message.addString("/playercount ");
+		if(checkPermission(session, UserClasses.DONATOR)){
+		}
+		if(checkPermission(session, UserClasses.MODERATOR)){
+			message.addString("/mute ");
+			message.addString("/kick ");
+			message.addString("/reset ");
+			message.addString("/unmute ");
+			message.addString("/announce ");
+		}
+		if(checkPermission(session, UserClasses.SUPER_MOD)){
+			message.addString("/ban ");
+			message.addString("/jump ");
+			message.addString("/unban ");
+			message.addString("/notify ");
+			message.addString("/weather ");
+		}
+		if(checkPermission(session, UserClasses.DEVELOPER)){
+			message.addString("/class");
+		}
+		if(checkPermission(session, UserClasses.OWNER)){
+			message.addString("/warp <player>,<location> ");
+			message.addString("/item <itemid>,<qty>");
+			message.addString("/money <player>,<qty>");
+			
+		}
+
+		session.Send(message);
+	}
+
+	
 	private void processPlayerClassChange(Session session, String playername, int adminLvl)
 	{
 		Player player = ActiveConnections.getPlayer(playername);
@@ -263,22 +321,31 @@ public class PlayerCommandEvent implements MessageEvent
 		session.Send(message);
 	}
 
-	private void processGetItem(Session session, String string)
+	private void processGetMoney(Session session, String playername, Integer mny)
 	{
-		//String[] text = string.split(",");
-		//Player player = ActiveConnections.getPlayer(text[0]);
-		//Player player2 = ActiveConnections.getPlayer(text[1]);
-		//ResultSet player1Result = m_database.query("SELECT `username` FROM `pn_members` WHERE `username` = '" + players[0] + "';");
+		Player player = ActiveConnections.getPlayer(playername);
 		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
 		message.addInt(4);
-		//m_database.query("UPDATE `pn_members` SET x = " + player2.getX() + ", y = " + player2.getY() + ", mapX = " + player2.getMap().getX() + ", mapY = " + player2.getMap().getY()
-		//		+ " WHERE username = '" + players[0] + "';");
-		message.addString("Command not yet available.");
+		m_money = m_money + mny;
+		player.setMoney(player.getMoney() + mny);
+		player.updateClientMoney();
+		message.addString("Something about "+ mny +" money..");
+		session.Send(message);
 	}
-	//else
-	//	message.addString("Player " + players[0] + " does not exist.");
-		
-	//}
+	
+	private void processGetItem(Session session, String playername, Integer itemid, Integer qty)
+	{
+		Player player = ActiveConnections.getPlayer(playername);
+		String itemname = GameServer.getServiceManager().getItemDatabase().getItem(itemid).getName();
+		System.out.println("Item: "+ itemname+" ("+itemid+") Qty: "+qty+".");
+		player.createItem(itemid, qty);
+		//Bag(player);
+		//ServerMessage update = new ServerMessage(ClientPacket.UPDATE_ITEM_TOT);
+		//update.addInt(GameServer.getServiceManager().getItemDatabase().getItem(itemid).getId());
+		//update.addInt(qty);
+		//session.Send(update);
+	}
+
 	
 	private void processPlayerWarp(Session session, String playernames)
 	{
@@ -352,6 +419,36 @@ public class PlayerCommandEvent implements MessageEvent
 			message.addString("An error occured trying to process the command.");
 			sqle.printStackTrace();
 		}
+		session.Send(message);
+	}
+
+	private void processWarp(Session session, String playerstring)
+	{
+		String[] str = playerstring.split(",");
+		Player player = ActiveConnections.getPlayer(str[0]);
+		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
+		message.addInt(4);
+		int x = 0,y = 0,mx = 0,my = 0;
+		String loc = null;
+		System.out.println("Warp Usage: "+ str[0]+" to "+str[1]+" ("+playerstring+")");
+		if(str[1].equals("pallet")){
+			mx = 3;
+			my = 1;
+			x = 512;
+			y = 440;
+			loc = "Pallet Town";
+		} else {
+			message.addString("An error occured. Usage /warp <player>,<city>");
+			
+		}
+		
+		if(loc != null){
+			player.setX(x);
+			player.setY(y);
+			player.setMap(GameServer.getServiceManager().getMovementService().getMapMatrix().getMapByGamePosition(mx, my), player.getFacing());
+			message.addString("Teleported to " + loc + " succesfully.");	
+		}
+
 		session.Send(message);
 	}
 

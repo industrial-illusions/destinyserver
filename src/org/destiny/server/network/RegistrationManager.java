@@ -105,31 +105,31 @@ public class RegistrationManager implements Runnable
 			}
 		}
 		/* Check if an account is already registered with the specified email address. */
-		data = m_database.query("SELECT * FROM pn_members WHERE email='" + MySqlManager.parseSQL(info[2]) + "'");
-		if(data != null)
-		{
-			data.first();
-			try
-			{
-				if(data.getString("email") != null && data.getString("email").equalsIgnoreCase(MySqlManager.parseSQL(info[2])))
-				{
-					ServerMessage message = new ServerMessage(ClientPacket.REGISTER_ISSUES);
-					message.addInt(5);
-					session.Send(message);
-					return;
-				}
-				if(info[2].length() > 52)
-				{
-					ServerMessage message = new ServerMessage(ClientPacket.REGISTER_ISSUES);
-					message.addInt(6);
-					session.Send(message);
-					return;
-				}
-			}
-			catch(Exception e)
-			{
-			}
-		}
+		//data = m_database.query("SELECT * FROM `pn_members` WHERE `email` = '" + MySqlManager.parseSQL(info[2]) + "'");
+		//if(data != null)
+		//{
+		//	data.first();
+		//	try
+		//	{
+		//		if(data.getString("email") != null && data.getString("email").equalsIgnoreCase(MySqlManager.parseSQL(info[2])))
+		//		{
+		//			ServerMessage message = new ServerMessage(ClientPacket.REGISTER_ISSUES);
+		//			message.addInt(5);
+		//			session.Send(message);
+		//			return;
+		//		}
+		//		if(info[2].length() > 52)
+		//		{
+		//			ServerMessage message = new ServerMessage(ClientPacket.REGISTER_ISSUES);
+		//			message.addInt(6);
+		//			session.Send(message);
+		//			return;
+		//		}
+		//	}
+		///	catch(Exception e)
+		//	{
+		//	}
+		//}
 		/* Check if user is not trying to register their starter as a non-starter Pokemon. */
 		if(!(s == 1 || s == 4 || s == 7 || s == 152 || s == 155 || s == 158 || s == 252 || s == 255 || s == 258 || s == 387 || s == 390 || s == 393))
 		{
