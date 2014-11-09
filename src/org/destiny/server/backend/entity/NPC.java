@@ -187,7 +187,6 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 7;
 						poke = Pokemon.getGymLeaderPokemon("Onix", 14, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Tackle", "Screech", "Tackle","Tackle");
 						party[0] = poke;
 						poke = Pokemon.getGymLeaderPokemon("Geodude", 12, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Tackle", "Defense Curl", "Mud Sport", "Rock Polish");
@@ -223,19 +222,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 10;
-						poke = Pokemon.getGymLeaderPokemon("Seaking", lvl, PokemonNature.N_LONELY, 0, 0, 0, 0, 0, 0, "Aqua Tail", "Megahorn", "Return", "Ice Beam");
+						poke = Pokemon.getGymLeaderPokemon("Staryu", 18, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Tackle", "Water Gun", "Tackle", "Water Gun");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Quagsire", lvl, PokemonNature.N_IMPISH, 0, 0, 0, 0, 0, 0, "Recover", "Earthquake", "Waterfall", "Toxic");
+						poke = Pokemon.getGymLeaderPokemon("Starmie", 21, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Tackle", "Water Gun", "Harden", "Bubble Beam");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Golduck", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Cross Chop", "Psychic");
-						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Lapras", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Thunderbolt", "Heal Bell");
-						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Blastoise", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Rapid Spin", "Earthquake");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Starmie", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Flamethrower", "Ice Beam", "Thunderbolt", "Psychic");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Golduck", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Cross Chop", "Psychic");
+						//party[2] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Lapras", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Thunderbolt", "Heal Bell");
+						//party[3] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Blastoise", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Rapid Spin", "Earthquake");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Starmie", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Flamethrower", "Ice Beam", "Thunderbolt", "Psychic");
+						//party[5] = poke;
 					}
 				}
 				else if(m_name.equalsIgnoreCase("Lt. Surge"))
@@ -259,19 +257,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 13;
-						poke = Pokemon.getGymLeaderPokemon("Raichu", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Nasty Plot", "Volt Tackle", "Encore", "Grass Knot");
+						poke = Pokemon.getGymLeaderPokemon("Voltorb", 21, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Shock Wave", "Tackle", "Screech", "SonicBoom");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Electabuzz", lvl, PokemonNature.N_HASTY, 0, 0, 0, 0, 0, 0, "Thunderbolt", "Cross Chop", "Psychic", "Surf");
+						poke = Pokemon.getGymLeaderPokemon("Pikachu", 18, PokemonNature.N_HASTY, 0, 0, 0, 0, 0, 0, "Shock Wave", "Thunder Wave", "Quick Attack", "Double Team");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Ampharos", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Rain Dance", "Thunder", "Reflect", "Signal Beam");
+						poke = Pokemon.getGymLeaderPokemon("Raichu", 24, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Shock Wave", "Thunder Wave", "Quick Attack", "Double Team");
 						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Electrode", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Rain Dance", "Taunt", "Thunder", "Explosion");
-						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Jolteon", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Thunderbolt", "Shadow Ball", "Crunch", "Protect");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Electrode", lvl, PokemonNature.N_NAIVE, 0, 0, 0, 0, 0, 0, "Ancientpower", "Taunt", "Thunderbolt", "Explosion");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Electrode", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Rain Dance", "Taunt", "Thunder", "Explosion");
+						//party[3] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Jolteon", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Thunderbolt", "Shadow Ball", "Crunch", "Protect");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Electrode", lvl, PokemonNature.N_NAIVE, 0, 0, 0, 0, 0, 0, "Ancientpower", "Taunt", "Thunderbolt", "Explosion");
+						//party[5] = poke;
 
 					}
 				}
@@ -297,19 +294,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 17;
-						poke = Pokemon.getGymLeaderPokemon("Vileplume", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Sludge Bomb", "Energy Ball", "Leech Seed", "Aromatherapy");
+						poke = Pokemon.getGymLeaderPokemon("Tangela", 30, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Bind", "Mega Drain", "Vine Whip", "Constrict");
 						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Meganium", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Seed Bomb", "Aromatherapy", "Leech Seed", "Synthesis");
+						poke = Pokemon.getGymLeaderPokemon("Weepinbell", 32, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Acid", "Stun Spore", "Sleep Powder", "Razor Leaf");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Sunflora", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "SolarBeam", "Ice Beam", "Earth Power", "Sunny Day");
+						poke = Pokemon.getGymLeaderPokemon("Gloom", 32, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Acid", "Petal Dance", "Stun Spore", "Sleep Powder");
 						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Victreebel", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "SolarBeam", "Weather Ball", "Sleep Powder", "Rock Slide");
-						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Tangela", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Sunny Day", "Endeavor", "Sleep Powder", "Leaf Storm");
-						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Bellossom", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Sunny Day", "Sleep Powder", "Moonlight", "SolarBeam");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Victreebel", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "SolarBeam", "Weather Ball", "Sleep Powder", "Rock Slide");
+						//party[3] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Tangela", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Sunny Day", "Endeavor", "Sleep Powder", "Leaf Storm");
+						//party[0] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Bellossom", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Sunny Day", "Sleep Powder", "Moonlight", "SolarBeam");
+						//party[5] = poke;
 					}
 				}
 				else if(m_name.equalsIgnoreCase("koga"))
@@ -333,19 +329,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 21;
-						poke = Pokemon.getGymLeaderPokemon("Muk", lvl, PokemonNature.N_CAREFUL, 0, 0, 0, 0, 0, 0, "Curse", "Poison Jab", "Brick Break", "Shadow Sneak");
+						poke = Pokemon.getGymLeaderPokemon("Koffing", 37, PokemonNature.N_CAREFUL, 0, 0, 0, 0, 0, 0, "Selfdestruct", "Sludge", "SmokeScreen", "Toxic");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Weezing", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Thunderbolt", "Flamethrower", "Will-O-Wisp", "Pain Split");
+						poke = Pokemon.getGymLeaderPokemon("Weezing", 43, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Tackle", "Sludge", "SmokeScreen", "Toxic");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Ariados", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Toxic Spikes", "Sucker Punch", "Protect", "Signal Beam");
+						poke = Pokemon.getGymLeaderPokemon("Koffing", 37, PokemonNature.N_CAREFUL, 0, 0, 0, 0, 0, 0, "Selfdestruct", "Sludge", "SmokeScreen", "Toxic");
 						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Forretress", lvl, PokemonNature.N_RELAXED, 0, 0, 0, 0, 0, 0, "Toxic Spikes", "Rapid Spin", "Gyro Ball", "Explosion");
+						poke = Pokemon.getGymLeaderPokemon("Muk", 39, PokemonNature.N_RELAXED, 0, 0, 0, 0, 0, 0, "Minimize", "Sludge", "Acid Armor", "Toxic");
 						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Venomoth", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Psychic", "Shadow Ball", "Sleep Powder", "Bug Buzz");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Crobat", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Taunt", "Roost", "Super Fang", "Brave Bird");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Venomoth", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Psychic", "Shadow Ball", "Sleep Powder", "Bug Buzz");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Crobat", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Taunt", "Roost", "Super Fang", "Brave Bird");
+						//party[5] = poke;
 					}
 				}
 				else if(m_name.equalsIgnoreCase("sabrina"))
@@ -369,19 +364,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 25;
-						poke = Pokemon.getGymLeaderPokemon("Slowking", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Surf", "Ice Beam", "Slack Off", "Toxic");
+						poke = Pokemon.getGymLeaderPokemon("Kadabra", 38, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Psybeam", "Reflect", "Future Sight", "Calm Mind");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Exeggutor", lvl, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Sleep Powder", "Leaf Storm", "Psychic", "Synthesis");
+						poke = Pokemon.getGymLeaderPokemon("Mr. Mime", 37, PokemonNature.N_MODEST, 0, 0, 0, 0, 0, 0, "Barrier", "Psybeam", "Baton Pass", "Calm Mind");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Alakazam", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Taunt", "Psychic", "Counter", "Signal Beam");
+						poke = Pokemon.getGymLeaderPokemon("Alakazam", 43, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Psycic", "Recover", "Future Sight", "Calm Mind");
 						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Espeon", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Calm Mind", "Psychic", "Earth Power", "Shadow Ball");
+						poke = Pokemon.getGymLeaderPokemon("Venemoth", 38, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Psybeam", "Gust", "Leech Life", "Supersonic");
 						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Hypno", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Wish", "Seismic Toss", "Psychic", "Protect");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Jynx", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Ice Beam", "Nasty Plot", "Lovely Kiss", "Psychic");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Hypno", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Wish", "Seismic Toss", "Psychic", "Protect");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Jynx", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Ice Beam", "Nasty Plot", "Lovely Kiss", "Psychic");
+						//party[5] = poke;
 					}
 				}
 				else if(m_name.equalsIgnoreCase("blaine"))
@@ -405,19 +399,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 30;
-						poke = Pokemon.getGymLeaderPokemon("Arcanine", lvl, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Flare Blitz", "ExtremeSpeed", "Morning Sun", "Toxic");
+						poke = Pokemon.getGymLeaderPokemon("Growlith", 42, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Bite", "Roar", "Take Down", "Fire Blast");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Charizard", lvl, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Sunny Day", "Flamethrower", "Solarbeam", "Air Slash");
+						poke = Pokemon.getGymLeaderPokemon("Ponyta", 40, PokemonNature.N_TIMID, 0, 0, 0, 0, 0, 0, "Stomp", "Bounce", "Fire Spin", "Fire Blast");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Houndoom", lvl, PokemonNature.N_HASTY, 0, 0, 0, 0, 0, 0, "Pursuit", "Sucker Punch", "Thunder Fang", "Fire Blast");
+						poke = Pokemon.getGymLeaderPokemon("Rapidash", 42, PokemonNature.N_HASTY, 0, 0, 0, 0, 0, 0, "Stomp", "Bounce", "Fire Spin", "Fire Blast");
 						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Flareon", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Wish", "Protect", "Flamethrower", "Toxic");
+						poke = Pokemon.getGymLeaderPokemon("Arcanine", 47, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Bite", "Roar", "Take Down", "Fire Blast");
 						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Rapidash", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Flare Blitz", "Hypnosis", "Megahorn", "Will-O-Wisp");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Magmortar", lvl, PokemonNature.N_NAIVE, 0, 0, 0, 0, 0, 0, "Flamethrower", "Thunderbolt", "Cross Chop", "Ice Punch");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Rapidash", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Flare Blitz", "Hypnosis", "Megahorn", "Will-O-Wisp");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Magmortar", lvl, PokemonNature.N_NAIVE, 0, 0, 0, 0, 0, 0, "Flamethrower", "Thunderbolt", "Cross Chop", "Ice Punch");
+						//party[5] = poke;
 					}
 				}
 				else if(m_name.equalsIgnoreCase("Giovani"))
@@ -441,19 +434,18 @@ public class NPC extends Character
 					}
 					else
 					{
-						lvl = 35;
-						poke = Pokemon.getGymLeaderPokemon("Dugtrio", lvl, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Earthquake", "Night Slash", "Stone Edge", "Pursuit");
+						poke = Pokemon.getGymLeaderPokemon("Dugtrio", 42, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Slash", "Sand Tomb", "Mud-Slap", "Earthquake");
 						party[0] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Nidoking", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Earthquake", "Ice Beam", "Thunderbolt", "Shadow Ball");
+						poke = Pokemon.getGymLeaderPokemon("Nidoking", 45, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Earthquake", "Double Kick", "Poison Sting", "Thrash");
 						party[1] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Nidoqueen", lvl, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Earth Power", "Stealth Rock", "Ice Beam", "Toxic Spikes");
+						poke = Pokemon.getGymLeaderPokemon("Nidoqueen", 44, PokemonNature.N_BOLD, 0, 0, 0, 0, 0, 0, "Earthquake", "Double Kick", "Poison Sting", "Body Slam");
 						party[2] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Rhyhorn", lvl, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Earthquake", "Rock Blast", "Fire Fang", "Aqua Tail");
+						poke = Pokemon.getGymLeaderPokemon("Rhyhorn", 50, PokemonNature.N_ADAMANT, 0, 0, 0, 0, 0, 0, "Take Down", "Rock Blast", "Scary Face", "Earthquake");
 						party[3] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Kangaskhan", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Flare Blitz", "Hypnosis", "Megahorn", "Will-O-Wisp");
-						party[4] = poke;
-						poke = Pokemon.getGymLeaderPokemon("Rhyhorn", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Earthquake", "Stone Edge", "Ice Fang", "Rock Polish");
-						party[5] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Kangaskhan", lvl, PokemonNature.N_CALM, 0, 0, 0, 0, 0, 0, "Flare Blitz", "Hypnosis", "Megahorn", "Will-O-Wisp");
+						//party[4] = poke;
+						//poke = Pokemon.getGymLeaderPokemon("Rhyhorn", lvl, PokemonNature.N_JOLLY, 0, 0, 0, 0, 0, 0, "Earthquake", "Stone Edge", "Ice Fang", "Rock Polish");
+						//party[5] = poke;
 					}
 				}
 				// johto
