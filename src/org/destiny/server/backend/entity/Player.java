@@ -406,7 +406,7 @@ public class Player extends Character implements Battleable, Tradeable
 	}
 
 	/**
-	 * Allows the player to buy an item
+	 * Creates an item
 	 * 
 	 * @param id
 	 * @param q
@@ -414,11 +414,6 @@ public class Player extends Character implements Battleable, Tradeable
 	public void createItem(int id, int q)
 	{
 		m_bag.addItem(id, q);
-		/* Let player know he bought the item. */
-		//ServerMessage message = new ServerMessage(ClientPacket.BOUGHT_ITEM);
-		//message.addInt(GameServer.getServiceManager().getItemDatabase().getItem(id).getId());
-		//getSession().Send(message);
-		/* Update player inventory. */
 		ServerMessage update = new ServerMessage(ClientPacket.UPDATE_ITEM_TOT);
 		update.addInt(GameServer.getServiceManager().getItemDatabase().getItem(id).getId());
 		update.addInt(q);

@@ -28,6 +28,7 @@ import org.destiny.server.battle.mechanics.statuses.field.HailEffect;
 import org.destiny.server.battle.mechanics.statuses.field.RainEffect;
 import org.destiny.server.battle.mechanics.statuses.field.SandstormEffect;
 import org.destiny.server.constants.ClientPacket;
+import org.destiny.server.constants.UserClasses;
 import org.destiny.server.feature.TimeService;
 import org.destiny.server.protocol.ServerMessage;
 
@@ -1065,6 +1066,9 @@ public class WildBattleField extends BattleField
 				/* TODO: Test scaling effect. */
 				if(poke.getLevel() <= 10 && exp < 5)
 					exp *= 11.5 - poke.getLevel();
+				if(m_player.getAdminLevel() >= UserClasses.VIP){
+					exp = exp * GameServer.RATE_EXP_POKE_VIP;
+				}
 				poke.setExp(poke.getExp() + exp);
 				/* Calculate how much exp is left to next level. */
 				int expTillLvl = (int) (DataService.getBattleMechanics().getExpForLevel(poke, poke.getLevel() + 1) - poke.getExp());

@@ -19,6 +19,7 @@ import org.destiny.server.battle.mechanics.statuses.field.HailEffect;
 import org.destiny.server.battle.mechanics.statuses.field.RainEffect;
 import org.destiny.server.battle.mechanics.statuses.field.SandstormEffect;
 import org.destiny.server.constants.ClientPacket;
+import org.destiny.server.constants.UserClasses;
 import org.destiny.server.feature.TimeService;
 import org.destiny.server.protocol.ServerMessage;
 
@@ -346,10 +347,19 @@ public class NpcBattleField extends BattleField
 	public void informVictory(int winner)
 	{
 		m_finished = true;
-		int money = (int) ((BASE_GOLD_REWARD * (getMechanics().getRandom().nextInt(5) + 1)) * GameServer.RATE_GOLD);	// The magic cookie is used as a base to reward gold (replace later).
+		int trainerExp = 0;
+		double texp = 1.0;
+		double tmoneyrate = 1.0;
+		if(m_player.getAdminLevel() >= UserClasses.VIP){
+			texp = trainerExp * GameServer.RATE_EXP_TRAINER_VIP;
+			tmoneyrate = GameServer.RATE_GOLD_VIP;
+		} else {
+			texp = trainerExp * GameServer.RATE_EXP_TRAINER;
+			tmoneyrate = GameServer.RATE_GOLD;
+		}
+		int money = (int) ((BASE_GOLD_REWARD * (getMechanics().getRandom().nextInt(5) + 1)) * tmoneyrate);	// The magic cookie is used as a base to reward gold (replace later).
 		if(winner == 0)
 		{
-			int trainerExp = 0;
 			for(int i = 0; i < getParty(1).length; i++)
 				if(getParty(1)[i] != null)
 					trainerExp += getParty(1)[i].getLevel() / 2;
@@ -359,7 +369,7 @@ public class NpcBattleField extends BattleField
 				money += 100;
 			}
 			if(trainerExp > 0)
-				m_player.addTrainingExp((int) (trainerExp * GameServer.RATE_EXP_TRAINER));
+				m_player.addTrainingExp((int) (trainerExp * texp));
 			if(m_npc.isGymLeader())
 				m_player.addBadge(m_npc.getBadge());
 			ServerMessage reward = new ServerMessage(m_player.getSession());

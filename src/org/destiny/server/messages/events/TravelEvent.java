@@ -23,7 +23,7 @@ public class TravelEvent implements MessageEvent
 			switch(travel.split(" - ")[0])
 			{
 				case "Vermillion City":
-					handleTravel(p, 10000, 25, 736, 1048, 6, 0, 0, UserClasses.DONATOR);
+					handleTravel(p, 10000, 25, 736, 1048, 6, 0, 0, UserClasses.VIP);
 					break;
 				case "Saffron City":
 					if(p.getMapX() == -31 && p.getMapY() == -39) // goldenrod city
@@ -47,7 +47,7 @@ public class TravelEvent implements MessageEvent
 					handleTravel(p, 0, 25, 1664, 888, 1, 1, 16, UserClasses.DEFAULT);
 					break;
 				case "Olivine City":
-					handleTravel(p, 10000, 25, 640, 664, -6, -3, 0, UserClasses.DONATOR);
+					handleTravel(p, 10000, 25, 640, 664, -6, -3, 0, UserClasses.VIP);
 					break;
 				case "Goldenrod City":
 					if(p.getMapX() == -50 && p.getMapY() == -13)// saffron city
@@ -86,28 +86,28 @@ public class TravelEvent implements MessageEvent
 					handleTicketTravel(p, ItemID.SINNOH_TICKET, 165000, 10000, 40, 192, 1880, 39, -48, 20, UserClasses.MODERATOR);
 					break;
 				case "Resort Area":
-					handleTravel(p, 25000, 40, 448, 504, 43, -47, 24, UserClasses.DONATOR);
+					handleTravel(p, 25000, 40, 448, 504, 43, -47, 24, UserClasses.VIP);
 					break;
 				case "One Island":
-					handleTravel(p, 5000, 25, 512, 568, -29, 2, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 512, 568, -29, 2, 16, UserClasses.VIP);
 					break;
 				case "Two Island":
-					handleTravel(p, 5000, 25, 320, 1336, -44, 5, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 320, 1336, -44, 5, 16, UserClasses.VIP);
 					break;
 				case "Three Island":
-					handleTravel(p, 5000, 25, 416, 408, -28, 5, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 416, 408, -28, 5, 16, UserClasses.VIP);
 					break;
 				case "Four Island":
-					handleTravel(p, 5000, 25, 416, 1048, -44, 10, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 416, 1048, -44, 10, 16, UserClasses.VIP);
 					break;
 				case "Five Island":
-					handleTravel(p, 5000, 25, 512, 664, -29, 8, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 512, 664, -29, 8, 16, UserClasses.VIP);
 					break;
 				case "Six Island":
-					handleTravel(p, 5000, 25, 416, 760, -29, 11, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 416, 760, -29, 11, 16, UserClasses.VIP);
 					break;
 				case "Seven Island":
-					handleTravel(p, 5000, 25, 512, 1944, -29, 14, 16, UserClasses.DONATOR);
+					handleTravel(p, 5000, 25, 512, 1944, -29, 14, 16, UserClasses.VIP);
 					break;
 				case "Iron Island":
 					handleTravel(p, 15000, 25, 2752, 568, 1, -46, 24, UserClasses.DEFAULT);
@@ -138,7 +138,7 @@ public class TravelEvent implements MessageEvent
 						session.Send(message);
 					}
 				case "Gateon Port":
-					handleTravel(p, 20000, 25, 1088, 888, 10, 41, 17, UserClasses.DONATOR);
+					handleTravel(p, 20000, 25, 1088, 888, 10, 41, 17, UserClasses.VIP);
 					break;
 				case "Pyrite Town":
 					if(p.getMapX() == -50 && p.getMapY() == -13)// saffron city
@@ -153,7 +153,7 @@ public class TravelEvent implements MessageEvent
 					{
 						money = 2500;
 					}
-					handleTravel(p, money, 25, 736, 1368, 21, 38, 17, UserClasses.DONATOR);
+					handleTravel(p, money, 25, 736, 1368, 21, 38, 17, UserClasses.VIP);
 					break;
 				case "Phenac City":
 					if(p.getMapX() == -50 && p.getMapY() == -13)// saffron city
@@ -168,7 +168,7 @@ public class TravelEvent implements MessageEvent
 					{
 						money = 2500;
 					}
-					handleTravel(p, money, 25, 960, 1368, -36, -39, 17, UserClasses.DONATOR);
+					handleTravel(p, money, 25, 960, 1368, -36, -39, 17, UserClasses.VIP);
 					break;
 				default:
 					break;
@@ -178,6 +178,9 @@ public class TravelEvent implements MessageEvent
 
 	public void handleTravel(Player p, int money, int trainerLvl, int x, int y, int mapX, int mapY, int badges, int userclass)
 	{
+		if(p.getAdminLevel() >= UserClasses.VIP){
+			money = money / 150 * 100;
+		}
 		if(p.getAdminLevel() > userclass || (p.getMoney() >= money && p.getTrainingLevel() >= trainerLvl) && p.getBadgeCount() >= badges)
 		{
 			if(p.getAdminLevel() <= userclass && money > 0)

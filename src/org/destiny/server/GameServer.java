@@ -62,8 +62,11 @@ public class GameServer
 	private int m_highest;
 
 	public static double RATE_GOLD = 1.0;
+	public static double RATE_GOLD_VIP = 1.5;
 	public static double RATE_EXP_POKE = 1.0;
+	public static double RATE_EXP_POKE_VIP = 1.5;
 	public static double RATE_EXP_TRAINER = 1.0;
+	public static double RATE_EXP_TRAINER_VIP = 1.0;
 	public static int RATE_WILDBATTLE = 8;
 	public static int RATE_KICKDELAY = 10;
 	public static final int AUTOSAVE_INTERVAL = 2; // Autosave interval in minutes
@@ -287,8 +290,11 @@ public class GameServer
 					Ini ratesIni = new Ini(new FileInputStream(rates));
 					Section s = ratesIni.get("RATES");
 					RATE_GOLD = Double.parseDouble(s.get("GOLD"));
+					RATE_GOLD_VIP = Double.parseDouble(s.get("GOLD_VIP"));
 					RATE_EXP_POKE = Double.parseDouble(s.get("EXP_POKE"));
+					RATE_EXP_POKE_VIP = Double.parseDouble(s.get("EXP_POKE_VIP"));
 					RATE_EXP_TRAINER = Double.parseDouble(s.get("EXP_TRAINER"));
+					RATE_EXP_TRAINER_VIP = Double.parseDouble(s.get("EXP_TRAINER_VIP"));
 					RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
 					RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
 				}
