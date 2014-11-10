@@ -10,7 +10,7 @@ NULL
 0,1,2,3,4,5,6,7
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -24,7 +24,7 @@ NULL
 0,1,2,3,4,5,6,7
 false
 false
-false
+0
 [/npc]
 [npc]
 Receptionist
@@ -38,7 +38,7 @@ NULL
 8
 false
 false
-false
+0
 [/npc]
 [warp]
 5

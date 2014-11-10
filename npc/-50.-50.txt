@@ -10,7 +10,7 @@ NULL
 0,1,2,3,4
 false
 false
-false
+0
 [/npc]
 [npc]
 Twin May
@@ -24,7 +24,7 @@ Ledyba,10
 5
 false
 false
-false
+0
 [/npc]
 [npc]
 Twin Amy
@@ -38,7 +38,7 @@ Spinarak,10
 6
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Catcher Al
@@ -52,7 +52,7 @@ Caterpie,12,Weedle,12
 7,8
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Catcher Benny
@@ -66,7 +66,7 @@ Weedle,7,Kakuna,9,Beedrill,12
 9
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Catcher Josh
@@ -80,7 +80,7 @@ Paras,13
 10,11
 false
 false
-false
+0
 [/npc]
 [npc]
 Bugsy
@@ -94,7 +94,7 @@ Butterfree,22,Beedrill,22,Parasect,22,Heracross,22,Yanma,22,Scyther,22
 12,13,14
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -108,7 +108,7 @@ NULL
 15
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -122,7 +122,7 @@ NULL
 15
 false
 false
-false
+0
 [/npc]
 [warp]
 23
@@ -241,9 +241,3 @@ false
 -50
 0
 [/warp]
-
-
-
-
-
-

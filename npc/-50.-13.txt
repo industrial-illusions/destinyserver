@@ -10,7 +10,7 @@ NULL
 0,1,2,3,4
 false
 false
-false
+0
 [/npc]
 [npc]
 Ticket_Vendor
@@ -24,7 +24,7 @@ NULL
 5
 false
 false
-false
+0
 [/npc]
 [warp]
 10

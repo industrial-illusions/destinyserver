@@ -10,7 +10,7 @@ NULL
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Sprout Tower Monk
@@ -24,7 +24,7 @@ NULL
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Sprout Tower Visitor
@@ -38,7 +38,7 @@ NULL
 2,3
 false
 false
-false
+0
 [/npc]
 [npc]
 Sprout Tower Visitor
@@ -52,7 +52,7 @@ NULL
 4,5
 false
 false
-false
+0
 [/npc]
 [npc]
 Sage Chow
@@ -66,7 +66,7 @@ Bellsprout,3,Bellsprout,3,Bellsprout,3
 6,7
 false
 false
-false
+0
 [/npc]
 [warp]
 8

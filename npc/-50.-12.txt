@@ -10,7 +10,7 @@ NULL
 0,1
 false
 false
-false
+0
 [/npc]
 [warp]
 5

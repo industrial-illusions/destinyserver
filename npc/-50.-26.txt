@@ -10,7 +10,7 @@ NULL
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 PN Staff
@@ -24,7 +24,7 @@ NULL
 1
 false
 false
-false
+0
 [/npc]
 [warp]
 11

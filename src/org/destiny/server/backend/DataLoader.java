@@ -26,8 +26,7 @@ public class DataLoader implements Runnable
 	 * 
 	 * @param f
 	 */
-	public DataLoader(File file, ServerMap map)
-	{
+	public DataLoader(File file, ServerMap map) {
 		m_file = file;
 		m_map = map;
 		new Thread(this, "MapDataLoader-Thread").start();
@@ -36,10 +35,8 @@ public class DataLoader implements Runnable
 	/**
 	 * Called by starting the thread
 	 */
-	public void run()
-	{
-		try(Scanner reader = new Scanner(m_file))
-		{
+	public void run() {
+		try(Scanner reader = new Scanner(m_file)) {
 			NPC npc = null;
 			WarpTile warp = null;
 			HMObject hmObject = null;
@@ -47,22 +44,22 @@ public class DataLoader implements Runnable
 			String line;
 			String[] details;
 			String direction = "Down";
-			while(reader.hasNextLine())
-			{
+			while(reader.hasNextLine())	{
 				line = reader.nextLine();
-				if(line.equalsIgnoreCase("[npc]"))
-				{
+				switch(line){
+				case "[npc]":
 					npc = new NPC();
 					npc.setName(reader.nextLine());
 					direction = reader.nextLine();
-					if(direction.equalsIgnoreCase("UP"))
+					if(direction.equalsIgnoreCase("UP")) {
 						npc.setFacing(Direction.Up);
-					else if(direction.equalsIgnoreCase("LEFT"))
+					} else if(direction.equalsIgnoreCase("LEFT")) {
 						npc.setFacing(Direction.Left);
-					else if(direction.equalsIgnoreCase("RIGHT"))
+					} else if(direction.equalsIgnoreCase("RIGHT")) {
 						npc.setFacing(Direction.Right);
-					else
+					} else {
 						npc.setFacing(Direction.Down);
+					}
 					npc.setSprite(Integer.parseInt(reader.nextLine()));
 					if(npc.getName().equalsIgnoreCase("NULL") && npc.getSprite() != 0)
 						npc.setName("NPC");
@@ -71,21 +68,17 @@ public class DataLoader implements Runnable
 					npc.setOriginalDirection(npc.getFacing());
 					// Load possible Pokemons
 					line = reader.nextLine();
-					if(!line.equalsIgnoreCase("NULL"))
-					{
+					if(!line.equalsIgnoreCase("NULL")) {
 						details = line.split(",");
 						HashMap<String, Integer> pokes = new HashMap<String, Integer>();
 						for(int i = 0; i < details.length; i = i + 2)
 							pokes.put(details[i], Integer.parseInt(details[i + 1]));
 						npc.setPossiblePokemon(pokes);
 					}
-					// Set minimum party level
-					npc.setPartySize(Integer.parseInt(reader.nextLine()));
-					npc.setBadge(Integer.parseInt(reader.nextLine()));
-					// Add all speech, if any
-					line = reader.nextLine();
-					if(!line.equalsIgnoreCase("NULL"))
-					{
+					npc.setPartySize(Integer.parseInt(reader.nextLine()));	// Set minimum party level
+					npc.setBadge(Integer.parseInt(reader.nextLine()));		// Minimum Badge requirement
+					line = reader.nextLine();								// Add all speech, if any
+					if(!line.equalsIgnoreCase("NULL")) {
 						details = line.split(",");
 						for(int i = 0; i < details.length; i++)
 							npc.addSpeech(Integer.parseInt(details[i]));
@@ -95,30 +88,30 @@ public class DataLoader implements Runnable
 
 					// Setting ShopKeeper as an int.
 					String shop = reader.nextLine();
-					try
-					{
+					try	{
 						npc.setShopKeeper(Integer.parseInt(shop.trim()));
 					}
-					catch(Exception e)
-					{
-						try
-						{
+					catch(Exception e) {
+						try {
 							/* Must be an old shop */
-							if(Boolean.parseBoolean(shop.trim().toLowerCase()))
+							if(Boolean.parseBoolean(shop.trim().toLowerCase())) {
 								npc.setShopKeeper(1); // Its an old shop! Yay!
-							else
+								System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD SHOP");
+							} else {
 								npc.setShopKeeper(0); // Its an old npc. Not a shop.
+								System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD NPC, PLEASE FIX");
+							}
 						}
-						catch(Exception ex)
-						{
+						catch(Exception ex)	{
 							npc.setShopKeeper(0);// Dunno what the hell it is, but its not a shop.
+							System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Broken 'shop'.");
 						}
 					}
-				}
-				else if(line.equalsIgnoreCase("[/npc]"))
+					break;
+				case "[/npc]":
 					m_map.addChar(npc);
-				else if(line.equalsIgnoreCase("[warp]"))
-				{
+					break;
+					case "[warp]":
 					warp = new WarpTile();
 					warp.setX(Integer.parseInt(reader.nextLine()));
 					warp.setY(Integer.parseInt(reader.nextLine()));
@@ -127,11 +120,11 @@ public class DataLoader implements Runnable
 					warp.setWarpMapX(Integer.parseInt(reader.nextLine()));
 					warp.setWarpMapY(Integer.parseInt(reader.nextLine()));
 					warp.setBadgeRequirement(Integer.parseInt(reader.nextLine()));
-				}
-				else if(line.equalsIgnoreCase("[/warp]"))
+					break;
+				case "[/warp]":
 					m_map.addWarp(warp);
-				else if(line.equalsIgnoreCase("[hmobject]"))
-				{
+					break;
+				case "[hmobject]":
 					hmObject = new HMObject();
 					hmObject.setName(reader.nextLine());
 					hmObject.setType(HMObject.parseHMObject(hmObject.getName()));
@@ -139,11 +132,11 @@ public class DataLoader implements Runnable
 					hmObject.setOriginalX(hmObject.getX());
 					hmObject.setY(Integer.parseInt(reader.nextLine()) * 32 - 8);
 					hmObject.setOriginalY(hmObject.getY());
-				}
-				else if(line.equalsIgnoreCase("[/hmobject]"))
+					break;
+				case "[/hmobject]":
 					hmObject.setMap(m_map, Direction.Down);
-				else if(line.equalsIgnoreCase("[trade]"))
-				{
+					break;
+				case "[trade]":
 					t = new TradeChar();
 					t.setName(reader.nextLine());
 					direction = reader.nextLine();
@@ -160,15 +153,17 @@ public class DataLoader implements Runnable
 					t.setY(Integer.parseInt(reader.nextLine()) * 32 - 8);
 					t.setRequestedPokemon(reader.nextLine(), Integer.parseInt(reader.nextLine()), reader.nextLine());
 					t.setOfferedSpecies(reader.nextLine(), Integer.parseInt(reader.nextLine()));
-				}
-				else if(line.equalsIgnoreCase("[/trade]"))
+					break;
+				case "[/trade]":
 					m_map.addChar(t);
+					break;
+				}
 			}
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
-			System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Invalid NPC, " + "HM Object or WarpTile");
+			System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Invalid NPC, HM Object or WarpTile");
 		}
 	}
 }

@@ -10,7 +10,7 @@ Poliwhirl,28
 0,1
 false
 false
-false
+0
 [/npc]
 [npc]
 Cooltrainer Gwen
@@ -24,7 +24,7 @@ Eevee,26,Flareon,22,Vaporeon,22,Jolteon,22
 2
 false
 false
-false
+0
 [/npc]
 [npc]
 Cooltrainer Nick
@@ -38,7 +38,7 @@ Charmander,26,Squirtle,26,Bulbasaur,26
 3,4
 false
 false
-false
+0
 [/npc]
 [warp]
 6

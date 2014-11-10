@@ -10,7 +10,7 @@ Bellsprout,3,Bellsprout,3,Bellsprout,3
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Sage Edmond
@@ -24,7 +24,7 @@ Bellsprout,3,Bellsprout,3,Bellsprout,3
 1
 false
 false
-false
+0
 [/npc]
 [warp]
 5

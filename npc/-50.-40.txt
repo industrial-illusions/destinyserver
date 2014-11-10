@@ -10,7 +10,7 @@ Geodude,23,Machop,25
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Hiker Phillip
@@ -24,7 +24,7 @@ Geodude,23,Geodude,23,Graveler,23
 1,2
 false
 false
-false
+0
 [/npc]
 [npc]
 Pokemaniac Andrew
@@ -38,7 +38,7 @@ Marowak,24,Marowak,24
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Pokemaniac Calvin
@@ -52,7 +52,7 @@ Kangaskhan,26
 4,5
 false
 false
-false
+0
 [/npc]
 [warp]
 8

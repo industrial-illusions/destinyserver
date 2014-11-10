@@ -10,7 +10,7 @@ Bellsprout,7,Hoothoot,7
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Sage Jin
@@ -24,7 +24,7 @@ Bellsprout,6
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Sage Neal
@@ -38,7 +38,7 @@ Bellsprout,6
 2
 false
 false
-false
+0
 [/npc]
 [npc]
 Sage Li
@@ -52,7 +52,7 @@ Bellsprout,7,Hoothoot,10,Bellsprout,7
 3,4,5,6,7
 false
 false
-false
+0
 [/npc]
 [warp]
 11
