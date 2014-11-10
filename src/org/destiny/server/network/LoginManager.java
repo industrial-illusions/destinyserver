@@ -2,6 +2,9 @@ package org.destiny.server.network;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -21,6 +24,7 @@ import org.destiny.server.battle.mechanics.statuses.items.HoldItem;
 import org.destiny.server.client.Session;
 import org.destiny.server.connections.ActiveConnections;
 import org.destiny.server.constants.ClientPacket;
+import org.destiny.server.constants.UserClasses;
 import org.destiny.server.feature.TimeService;
 import org.destiny.server.protocol.ServerMessage;
 
@@ -609,6 +613,31 @@ public class LoginManager implements Runnable
 		session.setPlayer(player);
 		session.setLoggedIn(true);
 		player.setLanguage(Language.values()[Integer.parseInt(String.valueOf(language))]);
+		if(player.getAdminLevel() >= UserClasses.VIP){
+			// VIP Daily Login Reward
+			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+			Date date = new Date();
+			//ResultSet vipdate = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "'");
+			try(ResultSet rs = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "';")) {
+				if(rs == null) {
+					player.createItem(5,2,0);
+					player.createItem(87,2,0);
+					player.createItem(800,1,0);
+					m_database.query("INSERT INTO `pn_vip` (`member`, `date`) VALUES ('"+username+"', '"+dateFormat.format(date)+"';");
+					return;
+				}
+				if(rs.first() && rs.getString("member").equalsIgnoreCase(username) && !rs.getString("date").equalsIgnoreCase(dateFormat.format(date))) {
+					player.createItem(5,2,0);
+					player.createItem(87,2,0);
+					player.createItem(800,1,0);
+					m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+username+"';");
+					return;
+				}
+			}catch(SQLException sqle)
+			{
+				sqle.printStackTrace();
+			}
+		}
 		/* Update the database with login information. */
 		m_database.query("UPDATE `pn_members` SET `lastLoginServer` = '" + MySqlManager.parseSQL(GameServer.getServerName()) + "', `lastLoginTime` = '" + time + "', `lastLoginIP` = '"
 				+ MySqlManager.parseSQL(session.getIpAddress()) + "', `lastLanguageUsed` = " + language + " WHERE `username` = '" + MySqlManager.parseSQL(username) + "';");

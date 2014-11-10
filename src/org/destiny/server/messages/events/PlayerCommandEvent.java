@@ -340,7 +340,7 @@ public class PlayerCommandEvent implements MessageEvent
 		Player player = ActiveConnections.getPlayer(playername);
 		String itemname = GameServer.getServiceManager().getItemDatabase().getItem(itemid).getName();
 		System.out.println("Item: "+ itemname + " (" + itemid + ") Qty: " + qty + ".");
-		player.createItem(itemid, qty);
+		player.createItem(itemid, qty, 1);
 		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
 		message.addInt(4);
 		message.addString("Obtained " + qty + "x " + itemname);

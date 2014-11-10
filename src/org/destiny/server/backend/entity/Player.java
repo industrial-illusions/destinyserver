@@ -411,13 +411,16 @@ public class Player extends Character implements Battleable, Tradeable
 	 * @param id
 	 * @param q
 	 */
-	public void createItem(int id, int q)
+	public void createItem(int id, int q, int mess)
 	{
 		m_bag.addItem(id, q);
+		if(mess == 1){
 		ServerMessage update = new ServerMessage(ClientPacket.UPDATE_ITEM_TOT);
 		update.addInt(GameServer.getServiceManager().getItemDatabase().getItem(id).getId());
 		update.addInt(q);
-		getSession().Send(update);
+		getSession().Send(update);	
+		}
+		
 		return;
 	}
 
