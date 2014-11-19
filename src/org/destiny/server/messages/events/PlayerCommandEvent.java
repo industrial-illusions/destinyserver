@@ -430,7 +430,7 @@ public class PlayerCommandEvent implements MessageEvent
 		player.setX(x);
 		player.setY(y);
 		player.setMap(GameServer.getServiceManager().getMovementService().getMapMatrix().getMapByGamePosition(mx, my), player.getFacing());
-		message.addString("Teleport to " + loc + " succesfull.");	
+		message.addString("Teleport to " + loc + " successful.");	
 		session.Send(message);	
 	}
 	
