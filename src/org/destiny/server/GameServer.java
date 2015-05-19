@@ -45,11 +45,12 @@ public class GameServer
 {
 	/* The revision of the game server */
 	private static final int SERVER_REVISION = 0;
+	private static String SERVER_HASH = "Unknown";
 	public static final int MOVEMENT_THREADS = 12;
 	private static boolean m_boolGui = false;
 	private static String m_dbServer, m_dbName, m_dbUsername, m_dbPassword, m_serverName;
 	private static GameServer m_instance;
-	private static int m_maxPlayers = 500; // default 500 players
+	private static int m_maxPlayers = 100;
 	private static ServiceManager m_serviceManager;
 	private static int m_port = 7002;
 	private JFrame m_gui;
@@ -66,7 +67,7 @@ public class GameServer
 	public static double RATE_EXP_TRAINER = 1.0;
 	public static double RATE_EXP_TRAINER_VIP = 1.0;
 	public static int RATE_WILDBATTLE = 8;
-	public static int RATE_KICKDELAY = 10;
+	public static int RATE_KICKDELAY = 30;
 	public static final int AUTOSAVE_INTERVAL = 2; // Autosave interval in minutes
 	public static int REVISION = getServerRevision();
 
@@ -301,28 +302,31 @@ public class GameServer
 		}
 	}
 
+	
+	
 	/**
-	 * Gets the SVN revision for the server.
+	 * Gets the GIT Hash of the server
+	 * @author Akkarinage
 	 * 
-	 * @return Returns the number in the rev.txt file, otherwise 0.
+	 * @return hash
 	 */
-	private static int getServerRevision()
+	private static String getServerHash()
 	{
-		int rev = SERVER_REVISION;
-		String path = System.getProperty("res.path");
-		if(path == null || path.equalsIgnoreCase("NULL"))
-			path = "./";
-		File file = new File(path + "/res/rev.txt");
+		String hash = SERVER_HASH;
+		File file = new File(".git/refs/heads/master");
 		try(Scanner sc = new Scanner(file))
 		{
-			rev = Integer.parseInt(sc.nextLine());
+			hash = sc.nextLine();
 		}
 		catch(FileNotFoundException fnfe)
 		{
 			fnfe.printStackTrace();
 		}
-		return rev;
+		
+		return hash;
 	}
+	
+	
 
 	/**
 	 * Starts the GameServer.
@@ -331,6 +335,7 @@ public class GameServer
 	 **/
 	public void start()
 	{
+		System.out.println("Git Hash: "+ getServerHash());
 		if(m_boolGui)
 		{
 			m_dbServer = m_dbS.getText();
