@@ -34,14 +34,12 @@ import org.ini4j.InvalidIniFormatException;
 
 /**
  * Represents a game server.
- * Starting a server requires a parameter to be passed in, i.e. java GameServer -s low -p 500
- * Here are the different settings:
- * -low < 1.86ghz < 256MB Ram < 1mbps Up/Down Connection 75 Players
- * -medium < 2ghz 512MB - 1GB Ram 1mbps Up/Down Connection 200 Players
- * -high > 1.86ghz > 1GB Ram > 1mbps Up/Down Connection > 500 Players
+ * Starting a server requires a parameter to be passed in, i.e. java server.jar -ng -ar
+ * Code is written/being re-written with intention of being compiled/ran with Java 8 u45 (1.8.0_45)
  * 
  * @author shadowkanji
  * @author Nushio
+ * @author Akkarinage
  */
 public class GameServer
 {

@@ -1068,6 +1068,8 @@ public class WildBattleField extends BattleField
 					exp *= 11.5 - poke.getLevel();
 				if(m_player.getAdminLevel() >= UserClasses.VIP){
 					exp = exp * GameServer.RATE_EXP_POKE_VIP;
+				} else {
+					exp = exp * GameServer.RATE_EXP_POKE;
 				}
 				poke.setExp(poke.getExp() + exp);
 				/* Calculate how much exp is left to next level. */
