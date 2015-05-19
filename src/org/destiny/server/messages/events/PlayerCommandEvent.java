@@ -63,7 +63,7 @@ public class PlayerCommandEvent implements MessageEvent
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("warp "))
 		{
 			String playerstring = input.substring(5);
-			if(checkPermission(session, UserClasses.ADMIN))
+			if(checkPermission(session, UserClasses.VIP))
 				processWarp(session, playerstring);
 		}
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("item "))

@@ -602,8 +602,9 @@ public class LoginManager implements Runnable
 	 * @param language
 	 * @param session
 	 * @param result
+	 * @throws SQLException 
 	 */
-	private void login(String username, char language, Session session, ResultSet result)
+	private void login(String username, char language, Session session, ResultSet result) throws SQLException
 	{
 		/* They are not logged in elsewhere, set the current login to the current server. */
 		long time = System.currentTimeMillis();
@@ -613,30 +614,31 @@ public class LoginManager implements Runnable
 		session.setPlayer(player);
 		session.setLoggedIn(true);
 		player.setLanguage(Language.values()[Integer.parseInt(String.valueOf(language))]);
+		String adminLevel = "User";
 		if(player.getAdminLevel() >= UserClasses.VIP){
+			adminLevel = "VIP";
 			// VIP Daily Login Reward
 			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 			Date date = new Date();
 			//ResultSet vipdate = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "'");
-			try(ResultSet rs = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "';")) {
-				if(rs == null) {
-					player.createItem(5,2,0);
-					player.createItem(87,2,0);
-					player.createItem(800,1,0);
-					m_database.query("INSERT INTO `pn_vip` (`member`, `date`) VALUES ('"+username+"', '"+dateFormat.format(date)+"';");
-					return;
-				}
-				if(rs.first() && rs.getString("member").equalsIgnoreCase(username) && !rs.getString("date").equalsIgnoreCase(dateFormat.format(date))) {
-					player.createItem(5,2,0);
-					player.createItem(87,2,0);
-					player.createItem(800,1,0);
-					m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+username+"';");
-					return;
-				}
-			}catch(SQLException sqle)
-			{
-				sqle.printStackTrace();
+			ResultSet rs = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "'");
+			if(rs == null) {
+				player.createItem(5,2,0);
+				player.createItem(87,2,0);
+				player.createItem(800,1,0);
+				m_database.query("INSERT INTO `pn_vip` (`member`, `date`) VALUES ('"+username+"', '"+dateFormat.format(date)+"';");
+				System.out.println("Added user to VIP table");
+				//return;
 			}
+			if(rs.first() && rs.getString("member").equalsIgnoreCase(username) && !rs.getString("date").equalsIgnoreCase(dateFormat.format(date))) {
+				player.createItem(5,2,0);
+				player.createItem(87,2,0);
+				player.createItem(800,1,0);
+				m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+username+"';");
+				System.out.println("Updated user in VIP table");
+				//return;
+			}
+			
 		}
 		/* Update the database with login information. */
 		m_database.query("UPDATE `pn_members` SET `lastLoginServer` = '" + MySqlManager.parseSQL(GameServer.getServerName()) + "', `lastLoginTime` = '" + time + "', `lastLoginIP` = '"
@@ -645,6 +647,6 @@ public class LoginManager implements Runnable
 		initialiseClient(player, session);
 		/* Add them to the list of players */
 		GameServer.getInstance().updatePlayerCount();
-		System.out.println("INFO: " + username + " logged in.");
+		System.out.println("INFO: " + adminLevel + " " + username + " logged in.");
 	}
 }

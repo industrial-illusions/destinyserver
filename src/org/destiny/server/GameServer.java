@@ -236,8 +236,11 @@ public class GameServer
 	 * Reads the commandline arguments and starts the server.
 	 * 
 	 * @param args Optional commandline arguments.
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
+	 * @throws InvalidIniFormatException 
 	 */
-	public static void main(String[] args)
+	public static void main(String[] args) throws InvalidIniFormatException, FileNotFoundException, IOException
 	{
 		/* Pipe errors to a file. */
 		try
@@ -253,12 +256,8 @@ public class GameServer
 		}
 		/* Server settings */
 		Options options = new Options();
-		options.addOption("p", "players", true, "Sets the max number of players.");
-		options.addOption("port", "port", true, "Sets the serverport.");
 		options.addOption("ng", "nogui", false, "Starts server in headless mode.");
 		options.addOption("ar", "autorun", false, "Runs without asking a single question.");
-		options.addOption("h", "help", false, "Shows this menu.");
-		options.addOption("rates", "serverrates", true, "Gives the file to be used for server rates config");
 		if(args.length > 0)
 		{
 			CommandLineParser parser = new GnuParser();
@@ -266,37 +265,9 @@ public class GameServer
 			{
 				/* Parse the command line arguments. */
 				CommandLine line = parser.parse(options, args);
-				if(line.hasOption("players"))
-				{
-					m_maxPlayers = Integer.parseInt(line.getOptionValue("players"));
-					if(m_maxPlayers < 1)
-						m_maxPlayers = 500;
-				}
-				if(line.hasOption("port"))
-					m_port = Integer.parseInt(line.getOptionValue("port"));
-				if(line.hasOption("help"))
-				{
-					HelpFormatter formatter = new HelpFormatter();
-					System.err.println("Server requires a settings parameter");
-					formatter.printHelp("java GameServer [param] <args>", options);
-				}
 				/* Create the server gui */
-				if(!line.hasOption("nogui"))
+				if(!line.hasOption("nogui")){
 					m_boolGui = true;
-				/* Load the server rates file */
-				if(line.hasOption("rates"))
-				{
-					String rates = line.getOptionValue("rates");
-					Ini ratesIni = new Ini(new FileInputStream(rates));
-					Section s = ratesIni.get("RATES");
-					RATE_GOLD = Double.parseDouble(s.get("GOLD"));
-					RATE_GOLD_VIP = Double.parseDouble(s.get("GOLD_VIP"));
-					RATE_EXP_POKE = Double.parseDouble(s.get("EXP_POKE"));
-					RATE_EXP_POKE_VIP = Double.parseDouble(s.get("EXP_POKE_VIP"));
-					RATE_EXP_TRAINER = Double.parseDouble(s.get("EXP_TRAINER"));
-					RATE_EXP_TRAINER_VIP = Double.parseDouble(s.get("EXP_TRAINER_VIP"));
-					RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
-					RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
 				}
 				/* No else since it's set to default 'false'. */
 				boolean autorun = line.hasOption("autorun");
@@ -309,15 +280,19 @@ public class GameServer
 				HelpFormatter formatter = new HelpFormatter();
 				formatter.printHelp("java GameServer [param] <args>", options);
 			}
-			catch(InvalidIniFormatException iife)
-			{
-				iife.printStackTrace();
-				System.err.println("Error in server rates format, using default 1.0");
-			}
-			catch(IOException ioe)
-			{
-				ioe.printStackTrace();
-			}
+			Ini ratesIni = new Ini(new FileInputStream("conf/settings.ini"));
+			Section s = ratesIni.get("RATES");
+			RATE_GOLD = Double.parseDouble(s.get("GOLD"));
+			RATE_GOLD_VIP = Double.parseDouble(s.get("GOLD_VIP"));
+			RATE_EXP_POKE = Double.parseDouble(s.get("EXP_POKE"));
+			RATE_EXP_POKE_VIP = Double.parseDouble(s.get("EXP_POKE_VIP"));
+			RATE_EXP_TRAINER = Double.parseDouble(s.get("EXP_TRAINER"));
+			RATE_EXP_TRAINER_VIP = Double.parseDouble(s.get("EXP_TRAINER_VIP"));
+			RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
+			RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
+			Section server = ratesIni.get("SERVER");
+			m_port = Integer.parseInt(server.get("PORT"));
+			m_maxPlayers = Integer.parseInt(server.get("MAX_PLAYERS"));
 		}
 		else
 		{
