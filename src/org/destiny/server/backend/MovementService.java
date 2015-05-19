@@ -133,7 +133,7 @@ public class MovementService
 					map.setMapMatrix(m_mapMatrix);
 					map.loadData();
 					m_mapMatrix.setMap(map, x + 50, y + 50);
-					System.out.println("loaded map: " + x + ", " + y);
+					//System.out.println("loaded map: " + x + ", " + y);
 				}
 				catch(Exception e)
 				{

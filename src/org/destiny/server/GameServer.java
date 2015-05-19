@@ -348,6 +348,7 @@ public class GameServer
 		MySqlManager.getInstance();
 		m_serviceManager = new ServiceManager();
 		m_serviceManager.start();
+		System.out.println("INFO: Server startup completed.");
 	}
 
 	/**
