@@ -44,7 +44,6 @@ import org.ini4j.InvalidIniFormatException;
 public class GameServer
 {
 	/* The revision of the game server */
-	private static final int SERVER_REVISION = 0;
 	private static String SERVER_HASH = "Unknown";
 	public static final int MOVEMENT_THREADS = 12;
 	private static boolean m_boolGui = false;
@@ -69,7 +68,6 @@ public class GameServer
 	public static int RATE_WILDBATTLE = 8;
 	public static int RATE_KICKDELAY = 30;
 	public static final int AUTOSAVE_INTERVAL = 2; // Autosave interval in minutes
-	public static int REVISION = getServerRevision();
 
 	/**
 	 * Default constructor.

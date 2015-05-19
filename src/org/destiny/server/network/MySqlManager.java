@@ -10,7 +10,7 @@ import org.destiny.server.GameServer;
 
 /**
  * Handles MySQL connections.
- * Makes the process similair to PHP.
+ * Makes the process similar to PHP.
  * 
  * @author Daniel Morante
  * @author XtremeJedi

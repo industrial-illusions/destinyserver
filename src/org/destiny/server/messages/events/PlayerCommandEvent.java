@@ -295,7 +295,7 @@ public class PlayerCommandEvent implements MessageEvent
 	{
 		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
 		message.addInt(4);
-		ResultSet playerNameResult = m_database.query("SELECT username FROM pn_members WHERE username = '" + playername + "';");
+		ResultSet playerNameResult = m_database.query("SELECT `username` FROM `pn_members` WHERE `username` = '" + playername + "';");
 		try
 		{
 			if(playerNameResult.first())
@@ -306,10 +306,10 @@ public class PlayerCommandEvent implements MessageEvent
 					player.setY(player.getHealY());
 					player.setMap(GameServer.getServiceManager().getMovementService().getMapMatrix().getMapByGamePosition(player.getHealMapX(), player.getHealMapY()), player.getFacing());
 				}
-				ResultSet playerLocation = m_database.query("SELECT healX,healY,healMapX,healMapY FROM pn_members WHERE username = '" + playername + "';");
+				ResultSet playerLocation = m_database.query("SELECT `healX`,`healY`,`healMapX`,`healMapY` FROM `pn_members` WHERE `username` = '" + playername + "';");
 				playerLocation.first();
 				int px = playerLocation.getInt("healX"), py = playerLocation.getInt("healY"), pmapX = playerLocation.getInt("healMapX"), pmapY = playerLocation.getInt("healMapY");
-				m_database.query("UPDATE pn_members SET x = " + px + ", y = " + py + ", mapX = " + pmapX + ", mapY = " + pmapY + " WHERE username = '" + playername + "';");
+				m_database.query("UPDATE `pn_members` SET `x` = " + px + ", `y` = " + py + ", `mapX` = " + pmapX + ", `mapY` = " + pmapY + " WHERE `username` = '" + playername + "';");
 				message.addString("Player " + playername + " has been teleported to his last heal location.");
 			}
 			else
@@ -352,8 +352,8 @@ public class PlayerCommandEvent implements MessageEvent
 		String[] players = playernames.split(",");
 		Player player1 = ActiveConnections.getPlayer(players[0]);
 		Player player2 = ActiveConnections.getPlayer(players[1]);
-		ResultSet player1Result = m_database.query("SELECT username FROM pn_members WHERE username = '" + players[0] + "';");
-		ResultSet player2Result = m_database.query("SELECT username FROM pn_members WHERE username = '" + players[1] + "';");
+		ResultSet player1Result = m_database.query("SELECT `username` FROM `pn_members` WHERE `username` = '" + players[0] + "';");
+		ResultSet player2Result = m_database.query("SELECT `username` FROM `pn_members` WHERE `username` = '" + players[1] + "';");
 		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
 		message.addInt(4);
 		try

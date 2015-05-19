@@ -2,7 +2,7 @@ package org.destiny.server.client;
 
 import org.destiny.server.GameServer;
 import org.destiny.server.backend.entity.Player;
-import org.destiny.server.constants.ClientPacket;
+//import org.destiny.server.constants.ClientPacket;
 import org.destiny.server.protocol.ClientMessage;
 import org.destiny.server.protocol.ServerMessage;
 import org.jboss.netty.channel.Channel;
@@ -21,10 +21,10 @@ public class Session
 		authenticated = false;
 		ipAddress = Ip;
 
-		ServerMessage message = new ServerMessage(this);
-		message.init(ClientPacket.SERVER_REVISION.getValue());
-		message.addInt(GameServer.REVISION);
-		message.sendResponse();
+//		ServerMessage message = new ServerMessage(this);
+//		message.init(ClientPacket.SERVER_REVISION.getValue());
+//		message.addInt(GameServer.REVISION);
+//		message.sendResponse();
 	}
 
 	public void close()
