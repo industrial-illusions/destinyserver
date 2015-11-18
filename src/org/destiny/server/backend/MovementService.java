@@ -106,7 +106,7 @@ public class MovementService
 			ie.printStackTrace();
 		}
 		mapLoader.shutdown();
-		System.out.println("INFO: Maps loaded");
+		System.out.println("INFO: Maps loaded.");
 	}
 
 	private class MapThread implements Runnable
@@ -167,7 +167,7 @@ public class MovementService
 			m_movementManager[i] = new MovementManager();
 			m_movementManager[i].start();
 		}
-		System.out.println("INFO: Movement Service started");
+		System.out.println("INFO: Movement Service started.");
 	}
 
 	/**
@@ -178,6 +178,6 @@ public class MovementService
 		m_sleepTimer.finish();
 		for(int i = 0; i < m_movementManager.length; i++)
 			m_movementManager[i].stop();
-		System.out.println("INFO: Movement Service stopped");
+		System.out.println("INFO: Movement Service stopped.");
 	}
 }

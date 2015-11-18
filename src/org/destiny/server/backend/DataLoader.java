@@ -96,15 +96,15 @@ public class DataLoader implements Runnable
 							/* Must be an old shop */
 							if(Boolean.parseBoolean(shop.trim().toLowerCase())) {
 								npc.setShopKeeper(1); // Its an old shop! Yay!
-								System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD SHOP");
+								System.err.println("ERROR: Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD SHOP");
 							} else {
 								npc.setShopKeeper(0); // Its an old npc. Not a shop.
-								System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD NPC, PLEASE FIX");
+								System.err.println("ERROR: Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD NPC, PLEASE FIX");
 							}
 						}
 						catch(Exception ex)	{
 							npc.setShopKeeper(0);// Dunno what the hell it is, but its not a shop.
-							System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Broken 'shop'.");
+							System.err.println("ERROR: Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Broken 'shop'.");
 						}
 					}
 					break;

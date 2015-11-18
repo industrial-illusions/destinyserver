@@ -96,7 +96,7 @@ public class FishDatabase
 						addEntry(pokeName, fishies);
 					}
 					s.close();
-					System.out.println("INFO: Fishing database reinitialised");
+					System.out.println("INFO: Fishing database initialised.");
 				}
 				catch(Exception e)
 				{

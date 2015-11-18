@@ -2,6 +2,8 @@ package org.destiny.server.battle;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -16,7 +18,7 @@ import org.destiny.server.battle.mechanics.moves.MoveList;
 import org.destiny.server.battle.mechanics.moves.MoveSetData;
 import org.destiny.server.feature.FishDatabase;
 import org.ini4j.Ini;
-import org.ini4j.Ini.Section;
+import org.ini4j.InvalidFileFormatException;
 import org.simpleframework.xml.core.Persister;
 
 /**
@@ -128,8 +130,11 @@ public class DataService
 
 	/**
 	 * Initializes the species database
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
+	 * @throws InvalidFileFormatException 
 	 */
-	public void initialiseSpecies()
+	public void initialiseSpecies() throws InvalidFileFormatException, FileNotFoundException, IOException
 	{
 		/* Load shoddy database */
 		try
@@ -141,20 +146,12 @@ public class DataService
 			e1.printStackTrace();
 			return;
 		}
-		Ini ini = null;
-		/* Load updated POLR db */
-		try
-		{
-			ini = new Ini(new FileInputStream("./res/pokemon.ini"));
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			return;
-		}
+		
+		Ini pokeIni = new Ini(new FileInputStream("res/pokemon.ini"));
+
 		for(int i = 0; i < 493; i++)
 		{
-			Ini.Section s = ini.get(String.valueOf(i + 1));
+			Ini.Section s = pokeIni.get(String.valueOf(i + 1));
 			PokemonSpecies species = null;
 			String name = s.get("InternalName");
 			if(name.equalsIgnoreCase("NIDORANfE"))
@@ -202,21 +199,15 @@ public class DataService
 				initialisePokemon(species, s, i);
 			}
 		}
+		
 		/* Load TM info */
-		try
-		{
-			ini = new Ini(new FileInputStream("./res/tms.ini"));
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-			return;
-		}
-		Iterator<String> iterator = ini.keySet().iterator();
+		Ini tmsIni = new Ini(new FileInputStream("./res/tms.ini"));
+		
+		Iterator<String> iterator = tmsIni.keySet().iterator();
 		while(iterator.hasNext())
 		{
 			String tm = iterator.next();
-			Ini.Section s = ini.get(tm);
+			Ini.Section s = tmsIni.get(tm);
 			String[] pokemons = s.get("POKEMON").split(",");
 			for(int i = 0; i < pokemons.length; i++)
 			{
@@ -293,7 +284,7 @@ public class DataService
 	 * @param species
 	 * @param s
 	 */
-	private void initialisePokemon(PokemonSpecies species, Section s, int pokemonNumber)
+	private void initialisePokemon(PokemonSpecies species, Ini.Section s, int pokemonNumber)
 	{
 		if(species != null)
 		{

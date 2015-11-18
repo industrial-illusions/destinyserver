@@ -10,7 +10,7 @@ Pikachu,100,Lapras,100,Snorlax,100,Venusaur,100,Charizard,100,Blastoise,100
 0
 false
 false
-false
+0
 [/npc]
 [warp]
 18

@@ -145,7 +145,7 @@ public class TimeService implements Runnable
 			 * where day is a number from 0 - 6
 			 * Prints something like: 2 5 30 echo date('w h i');
 			 * Coded by -DefaulT for PokeNet servers ?> */
-			URL url = new URL("http://industrial-illusions.net/destiny/timeservice.php");
+			URL url = new URL("http://langfordenterprises.com/timeservice/index.php");
 			BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 			in.readLine();
 			StringTokenizer s = new StringTokenizer(in.readLine());
@@ -158,7 +158,7 @@ public class TimeService implements Runnable
 		{
 			/* Can throw a number of exceptions including IO and NumberFormat due to an empty line.
 			 * Can't reach website, base time on local */
-			System.out.println("ERROR: Cannot reach time server, reverting to local time");
+			System.out.println("ERROR: Cannot reach time server, reverting to local time!");
 			Calendar cal = Calendar.getInstance();
 			m_hour = cal.get(Calendar.HOUR_OF_DAY);
 			m_minutes = cal.get(Calendar.MINUTE);
@@ -215,7 +215,7 @@ public class TimeService implements Runnable
 			{
 			}
 		}
-		System.out.println("INFO: Time Service stopped");
+		System.out.println("INFO: Time Service stopped.");
 	}
 
 	/**
@@ -235,7 +235,7 @@ public class TimeService implements Runnable
 	public void start()
 	{
 		m_thread.start();
-		System.out.println("INFO: Time Service started");
+		System.out.println("INFO: Time Service started.");
 	}
 
 	/**

@@ -30,7 +30,7 @@ public class NpcSleepTimer extends Thread
 	@Override
 	public void run()
 	{
-		System.out.println("INFO: Npc sleep timer started");
+		System.out.println("INFO: Npc sleep timer started.");
 		Random r = new Random();
 		while(m_running)
 		{
@@ -53,7 +53,7 @@ public class NpcSleepTimer extends Thread
 			{
 			}
 		}
-		System.out.println("INFO: Npc sleep timer stopped");
+		System.out.println("INFO: Npc sleep timer stopped.");
 	}
 
 	public void finish()

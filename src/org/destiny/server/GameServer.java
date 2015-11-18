@@ -6,13 +6,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.Date;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -29,8 +27,6 @@ import org.apache.commons.cli.ParseException;
 import org.destiny.server.connections.ActiveConnections;
 import org.destiny.server.network.MySqlManager;
 import org.ini4j.Ini;
-import org.ini4j.Ini.Section;
-import org.ini4j.InvalidIniFormatException;
 
 /**
  * Represents a game server.
@@ -48,25 +44,16 @@ public class GameServer
 	public static final int MOVEMENT_THREADS = 12;
 	private static boolean m_boolGui = false;
 	private static String m_dbServer, m_dbName, m_dbUsername, m_dbPassword, m_serverName;
+	public static double RATE_GOLD, RATE_GOLD_VIP, RATE_EXP_POKE, RATE_EXP_POKE_VIP, RATE_EXP_TRAINER, RATE_EXP_TRAINER_VIP;
+	public static int RATE_WILDBATTLE, RATE_KICKDELAY, m_port, m_maxPlayers;
 	private static GameServer m_instance;
-	private static int m_maxPlayers = 100;
 	private static ServiceManager m_serviceManager;
-	private static int m_port = 7002;
 	private JFrame m_gui;
 	private JLabel m_pAmount, m_pHighest;
 	private JButton m_start, m_stop, m_set, m_exit;
 	private JPasswordField m_dbP;
 	private JTextField m_dbS, m_dbN, m_dbU, m_name;
 	private int m_highest;
-
-	public static double RATE_GOLD = 1.0;
-	public static double RATE_GOLD_VIP = 1.5;
-	public static double RATE_EXP_POKE = 1.0;
-	public static double RATE_EXP_POKE_VIP = 1.5;
-	public static double RATE_EXP_TRAINER = 1.0;
-	public static double RATE_EXP_TRAINER_VIP = 1.0;
-	public static int RATE_WILDBATTLE = 8;
-	public static int RATE_KICKDELAY = 30;
 	public static final int AUTOSAVE_INTERVAL = 2; // Autosave interval in minutes
 
 	/**
@@ -75,8 +62,10 @@ public class GameServer
 	 * It automatically loads settings if possible.
 	 * 
 	 * @param autorun True if the server should autostart, otherwise false.
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
 	 */
-	public GameServer(boolean autorun)
+	public GameServer(boolean autorun) throws FileNotFoundException, IOException
 	{
 		if(autorun)
 		{
@@ -182,8 +171,10 @@ public class GameServer
 	 * Initializes the gameserver object.
 	 * 
 	 * @param autorun True if the server should autostart, otherwise false.
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
 	 */
-	public static void initGameServer(boolean autorun)
+	public static void initGameServer(boolean autorun) throws FileNotFoundException, IOException
 	{
 		m_instance = new GameServer(autorun);
 	}
@@ -235,20 +226,16 @@ public class GameServer
 	 * @param args Optional commandline arguments.
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
-	 * @throws InvalidIniFormatException 
 	 */
-	public static void main(String[] args) throws InvalidIniFormatException, FileNotFoundException, IOException
-	{
+	public static void main(String[] args) throws FileNotFoundException, IOException
+	{		
 		/* Pipe errors to a file. */
-		
-		File f = null;
-		boolean bool = false;
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 			
 		try{
-			f = new File("logs/" + dateFormat.format(date) + ".txt");
-			bool = f.createNewFile();
+			File f = new File("logs/" + dateFormat.format(date) + ".txt");
+			f.createNewFile();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -280,19 +267,7 @@ public class GameServer
 				HelpFormatter formatter = new HelpFormatter();
 				formatter.printHelp("java GameServer [param] <args>", options);
 			}
-			Ini ratesIni = new Ini(new FileInputStream("conf/settings.ini"));
-			Section s = ratesIni.get("RATES");
-			RATE_GOLD = Double.parseDouble(s.get("GOLD"));
-			RATE_GOLD_VIP = Double.parseDouble(s.get("GOLD_VIP"));
-			RATE_EXP_POKE = Double.parseDouble(s.get("EXP_POKE"));
-			RATE_EXP_POKE_VIP = Double.parseDouble(s.get("EXP_POKE_VIP"));
-			RATE_EXP_TRAINER = Double.parseDouble(s.get("EXP_TRAINER"));
-			RATE_EXP_TRAINER_VIP = Double.parseDouble(s.get("EXP_TRAINER_VIP"));
-			RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
-			RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
-			Section server = ratesIni.get("SERVER");
-			m_port = Integer.parseInt(server.get("PORT"));
-			m_maxPlayers = Integer.parseInt(server.get("MAX_PLAYERS"));
+			
 		}
 		else
 		{
@@ -328,15 +303,45 @@ public class GameServer
 	}
 	
 	
+	/**
+	 * Reads configuration ini file.
+	 * @author Akkarinage
+	 * 
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
+	public void loadConfigs() throws FileNotFoundException, IOException
+	{
+		Ini configIni = new Ini(new FileInputStream("conf/settings.ini"));
+		Ini.Section s = configIni.get("RATES");
+		RATE_GOLD = Double.parseDouble(s.get("GOLD"));
+		RATE_GOLD_VIP = Double.parseDouble(s.get("GOLD_VIP"));
+		RATE_EXP_POKE = Double.parseDouble(s.get("EXP_POKE"));
+		RATE_EXP_POKE_VIP = Double.parseDouble(s.get("EXP_POKE_VIP"));
+		RATE_EXP_TRAINER = Double.parseDouble(s.get("EXP_TRAINER"));
+		RATE_EXP_TRAINER_VIP = Double.parseDouble(s.get("EXP_TRAINER_VIP"));
+		RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
+		RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
+		Ini.Section server = configIni.get("SERVER");
+		m_port = Integer.parseInt(server.get("PORT"));
+		m_maxPlayers = Integer.parseInt(server.get("MAX_PLAYERS"));
+	}
+	
+	
 
 	/**
 	 * Starts the GameServer.
 	 * This function fills the GUI fields (if any), checks the database connection and starts the servicemanager.
 	 * Once the servicemanager is started, the server will start booting up.
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
 	 **/
-	public void start()
+	public void start() throws FileNotFoundException, IOException
 	{
 		System.out.println("Git Hash: "+ getServerHash());
+		
+		loadConfigs();
+		
 		if(m_boolGui)
 		{
 			m_dbServer = m_dbS.getText();
@@ -390,7 +395,7 @@ public class GameServer
 	{
 		m_gui = new JFrame();
 		m_gui.setTitle("Pokemon Destiny Server");
-		m_gui.setSize(148, 340);
+		m_gui.setSize(148, 350);
 		m_gui.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		m_gui.getContentPane().setLayout(null);
 		m_gui.setResizable(false);
@@ -415,7 +420,15 @@ public class GameServer
 		{
 			public void actionPerformed(ActionEvent arg0)
 			{
-				start();
+				try {
+					start();
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		});
 		m_gui.getContentPane().add(m_start);

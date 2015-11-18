@@ -10,7 +10,7 @@ NULL
 0,1
 false
 false
-false
+0
 [/npc]
 [npc]
 Shop Keeper
@@ -24,7 +24,7 @@ NULL
 2
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
