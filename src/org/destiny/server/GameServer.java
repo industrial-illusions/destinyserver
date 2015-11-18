@@ -240,17 +240,20 @@ public class GameServer
 	public static void main(String[] args) throws InvalidIniFormatException, FileNotFoundException, IOException
 	{
 		/* Pipe errors to a file. */
-		try
-		{
-			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-			Date date = new Date();
-			PrintStream errorPrinter = new PrintStream(new File("logs/" + dateFormat.format(date) + ".txt"));
-			System.setErr(errorPrinter);
-		}
-		catch(IOException | SecurityException e)
-		{
+		
+		File f = null;
+		boolean bool = false;
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = new Date();
+			
+		try{
+			f = new File("logs/" + dateFormat.format(date) + ".txt");
+			bool = f.createNewFile();
+		}catch(Exception e){
 			e.printStackTrace();
 		}
+		
+
 		/* Server settings */
 		Options options = new Options();
 		options.addOption("ng", "nogui", false, "Starts server in headless mode.");

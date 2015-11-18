@@ -1,7 +1,6 @@
 *.class
 server.jar
 bin
-updates
-logs
+logs/*
 errors.txt
 conf/database.txt
