@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+import org.destiny.server.Logger;
 import org.destiny.server.backend.item.DropData;
 import org.destiny.server.battle.Pokemon.ExpTypes;
 import org.destiny.server.battle.PokemonEvolution.EvolutionTypes;
@@ -57,8 +58,8 @@ public class DataService
 			m_moveSetData = stream.read(MoveSetData.class, new File(f.getCanonicalPath() + "/res/movesets.xml"));
 			initialiseSpecies();
 			PokemonSpecies.setDefaultData(m_speciesData);
-			System.out.println("INFO: Pokemon Databases loaded.");
-			System.out.println("INFO: Trade Block List established.");
+			Logger.logInfo("Pokemon Databases loaded.");
+			Logger.logInfo("Trade Block List established.");
 		}
 		catch(Exception e)
 		{

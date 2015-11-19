@@ -9,6 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.destiny.server.GameServer;
+import org.destiny.server.Logger;
 import org.destiny.server.backend.entity.Player;
 import org.destiny.server.backend.map.ServerMap;
 import org.destiny.server.backend.map.ServerMapMatrix;
@@ -106,7 +107,7 @@ public class MovementService
 			ie.printStackTrace();
 		}
 		mapLoader.shutdown();
-		System.out.println("INFO: Maps loaded.");
+		Logger.logInfo("Maps loaded.");
 	}
 
 	private class MapThread implements Runnable
@@ -137,7 +138,7 @@ public class MovementService
 				}
 				catch(Exception e)
 				{
-					System.err.println("Error loading " + x + "." + y + ".tmx - Bad map file");
+					Logger.logError("Bad Map File (" + x + "." + y + ".tmx)", "Check /map/" + x + "." + y + ".tmx for syntax errors");
 					m_mapMatrix.setMap(null, x + 50, y + 50);
 				}
 		}
@@ -167,7 +168,7 @@ public class MovementService
 			m_movementManager[i] = new MovementManager();
 			m_movementManager[i].start();
 		}
-		System.out.println("INFO: Movement Service started.");
+		Logger.logInfo("Movement Service started.");
 	}
 
 	/**
@@ -178,6 +179,6 @@ public class MovementService
 		m_sleepTimer.finish();
 		for(int i = 0; i < m_movementManager.length; i++)
 			m_movementManager[i].stop();
-		System.out.println("INFO: Movement Service stopped.");
+		Logger.logInfo("Movement Service stopped.");
 	}
 }

@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.destiny.server.GameServer;
+import org.destiny.server.Logger;
 
 /**
  * Handles MySQL connections.
@@ -27,7 +28,7 @@ public class MySqlManager
 		mysql_connectionURL = "jdbc:mysql://" + GameServer.getDatabaseHost() + ":3306/" + GameServer.getDatabaseName() + "?autoReconnect=true";
 		if(!open())
 		{
-			System.out.println("Cannot connect to the database, please check your settings.");
+			Logger.logError("Cannot connect to the database, please check your settings.", "Unknown");
 			System.exit(-1);
 		}
 	}

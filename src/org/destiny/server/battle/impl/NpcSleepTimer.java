@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+import org.destiny.server.Logger;
 import org.destiny.server.backend.entity.NPC;
 
 /**
@@ -30,7 +31,7 @@ public class NpcSleepTimer extends Thread
 	@Override
 	public void run()
 	{
-		System.out.println("INFO: Npc sleep timer started.");
+		Logger.logInfo("Npc sleep timer started.");
 		Random r = new Random();
 		while(m_running)
 		{
@@ -53,7 +54,7 @@ public class NpcSleepTimer extends Thread
 			{
 			}
 		}
-		System.out.println("INFO: Npc sleep timer stopped.");
+		Logger.logInfo("Npc sleep timer stopped.");
 	}
 
 	public void finish()

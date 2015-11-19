@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 import org.destiny.server.GameServer;
+import org.destiny.server.Logger;
 import org.destiny.server.backend.SaveManager;
 import org.destiny.server.backend.entity.Player;
 import org.destiny.server.connections.ActiveConnections;
@@ -94,7 +95,7 @@ public class LogoutManager implements Runnable
 			}
 		}
 		m_thread = null;
-		System.out.println("INFO: All player data saved successfully.");
+		Logger.logInfo("All player data saved successfully.");
 	}
 
 	/**

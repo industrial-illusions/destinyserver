@@ -1,6 +1,7 @@
 package org.destiny.server.network;
 
 import org.destiny.server.GameServer;
+import org.destiny.server.Logger;
 import org.destiny.server.backend.SaveManager;
 import org.destiny.server.client.Session;
 import org.destiny.server.connections.ActiveConnections;
@@ -136,17 +137,17 @@ public class NetworkService
 		m_loginManager.start();
 		_connection = new Connection(GameServer.getPort(), m_logoutManager);
 		if(!_connection.StartSocket())
-			System.out.println("ERROR: Something is using the port or the IP address is invalid.");
+			Logger.logError("Something is using the port or the IP address is invalid", "Check for already running instances of Destiny on the specified port");
 		else
 		{
-			System.out.println("INFO: Server started on port " + GameServer.getPort());
+			Logger.logInfo("Server started on port " + GameServer.getPort());
 			/* Start the chat managers */
 			for(int i = 0; i < m_chatManagers.length; i++)
 			{
 				m_chatManagers[i] = new ChatManager();
 				m_chatManagers[i].start();
 			}
-			System.out.println("INFO: Network Service started.");
+			Logger.logInfo("Network Service started.");
 		}
 	}
 
@@ -157,10 +158,10 @@ public class NetworkService
 	{
 		_connection.StopSocket();
 		logoutAll();
-		System.out.println("Logged out all players.");
+		Logger.logInfo("Logged out all players.");
 		for(ChatManager chatMngr : m_chatManagers)
 			chatMngr.stop();
-		System.out.println("INFO: Network Service stopped.");
+		Logger.logInfo("Network Service stopped.");
 	}
 
 	private class SaveThread implements Runnable
@@ -174,7 +175,7 @@ public class NetworkService
 			{
 				if(ActiveConnections.getActiveConnections() > 0)
 				{
-					System.out.println("Saving all players");
+					Logger.logInfo("Saving all players.");
 					/* Queue all players to be saved */
 					for(Session session : ActiveConnections.allSessions().values())
 					{
@@ -194,7 +195,7 @@ public class NetworkService
 								ServerMessage failmsg = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
 								failmsg.addString("Save Failed.");
 								session.Send(failmsg);
-								System.err.println("Error saving player" + session.getPlayer().getName() + " " + session.getPlayer().getId());
+								Logger.logError("Error saving player " + session.getPlayer().getName() + " (" + session.getPlayer().getId() + ")", "Look up " + session.getPlayer().getId() + " in `pn_members`");
 							}
 						}
 						else
@@ -210,7 +211,7 @@ public class NetworkService
 				catch(InterruptedException ie)
 				{
 					shouldSave = false;
-					System.err.println("Autosaver has been stopped!");
+					Logger.logInfo("Autosaver has been stopped!");
 				}
 			}
 		}

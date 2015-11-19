@@ -102,7 +102,7 @@ public class ServiceManager
 		m_movementService.start();
 		m_networkService.start();
 		m_timeService.start();
-		System.out.println("INFO: Service Manager startup completed.");
+		Logger.logInfo("Service Manager startup completed.");
 	}
 
 	/**
@@ -115,6 +115,6 @@ public class ServiceManager
 		m_timeService.stop();
 		m_movementService.stop();
 		m_networkService.stop();
-		System.out.println("INFO: Service Manager stopped.");
+		Logger.logInfo("Service Manager stopped.");
 	}
 }

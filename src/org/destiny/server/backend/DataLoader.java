@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import org.destiny.server.Logger;
 import org.destiny.server.backend.entity.HMObject;
 import org.destiny.server.backend.entity.NPC;
 import org.destiny.server.backend.entity.TradeChar;
@@ -96,15 +97,15 @@ public class DataLoader implements Runnable
 							/* Must be an old shop */
 							if(Boolean.parseBoolean(shop.trim().toLowerCase())) {
 								npc.setShopKeeper(1); // Its an old shop! Yay!
-								System.err.println("ERROR: Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD SHOP");
+								Logger.logError("Found old style Shop NPC (" + m_map.getX() + "." + m_map.getY() + ".txt)", "Change TRUE to Shop Number in " + m_map.getX() + "." + m_map.getY() + ".txt");
 							} else {
 								npc.setShopKeeper(0); // Its an old npc. Not a shop.
-								System.err.println("ERROR: Error in " + m_map.getX() + "." + m_map.getY() + ".txt - OLD NPC, PLEASE FIX");
+								Logger.logError("Found old style NPC (" + m_map.getX() + "." + m_map.getY() + ".txt)", "Change FALSE to 0 in " + m_map.getX() + "." + m_map.getY() + ".txt");
 							}
 						}
 						catch(Exception ex)	{
 							npc.setShopKeeper(0);// Dunno what the hell it is, but its not a shop.
-							System.err.println("ERROR: Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Broken 'shop'.");
+							Logger.logError("Unknown Shop/NPC (" + m_map.getX() + "." + m_map.getY() + ".txt)", "Better have a look " + m_map.getX() + "." + m_map.getY() + ".txt - maybe take a hammer to it??");
 						}
 					}
 					break;
@@ -163,7 +164,7 @@ public class DataLoader implements Runnable
 		catch(Exception e)
 		{
 			e.printStackTrace();
-			System.err.println("Error in " + m_map.getX() + "." + m_map.getY() + ".txt - Invalid NPC, HM Object or WarpTile");
+			Logger.logError("Invalid NPC, HM Object or WarpTile (" + m_map.getX() + "." + m_map.getY() + ".txt)", "Check syntax in " + m_map.getX() + "." + m_map.getY() + ".txt");
 		}
 	}
 }

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.destiny.server.Logger;
 import org.destiny.server.backend.item.DropData;
 import org.destiny.server.battle.Pokemon.ExpTypes;
 import org.destiny.server.battle.mechanics.PokemonType;
@@ -375,7 +376,7 @@ public class PokemonSpecies
 	{
 		if(m_drops == null)
 		{
-			System.err.println("INFO: Drop data null for " + m_name);
+			Logger.logError("Drop data null for " + m_name, "No data was passed to org.destiny.server.battle.PokemonSpecies.getRandomItem()");
 			return -1;
 		}
 		if(DataService.getBattleMechanics().getRandom().nextInt(99) < 30)

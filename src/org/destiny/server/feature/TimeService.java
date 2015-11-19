@@ -8,6 +8,7 @@ import java.util.Random;
 import java.util.StringTokenizer;
 
 import org.destiny.server.GameServer;
+import org.destiny.server.Logger;
 import org.destiny.server.backend.entity.Player;
 import org.destiny.server.battle.mechanics.statuses.field.FieldEffect;
 import org.destiny.server.battle.mechanics.statuses.field.HailEffect;
@@ -158,7 +159,7 @@ public class TimeService implements Runnable
 		{
 			/* Can throw a number of exceptions including IO and NumberFormat due to an empty line.
 			 * Can't reach website, base time on local */
-			System.out.println("ERROR: Cannot reach time server, reverting to local time!");
+			Logger.logError("Cannot reach time server, reverting to local time!", "Is the TimeService URL correct?");
 			Calendar cal = Calendar.getInstance();
 			m_hour = cal.get(Calendar.HOUR_OF_DAY);
 			m_minutes = cal.get(Calendar.MINUTE);
@@ -215,7 +216,7 @@ public class TimeService implements Runnable
 			{
 			}
 		}
-		System.out.println("INFO: Time Service stopped.");
+		Logger.logInfo("Time Service stopped.");
 	}
 
 	/**
@@ -235,7 +236,7 @@ public class TimeService implements Runnable
 	public void start()
 	{
 		m_thread.start();
-		System.out.println("INFO: Time Service started.");
+		Logger.logInfo("Time Service started.");
 	}
 
 	/**

@@ -31,7 +31,7 @@ import org.ini4j.Ini;
 /**
  * Represents a game server.
  * Starting a server requires a parameter to be passed in, i.e. java server.jar -ng -ar
- * Code is written/being re-written with intention of being compiled/ran with Java 8 u45 (1.8.0_45)
+ * Code is written/being re-written with intention of being compiled/ran with Java 8 u65 (1.8.0_65)
  * 
  * @author shadowkanji
  * @author Nushio
@@ -45,7 +45,11 @@ public class GameServer
 	private static boolean m_boolGui = false;
 	private static String m_dbServer, m_dbName, m_dbUsername, m_dbPassword, m_serverName;
 	public static double RATE_GOLD, RATE_GOLD_VIP, RATE_EXP_POKE, RATE_EXP_POKE_VIP, RATE_EXP_TRAINER, RATE_EXP_TRAINER_VIP;
-	public static int RATE_WILDBATTLE, RATE_KICKDELAY, m_port, m_maxPlayers;
+	public static int RATE_WILDBATTLE, RATE_KICKDELAY, m_port, m_maxPlayers, IRC_PORT;
+	public static String IRC_HOST, IRC_NICK, IRC_NICKPASS, IRC_CHANNEL;
+	public static boolean DEBUG = false;
+	public static boolean SQL_LOGGING = false;
+	public static boolean IRC_ENABLE = false;
 	private static GameServer m_instance;
 	private static ServiceManager m_serviceManager;
 	private JFrame m_gui;
@@ -273,7 +277,7 @@ public class GameServer
 		{
 			/* Automatically generate the help statement. */
 			HelpFormatter formatter = new HelpFormatter();
-			System.err.println("Server requires a settings parameter");
+			Logger.logError("Server requires a settings parameter", "Search Destiny Wiki for Statup Args.");
 			formatter.printHelp("java GameServer [param] <args>", options);
 		}
 	}
@@ -322,9 +326,24 @@ public class GameServer
 		RATE_EXP_TRAINER_VIP = Double.parseDouble(s.get("EXP_TRAINER_VIP"));
 		RATE_WILDBATTLE = Integer.parseInt(s.get("WILDBATTLE"));
 		RATE_KICKDELAY = Integer.parseInt(s.get("KICKDELAY"));
+		
 		Ini.Section server = configIni.get("SERVER");
 		m_port = Integer.parseInt(server.get("PORT"));
 		m_maxPlayers = Integer.parseInt(server.get("MAX_PLAYERS"));
+		DEBUG = Boolean.parseBoolean(server.get("DEBUG"));
+		SQL_LOGGING = Boolean.parseBoolean(server.get("SQL_LOGGING"));
+		
+		Ini.Section irc = configIni.get("IRC");
+		IRC_ENABLE = Boolean.parseBoolean(irc.get("IRC_ENABLE"));
+		IRC_HOST = irc.get("IRC_HOST");
+		IRC_PORT = Integer.parseInt(irc.get("IRC_PORT"));
+		IRC_NICK = irc.get("IRC_NICK");
+		IRC_NICKPASS = irc.get("IRC_NICKPASS");
+		IRC_CHANNEL = irc.get("IRC_CHANNEL");
+		
+		
+				
+		
 	}
 	
 	
@@ -338,7 +357,7 @@ public class GameServer
 	 **/
 	public void start() throws FileNotFoundException, IOException
 	{
-		System.out.println("Git Hash: "+ getServerHash());
+		if(GameServer.DEBUG){Logger.logInfo("Git Hash: "+ getServerHash());}
 		
 		loadConfigs();
 		
@@ -356,7 +375,8 @@ public class GameServer
 		MySqlManager.getInstance();
 		m_serviceManager = new ServiceManager();
 		m_serviceManager.start();
-		System.out.println("INFO: Server startup completed.");
+		if(GameServer.DEBUG){Logger.logInfo("Server running in debug mode.");}
+		Logger.logInfo("Server startup completed.");
 	}
 
 	/**
@@ -377,7 +397,7 @@ public class GameServer
 			try
 			{
 				Thread.sleep(10 * 1000);
-				System.out.println("Exiting server...");
+				Logger.logInfo("Exiting server...");
 				MySqlManager.getInstance().close();
 				System.exit(0);
 			}
