@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 import org.destiny.server.GameServer;
+import org.destiny.server.Logger;
 import org.destiny.server.backend.entity.Bag;
 import org.destiny.server.backend.entity.Player;
 import org.destiny.server.backend.entity.Pokedex;
@@ -40,6 +41,7 @@ public class LoginManager implements Runnable
 	private Queue<Object[]> m_loginQueue;
 	private Queue<Object[]> m_passChangeQueue;
 	private Thread m_thread;
+	//private Bag m_bag;
 
 	/**
 	 * Default constructor. Requires a logout manager to be passed in so the server can check if player's data is not being saved as they are logging in.
@@ -246,7 +248,7 @@ public class LoginManager implements Runnable
 				}
 				else if(rs.getString("lastLoginServer").equals("null"))
 					/* They are not logged in elsewhere, log them in. */
-					login(username, language, session, rs);
+					login(username, language, session, rs, rs.getInt("id"));
 			}
 			else
 			{
@@ -604,7 +606,7 @@ public class LoginManager implements Runnable
 	 * @param result
 	 * @throws SQLException 
 	 */
-	private void login(String username, char language, Session session, ResultSet result) throws SQLException
+	private void login(String username, char language, Session session, ResultSet result, Integer userid) throws SQLException
 	{
 		/* They are not logged in elsewhere, set the current login to the current server. */
 		long time = System.currentTimeMillis();
@@ -614,31 +616,34 @@ public class LoginManager implements Runnable
 		session.setPlayer(player);
 		session.setLoggedIn(true);
 		player.setLanguage(Language.values()[Integer.parseInt(String.valueOf(language))]);
-		String adminLevel = "User";
+		String adminLevel = "User ";
 		if(player.getAdminLevel() >= UserClasses.VIP){
-			adminLevel = "VIP";
+			adminLevel = "VIP ";
 			// VIP Daily Login Reward
 			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 			Date date = new Date();
-			//ResultSet vipdate = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "'");
-			ResultSet rs = m_database.query("SELECT * FROM `pn_vip` WHERE `member`='" + username + "'");
-			if(rs == null) {
-				player.createItem(5,2,0);
-				player.createItem(87,2,0);
-				player.createItem(800,1,0);
-				m_database.query("INSERT INTO `pn_vip` (`member`, `date`) VALUES ('"+username+"', '"+dateFormat.format(date)+"';");
-				System.out.println("Added user to VIP table");
-				//return;
+			ResultSet rs = m_database.query("SELECT * FROM `pn_vip` WHERE `member` = '" + userid + "'");
+			if(GameServer.DEBUG){System.out.println("Searching for user (" + username + ":"+userid+") in the VIP table.");}
+			if(rs.first()) {
+				if(GameServer.DEBUG){System.out.println("Found user in VIP table. Did they already log in today?");}
+				ResultSet rs2 = m_database.query("SELECT * FROM `pn_vip` WHERE `member` = '" + userid + "' AND `date` = '"+dateFormat.format(date)+"'");
+				if(rs2.first()) {
+					if(GameServer.DEBUG){System.out.println("User already given rewards for today!");}
+					} else {
+						m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+userid+"';");
+						if(GameServer.DEBUG){System.out.println("Updated user in VIP table.");}
+					}
+			} else {
+				Player p = session.getPlayer();
+				p.getBag().addItem(5, 2);
+				p.getBag().addItem(87, 2);
+				p.getBag().addItem(800, 1);
+				m_database.query("INSERT INTO `pn_vip` (`member`, `date`) VALUES ('" + userid + "', '" + dateFormat.format(date) + "');");
+				if(GameServer.DEBUG){System.out.println("Added user to VIP table.");}
 			}
-			if(rs.first() && rs.getString("member").equalsIgnoreCase(username) && !rs.getString("date").equalsIgnoreCase(dateFormat.format(date))) {
-				player.createItem(5,2,0);
-				player.createItem(87,2,0);
-				player.createItem(800,1,0);
-				m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+username+"';");
-				System.out.println("Updated user in VIP table");
-				//return;
-			}
-			
+		}
+		if(player.getAdminLevel() >= UserClasses.ADMIN){
+			adminLevel = "Admin ";
 		}
 		/* Update the database with login information. */
 		m_database.query("UPDATE `pn_members` SET `lastLoginServer` = '" + MySqlManager.parseSQL(GameServer.getServerName()) + "', `lastLoginTime` = '" + time + "', `lastLoginIP` = '"
@@ -647,6 +652,6 @@ public class LoginManager implements Runnable
 		initialiseClient(player, session);
 		/* Add them to the list of players */
 		GameServer.getInstance().updatePlayerCount();
-		System.out.println("INFO: " + adminLevel + " " + username + " logged in.");
+		Logger.logInfo(adminLevel + username + " logged in.");
 	}
 }

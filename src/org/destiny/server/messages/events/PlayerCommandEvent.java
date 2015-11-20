@@ -16,11 +16,10 @@ import org.destiny.server.protocol.ClientMessage;
 import org.destiny.server.protocol.ServerMessage;
 
 
-
 public class PlayerCommandEvent implements MessageEvent
 {
-//private int m_money = 0;
 	private MySqlManager m_database;
+	//private Bag m_bag;
 
 	@Override
 	public void Parse(Session session, ClientMessage request, ServerMessage message)
@@ -45,7 +44,7 @@ public class PlayerCommandEvent implements MessageEvent
 			Player player = ActiveConnections.getPlayer(playername);
 			message = new ServerMessage(ClientPacket.CHAT_PACKET);
 			message.addInt(4);
-			message.addString("Location: Map: "+player.getMapX()+", "+player.getMapY()+" x: "+player.getX()+" y: "+player.getY()+"");
+			message.addString("Location: Map: "+player.getMapX()+", "+player.getMapY()+" x: "+player.getX()+" ("+player.getX() / 32 +") y: "+player.getY()+" ("+player.getY() / 32 +")");
 			session.Send(message);
 		}
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("kick "))
@@ -69,12 +68,10 @@ public class PlayerCommandEvent implements MessageEvent
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("item "))
 		{
 			String[] playerdata = input.substring(5).split(",");
-			String playername = playerdata[0];
-			int itemid = Integer.parseInt(playerdata[1]);
-			int qty = 1;
-			if(playerdata[2] != null){ qty = Integer.parseInt(playerdata[2]);}
+			int itemid = Integer.parseInt(playerdata[0]);
+			int qty = Integer.parseInt(playerdata[1]);
 			if(checkPermission(session, UserClasses.ADMIN))
-				processGetItem(session, playername, itemid, qty );
+				processGetItem(session, itemid, qty );
 		}
 		else if(input.length() >= 6 && input.substring(0, 6).equalsIgnoreCase("money "))
 		{
@@ -158,35 +155,34 @@ public class PlayerCommandEvent implements MessageEvent
 		{
 			message = new ServerMessage(ClientPacket.CHAT_PACKET);
 			message.addInt(4);
-			message.addString("List of available commands:");
-			message.addString("playercount ");
-			message.addString("where <player>");
+			String cmdString = "List of available commands:\n";
+			cmdString = cmdString + "/playercount\n";
+			cmdString = cmdString + "/where <player>\n";
 			if(checkPermission(session, UserClasses.VIP)){
 			}
 			if(checkPermission(session, UserClasses.MODERATOR)){
-				message.addString("mute ");
-				message.addString("kick ");
-				message.addString("reset ");
-				message.addString("unmute ");
-				message.addString("announce ");
+				cmdString = cmdString + "/mute <player>\n";
+				cmdString = cmdString + "/kick <player>\n";
+				cmdString = cmdString + "/reset <player>\n";
+				cmdString = cmdString + "/unmute <player>\n";
+				cmdString = cmdString + "/announce <text>\n";
 			}
 			if(checkPermission(session, UserClasses.SUPER_MOD)){
-				message.addString("ban ");
-				message.addString("jump ");
-				message.addString("unban ");
-				message.addString("notify ");
-				message.addString("weather ");
+				cmdString = cmdString + "/ban <player>\n";
+				cmdString = cmdString + "/unban <player>\n";
+				cmdString = cmdString + "/jump <player 1>,<player 2>\n";
+				cmdString = cmdString + "/notify ";
+				cmdString = cmdString + "/weather <type>\n";
 			}
 			if(checkPermission(session, UserClasses.DEVELOPER)){
-				message.addString("class");
+				cmdString = cmdString + "/class\n";
 			}
 			if(checkPermission(session, UserClasses.ADMIN)){
-				message.addString("warp <player>,<location> ");
-				message.addString("item <itemid>,<qty>");
-				message.addString("money <player>,<qty>");
-				
+				cmdString = cmdString + "/warp <player>,<location>\n";
+				cmdString = cmdString + "/item <itemid>,<qty>\n";
+				cmdString = cmdString + "/money <player>,<qty>\n";
 			}
-
+			message.addString(cmdString);
 			session.Send(message);
 		}
 		else
@@ -328,23 +324,21 @@ public class PlayerCommandEvent implements MessageEvent
 		Player player = ActiveConnections.getPlayer(playername);
 		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
 		message.addInt(4);
-		//m_money = m_money + mny;
 		player.setMoney(player.getMoney() + mny);
 		player.updateClientMoney();
 		message.addString("Something about "+ mny +" money..");
 		session.Send(message);
 	}
 	
-	private void processGetItem(Session session, String playername, Integer itemid, Integer qty)
+	private void processGetItem(Session session, Integer itemid, Integer qty)
 	{
-		Player player = ActiveConnections.getPlayer(playername);
 		String itemname = GameServer.getServiceManager().getItemDatabase().getItem(itemid).getName();
-		System.out.println("Item: "+ itemname + " (" + itemid + ") Qty: " + qty + ".");
-		player.createItem(itemid, qty, 1);
+		Player p = session.getPlayer();
+		p.getBag().addItem(itemid, qty);
 		ServerMessage message = new ServerMessage(ClientPacket.CHAT_PACKET);
 		message.addInt(4);
 		message.addString("Obtained " + qty + "x " + itemname);
-		session.Send(message);
+		session.Send(message);	
 	}
 
 	private void processPlayerWarp(Session session, String playernames)
