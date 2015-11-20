@@ -10,7 +10,7 @@ Goldeen,29,Wailmer,29
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bird Keeper Robert
@@ -24,7 +24,7 @@ Swablu,30
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bird Keeper Colin
@@ -38,7 +38,7 @@ Natu,29,Swellow,29
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Parasol Lady
@@ -52,7 +52,7 @@ Castform,30
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Cooltrainer Jenn
@@ -66,7 +66,7 @@ Milotic,31
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Maniac Brandon
@@ -80,7 +80,7 @@ Surskit,28,Surskit,28,Surskit,28
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Ruin Maniac Chip
@@ -94,5 +94,5 @@ Sandshrew,28,Sandshrew,28,Sandslash,28
 0
 false
 false
-false
+0
 [/npc]

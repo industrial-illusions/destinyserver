@@ -19,7 +19,7 @@ NULL
 0
 FALSE
 FALSE
-FALSE
+0
 [/npc]
 [npc]
 NULL
@@ -33,7 +33,7 @@ NULL
 0
 FALSE
 FALSE
-TRUE
+1
 [/npc]
 [npc]
 NULL
@@ -47,5 +47,5 @@ NULL
 0
 FALSE
 FALSE
-TRUE
+1
 [/npc]

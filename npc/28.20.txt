@@ -10,7 +10,7 @@ Ninjask,26
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Maniac Donald
@@ -24,7 +24,7 @@ Wurmple,25,Silcoon,25,Beautifly,25
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Catcher Greg
@@ -38,7 +38,7 @@ Volbeat,26,Illumise,26
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bug Maniac Taylor
@@ -52,7 +52,7 @@ Wurmple,25,Cascoon,25,Dustox,25
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Fisherman Eugene
@@ -66,7 +66,7 @@ Magikarp,30,Tentacool,21,Feebas,27,Carvanha,24
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Pokemon Ranger Catherine
@@ -80,7 +80,7 @@ Gloom,27,Roselia,27
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Pokemon Ranger Jackson
@@ -94,7 +94,7 @@ Breloom,28
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Bird Keeper Phil
@@ -108,7 +108,7 @@ Tailow,25,Wingull,25,Swellow,25
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Ninja Boy Takashi
@@ -122,7 +122,7 @@ Ninjask,27
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Ninja Boy Hideo
@@ -136,7 +136,7 @@ Koffing,26,Koffing,26
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Ninja Master Sasuke
@@ -150,7 +150,7 @@ Ninjask,79,Shedinja,80
 0
 false
 false
-false
+0
 [/npc]
 [warp]
 37

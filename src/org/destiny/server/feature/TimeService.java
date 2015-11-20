@@ -146,7 +146,7 @@ public class TimeService implements Runnable
 			 * where day is a number from 0 - 6
 			 * Prints something like: 2 5 30 echo date('w h i');
 			 * Coded by -DefaulT for PokeNet servers ?> */
-			URL url = new URL("http://langfordenterprises.com/timeservice/index.php");
+			URL url = new URL(GameServer.TIMESERVICEURL);
 			BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 			in.readLine();
 			StringTokenizer s = new StringTokenizer(in.readLine());

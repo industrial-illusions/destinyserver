@@ -406,7 +406,7 @@ Togetic,45,Clefable,45,Raichu,45
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Lass 
@@ -420,7 +420,7 @@ Togetic,45,Clefable,45,Raichu,45
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Lass 
@@ -434,7 +434,7 @@ Nidoqueen,45,Vespiquen,45,Delcatty,45
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Gentleman
@@ -448,7 +448,7 @@ Arcanine,45,Quagsire,45
 2
 false
 false
-false
+0
 [/npc]
 [npc]
 Youngster
@@ -462,7 +462,7 @@ Croconaw,35
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Lass 
@@ -476,7 +476,7 @@ Pichu,25,Pikachu,40,Raichu,45
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Fisherman
@@ -490,7 +490,7 @@ Starmie,50
 4
 false
 false
-false
+0
 [/npc]
 [npc]
 Waiter
@@ -504,7 +504,7 @@ Machamp,50
 5
 false
 false
-false
+0
 [/npc]
 [npc]
 Lass 
@@ -518,7 +518,7 @@ Togekiss,50
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Tony
@@ -532,7 +532,7 @@ NULL
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Old Man
@@ -546,7 +546,7 @@ Ninetails,50
 2
 false
 false
-false
+0
 [/npc]
 [npc]
 Youngster
@@ -560,7 +560,7 @@ Quilava,35
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Youngster
@@ -574,7 +574,7 @@ Mightyena,50,Honchkrow,50
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Youngster
@@ -588,7 +588,7 @@ Bayleef,35
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Waiter
@@ -602,7 +602,7 @@ NULL
 6
 true
 false
-false
+0
 [/npc]
 [npc]
 Baby
@@ -616,7 +616,7 @@ NULL
 7
 false
 false
-false
+0
 [/npc]
 [npc]
 Mom
@@ -630,7 +630,7 @@ NULL
 8
 false
 false
-false
+0
 [/npc]
 [npc]
 Waiter
@@ -644,7 +644,7 @@ NULL
 9
 false
 false
-false
+0
 [/npc]
 [npc]
 Waiter
@@ -658,7 +658,7 @@ NULL
 9
 false
 false
-false
+0
 [/npc]
 [npc]
 Sarah
@@ -672,7 +672,7 @@ NULL
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Theo
@@ -686,7 +686,7 @@ NULL
 10
 false
 false
-false
+0
 [/npc]
 [npc]
 Timothy
@@ -700,7 +700,7 @@ Skarmory,45,Ursaring,45,Ariados,45
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Medusa
@@ -714,7 +714,7 @@ Rapidash,50,Dodrio,50
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Muriel
@@ -728,7 +728,7 @@ Weavile,60
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Luigi
@@ -742,7 +742,7 @@ Gengar,50
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Susan
@@ -756,7 +756,7 @@ Dewgong,45,Tangela,45
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 Seth
@@ -770,7 +770,7 @@ Hypno,50
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Simon
@@ -784,7 +784,7 @@ Crobat,50,Snorlax,50
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Gamer
@@ -798,7 +798,7 @@ Aggron,50
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Gamer
@@ -812,7 +812,7 @@ Tyranitar,50
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Risky Man
@@ -826,7 +826,7 @@ Magnezone,50
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Gamer
@@ -840,7 +840,7 @@ Aggron,50
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Leonard
@@ -854,7 +854,7 @@ Golem,50
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -868,8 +868,5 @@ NULL
 9
 false
 false
-false
+0
 [/npc]
-
-
-

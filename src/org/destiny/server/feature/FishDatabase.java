@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.StringTokenizer;
+
+import org.destiny.server.Logger;
 import org.simpleframework.xml.ElementMap;
 import org.simpleframework.xml.Root;
 
@@ -96,7 +98,7 @@ public class FishDatabase
 						addEntry(pokeName, fishies);
 					}
 					s.close();
-					System.out.println("INFO: Fishing database initialised.");
+					Logger.logInfo("Fishing database initialised.");
 				}
 				catch(Exception e)
 				{

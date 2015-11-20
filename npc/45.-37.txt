@@ -19,7 +19,7 @@ NULL
 1
 true
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -33,7 +33,7 @@ NULL
 2
 false
 true
-false
+0
 [/npc]
 [npc]
 Tobias
@@ -47,7 +47,5 @@ Latios,100,Darkray,100,Milotic,100,Rotom,100,Aerodactyl,100,Metagross,100
 0
 false
 false
-false
+0
 [/npc]
-
-

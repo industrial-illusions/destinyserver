@@ -10,7 +10,7 @@ NULL
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 sign
@@ -24,7 +24,7 @@ NULL
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 Seasond_Sailor
@@ -38,7 +38,7 @@ NULL
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 citizen
@@ -52,7 +52,7 @@ NULL
 0
 false
 false
-false
+0
 [/npc]
 [npc]
 citizen

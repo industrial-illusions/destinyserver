@@ -1,2 +1,2 @@
-java -jar server.jar -nogui -ar
+java -jar server.jar -ar
 Pause

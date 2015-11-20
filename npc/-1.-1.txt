@@ -10,7 +10,7 @@ NULL
 0,1
 false
 false
-false
+0
 [/npc]
 [npc]
 Hiker Bailey
@@ -24,7 +24,7 @@ Geodude,13,Geodude,13,Geodude,13,Geodude,13,Geodude,13
 2
 false
 false
-false
+0
 [/npc]
 [warp]
 18

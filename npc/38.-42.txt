@@ -10,7 +10,7 @@ NULL
 16,17
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -24,7 +24,7 @@ NULL
 15
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -38,7 +38,7 @@ NULL
 14
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -52,7 +52,7 @@ NULL
 11,12,13
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -66,7 +66,7 @@ NULL
 9,10
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -80,7 +80,7 @@ NULL
 8
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -94,7 +94,7 @@ NULL
 6,7
 false
 false
-false
+0
 [/npc]
 [npc]
 NPC
@@ -108,7 +108,7 @@ NULL
 2,3
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -122,7 +122,7 @@ NULL
 4,5
 false
 false
-false
+0
 [/npc]
 [warp]
 2
@@ -286,8 +286,3 @@ false
 -32
 0
 [/warp]
-
-
-
-
-

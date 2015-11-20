@@ -46,7 +46,7 @@ public class GameServer
 	private static String m_dbServer, m_dbName, m_dbUsername, m_dbPassword, m_serverName;
 	public static double RATE_GOLD, RATE_GOLD_VIP, RATE_EXP_POKE, RATE_EXP_POKE_VIP, RATE_EXP_TRAINER, RATE_EXP_TRAINER_VIP;
 	public static int RATE_WILDBATTLE, RATE_KICKDELAY, m_port, m_maxPlayers, IRC_PORT;
-	public static String IRC_HOST, IRC_NICK, IRC_NICKPASS, IRC_CHANNEL;
+	public static String IRC_HOST, IRC_NICK, IRC_NICKPASS, IRC_CHANNEL, TIMESERVICEURL;
 	public static boolean DEBUG = false;
 	public static boolean SQL_LOGGING = false;
 	public static boolean IRC_ENABLE = false;
@@ -332,6 +332,7 @@ public class GameServer
 		m_maxPlayers = Integer.parseInt(server.get("MAX_PLAYERS"));
 		DEBUG = Boolean.parseBoolean(server.get("DEBUG"));
 		SQL_LOGGING = Boolean.parseBoolean(server.get("SQL_LOGGING"));
+		TIMESERVICEURL = server.get("TIMESERVICEURL");
 		
 		Ini.Section irc = configIni.get("IRC");
 		IRC_ENABLE = Boolean.parseBoolean(irc.get("IRC_ENABLE"));

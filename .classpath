@@ -11,5 +11,6 @@
 	<classpathentry kind="lib" path="lib/slf4j-jdk14-1.6.4.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.25-bin.jar"/>
 	<classpathentry kind="lib" path="lib/netty-3.6.5.Final.jar"/>
+	<classpathentry kind="lib" path="lib/pircbot.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
