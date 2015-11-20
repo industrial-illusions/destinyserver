@@ -181,20 +181,26 @@ public class NetworkService
 					{
 						if(session.getPlayer() != null)
 						{
-							ServerMessage message = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
-							message.addString("Saving...");
-							session.Send(message);
+							if(GameServer.DISPLAY_SAVE){
+								ServerMessage message = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
+								message.addString("Saving...");
+								session.Send(message);
+							}
 							if(m_saveManager.savePlayer(session.getPlayer()) == 0)
 							{
-								ServerMessage succesmg = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
-								succesmg.addString("Save succesfull.");
-								session.Send(succesmg);
+								if(GameServer.DISPLAY_SAVE){
+									ServerMessage succesmg = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
+									succesmg.addString("Save succesfull.");
+									session.Send(succesmg);
+								}
 							}
 							else
 							{
-								ServerMessage failmsg = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
-								failmsg.addString("Save Failed.");
-								session.Send(failmsg);
+								if(GameServer.DISPLAY_SAVE){
+									ServerMessage failmsg = new ServerMessage(ClientPacket.SERVER_ANNOUNCEMENT);
+									failmsg.addString("Save Failed.");
+									session.Send(failmsg);
+								}
 								Logger.logError("Error saving player " + session.getPlayer().getName() + " (" + session.getPlayer().getId() + ")", "Look up " + session.getPlayer().getId() + " in `pn_members`");
 							}
 						}

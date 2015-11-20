@@ -50,6 +50,7 @@ public class GameServer
 	public static boolean DEBUG = false;
 	public static boolean SQL_LOGGING = false;
 	public static boolean IRC_ENABLE = false;
+	public static boolean DISPLAY_SAVE = false; 
 	private static GameServer m_instance;
 	private static ServiceManager m_serviceManager;
 	private JFrame m_gui;
@@ -333,6 +334,7 @@ public class GameServer
 		DEBUG = Boolean.parseBoolean(server.get("DEBUG"));
 		SQL_LOGGING = Boolean.parseBoolean(server.get("SQL_LOGGING"));
 		TIMESERVICEURL = server.get("TIMESERVICEURL");
+		DISPLAY_SAVE = Boolean.parseBoolean(server.get("DISPLAY_SAVE"));
 		
 		Ini.Section irc = configIni.get("IRC");
 		IRC_ENABLE = Boolean.parseBoolean(irc.get("IRC_ENABLE"));
@@ -341,10 +343,7 @@ public class GameServer
 		IRC_NICK = irc.get("IRC_NICK");
 		IRC_NICKPASS = irc.get("IRC_NICKPASS");
 		IRC_CHANNEL = irc.get("IRC_CHANNEL");
-		
-		
-				
-		
+
 	}
 	
 	
