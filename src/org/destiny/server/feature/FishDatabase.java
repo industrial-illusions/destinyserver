@@ -1,25 +1,24 @@
 package org.destiny.server.feature;
 
-import java.io.File;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
-import java.util.StringTokenizer;
-
 import org.destiny.server.Logger;
-import org.simpleframework.xml.ElementMap;
-import org.simpleframework.xml.Root;
+import org.destiny.server.network.MySqlManager;
 
 /**
  * Stores a database of pokemon caught by fishing
  * 
  * @author shadowkanji
  * @author Fshy
+ * @author Akkarinage
  */
-@Root
+
 public class FishDatabase
 {
-	@ElementMap
+	private MySqlManager db1;
+
 	private HashMap<String, ArrayList<FishPokemon>> m_database;
 
 	/**
@@ -67,43 +66,25 @@ public class FishDatabase
 	/**
 	 * Reinitialises the database
 	 */
-	public void reinitialise()
-	{
-		Thread t = new Thread(new Runnable()
-		{
-			public void run()
-			{
-				m_database = new HashMap<String, ArrayList<FishPokemon>>();
-				try
-				{
-					/* Read all the data from the text file */
-					Scanner s = new Scanner(new File("./res/fishing.txt"));
-					String pokemon = "";
-					ArrayList<FishPokemon> fishies = new ArrayList<FishPokemon>();
-					while(s.hasNextLine())
-					{
-						pokemon = s.nextLine();
-						fishies = new ArrayList<FishPokemon>();
-						/* Parse the data in the order EXPERIENCE, LEVELREQ, RODREQ */
-						StringTokenizer st = new StringTokenizer(pokemon);
-						String pokeName = st.nextToken().toUpperCase();
-						while(st.hasMoreTokens())
-						{
-							int levelreq = Integer.parseInt(st.nextToken());
-							int exp = Integer.parseInt(st.nextToken());
-							int rodreq = Integer.parseInt(st.nextToken());
-							FishPokemon d = new FishPokemon(exp, levelreq, rodreq);
-							fishies.add(d);
-						}
-						addEntry(pokeName, fishies);
-					}
-					s.close();
-					Logger.logInfo("Fishing database initialised.");
+	public void reinitialise() {
+		Thread t = new Thread(new Runnable() {
+		public void run() {
+			db1 = MySqlManager.getInstance();
+			m_database = new HashMap<String, ArrayList<FishPokemon>>();
+			ResultSet rs1 = db1.query("SELECT * FROM `pn_db_fishing`");
+			ArrayList<FishPokemon> fishies = new ArrayList<FishPokemon>();
+			try {
+				while (rs1.next()) {
+					fishies = new ArrayList<FishPokemon>();
+					String pokeName = rs1.getString("pokemon").toUpperCase();
+					FishPokemon d = new FishPokemon(rs1.getInt("experience"), rs1.getInt("levelreq"), rs1.getInt("rodreq"));
+					fishies.add(d);
+					addEntry(pokeName, fishies);
 				}
-				catch(Exception e)
-				{
-					e.printStackTrace();
-				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			Logger.logInfo("Fishing database initialised from SQL.");
 			}
 		}, "FishDatabase_Thread");
 		t.start();
