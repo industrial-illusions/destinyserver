@@ -21,7 +21,7 @@ public class DataLoader implements Runnable
 {
 	private final File m_file;
 	private final ServerMap m_map;
-
+	//public Integer countnpc, countwarp, counthmobject, counttrade = 0;
 	/**
 	 * Constructor
 	 * 
@@ -37,6 +37,7 @@ public class DataLoader implements Runnable
 	 * Called by starting the thread
 	 */
 	public void run() {
+		
 		try(Scanner reader = new Scanner(m_file)) {
 			NPC npc = null;
 			WarpTile warp = null;
@@ -49,6 +50,7 @@ public class DataLoader implements Runnable
 				line = reader.nextLine();
 				switch(line){
 				case "[npc]":
+					//countnpc++;
 					npc = new NPC();
 					npc.setName(reader.nextLine());
 					direction = reader.nextLine();
@@ -112,7 +114,8 @@ public class DataLoader implements Runnable
 				case "[/npc]":
 					m_map.addChar(npc);
 					break;
-					case "[warp]":
+				case "[warp]":
+					//countwarp++;
 					warp = new WarpTile();
 					warp.setX(Integer.parseInt(reader.nextLine()));
 					warp.setY(Integer.parseInt(reader.nextLine()));
@@ -125,7 +128,25 @@ public class DataLoader implements Runnable
 				case "[/warp]":
 					m_map.addWarp(warp);
 					break;
+				case "WARP":
+					//countwarp++;
+					String warpobjectLine = reader.nextLine();
+					String[] warptok = warpobjectLine.split(",");
+										
+					warp = new WarpTile();
+					warp.setX(Integer.parseInt(warptok[0]));
+					warp.setY(Integer.parseInt(warptok[1]));
+					warp.setWarpX(Integer.parseInt(warptok[2]) * 32);
+					warp.setWarpY(Integer.parseInt(warptok[3]) * 32 - 8);
+					warp.setWarpMapX(Integer.parseInt(warptok[4]));
+					warp.setWarpMapY(Integer.parseInt(warptok[5]));
+					warp.setBadgeRequirement(Integer.parseInt(warptok[6]));
+					
+					m_map.addWarp(warp);
+					
+					break;
 				case "[hmobject]":
+					//counthmobject++;
 					hmObject = new HMObject();
 					hmObject.setName(reader.nextLine());
 					hmObject.setType(HMObject.parseHMObject(hmObject.getName()));
@@ -137,7 +158,22 @@ public class DataLoader implements Runnable
 				case "[/hmobject]":
 					hmObject.setMap(m_map, Direction.Down);
 					break;
+				case "HMOBJECT":
+					//counthmobject++;
+					String hmobjectLine = reader.nextLine();
+					String[] hmtok = hmobjectLine.split(",");
+					
+					hmObject = new HMObject();
+					hmObject.setName(hmtok[0]);
+					hmObject.setType(HMObject.parseHMObject(hmtok[0]));
+					hmObject.setX(Integer.parseInt(hmtok[1]) * 32);
+					hmObject.setOriginalX(hmObject.getX());
+					hmObject.setY(Integer.parseInt(hmtok[2]) * 32 - 8);
+					hmObject.setOriginalY(hmObject.getY());
+					hmObject.setMap(m_map, Direction.Down);
+					break;
 				case "[trade]":
+					//counttrade++;
 					t = new TradeChar();
 					t.setName(reader.nextLine());
 					direction = reader.nextLine();

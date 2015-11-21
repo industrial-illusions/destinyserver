@@ -3,3 +3,4 @@
 /logs/*.txt
 /errors.txt
 /conf/database.txt
+/bin/

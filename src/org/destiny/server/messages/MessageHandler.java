@@ -28,6 +28,7 @@ import org.destiny.server.messages.events.MoveRightEvent;
 import org.destiny.server.messages.events.MoveUpEvent;
 import org.destiny.server.messages.events.PartySwapEvent;
 import org.destiny.server.messages.events.PlayerCommandEvent;
+import org.destiny.server.messages.events.PlayerFlyCommandEvent;
 import org.destiny.server.messages.events.PokemonInfoRequestEvent;
 import org.destiny.server.messages.events.PokemonSwitchEvent;
 import org.destiny.server.messages.events.RegisterEvent;
@@ -131,5 +132,6 @@ public class MessageHandler
 		// messages.put(57, new ());
 		messages.put(58, new StartBattlefrontierEvent());
 		/* TODO: Use commented numbers for future messages. */
+		messages.put(62, new PlayerFlyCommandEvent());
 	}
 }
