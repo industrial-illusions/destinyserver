@@ -53,9 +53,8 @@ public class DataService
 			m_mechanics = DataService.getBattleMechanics();
 			m_fishingData = DataService.getFishDatabase();
 			m_fishingData.reinitialise();
-			JewelMechanics.loadMoveTypes("res/movetypes.txt");
-			File f = new File(".");
-			m_moveSetData = stream.read(MoveSetData.class, new File(f.getCanonicalPath() + "/res/movesets.xml"));
+			JewelMechanics.loadMoveTypes("db/movetypes.txt");
+			m_moveSetData = stream.read(MoveSetData.class, new File("db/movesets.xml"));
 			initialiseSpecies();
 			PokemonSpecies.setDefaultData(m_speciesData);
 			Logger.logInfo("Pokemon Databases loaded.");
@@ -140,7 +139,7 @@ public class DataService
 		/* Load shoddy database */
 		try
 		{
-			m_speciesData.loadSpeciesDatabase(new File("./res/dpspecies.db"));
+			m_speciesData.loadSpeciesDatabase(new File("db/dpspecies.db"));
 		}
 		catch(Exception e1)
 		{
@@ -148,7 +147,7 @@ public class DataService
 			return;
 		}
 		
-		Ini pokeIni = new Ini(new FileInputStream("res/pokemon.ini"));
+		Ini pokeIni = new Ini(new FileInputStream("db/pokemon.ini"));
 
 		for(int i = 0; i < 493; i++)
 		{
@@ -202,7 +201,7 @@ public class DataService
 		}
 		
 		/* Load TM info */
-		Ini tmsIni = new Ini(new FileInputStream("./res/tms.ini"));
+		Ini tmsIni = new Ini(new FileInputStream("db/tms.ini"));
 		
 		Iterator<String> iterator = tmsIni.keySet().iterator();
 		while(iterator.hasNext())
@@ -241,7 +240,7 @@ public class DataService
 		/* Load Drop Data */
 		try
 		{
-			Scanner s = new Scanner(new File("./res/itemdrops.txt"));
+			Scanner s = new Scanner(new File("db/itemdrops.txt"));
 			String pokemon = "";
 			while(s.hasNextLine())
 			{

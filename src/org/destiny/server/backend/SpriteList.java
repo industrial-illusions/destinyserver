@@ -38,7 +38,7 @@ public class SpriteList
 	 */
 	public void initialise()
 	{
-		File f = new File("res/sprites.txt");
+		File f = new File("db/sprites.txt");
 		if(f.exists())
 			try
 			{

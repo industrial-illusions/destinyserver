@@ -120,7 +120,7 @@ public class ItemDatabase
 		{
 			DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-			Document doc = docBuilder.parse(new File("res/itemdex.xml"));
+			Document doc = docBuilder.parse(new File("db/itemdex.xml"));
 			doc.getDocumentElement().normalize();
 
 			NodeList itemsNodeList = doc.getElementsByTagName("itemDatabase");
