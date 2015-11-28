@@ -25,7 +25,7 @@ public class MySqlManager
 
 	public MySqlManager()
 	{
-		mysql_connectionURL = "jdbc:mysql://" + GameServer.getDatabaseHost() + ":3306/" + GameServer.getDatabaseName() + "?autoReconnect=true";
+		mysql_connectionURL = "jdbc:mysql://" + GameServer.getDatabaseHost() + ":3306/" + GameServer.getDatabaseName() + "?autoReconnect=true&allowMultiQueries=true";
 		if(!open())
 		{
 			Logger.logError("Cannot connect to the database, please check your settings.", "Unknown");

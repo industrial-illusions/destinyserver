@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
@@ -24,6 +25,7 @@ import org.apache.commons.cli.GnuParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
+import org.destiny.server.backend.UpgradeProcessor;
 import org.destiny.server.connections.ActiveConnections;
 import org.destiny.server.network.MySqlManager;
 import org.ini4j.Ini;
@@ -49,6 +51,7 @@ public class GameServer
 	public static String IRC_HOST, IRC_NICK, IRC_NICKPASS, IRC_CHANNEL, TIMESERVICEURL;
 	public static boolean DEBUG = false;
 	public static boolean SQL_LOGGING = false;
+	public static boolean SQL_UPGRADES = true;
 	public static boolean IRC_ENABLE = false;
 	public static boolean DISPLAY_SAVE = false; 
 	private static GameServer m_instance;
@@ -69,8 +72,9 @@ public class GameServer
 	 * @param autorun True if the server should autostart, otherwise false.
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
+	 * @throws SQLException 
 	 */
-	public GameServer(boolean autorun) throws FileNotFoundException, IOException
+	public GameServer(boolean autorun) throws FileNotFoundException, IOException, SQLException
 	{
 		if(autorun)
 		{
@@ -178,8 +182,9 @@ public class GameServer
 	 * @param autorun True if the server should autostart, otherwise false.
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
+	 * @throws SQLException 
 	 */
-	public static void initGameServer(boolean autorun) throws FileNotFoundException, IOException
+	public static void initGameServer(boolean autorun) throws FileNotFoundException, IOException, SQLException
 	{
 		m_instance = new GameServer(autorun);
 	}
@@ -231,8 +236,9 @@ public class GameServer
 	 * @param args Optional commandline arguments.
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
+	 * @throws SQLException 
 	 */
-	public static void main(String[] args) throws FileNotFoundException, IOException
+	public static void main(String[] args) throws FileNotFoundException, IOException, SQLException
 	{		
 		/* Pipe errors to a file. */
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -333,6 +339,7 @@ public class GameServer
 		m_maxPlayers = Integer.parseInt(server.get("MAX_PLAYERS"));
 		DEBUG = Boolean.parseBoolean(server.get("DEBUG"));
 		SQL_LOGGING = Boolean.parseBoolean(server.get("SQL_LOGGING"));
+		SQL_UPGRADES = Boolean.parseBoolean(server.get("SQL_UPGRADES"));
 		TIMESERVICEURL = server.get("TIMESERVICEURL");
 		DISPLAY_SAVE = Boolean.parseBoolean(server.get("DISPLAY_SAVE"));
 		
@@ -354,12 +361,17 @@ public class GameServer
 	 * Once the servicemanager is started, the server will start booting up.
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
+	 * @throws SQLException 
 	 **/
-	public void start() throws FileNotFoundException, IOException
+	public void start() throws FileNotFoundException, IOException, SQLException
 	{
 		if(GameServer.DEBUG){Logger.logInfo("Git Hash: "+ getServerHash());}
 		
 		loadConfigs();
+		
+		if(GameServer.SQL_UPGRADES){
+			UpgradeProcessor.Check();
+		}
 		
 		if(m_boolGui)
 		{
@@ -446,6 +458,9 @@ public class GameServer
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
