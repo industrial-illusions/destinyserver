@@ -10,7 +10,7 @@ Lunatone,60,Solrock,60,Xatu,60,Claydol,60
 0
 false
 false
-false
+0
 [/npc]
 [warp]
 20

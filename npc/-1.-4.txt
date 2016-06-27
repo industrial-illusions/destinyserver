@@ -10,7 +10,7 @@ NULL
 0,1
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -24,7 +24,7 @@ NULL
 0,2
 false
 false
-false
+0
 [/npc]
 [npc]
 Psychic Phil
@@ -38,7 +38,7 @@ Natu,24,Kadabra,24
 3
 false
 false
-false
+0
 [/npc]
 [npc]
 Fisher Edgar
@@ -52,7 +52,7 @@ Remoraid,25,Remoraid,25
 4,5,6
 false
 false
-false
+0
 [/npc]
 [npc]
 Cooltrainer Cybil
@@ -66,7 +66,7 @@ Butterfree,25,Bellossom,25
 7,8
 false
 false
-false
+0
 [/npc]
 [npc]
 Cooltrainer Allen
@@ -80,7 +80,7 @@ Charmeleon,27
 9,10
 false
 false
-false
+0
 [/npc]
 [npc]
 Pokemaniac Zach
@@ -94,7 +94,7 @@ Rhyhorn,27
 11
 false
 false
-false
+0
 [/npc]
 [npc]
 Fisher Wilton
@@ -108,7 +108,7 @@ Goldeen,23,Goldeen,23,Seaking,25
 12,13
 false
 false
-false
+0
 [/npc]
 [npc]
 Bird Keeper Vance
@@ -122,7 +122,7 @@ Pidgeotto,25,Pidgeotto,25
 14
 false
 false
-false
+0
 [/npc]
 [warp]
 56

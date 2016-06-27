@@ -12,6 +12,5 @@
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
         <javaElement handleIdentifier="=PokemoniumServer/src"/>
-        <file path="/PokemoniumServer/manifest.mf"/>
     </selectedElements>
 </jardesc>

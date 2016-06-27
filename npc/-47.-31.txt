@@ -10,7 +10,7 @@ NULL
 0
 true
 false
-false
+0
 [/npc]
 [npc]
 Nurse Joy
@@ -24,7 +24,7 @@ NULL
 1
 false
 false
-false
+0
 [/npc]
 [npc]
 NULL
@@ -38,7 +38,7 @@ NULL
 2
 false
 true
-false
+0
 [/npc]
 [warp]
 15
@@ -70,5 +70,5 @@ NULL
 3
 false
 false
-false
+0
 [/npc]

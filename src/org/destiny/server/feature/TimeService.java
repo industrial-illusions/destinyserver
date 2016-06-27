@@ -153,6 +153,7 @@ public class TimeService implements Runnable
 			m_day = Integer.parseInt(s.nextToken());
 			m_hour = Integer.parseInt(s.nextToken());
 			m_minutes = Integer.parseInt(s.nextToken());
+			Logger.logInfo("Found " + in.readLine() + " for Time Service");
 			in.close();
 		}
 		catch(Exception e)

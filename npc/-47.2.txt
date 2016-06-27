@@ -19,5 +19,5 @@ Ludicolo,90,Tentacruel,90,Milotic,90,Whiscash,90,Gyarados,90,Starmie,90
 0
 false
 false
-false
+0
 [/npc]

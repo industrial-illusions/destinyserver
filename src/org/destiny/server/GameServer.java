@@ -47,12 +47,11 @@ public class GameServer
 	private static boolean m_boolGui = false;
 	private static String m_dbServer, m_dbName, m_dbUsername, m_dbPassword, m_serverName;
 	public static double RATE_GOLD, RATE_GOLD_VIP, RATE_EXP_POKE, RATE_EXP_POKE_VIP, RATE_EXP_TRAINER, RATE_EXP_TRAINER_VIP;
-	public static int RATE_WILDBATTLE, RATE_KICKDELAY, m_port, m_maxPlayers, IRC_PORT;
-	public static String IRC_HOST, IRC_NICK, IRC_NICKPASS, IRC_CHANNEL, TIMESERVICEURL;
+	public static int RATE_WILDBATTLE, RATE_KICKDELAY, m_port, m_maxPlayers;
+	public static String TIMESERVICEURL;
 	public static boolean DEBUG = false;
 	public static boolean SQL_LOGGING = false;
 	public static boolean SQL_UPGRADES = true;
-	public static boolean IRC_ENABLE = false;
 	public static boolean DISPLAY_SAVE = false; 
 	private static GameServer m_instance;
 	private static ServiceManager m_serviceManager;
@@ -343,14 +342,6 @@ public class GameServer
 		TIMESERVICEURL = server.get("TIMESERVICEURL");
 		DISPLAY_SAVE = Boolean.parseBoolean(server.get("DISPLAY_SAVE"));
 		
-		Ini.Section irc = configIni.get("IRC");
-		IRC_ENABLE = Boolean.parseBoolean(irc.get("IRC_ENABLE"));
-		IRC_HOST = irc.get("IRC_HOST");
-		IRC_PORT = Integer.parseInt(irc.get("IRC_PORT"));
-		IRC_NICK = irc.get("IRC_NICK");
-		IRC_NICKPASS = irc.get("IRC_NICKPASS");
-		IRC_CHANNEL = irc.get("IRC_CHANNEL");
-
 	}
 	
 	
