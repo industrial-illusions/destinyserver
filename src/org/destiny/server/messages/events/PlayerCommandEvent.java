@@ -47,6 +47,14 @@ public class PlayerCommandEvent implements MessageEvent
 			message.addString("Location: Map: "+player.getMapX()+", "+player.getMapY()+" x: "+player.getX()+" ("+player.getX() / 32 +") y: "+player.getY()+" ("+player.getY() / 32 +")");
 			session.Send(message);
 		}
+		else if(input.length() == 5 && input.substring(0,5 ).equalsIgnoreCase("where"))
+		{
+			Player player = session.getPlayer();
+			message = new ServerMessage(ClientPacket.CHAT_PACKET);
+			message.addInt(4);
+			message.addString("Location: Map: "+player.getMapX()+", "+player.getMapY()+" x: "+player.getX()+" ("+player.getX() / 32 +") y: "+player.getY()+" ("+player.getY() / 32 +")");
+			session.Send(message);
+		}
 		else if(input.length() >= 5 && input.substring(0, 5).equalsIgnoreCase("kick "))
 		{
 			String playername = input.substring(5);
@@ -157,7 +165,7 @@ public class PlayerCommandEvent implements MessageEvent
 			message.addInt(4);
 			String cmdString = "List of available commands:\n";
 			cmdString = cmdString + "/playercount\n";
-			cmdString = cmdString + "/where <player>\n";
+			cmdString = cmdString + "/where{ <player>}\n";
 			if(checkPermission(session, UserClasses.VIP)){
 			}
 			if(checkPermission(session, UserClasses.MODERATOR)){
