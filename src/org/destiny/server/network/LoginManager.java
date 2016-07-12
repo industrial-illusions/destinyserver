@@ -629,10 +629,14 @@ public class LoginManager implements Runnable
 				ResultSet rs2 = m_database.query("SELECT * FROM `pn_vip` WHERE `member` = '" + userid + "' AND `date` = '"+dateFormat.format(date)+"'");
 				if(rs2.first()) {
 					if(GameServer.DEBUG){System.out.println("User already given rewards for today!");}
-					} else {
-						m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+userid+"';");
-						if(GameServer.DEBUG){System.out.println("Updated user in VIP table.");}
-					}
+				} else {
+					Player p = session.getPlayer();
+					p.getBag().addItem(5, 2);
+					p.getBag().addItem(87, 2);
+					p.getBag().addItem(800, 1);
+					m_database.query("UPDATE `pn_vip` SET `date` = '"+dateFormat.format(date)+"' WHERE `member` = '"+userid+"';");
+					if(GameServer.DEBUG){System.out.println("Updated user in VIP table.");}
+				}
 			} else {
 				Player p = session.getPlayer();
 				p.getBag().addItem(5, 2);
