@@ -1,0 +1,1 @@
+ALTER TABLE `pn_item_db` ADD `script` VARCHAR(64) NULL DEFAULT NULL ;

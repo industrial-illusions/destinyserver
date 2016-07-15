@@ -3,6 +3,7 @@
 -- Table structure for table `pn_item_db`
 --
 
+
 CREATE TABLE IF NOT EXISTS `pn_item_db` (
   `id` int(6) NOT NULL AUTO_INCREMENT,
   `name` varchar(32) NOT NULL,
@@ -10,6 +11,7 @@ CREATE TABLE IF NOT EXISTS `pn_item_db` (
   `category` varchar(32) NOT NULL,
   `shop` int(2) NOT NULL,
   `price` int(6) NOT NULL,
+  `script` varchar(64) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=807 ;
 
@@ -17,431 +19,430 @@ CREATE TABLE IF NOT EXISTS `pn_item_db` (
 -- Dumping data for table `pn_item_db`
 --
 
-REPLACE INTO `pn_item_db` VALUES(1, 'Potion', 'Basic healing item, 20hp', 'POTIONS', 1, 300);
-REPLACE INTO `pn_item_db` VALUES(2, 'Super Potion', 'Next step from potion. 50hp', 'POTIONS', 1, 700);
-REPLACE INTO `pn_item_db` VALUES(3, 'Hyper Potion', 'Will heal 200hp', 'POTIONS', 0, 1200);
-REPLACE INTO `pn_item_db` VALUES(4, 'Max Potion', 'Will heal pokemon health fully', 'POTIONS', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(5, 'Full Restore', 'What happens when a max potion and a full heal have a baby.', 'POTIONS', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(16, 'Antidote', 'Will heal any poison', 'Medicine', 1, 100);
-REPLACE INTO `pn_item_db` VALUES(17, 'Parlyz Heal', 'Will heal paralysis', 'Medicine', 1, 200);
-REPLACE INTO `pn_item_db` VALUES(18, 'Awakening', 'A bucket of water in the face of sleep ', 'Medicine', 1, 250);
-REPLACE INTO `pn_item_db` VALUES(19, 'Burn Heal', 'heals burns... yeah...', 'Medicine', 1, 250);
-REPLACE INTO `pn_item_db` VALUES(20, 'Ice Heal', 'heals frozen pokemon', 'Medicine', 1, 250);
-REPLACE INTO `pn_item_db` VALUES(21, 'Full Heal', 'Will heal any status condition', 'Medicine', 0, 600);
-REPLACE INTO `pn_item_db` VALUES(22, 'Lava Cookie', 'Full heals in cookie form', 'Medicine', 0, 200);
-REPLACE INTO `pn_item_db` VALUES(23, 'Old Gateau', 'Like a full heal', 'Medicine', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(35, 'Poke Ball', 'the basic pokemon catching machine', 'Pokeball', 1, 200);
-REPLACE INTO `pn_item_db` VALUES(36, 'Great Ball', 'Higher catch rate... try pressing a+b (nostalgia)', 'Pokeball', 1, 600);
-REPLACE INTO `pn_item_db` VALUES(37, 'Ultra Ball', 'Best normal type of poke ball', 'Pokeball', 0, 1200);
-REPLACE INTO `pn_item_db` VALUES(38, 'Master Ball', 'Will catch anything', 'Pokeball', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(39, 'Safari Ball', 'For use in the safari zone', 'Pokeball', 0, 200);
-REPLACE INTO `pn_item_db` VALUES(40, 'Park Ball', 'For use in bug-catching contests', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(41, 'Level Ball', 'The higher level you are in comparison, the better ', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(42, 'Lure Ball', 'Works well when fishing', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(43, 'Moon Ball', 'Works well if the pokemon evolves with moon stone', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(44, 'Friend Ball', 'Makes the pokemon friendlier', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(45, 'Fast Ball', 'Works well on pokemon with tendencies to flee ', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(46, 'Heavy Ball', 'Works well on heavy pokemon', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(47, 'Love Ball', 'Works well if the pokemon are opposite genders ', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(48, 'Luxury Ball', 'So you can buy love! will make pokemon closer to you', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(49, 'Premier Ball', 'For buying 10 poke balls... an 11th one free ', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(50, 'Net Ball', 'Works better on bugs and water pokemon ', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(51, 'Dive Ball', 'Works better under water', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(52, 'Nest Ball', 'Works well on weaker pokemon', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(53, 'Repeat Ball', 'Works better on pokemon caught before ', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(54, 'Timer Ball', 'Works better earlier in a battle', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(55, 'Heal Ball', 'Fully heals caught pokemon', 'Pokeball', 0, 300);
-REPLACE INTO `pn_item_db` VALUES(56, 'Dusk Ball', 'Works better in caves', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(57, 'Cherish Ball', 'An event poke ball', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(58, 'Quick Ball', 'Works better earlier in battle', 'Pokeball', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(70, 'HP Up', 'Increases HP EVs', 'Vitamins', 7, 9800);
-REPLACE INTO `pn_item_db` VALUES(71, 'Protein', 'Strengthens pokemon attack EVs ', 'Vitamins', 7, 9800);
-REPLACE INTO `pn_item_db` VALUES(72, 'Iron', 'Hardens the Defense EVs', 'Vitamins', 7, 9800);
-REPLACE INTO `pn_item_db` VALUES(73, 'Calcium', 'Develops the Sp. Attack Evs', 'Vitamins', 7, 9800);
-REPLACE INTO `pn_item_db` VALUES(74, 'Zinc', 'Hardens the Sp. defense EVs', 'Vitamins', 7, 9800);
-REPLACE INTO `pn_item_db` VALUES(75, 'Carbos', 'Provides energy for Speed EVs', 'Vitamins', 7, 9800);
-REPLACE INTO `pn_item_db` VALUES(76, 'PP Up', 'Increases the PP of a move', 'Vitamins', 0, 9800);
-REPLACE INTO `pn_item_db` VALUES(77, 'PP Max', 'three PP Ups rolled into one', 'Vitamins', 0, 15000);
-REPLACE INTO `pn_item_db` VALUES(78, 'Rare Candy', 'Provides the energy to allow pokemon level growth', 'Vitamins', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(85, 'Repel', 'Repels the wild pokemon for 100 steps ', 'Field', 1, 350);
-REPLACE INTO `pn_item_db` VALUES(86, 'Super Repel', 'Repels the wild pokemon for 200 steps ', 'Field', 1, 500);
-REPLACE INTO `pn_item_db` VALUES(87, 'Max Repel', 'Repels the wild pokemon for 250 steps ', 'Field', 0, 700);
-REPLACE INTO `pn_item_db` VALUES(91, 'Escape Rope', 'Escapes caves easily', 'Field', 1, 250);
-REPLACE INTO `pn_item_db` VALUES(92, 'Mach Bike', 'Ride as fast as the wind', 'Field', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(93, 'Acro Bike', 'Perform tricks like none other', 'Field', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(94, 'Vial', 'Used in many pokemon crafts', 'Tools', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(95, 'Poffin Case', 'A case for poffins', 'Other', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(96, 'Berry Blender', 'Blend berries into poke blocks', 'Other', 0, -1);
-REPLACE INTO `pn_item_db` VALUES(97, 'Old Rod', 'A beginners rod', 'Field', 3, 2000);
-REPLACE INTO `pn_item_db` VALUES(98, 'Good Rod', 'A slight upgrade from the old rod', 'Field', 3, 25000);
-REPLACE INTO `pn_item_db` VALUES(99, 'Great Rod', 'Second best rod', 'Field', 3, 75000);
-REPLACE INTO `pn_item_db` VALUES(100, 'Ultra Rod', 'Best rod there is', 'Field', 3, 500000);
-REPLACE INTO `pn_item_db` VALUES(101, 'Cleanse Tag', 'Keeps wild pokemon away', 'Field', 0, 200);
-REPLACE INTO `pn_item_db` VALUES(126, 'Glass', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(127, 'Coal', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(128, 'Iron', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(129, 'Steel', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(130, 'Rubber', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(131, 'Cloth', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(132, 'String', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(133, 'Flax', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(134, 'Nugget', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(135, 'Wood', 'ModMe', 'Tools', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(150, 'DeepSeaScale', 'Item for a clampearl', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(151, 'DeepSeaTooth', 'Item for a clamperl', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(152, 'Dragon Scale', 'Seadra item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(153, 'Dubious Disc', 'Porygon2 item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(154, 'Electirizer', 'Electrabuzz item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(155, 'King''s Rock', 'Can cause flinching', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(156, 'Magmarizer', 'Magmar item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(157, 'Metal Coat', 'Allows evolution into steel type ', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(158, 'Oval Stone', 'Happiny item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(159, 'Protector', 'Rhyhorn item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(160, 'Razor Claw', 'Sneasle item; raises critical hits ', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(161, 'Razor Fang', 'Gligar item; raises flinching', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(162, 'Reaper Cloth', 'Dusclops item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(163, 'Up-Grade', 'Porygon item', 'Evolution', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(164, 'Fire Stone', 'Allows fire type evolution', 'Evolution', 6, 1500);
-REPLACE INTO `pn_item_db` VALUES(165, 'Water Stone', 'Allows water type evolution', 'Evolution', 6, 1500);
-REPLACE INTO `pn_item_db` VALUES(166, 'Thunder Stone', 'Allows electric type evolution', 'Evolution', 6, 1500);
-REPLACE INTO `pn_item_db` VALUES(167, 'Sun Stone', 'Allows growth under the sun', 'Evolution', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(168, 'Moon Stone', 'Allows growth under the moon', 'Evolution', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(169, 'Shiny Stone', 'Allows evolution', 'Evolution', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(170, 'Dusk Stone', 'Allows evolution', 'Evolution', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(171, 'Dawn Stone', 'Allows evolution', 'Evolution', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(172, 'Everstone', 'Prevents evolution', 'Evolution', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(173, 'Leaf Stone', 'Allows plant type evolution', 'Evolution', 6, 1500);
-REPLACE INTO `pn_item_db` VALUES(181, 'Full Incense', 'Holder moves last', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(182, 'Lax Incense', 'Increases evasion', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(183, 'Luck Incense', 'Doubles money', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(184, 'Odd Incense', 'Raises psychic moves', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(185, 'Rock Incense', 'Raises rock moves', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(186, 'Rose Incense', 'Raises grass moves', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(187, 'Sea Incense', 'Raises water moves', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(188, 'Wave Incense', 'Raises water moves', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(189, 'Pure Incense', 'Prevents wild pokemon encounters if holder is first in party', 'Breeding', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(200, 'Cheri Berry', 'Cures paralysis', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(201, 'Chesto Berry', 'Cures Sleep', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(202, 'Pecha Berry', 'Cures poison', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(203, 'Rawst Berry', 'Heals burns', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(204, 'Aspear Berry', 'Defrosts pokemon', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(205, 'Leppa Berry', 'Restores PP', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(206, 'Oran Berry', 'Restores HP', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(207, 'Persim Berry', 'Cures confusion', 'Food', 11, 10);
-REPLACE INTO `pn_item_db` VALUES(208, 'Lum Berry', 'Cures any status', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(209, 'Sitrus Berry', 'Recovers 30 HP', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(210, 'Figy Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(211, 'Wiki Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(212, 'Mago Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(213, 'Auguav Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(214, 'Iapapa Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(215, 'Razz Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(216, 'Bluk Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(217, 'Nanab Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(218, 'Weaper Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(219, 'Pomeg Berry', 'Raises happiness but lowers EV', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(220, 'Kelpsy Berry', 'Raises happiness but lowers EV', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(221, 'Qualot Berry', 'Raises happiness but lowers EV', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(222, 'Hondew Berry', 'Raises happiness but lowers EV', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(223, 'Grepa Berry', 'Raises happiness but lowers EV', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(224, 'Tamato Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(225, 'Cornn Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(226, 'Magost Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(227, 'Rabuta Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(228, 'Nomel Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(229, 'Spelon Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(230, 'Pamtre Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(231, 'Watmel Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(232, 'Durin Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(233, 'Belue Berry', 'Poffin ingredient', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(234, 'Occa Berry', 'Weakens fire', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(235, 'Passho Berry', 'Weakens water', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(236, 'Wacan Berry', 'Weakens electric', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(237, 'Rindo Berry', 'Weakens grass', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(238, 'Yache Berry', 'Weakens ice', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(239, 'Chople Berry', 'Weakens fighting', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(240, 'Kebia Berry', 'Weakens poison', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(241, 'Shuca Berry', 'Weakens ground', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(242, 'Coba Berry', 'Weakens flying', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(243, 'Payapa Berry', 'Weakens psychic', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(244, 'Tanga Berry', 'Weakens bugs', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(245, 'Charti Berry', 'Weakens rock', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(246, 'Kasib Berry', 'Weakens ghost', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(247, 'Haban Berry', 'Weakens dragon', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(248, 'Colbur Berry', 'Weakens dark', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(249, 'Babiri Berry', 'Weakens steel', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(250, 'Chilan Berry', 'Weakens normal', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(251, 'Liechi Berry', 'Raises attack when weak', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(252, 'Ganlon Berry', 'Raises defense when weak', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(253, 'Salac Berry', 'Raises speed when weak', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(254, 'Petaya Berry', 'Raises SP. attack when weak', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(255, 'Apicot Berry', 'Raises SP. Defense when weak', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(256, 'Starf Berry', 'Raises Critical hit ratio when weak ', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(257, 'Enigma Berry', 'Restores HP when hit by a supper effective attack', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(258, 'Micle Berry', 'Raises accuracy', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(259, 'Custap Berry', 'Moves first', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(260, 'Jaboca Berry', 'Causes recoil on physical moves', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(261, 'Rowap Berry', 'Causes recoil on special moves', 'Food', 0, 10);
-REPLACE INTO `pn_item_db` VALUES(300, 'Adamant Orb', 'Dialga''s signature item', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(301, 'Black Belt', 'Enhances fighting moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(302, 'BlackGlasses', 'Enhances dark moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(303, 'Charcoal', 'Enhances fire moves', 'Field', 0, 4900);
-REPLACE INTO `pn_item_db` VALUES(304, 'Dragon Fang', 'Enhances dragon moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(305, 'Hard Stone', 'Enhances rock moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(306, 'Lustrous Orb', 'Palkia''s signature item', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(307, 'Magnet', 'Enhances electric moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(308, 'Metal Coat', 'Enhances steel moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(309, 'Miracle Seed', 'Enhances grass moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(310, 'Mystic Water', 'Enhances water moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(311, 'NeverMeltIce', 'Enhances ice moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(312, 'Pink Bow', 'Enhances normal moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(313, 'Poison Barb', 'Enhances poison moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(314, 'Polkadot Bow', 'Enhances normal moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(315, 'Griseous Orb', 'Giratina''s signature item', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(316, 'Sharp Beak', 'Enhances flying moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(317, 'Silk Scarf', 'Enhances normal moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(318, 'SilverPowder', 'Enhances bug moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(319, 'Soft Sand', 'Enhances ground moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(320, 'Spell Tag', 'Enhances ghost moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(321, 'TwistedSpoon', 'Enhances psychic moves', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(331, 'Draco Plate', 'Enhances dragon moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(332, 'Dread Plate', 'Enhances dark moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(333, 'Earth Plate', 'Enhances ground moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(334, 'Fist Plate', 'Enhances fighting moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(335, 'Flame Plate', 'Enhances fire moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(336, 'Icicle Plate', 'Enhances ice moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(337, 'Insect Plate', 'Enhances bug moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(338, 'Iron Plate', 'Enhances steel moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(339, 'Meadow Plate', 'Enhances grass moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(340, 'Mind Plate', 'Enhances psychic moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(341, 'Sky Plate', 'Enhances flying moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(342, 'Splash Plate', 'Enhances water moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(343, 'Spooky Plate', 'Enhances ghost moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(344, 'Stone Plate', 'Enhances rock moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(345, 'Toxic Plate', 'Enhances poison moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(346, 'Zap Plate', 'Enhances electric moves', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(350, 'Amulet Coin', 'Doubles winnings', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(351, 'Berserk Gene', 'Confuses and ups attack', 'Field', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(352, 'Big Root', 'Increases HP drain', 'Field', 0, 250);
-REPLACE INTO `pn_item_db` VALUES(353, 'Black Sludge', 'Heals poison types, hurts others', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(354, 'BrightPowder', 'Raises evasion', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(355, 'Choice Band', 'Increases only one attack', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(356, 'Choice Scarf', 'Increases speed but can only use one move ', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(357, 'Choice Specs', 'Increases Sp. attack but can only use one move', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(358, 'Damp Rock', 'lengthens rain dance', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(359, 'Destiny Knot', 'Both pokemon become infatuated at the same time ', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(360, 'Exp. Share', 'Splits exp. among pokemon', 'Field', 0, 10000);
-REPLACE INTO `pn_item_db` VALUES(361, 'Expert Belt', 'Boosts super effective moves', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(362, 'Flame Orb', 'Burns holder', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(363, 'Focus Band', 'Can survive with one hp left', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(364, 'Focus Sash', 'Can''t be one hit KOed with full health ', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(365, 'Grip Claw', 'Lengthens trapping moves', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(366, 'Heat Rock', 'Lengthens sunny day', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(367, 'Icy Rock', 'Lengthens hail', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(368, 'Iron Ball', 'Cuts speed and cancels flying type ', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(369, 'Lagging Tail', 'Makes user move last', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(370, 'Leftovers', 'Heals at the end of each turn', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(371, 'Life Orb', 'Boosts attack at cost of HP', 'Field', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(372, 'Light Clay', 'Lengthens light screen and reflect ', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(373, 'Lucky Egg', 'Boosts experience gained', 'Field', 0, 10000);
-REPLACE INTO `pn_item_db` VALUES(374, 'Mental Herb', 'Prevents attraction', 'Field', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(375, 'Metronome', 'Increases consecutive attacks ', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(376, 'Muscle Band', 'Increases physical moves', 'Field', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(377, 'Power Herb', 'No charge move required', 'Field', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(378, 'Quick Claw', 'Allows user to move first', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(379, 'Scope Lens', 'Increases critical hits', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(380, 'Shed Shell', 'Can switch even if trapped', 'Field', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(381, 'Shell Bell', 'Gains HP based on attacks', 'Field', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(382, 'Smoke Ball', 'Can escape from wild pokemon', 'Field', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(383, 'Smooth Rock', 'Lengthens sandstorm', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(384, 'Sticky Barb', 'Hurts use every turn but can latch on to other pokemon', 'Field', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(385, 'Toxic Orb', 'Poisons user', 'Field', 0, 1500);
-REPLACE INTO `pn_item_db` VALUES(386, 'White Herb', 'Negates negative stat changes', 'Field', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(387, 'Wide Lens', 'Boosts accuracy', 'Field', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(388, 'Wise Glasses', 'Boosts special moves', 'Field', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(389, 'Zoom Lens', 'Bossts accuracy if moves second', 'Field', 0, 2500);
-REPLACE INTO `pn_item_db` VALUES(400, 'Red Pokeblock', 'Raises coolness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(401, 'Blue Pokeblock', 'Raises beauty', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(402, 'Pink Pokeblock', 'Raises cuteness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(403, 'Green Pokeblock', 'Raises smartness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(404, 'Yellow Pokeblock', 'Raises toughness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(405, 'Purple Pokeblock', 'Raises coolness and something else ', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(406, 'Indigo Pokeblock', 'Raises beauty and something else ', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(407, 'Brown Pokeblock', 'Raises cuteness and something else ', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(408, 'LiteBlue Pokeblock', 'Raises smartness and something else ', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(409, 'Olive Pokeblock', 'Raises toughness and something else ', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(410, 'Black Pokeblock', 'The flavors of the berries canceled out ', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(411, 'Gold Pokeblock', 'Raises one or two attributes', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(412, 'Gray Pokeblock', 'Raises 3 attributes', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(413, 'White Pokeblock', 'Raises 4 attributes', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(414, 'Bitter Poffin', 'Raises smartness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(415, 'Spicy Poffin', 'Raises coolness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(416, 'Sweet Poffin', 'Raises cuteness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(417, 'Dry Poffin', 'Raises beauty', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(418, 'Sour Poffin', 'Raises toughness', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(419, 'Mild Poffin', 'Raises multiple attributes', 'Food', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(420, 'Honey', 'Slather on a tree to attract pokemon ', 'Food', 8, 1000);
-REPLACE INTO `pn_item_db` VALUES(421, 'Big Apple', 'An apple a day keeps the haunter away ', 'Food', 8, 100);
-REPLACE INTO `pn_item_db` VALUES(422, 'Huge Apple', 'A bigger version of the big apple?', 'Food', 8, 500);
-REPLACE INTO `pn_item_db` VALUES(423, 'Golden Apple', 'Not actually made out of gold', 'Food', 8, 1000);
-REPLACE INTO `pn_item_db` VALUES(424, 'Perfect Apple', 'DO NOT EAT IT... too precious', 'Food', 8, 5000);
-REPLACE INTO `pn_item_db` VALUES(425, 'Banana', 'Is that a banana in your pocket or are you just happy to see me?', 'Food', 8, 100);
-REPLACE INTO `pn_item_db` VALUES(426, 'Grimy Food', 'A food that came out of a grimer, do you really want to eat it?', 'Food', 8, 100);
-REPLACE INTO `pn_item_db` VALUES(427, 'Chestnut', 'A Mankeys favorite food', 'Food', 8, 100);
-REPLACE INTO `pn_item_db` VALUES(428, 'Black Gummi', 'A gummi that is black', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(429, 'Blue Gummi', 'A gummi that is blue', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(430, 'Brown Gummi', 'A gummi that is brown', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(431, 'Clear Gummi', 'A gummi that is clear', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(432, 'Gold Gummi', 'A gummi that is gold', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(433, 'Grass Gummi', 'A gummi that is made out of grass?', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(434, 'Green Gummi', 'A gummi that is green', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(435, 'Grey Gummi', 'A gummi that is gray', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(436, 'Orange Gummi', 'A gummi that is orange', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(437, 'Pink Gummi', 'A gummi that is pink', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(438, 'Purple Gummi', 'A gummi that is purple', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(439, 'Red Gummi', 'A gummi that is red', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(440, 'Royal Gummi', 'A gummi that is fit for a king', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(441, 'Silver Gummi', 'A gummi that is silver', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(442, 'Sky Gummi', 'A gummi that is made out of clouds?', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(443, 'White Gummi', 'A gummi that is white', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(444, 'Yellow Gummi', 'A gummi that is yellow', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(445, 'Wonder Gummi', 'A gummi that is a mystery O.O', 'Food', 0, 100);
-REPLACE INTO `pn_item_db` VALUES(477, 'Light Ball', 'Doubles Sp. attack and attack of pikachu ', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(478, 'Lucky Punch', 'Raises critical hit ratio of chansey ', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(479, 'Metal Powder', 'Raises defense and Sp. defense of ditto ', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(480, 'Quick Powder', 'Increases Dittos speed', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(481, 'Soul Dew', 'Increases Sp. attack and Sp. defense of latios and latias', 'Field', 0, 10000);
-REPLACE INTO `pn_item_db` VALUES(482, 'Stick', 'Increases the critical hit ratio of farfetch ', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(483, 'Thick Club', 'Doubles attack of cubone and marowak ', 'Field', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(490, 'Blue Scarf', 'Increases beauty', 'Field', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(491, 'Green Scarf', 'Increases smarts', 'Field', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(492, 'Pink Scarf', 'Increases cuteness', 'Field', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(493, 'Red Scarf', 'Increases coolness', 'Field', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(494, 'Yellow Scarf', 'Increases toughness', 'Field', 0, 500);
-REPLACE INTO `pn_item_db` VALUES(500, 'White Apricorn', 'Makes a fast ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(501, 'Red Apricorn', 'Makes a level ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(502, 'Blue Apricorn', 'Makes a lure ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(503, 'Black Apricorn', 'Makes a heavy ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(504, 'Pink Apricorn', 'Makes a love ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(505, 'Green Apricorn', 'Makes a friend ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(506, 'Yellow Aprocorn', 'Makes a moon ball', 'Tools', 0, 30);
-REPLACE INTO `pn_item_db` VALUES(525, 'Soothe Bell', 'Increases friendship', 'Field', 0, 5000);
-REPLACE INTO `pn_item_db` VALUES(550, 'Air Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(551, 'Bloom Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(552, 'Bubble Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(553, 'Flame Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(554, 'Grass Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(555, 'Hearth Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(556, 'Snom Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(557, 'Space Mail', 'A piece of mail', 'Key', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(558, 'Steel Mail', 'A piece of mail', 'Field', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(559, 'Tunnel Mail', 'A piece of mail', 'Key', 0, 50);
-REPLACE INTO `pn_item_db` VALUES(576, 'TM01 Focus Punch', 'Teaches focus punch', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(577, 'TM02 Dragon Claw', 'Teaches dragon claw', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(578, 'TM03 Water Pulse', 'Teaches water pulse', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(579, 'TM04 Calm Mind', 'Teaches calm mind', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(580, 'TM05 Roar', 'Teaches roar', 'TM', 5, 2000);
-REPLACE INTO `pn_item_db` VALUES(581, 'TM06 Toxic', 'Teaches toxic', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(582, 'TM07 Hail', 'Teaches hail', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(583, 'TM08 Bulk Up', 'Teaches bulk up', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(584, 'TM09 Bullet Seed', 'Teaches bullet seed', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(585, 'TM10 Hidden Power', 'Teaches hidden power', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(586, 'TM11 Sunny Day', 'Teaches sunny day', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(587, 'TM12 Taunt', 'Teaches taunt', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(588, 'TM13 Ice Beam', 'Teaches ice beam', 'TM', 2, 15000);
-REPLACE INTO `pn_item_db` VALUES(589, 'TM14 Blizzard', 'Teaches blizzard', 'TM', 2, 20000);
-REPLACE INTO `pn_item_db` VALUES(590, 'TM15 Hyper Beam', 'Teaches hyper beam', 'TM', 5, 7500);
-REPLACE INTO `pn_item_db` VALUES(591, 'TM16 Light Screen', 'Teaches light screen', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(592, 'TM17 Protect', 'Teaches protect', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(593, 'TM18 Rain Dance', 'Teaches rain dance', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(594, 'TM19 Giga Drain', 'Teaches giga drain', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(595, 'TM20 Safeguard', 'Teaches safeguard', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(596, 'TM21 Frustration', 'Teaches frustration', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(597, 'TM22 SolarBeam', 'Teaches solarbeam', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(598, 'TM23 Iron Tail', 'Teaches iron tail', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(599, 'TM24 Thunderbolt', 'Teaches thunderbolt', 'TM', 2, 15000);
-REPLACE INTO `pn_item_db` VALUES(600, 'TM25 Thunder', 'Teaches thunder', 'TM', 2, 20000);
-REPLACE INTO `pn_item_db` VALUES(601, 'TM26 Earthquake', 'Teaches earthquake', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(602, 'TM27 Return', 'Teaches return', 'TM', 2, 10000);
-REPLACE INTO `pn_item_db` VALUES(603, 'TM28 Dig', 'Teaches dig', 'TM', 5, 5500);
-REPLACE INTO `pn_item_db` VALUES(604, 'TM29 Psychic', 'Teaches psychic', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(605, 'TM30 Shadow Ball', 'Teaches shadow ball', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(606, 'TM31 Brick Break', 'Teaches brick break', 'TM', 5, 5500);
-REPLACE INTO `pn_item_db` VALUES(607, 'TM32 Double Team', 'Teaches double team', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(608, 'TM33 Reflect', 'Teaches reflect', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(609, 'TM34 Shock Wave', 'Teaches shock wave', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(610, 'TM35 Flamethrower', 'Teaches flamethrower', 'TM', 2, 15000);
-REPLACE INTO `pn_item_db` VALUES(611, 'TM36 Sludge Bomb', 'Teaches sludge bomb', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(612, 'TM37 Sandstorm', 'Teaches sandstorm', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(613, 'TM38 Fire Blast', 'Teaches fire blast', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(614, 'TM39 Rock Tomb', 'Teaches rock tomb', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(615, 'TM40 Aerial Ace', 'Teaches aerial ace', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(616, 'TM41 Torment', 'Teaches torment', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(617, 'TM42 Facade', 'Teaches facade', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(618, 'TM43 Secret Power', 'Teaches secret power', 'TM', 5, 2000);
-REPLACE INTO `pn_item_db` VALUES(619, 'TM44 Rest', 'Teaches rest', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(620, 'TM45 Attract', 'Teaches attract', 'TM', 5, 2000);
-REPLACE INTO `pn_item_db` VALUES(621, 'TM46 Thief', 'Teaches thief', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(622, 'TM47 Steel Wing', 'Teaches steel wing', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(623, 'TM48 Skill Swap', 'Teaches skill swap', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(624, 'TM49 Snatch', 'Teaches snatch', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(625, 'TM50 Overheat', 'Teaches overheat', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(626, 'TM51 Roost', 'Teaches roost', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(627, 'TM52 Focus Blast', 'Teaches focus blast', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(628, 'TM53 Energy Ball', 'Teaches energy ball', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(629, 'TM54 False Swipe', 'Teaches false swipe', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(630, 'TM55 Brine', 'Teaches brine', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(631, 'TM56 Fling', 'Teaches fling', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(632, 'TM57 Charge Beam', 'Teaches charge beam', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(633, 'TM58 Endure', 'Teaches endure', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(634, 'TM59 Dragon Pulse', 'Teaches dragon pulse', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(635, 'TM60 Drain Punch', 'Teaches drain punch', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(636, 'TM61 Will-O-Wisp', 'Teaches will-o-wisp', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(637, 'TM62 Silver Wind', 'Teaches silver wind', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(638, 'TM63 Embargo', 'Teaches embargo', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(639, 'TM64 Explosion', 'Teaches explosion', 'TM', 0, 4000);
-REPLACE INTO `pn_item_db` VALUES(640, 'TM65 Shadow Claw', 'Teaches shadow claw', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(641, 'TM66 Payback', 'Teaches payback', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(642, 'TM67 Recycle', 'Teaches recycle', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(643, 'TM68 Giga Impact', 'Teaches giga impact', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(644, 'TM69 Rock Polish', 'Teaches rock polish', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(645, 'TM70 Flash', 'Teaches flash', 'TM', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(646, 'TM71 Stone Edge', 'Teaches stone edge', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(647, 'TM72 Avalanche', 'Teaches avalanche', 'TM', 0, 4000);
-REPLACE INTO `pn_item_db` VALUES(648, 'TM73 Thunder Wave', 'Teaches thunder wave', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(649, 'TM74 Gyro Ball', 'Teaches gyro ball', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(650, 'TM75 Swords Dance', 'Teaches swords dance', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(651, 'TM76 Stealth Rock', 'Teaches stealth rock', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(652, 'TM77 Psych Up', 'Teaches psych up', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(653, 'TM78 Captivate', 'Teaches captivate', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(654, 'TM79 Dark Pulse', 'Teaches dark pulse', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(655, 'TM80 Rock Slide', 'Teaches rock slide', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(656, 'TM81 X-Scissor', 'Teaches x-scissor', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(657, 'TM82 Sleep Talk', 'Teaches sleep talk', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(658, 'TM83 Natural Gift', 'Teaches natural gift', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(659, 'TM84 Poison Jab', 'Teaches poison jab', 'TM', 0, 4000);
-REPLACE INTO `pn_item_db` VALUES(660, 'TM85 Dream Eater', 'Teaches dream eater', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(661, 'TM86 Grass Knot', 'Teaches grass knot', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(662, 'TM87 Swagger', 'Teaches swagger', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(663, 'TM88 Pluck', 'Teaches pluck', 'TM', 0, 2000);
-REPLACE INTO `pn_item_db` VALUES(664, 'TM89 U-turn', 'Teaches u-turn', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(665, 'TM90 Substitute', 'Teaches substitute', 'TM', 0, 5500);
-REPLACE INTO `pn_item_db` VALUES(666, 'TM91 Flash Cannon', 'Teaches flash cannon', 'TM', 0, 4000);
-REPLACE INTO `pn_item_db` VALUES(667, 'TM92 Trick Room', 'Teaches trick room', 'TM', 0, 3000);
-REPLACE INTO `pn_item_db` VALUES(668, 'TM93 Surf', 'Teaches surf', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(669, 'TM94 Cut', 'Teaches Cut', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(670, 'TM95 Fly', 'Teaches Fly', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(671, 'TM96 Strength', 'Teaches Strength', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(672, 'TM97 Rocksmash', 'Teaches Rocksmash', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(673, 'TM98 Waterfall', 'Teaches Waterfall', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(674, 'TM99 Dive', 'Teaches Dive', 'TM', 0, 7500);
-REPLACE INTO `pn_item_db` VALUES(750, 'Secret Potion', 'Known to cure psyduck headaches', 'Key', 0, 1000);
-REPLACE INTO `pn_item_db` VALUES(800, 'Voltorb Lollipop', 'Heals 50HP, but might Paralyze your Pokemon', 'Food', 10, 1000);
-REPLACE INTO `pn_item_db` VALUES(801, 'Sweet Chills', 'Restores 5PP to all moves, but might Freeze your Pokemon', 'Food', 10, 1000);
-REPLACE INTO `pn_item_db` VALUES(802, 'Cinnamon Candy', 'Heals All Status, but might Burn your Pokemon', 'Food', 10, 1000);
-REPLACE INTO `pn_item_db` VALUES(803, 'Candy Corn', 'Raises Happiness, but might Poison your Pokemon', 'Food', 10, 1000);
-REPLACE INTO `pn_item_db` VALUES(804, 'Poke Choc', 'Raises Happiness, and might Heal 30HP to your Pokemon', 'Food', 10, 1000);
-REPLACE INTO `pn_item_db` VALUES(805, 'Gummilax', 'Raises Happiness, but might put your Pokemon to Sleep', 'Food', 10, 1000);
-REPLACE INTO `pn_item_db` VALUES(806, 'Gengum', 'Heals your Pokemons HP for an unknown amount.', 'Food', 10, 1000);
-
--- --------------------------------------------------------
+REPLACE INTO `pn_item_db` (`id`, `name`, `description`, `category`, `shop`, `price`, `script`) VALUES
+(1, 'Potion', 'Basic healing item, 20hp', 'POTIONS', 1, 300, 'healPokemon,20'),
+(2, 'Super Potion', 'Next step from potion. 50hp', 'POTIONS', 1, 700, 'healPokemon,50'),
+(3, 'Hyper Potion', 'Will heal 200hp', 'POTIONS', 0, 1200, 'healPokemon,200'),
+(4, 'Max Potion', 'Will heal pokemon health fully', 'POTIONS', 0, 2500, 'healPokemon,999999'),
+(5, 'Full Restore', 'What happens when a max potion and a full heal have a baby.', 'POTIONS', 0, 3000, NULL),
+(16, 'Antidote', 'Will heal any poison', 'Medicine', 1, 100, 'removeEffect,PoisonEffect.class'),
+(17, 'Parlyz Heal', 'Will heal paralysis', 'Medicine', 1, 200, 'removeEffect,ParalysisEffect.class'),
+(18, 'Awakening', 'A bucket of water in the face of sleep ', 'Medicine', 1, 250, 'removeEffect,SleepEffect.class'),
+(19, 'Burn Heal', 'heals burns... yeah...', 'Medicine', 1, 250, 'removeEffect,BurnEffect.class'),
+(20, 'Ice Heal', 'heals frozen pokemon', 'Medicine', 1, 250, 'removeEffect,FreezeEffect.class'),
+(21, 'Full Heal', 'Will heal any status condition', 'Medicine', 0, 600, 'removeAllEffect,1'),
+(22, 'Lava Cookie', 'Full heals in cookie form', 'Medicine', 0, 200, 'removeAllEffect,1'),
+(23, 'Old Gateau', 'Like a full heal', 'Medicine', 0, 500, 'removeAllEffect,1'),
+(35, 'Poke Ball', 'the basic pokemon catching machine', 'Pokeball', 1, 200, NULL),
+(36, 'Great Ball', 'Higher catch rate... try pressing a+b (nostalgia)', 'Pokeball', 1, 600, 'catchRate,1.5'),
+(37, 'Ultra Ball', 'Best normal type of poke ball', 'Pokeball', 0, 1200, 'catchRate,2.0'),
+(38, 'Master Ball', 'Will catch anything', 'Pokeball', 0, -1, 'catchRate,255'),
+(39, 'Safari Ball', 'For use in the safari zone', 'Pokeball', 0, 200, NULL),
+(40, 'Park Ball', 'For use in bug-catching contests', 'Pokeball', 0, 1000, NULL),
+(41, 'Level Ball', 'The higher level you are in comparison, the better ', 'Pokeball', 0, 1000, NULL),
+(42, 'Lure Ball', 'Works well when fishing', 'Pokeball', 0, 1000, NULL),
+(43, 'Moon Ball', 'Works well if the pokemon evolves with moon stone', 'Pokeball', 0, 1000, NULL),
+(44, 'Friend Ball', 'Makes the pokemon friendlier', 'Pokeball', 0, 1000, NULL),
+(45, 'Fast Ball', 'Works well on pokemon with tendencies to flee ', 'Pokeball', 0, 1000, NULL),
+(46, 'Heavy Ball', 'Works well on heavy pokemon', 'Pokeball', 0, 1000, NULL),
+(47, 'Love Ball', 'Works well if the pokemon are opposite genders ', 'Pokeball', 0, 1000, NULL),
+(48, 'Luxury Ball', 'So you can buy love! will make pokemon closer to you', 'Pokeball', 0, 1000, NULL),
+(49, 'Premier Ball', 'For buying 10 poke balls... an 11th one free ', 'Pokeball', 0, 1000, NULL),
+(50, 'Net Ball', 'Works better on bugs and water pokemon ', 'Pokeball', 0, 1000, NULL),
+(51, 'Dive Ball', 'Works better under water', 'Pokeball', 0, 1000, NULL),
+(52, 'Nest Ball', 'Works well on weaker pokemon', 'Pokeball', 0, 1000, NULL),
+(53, 'Repeat Ball', 'Works better on pokemon caught before ', 'Pokeball', 0, 1000, NULL),
+(54, 'Timer Ball', 'Works better earlier in a battle', 'Pokeball', 0, 1000, NULL),
+(55, 'Heal Ball', 'Fully heals caught pokemon', 'Pokeball', 0, 300, NULL),
+(56, 'Dusk Ball', 'Works better in caves', 'Pokeball', 0, 1000, NULL),
+(57, 'Cherish Ball', 'An event poke ball', 'Pokeball', 0, 1000, NULL),
+(58, 'Quick Ball', 'Works better earlier in battle', 'Pokeball', 0, 1000, NULL),
+(70, 'HP Up', 'Increases HP EVs', 'Vitamins', 7, 9800, NULL),
+(71, 'Protein', 'Strengthens pokemon attack EVs ', 'Vitamins', 7, 9800, NULL),
+(72, 'Iron', 'Hardens the Defense EVs', 'Vitamins', 7, 9800, NULL),
+(73, 'Calcium', 'Develops the Sp. Attack Evs', 'Vitamins', 7, 9800, NULL),
+(74, 'Zinc', 'Hardens the Sp. defense EVs', 'Vitamins', 7, 9800, NULL),
+(75, 'Carbos', 'Provides energy for Speed EVs', 'Vitamins', 7, 9800, NULL),
+(76, 'PP Up', 'Increases the PP of a move', 'Vitamins', 0, 9800, NULL),
+(77, 'PP Max', 'three PP Ups rolled into one', 'Vitamins', 0, 15000, NULL),
+(78, 'Rare Candy', 'Provides the energy to allow pokemon level growth', 'Vitamins', 0, -1, NULL),
+(85, 'Repel', 'Repels the wild pokemon for 100 steps ', 'Field', 1, 350, NULL),
+(86, 'Super Repel', 'Repels the wild pokemon for 200 steps ', 'Field', 1, 500, NULL),
+(87, 'Max Repel', 'Repels the wild pokemon for 250 steps ', 'Field', 0, 700, NULL),
+(91, 'Escape Rope', 'Escapes caves easily', 'Field', 1, 250, NULL),
+(92, 'Mach Bike', 'Ride as fast as the wind', 'Field', 0, -1, NULL),
+(93, 'Acro Bike', 'Perform tricks like none other', 'Field', 0, -1, NULL),
+(94, 'Vial', 'Used in many pokemon crafts', 'Tools', 0, -1, NULL),
+(95, 'Poffin Case', 'A case for poffins', 'Other', 0, -1, NULL),
+(96, 'Berry Blender', 'Blend berries into poke blocks', 'Other', 0, -1, NULL),
+(97, 'Old Rod', 'A beginners rod', 'Field', 3, 2000, 'useRod,0'),
+(98, 'Good Rod', 'A slight upgrade from the old rod', 'Field', 3, 25000, 'useRod,15'),
+(99, 'Great Rod', 'Second best rod', 'Field', 3, 75000, 'useRod,50'),
+(100, 'Ultra Rod', 'Best rod there is', 'Field', 3, 500000, 'useRod,75'),
+(101, 'Cleanse Tag', 'Keeps wild pokemon away', 'Field', 0, 200, NULL),
+(126, 'Glass', 'ModMe', 'Tools', 0, 50, NULL),
+(127, 'Coal', 'ModMe', 'Tools', 0, 50, NULL),
+(128, 'Iron', 'ModMe', 'Tools', 0, 50, NULL),
+(129, 'Steel', 'ModMe', 'Tools', 0, 50, NULL),
+(130, 'Rubber', 'ModMe', 'Tools', 0, 50, NULL),
+(131, 'Cloth', 'ModMe', 'Tools', 0, 50, NULL),
+(132, 'String', 'ModMe', 'Tools', 0, 50, NULL),
+(133, 'Flax', 'ModMe', 'Tools', 0, 50, NULL),
+(134, 'Nugget', 'ModMe', 'Tools', 0, 50, NULL),
+(135, 'Wood', 'ModMe', 'Tools', 0, 50, NULL),
+(150, 'DeepSeaScale', 'Item for a clampearl', 'Evolution', 0, 1000, NULL),
+(151, 'DeepSeaTooth', 'Item for a clamperl', 'Evolution', 0, 1000, NULL),
+(152, 'Dragon Scale', 'Seadra item', 'Evolution', 0, 1000, NULL),
+(153, 'Dubious Disc', 'Porygon2 item', 'Evolution', 0, 1000, NULL),
+(154, 'Electirizer', 'Electrabuzz item', 'Evolution', 0, 1000, NULL),
+(155, 'King''s Rock', 'Can cause flinching', 'Evolution', 0, 1000, NULL),
+(156, 'Magmarizer', 'Magmar item', 'Evolution', 0, 1000, NULL),
+(157, 'Metal Coat', 'Allows evolution into steel type ', 'Evolution', 0, 1000, NULL),
+(158, 'Oval Stone', 'Happiny item', 'Evolution', 0, 1000, NULL),
+(159, 'Protector', 'Rhyhorn item', 'Evolution', 0, 1000, NULL),
+(160, 'Razor Claw', 'Sneasle item; raises critical hits ', 'Evolution', 0, 1000, NULL),
+(161, 'Razor Fang', 'Gligar item; raises flinching', 'Evolution', 0, 1000, NULL),
+(162, 'Reaper Cloth', 'Dusclops item', 'Evolution', 0, 1000, NULL),
+(163, 'Up-Grade', 'Porygon item', 'Evolution', 0, 1000, NULL),
+(164, 'Fire Stone', 'Allows fire type evolution', 'Evolution', 6, 1500, 'evolve,firestone'),
+(165, 'Water Stone', 'Allows water type evolution', 'Evolution', 6, 1500, 'evolve,waterstone'),
+(166, 'Thunder Stone', 'Allows electric type evolution', 'Evolution', 6, 1500, 'evolve,thunderstone'),
+(167, 'Sun Stone', 'Allows growth under the sun', 'Evolution', 0, 1500, 'evolve,sunstone'),
+(168, 'Moon Stone', 'Allows growth under the moon', 'Evolution', 0, 1500, 'evolve,moonstone'),
+(169, 'Shiny Stone', 'Allows evolution', 'Evolution', 0, 1500, 'evolve,shinystone'),
+(170, 'Dusk Stone', 'Allows evolution', 'Evolution', 0, 1500, 'eveolve,duskstone'),
+(171, 'Dawn Stone', 'Allows evolution', 'Evolution', 0, 1500, 'evolve,dawnstone'),
+(172, 'Everstone', 'Prevents evolution', 'Evolution', 0, 1500, NULL),
+(173, 'Leaf Stone', 'Allows plant type evolution', 'Evolution', 6, 1500, 'evolve,leafstone'),
+(181, 'Full Incense', 'Holder moves last', 'Breeding', 0, 50, NULL),
+(182, 'Lax Incense', 'Increases evasion', 'Breeding', 0, 50, NULL),
+(183, 'Luck Incense', 'Doubles money', 'Breeding', 0, 50, NULL),
+(184, 'Odd Incense', 'Raises psychic moves', 'Breeding', 0, 50, NULL),
+(185, 'Rock Incense', 'Raises rock moves', 'Breeding', 0, 50, NULL),
+(186, 'Rose Incense', 'Raises grass moves', 'Breeding', 0, 50, NULL),
+(187, 'Sea Incense', 'Raises water moves', 'Breeding', 0, 50, NULL),
+(188, 'Wave Incense', 'Raises water moves', 'Breeding', 0, 50, NULL),
+(189, 'Pure Incense', 'Prevents wild pokemon encounters if holder is first in party', 'Breeding', 0, 50, NULL),
+(200, 'Cheri Berry', 'Cures paralysis', 'Food', 11, 10, 'removeEffect,ParalysisEffect.class'),
+(201, 'Chesto Berry', 'Cures Sleep', 'Food', 11, 10, 'removeEffect,SleepEffect.class'),
+(202, 'Pecha Berry', 'Cures poison', 'Food', 11, 10, 'removeEffect,PoisonEffect.class'),
+(203, 'Rawst Berry', 'Heals burns', 'Food', 11, 10, 'removeEffect,BurnEffect.class'),
+(204, 'Aspear Berry', 'Defrosts pokemon', 'Food', 11, 10, 'removeEffect,FreezeEffect.class'),
+(205, 'Leppa Berry', 'Restores PP', 'Food', 0, 10, NULL),
+(206, 'Oran Berry', 'Restores HP', 'Food', 11, 10, 'feedBerry,10'),
+(207, 'Persim Berry', 'Cures confusion', 'Food', 11, 10, 'removeEffect,ConfuseEffect.class'),
+(208, 'Lum Berry', 'Cures any status', 'Food', 0, 10, 'removeAllEffect,1'),
+(209, 'Sitrus Berry', 'Recovers 30 HP', 'Food', 0, 10, 'feedBerry,30'),
+(210, 'Figy Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10, 'healPokemonAmt,8'),
+(211, 'Wiki Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10, 'healPokemonAmt,8'),
+(212, 'Mago Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10, 'healPokemonAmt,8'),
+(213, 'Auguav Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10, 'healPokemonAmt,8'),
+(214, 'Iapapa Berry', 'Heals 1/8th of total HP with a chance of confusion', 'Food', 0, 10, 'healPokemonAmt,8'),
+(215, 'Razz Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(216, 'Bluk Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(217, 'Nanab Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(218, 'Weaper Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(219, 'Pomeg Berry', 'Raises happiness but lowers EV', 'Food', 0, 10, NULL),
+(220, 'Kelpsy Berry', 'Raises happiness but lowers EV', 'Food', 0, 10, NULL),
+(221, 'Qualot Berry', 'Raises happiness but lowers EV', 'Food', 0, 10, NULL),
+(222, 'Hondew Berry', 'Raises happiness but lowers EV', 'Food', 0, 10, NULL),
+(223, 'Grepa Berry', 'Raises happiness but lowers EV', 'Food', 0, 10, NULL),
+(224, 'Tamato Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(225, 'Cornn Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(226, 'Magost Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(227, 'Rabuta Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(228, 'Nomel Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(229, 'Spelon Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(230, 'Pamtre Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(231, 'Watmel Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(232, 'Durin Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(233, 'Belue Berry', 'Poffin ingredient', 'Food', 0, 10, NULL),
+(234, 'Occa Berry', 'Weakens fire', 'Food', 0, 10, NULL),
+(235, 'Passho Berry', 'Weakens water', 'Food', 0, 10, NULL),
+(236, 'Wacan Berry', 'Weakens electric', 'Food', 0, 10, NULL),
+(237, 'Rindo Berry', 'Weakens grass', 'Food', 0, 10, NULL),
+(238, 'Yache Berry', 'Weakens ice', 'Food', 0, 10, NULL),
+(239, 'Chople Berry', 'Weakens fighting', 'Food', 0, 10, NULL),
+(240, 'Kebia Berry', 'Weakens poison', 'Food', 0, 10, NULL),
+(241, 'Shuca Berry', 'Weakens ground', 'Food', 0, 10, NULL),
+(242, 'Coba Berry', 'Weakens flying', 'Food', 0, 10, NULL),
+(243, 'Payapa Berry', 'Weakens psychic', 'Food', 0, 10, NULL),
+(244, 'Tanga Berry', 'Weakens bugs', 'Food', 0, 10, NULL),
+(245, 'Charti Berry', 'Weakens rock', 'Food', 0, 10, NULL),
+(246, 'Kasib Berry', 'Weakens ghost', 'Food', 0, 10, NULL),
+(247, 'Haban Berry', 'Weakens dragon', 'Food', 0, 10, NULL),
+(248, 'Colbur Berry', 'Weakens dark', 'Food', 0, 10, NULL),
+(249, 'Babiri Berry', 'Weakens steel', 'Food', 0, 10, NULL),
+(250, 'Chilan Berry', 'Weakens normal', 'Food', 0, 10, NULL),
+(251, 'Liechi Berry', 'Raises attack when weak', 'Food', 0, 10, NULL),
+(252, 'Ganlon Berry', 'Raises defense when weak', 'Food', 0, 10, NULL),
+(253, 'Salac Berry', 'Raises speed when weak', 'Food', 0, 10, NULL),
+(254, 'Petaya Berry', 'Raises SP. attack when weak', 'Food', 0, 10, NULL),
+(255, 'Apicot Berry', 'Raises SP. Defense when weak', 'Food', 0, 10, NULL),
+(256, 'Starf Berry', 'Raises Critical hit ratio when weak ', 'Food', 0, 10, NULL),
+(257, 'Enigma Berry', 'Restores HP when hit by a supper effective attack', 'Food', 0, 10, NULL),
+(258, 'Micle Berry', 'Raises accuracy', 'Food', 0, 10, NULL),
+(259, 'Custap Berry', 'Moves first', 'Food', 0, 10, NULL),
+(260, 'Jaboca Berry', 'Causes recoil on physical moves', 'Food', 0, 10, NULL),
+(261, 'Rowap Berry', 'Causes recoil on special moves', 'Food', 0, 10, NULL),
+(300, 'Adamant Orb', 'Dialga''s signature item', 'Field', 0, 5000, NULL),
+(301, 'Black Belt', 'Enhances fighting moves', 'Field', 0, 50, NULL),
+(302, 'BlackGlasses', 'Enhances dark moves', 'Field', 0, 50, NULL),
+(303, 'Charcoal', 'Enhances fire moves', 'Field', 0, 4900, NULL),
+(304, 'Dragon Fang', 'Enhances dragon moves', 'Field', 0, 50, NULL),
+(305, 'Hard Stone', 'Enhances rock moves', 'Field', 0, 50, NULL),
+(306, 'Lustrous Orb', 'Palkia''s signature item', 'Field', 0, 5000, NULL),
+(307, 'Magnet', 'Enhances electric moves', 'Field', 0, 50, NULL),
+(308, 'Metal Coat', 'Enhances steel moves', 'Field', 0, 50, NULL),
+(309, 'Miracle Seed', 'Enhances grass moves', 'Field', 0, 50, NULL),
+(310, 'Mystic Water', 'Enhances water moves', 'Field', 0, 50, NULL),
+(311, 'NeverMeltIce', 'Enhances ice moves', 'Field', 0, 50, NULL),
+(312, 'Pink Bow', 'Enhances normal moves', 'Field', 0, 50, NULL),
+(313, 'Poison Barb', 'Enhances poison moves', 'Field', 0, 50, NULL),
+(314, 'Polkadot Bow', 'Enhances normal moves', 'Field', 0, 50, NULL),
+(315, 'Griseous Orb', 'Giratina''s signature item', 'Field', 0, 5000, NULL),
+(316, 'Sharp Beak', 'Enhances flying moves', 'Field', 0, 50, NULL),
+(317, 'Silk Scarf', 'Enhances normal moves', 'Field', 0, 50, NULL),
+(318, 'SilverPowder', 'Enhances bug moves', 'Field', 0, 50, NULL),
+(319, 'Soft Sand', 'Enhances ground moves', 'Field', 0, 50, NULL),
+(320, 'Spell Tag', 'Enhances ghost moves', 'Field', 0, 50, NULL),
+(321, 'TwistedSpoon', 'Enhances psychic moves', 'Field', 0, 50, NULL),
+(331, 'Draco Plate', 'Enhances dragon moves', 'Field', 0, 5000, NULL),
+(332, 'Dread Plate', 'Enhances dark moves', 'Field', 0, 5000, NULL),
+(333, 'Earth Plate', 'Enhances ground moves', 'Field', 0, 5000, NULL),
+(334, 'Fist Plate', 'Enhances fighting moves', 'Field', 0, 5000, NULL),
+(335, 'Flame Plate', 'Enhances fire moves', 'Field', 0, 5000, NULL),
+(336, 'Icicle Plate', 'Enhances ice moves', 'Field', 0, 5000, NULL),
+(337, 'Insect Plate', 'Enhances bug moves', 'Field', 0, 5000, NULL),
+(338, 'Iron Plate', 'Enhances steel moves', 'Field', 0, 5000, NULL),
+(339, 'Meadow Plate', 'Enhances grass moves', 'Field', 0, 5000, NULL),
+(340, 'Mind Plate', 'Enhances psychic moves', 'Field', 0, 5000, NULL),
+(341, 'Sky Plate', 'Enhances flying moves', 'Field', 0, 5000, NULL),
+(342, 'Splash Plate', 'Enhances water moves', 'Field', 0, 5000, NULL),
+(343, 'Spooky Plate', 'Enhances ghost moves', 'Field', 0, 5000, NULL),
+(344, 'Stone Plate', 'Enhances rock moves', 'Field', 0, 5000, NULL),
+(345, 'Toxic Plate', 'Enhances poison moves', 'Field', 0, 5000, NULL),
+(346, 'Zap Plate', 'Enhances electric moves', 'Field', 0, 5000, NULL),
+(350, 'Amulet Coin', 'Doubles winnings', 'Field', 0, 50, NULL),
+(351, 'Berserk Gene', 'Confuses and ups attack', 'Field', 0, 100, NULL),
+(352, 'Big Root', 'Increases HP drain', 'Field', 0, 250, NULL),
+(353, 'Black Sludge', 'Heals poison types, hurts others', 'Field', 0, 1500, NULL),
+(354, 'BrightPowder', 'Raises evasion', 'Field', 0, 1000, NULL),
+(355, 'Choice Band', 'Increases only one attack', 'Field', 0, 5000, NULL),
+(356, 'Choice Scarf', 'Increases speed but can only use one move ', 'Field', 0, 5000, NULL),
+(357, 'Choice Specs', 'Increases Sp. attack but can only use one move', 'Field', 0, 5000, NULL),
+(358, 'Damp Rock', 'lengthens rain dance', 'Field', 0, 1500, NULL),
+(359, 'Destiny Knot', 'Both pokemon become infatuated at the same time ', 'Field', 0, 1000, NULL),
+(360, 'Exp. Share', 'Splits exp. among pokemon', 'Field', 0, 10000, NULL),
+(361, 'Expert Belt', 'Boosts super effective moves', 'Field', 0, 1500, NULL),
+(362, 'Flame Orb', 'Burns holder', 'Field', 0, 1500, NULL),
+(363, 'Focus Band', 'Can survive with one hp left', 'Field', 0, 5000, NULL),
+(364, 'Focus Sash', 'Can''t be one hit KOed with full health ', 'Field', 0, 5000, NULL),
+(365, 'Grip Claw', 'Lengthens trapping moves', 'Field', 0, 1500, NULL),
+(366, 'Heat Rock', 'Lengthens sunny day', 'Field', 0, 1500, NULL),
+(367, 'Icy Rock', 'Lengthens hail', 'Field', 0, 1500, NULL),
+(368, 'Iron Ball', 'Cuts speed and cancels flying type ', 'Field', 0, 50, NULL),
+(369, 'Lagging Tail', 'Makes user move last', 'Field', 0, 50, NULL),
+(370, 'Leftovers', 'Heals at the end of each turn', 'Field', 0, 5000, NULL),
+(371, 'Life Orb', 'Boosts attack at cost of HP', 'Field', 0, 500, NULL),
+(372, 'Light Clay', 'Lengthens light screen and reflect ', 'Field', 0, 1500, NULL),
+(373, 'Lucky Egg', 'Boosts experience gained', 'Field', 0, 10000, NULL),
+(374, 'Mental Herb', 'Prevents attraction', 'Field', 0, 100, NULL),
+(375, 'Metronome', 'Increases consecutive attacks ', 'Field', 0, 1500, NULL),
+(376, 'Muscle Band', 'Increases physical moves', 'Field', 0, 2500, NULL),
+(377, 'Power Herb', 'No charge move required', 'Field', 0, 100, NULL),
+(378, 'Quick Claw', 'Allows user to move first', 'Field', 0, 1500, NULL),
+(379, 'Scope Lens', 'Increases critical hits', 'Field', 0, 1500, NULL),
+(380, 'Shed Shell', 'Can switch even if trapped', 'Field', 0, 2500, NULL),
+(381, 'Shell Bell', 'Gains HP based on attacks', 'Field', 0, 2500, NULL),
+(382, 'Smoke Ball', 'Can escape from wild pokemon', 'Field', 0, 100, NULL),
+(383, 'Smooth Rock', 'Lengthens sandstorm', 'Field', 0, 1500, NULL),
+(384, 'Sticky Barb', 'Hurts use every turn but can latch on to other pokemon', 'Field', 0, 100, NULL),
+(385, 'Toxic Orb', 'Poisons user', 'Field', 0, 1500, NULL),
+(386, 'White Herb', 'Negates negative stat changes', 'Field', 0, 100, NULL),
+(387, 'Wide Lens', 'Boosts accuracy', 'Field', 0, 2500, NULL),
+(388, 'Wise Glasses', 'Boosts special moves', 'Field', 0, 2500, NULL),
+(389, 'Zoom Lens', 'Bossts accuracy if moves second', 'Field', 0, 2500, NULL),
+(400, 'Red Pokeblock', 'Raises coolness', 'Food', 0, 50, NULL),
+(401, 'Blue Pokeblock', 'Raises beauty', 'Food', 0, 50, NULL),
+(402, 'Pink Pokeblock', 'Raises cuteness', 'Food', 0, 50, NULL),
+(403, 'Green Pokeblock', 'Raises smartness', 'Food', 0, 50, NULL),
+(404, 'Yellow Pokeblock', 'Raises toughness', 'Food', 0, 50, NULL),
+(405, 'Purple Pokeblock', 'Raises coolness and something else ', 'Food', 0, 50, NULL),
+(406, 'Indigo Pokeblock', 'Raises beauty and something else ', 'Food', 0, 50, NULL),
+(407, 'Brown Pokeblock', 'Raises cuteness and something else ', 'Food', 0, 50, NULL),
+(408, 'LiteBlue Pokeblock', 'Raises smartness and something else ', 'Food', 0, 50, NULL),
+(409, 'Olive Pokeblock', 'Raises toughness and something else ', 'Food', 0, 50, NULL),
+(410, 'Black Pokeblock', 'The flavors of the berries canceled out ', 'Food', 0, 50, NULL),
+(411, 'Gold Pokeblock', 'Raises one or two attributes', 'Food', 0, 100, NULL),
+(412, 'Gray Pokeblock', 'Raises 3 attributes', 'Food', 0, 100, NULL),
+(413, 'White Pokeblock', 'Raises 4 attributes', 'Food', 0, 100, NULL),
+(414, 'Bitter Poffin', 'Raises smartness', 'Food', 0, 50, NULL),
+(415, 'Spicy Poffin', 'Raises coolness', 'Food', 0, 50, NULL),
+(416, 'Sweet Poffin', 'Raises cuteness', 'Food', 0, 50, NULL),
+(417, 'Dry Poffin', 'Raises beauty', 'Food', 0, 50, NULL),
+(418, 'Sour Poffin', 'Raises toughness', 'Food', 0, 50, NULL),
+(419, 'Mild Poffin', 'Raises multiple attributes', 'Food', 0, 50, NULL),
+(420, 'Honey', 'Slather on a tree to attract pokemon ', 'Food', 8, 1000, NULL),
+(421, 'Big Apple', 'An apple a day keeps the haunter away ', 'Food', 8, 100, NULL),
+(422, 'Huge Apple', 'A bigger version of the big apple?', 'Food', 8, 500, NULL),
+(423, 'Golden Apple', 'Not actually made out of gold', 'Food', 8, 1000, NULL),
+(424, 'Perfect Apple', 'DO NOT EAT IT... too precious', 'Food', 8, 5000, NULL),
+(425, 'Banana', 'Is that a banana in your pocket or are you just happy to see me?', 'Food', 8, 100, NULL),
+(426, 'Grimy Food', 'A food that came out of a grimer, do you really want to eat it?', 'Food', 8, 100, NULL),
+(427, 'Chestnut', 'A Mankeys favorite food', 'Food', 8, 100, NULL),
+(428, 'Black Gummi', 'A gummi that is black', 'Food', 0, 100, NULL),
+(429, 'Blue Gummi', 'A gummi that is blue', 'Food', 0, 100, NULL),
+(430, 'Brown Gummi', 'A gummi that is brown', 'Food', 0, 100, NULL),
+(431, 'Clear Gummi', 'A gummi that is clear', 'Food', 0, 100, NULL),
+(432, 'Gold Gummi', 'A gummi that is gold', 'Food', 0, 100, NULL),
+(433, 'Grass Gummi', 'A gummi that is made out of grass?', 'Food', 0, 100, NULL),
+(434, 'Green Gummi', 'A gummi that is green', 'Food', 0, 100, NULL),
+(435, 'Grey Gummi', 'A gummi that is gray', 'Food', 0, 100, NULL),
+(436, 'Orange Gummi', 'A gummi that is orange', 'Food', 0, 100, NULL),
+(437, 'Pink Gummi', 'A gummi that is pink', 'Food', 0, 100, NULL),
+(438, 'Purple Gummi', 'A gummi that is purple', 'Food', 0, 100, NULL),
+(439, 'Red Gummi', 'A gummi that is red', 'Food', 0, 100, NULL),
+(440, 'Royal Gummi', 'A gummi that is fit for a king', 'Food', 0, 100, NULL),
+(441, 'Silver Gummi', 'A gummi that is silver', 'Food', 0, 100, NULL),
+(442, 'Sky Gummi', 'A gummi that is made out of clouds?', 'Food', 0, 100, NULL),
+(443, 'White Gummi', 'A gummi that is white', 'Food', 0, 100, NULL),
+(444, 'Yellow Gummi', 'A gummi that is yellow', 'Food', 0, 100, NULL),
+(445, 'Wonder Gummi', 'A gummi that is a mystery O.O', 'Food', 0, 100, NULL),
+(477, 'Light Ball', 'Doubles Sp. attack and attack of pikachu ', 'Field', 0, 5000, NULL),
+(478, 'Lucky Punch', 'Raises critical hit ratio of chansey ', 'Field', 0, 1000, NULL),
+(479, 'Metal Powder', 'Raises defense and Sp. defense of ditto ', 'Field', 0, 1000, NULL),
+(480, 'Quick Powder', 'Increases Dittos speed', 'Field', 0, 1000, NULL),
+(481, 'Soul Dew', 'Increases Sp. attack and Sp. defense of latios and latias', 'Field', 0, 10000, NULL),
+(482, 'Stick', 'Increases the critical hit ratio of farfetch ', 'Field', 0, 1000, NULL),
+(483, 'Thick Club', 'Doubles attack of cubone and marowak ', 'Field', 0, 1000, NULL),
+(490, 'Blue Scarf', 'Increases beauty', 'Field', 0, 500, NULL),
+(491, 'Green Scarf', 'Increases smarts', 'Field', 0, 500, NULL),
+(492, 'Pink Scarf', 'Increases cuteness', 'Field', 0, 500, NULL),
+(493, 'Red Scarf', 'Increases coolness', 'Field', 0, 500, NULL),
+(494, 'Yellow Scarf', 'Increases toughness', 'Field', 0, 500, NULL),
+(500, 'White Apricorn', 'Makes a fast ball', 'Tools', 0, 30, NULL),
+(501, 'Red Apricorn', 'Makes a level ball', 'Tools', 0, 30, NULL),
+(502, 'Blue Apricorn', 'Makes a lure ball', 'Tools', 0, 30, NULL),
+(503, 'Black Apricorn', 'Makes a heavy ball', 'Tools', 0, 30, NULL),
+(504, 'Pink Apricorn', 'Makes a love ball', 'Tools', 0, 30, NULL),
+(505, 'Green Apricorn', 'Makes a friend ball', 'Tools', 0, 30, NULL),
+(506, 'Yellow Aprocorn', 'Makes a moon ball', 'Tools', 0, 30, NULL),
+(525, 'Soothe Bell', 'Increases friendship', 'Field', 0, 5000, NULL),
+(550, 'Air Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(551, 'Bloom Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(552, 'Bubble Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(553, 'Flame Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(554, 'Grass Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(555, 'Hearth Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(556, 'Snom Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(557, 'Space Mail', 'A piece of mail', 'Key', 0, 50, NULL),
+(558, 'Steel Mail', 'A piece of mail', 'Field', 0, 50, NULL),
+(559, 'Tunnel Mail', 'A piece of mail', 'Key', 0, 50, NULL),
+(576, 'TM01 Focus Punch', 'Teaches focus punch', 'TM', 0, 5500, NULL),
+(577, 'TM02 Dragon Claw', 'Teaches dragon claw', 'TM', 0, 5500, NULL),
+(578, 'TM03 Water Pulse', 'Teaches water pulse', 'TM', 0, 5500, NULL),
+(579, 'TM04 Calm Mind', 'Teaches calm mind', 'TM', 0, 7500, NULL),
+(580, 'TM05 Roar', 'Teaches roar', 'TM', 5, 2000, NULL),
+(581, 'TM06 Toxic', 'Teaches toxic', 'TM', 0, 2000, NULL),
+(582, 'TM07 Hail', 'Teaches hail', 'TM', 0, 2000, NULL),
+(583, 'TM08 Bulk Up', 'Teaches bulk up', 'TM', 0, 5500, NULL),
+(584, 'TM09 Bullet Seed', 'Teaches bullet seed', 'TM', 0, 5500, NULL),
+(585, 'TM10 Hidden Power', 'Teaches hidden power', 'TM', 0, 7500, NULL),
+(586, 'TM11 Sunny Day', 'Teaches sunny day', 'TM', 0, 2000, NULL),
+(587, 'TM12 Taunt', 'Teaches taunt', 'TM', 0, 5500, NULL),
+(588, 'TM13 Ice Beam', 'Teaches ice beam', 'TM', 2, 15000, NULL),
+(589, 'TM14 Blizzard', 'Teaches blizzard', 'TM', 2, 20000, NULL),
+(590, 'TM15 Hyper Beam', 'Teaches hyper beam', 'TM', 5, 7500, NULL),
+(591, 'TM16 Light Screen', 'Teaches light screen', 'TM', 0, 2000, NULL),
+(592, 'TM17 Protect', 'Teaches protect', 'TM', 0, 2000, NULL),
+(593, 'TM18 Rain Dance', 'Teaches rain dance', 'TM', 0, 2000, NULL),
+(594, 'TM19 Giga Drain', 'Teaches giga drain', 'TM', 0, 5500, NULL),
+(595, 'TM20 Safeguard', 'Teaches safeguard', 'TM', 0, 2000, NULL),
+(596, 'TM21 Frustration', 'Teaches frustration', 'TM', 0, 2000, NULL),
+(597, 'TM22 SolarBeam', 'Teaches solarbeam', 'TM', 0, 3000, NULL),
+(598, 'TM23 Iron Tail', 'Teaches iron tail', 'TM', 0, 5500, NULL),
+(599, 'TM24 Thunderbolt', 'Teaches thunderbolt', 'TM', 2, 15000, NULL),
+(600, 'TM25 Thunder', 'Teaches thunder', 'TM', 2, 20000, NULL),
+(601, 'TM26 Earthquake', 'Teaches earthquake', 'TM', 0, 7500, NULL),
+(602, 'TM27 Return', 'Teaches return', 'TM', 2, 10000, NULL),
+(603, 'TM28 Dig', 'Teaches dig', 'TM', 5, 5500, NULL),
+(604, 'TM29 Psychic', 'Teaches psychic', 'TM', 0, 7500, NULL),
+(605, 'TM30 Shadow Ball', 'Teaches shadow ball', 'TM', 0, 7500, NULL),
+(606, 'TM31 Brick Break', 'Teaches brick break', 'TM', 5, 5500, NULL),
+(607, 'TM32 Double Team', 'Teaches double team', 'TM', 0, 2000, NULL),
+(608, 'TM33 Reflect', 'Teaches reflect', 'TM', 0, 2000, NULL),
+(609, 'TM34 Shock Wave', 'Teaches shock wave', 'TM', 0, 5500, NULL),
+(610, 'TM35 Flamethrower', 'Teaches flamethrower', 'TM', 2, 15000, NULL),
+(611, 'TM36 Sludge Bomb', 'Teaches sludge bomb', 'TM', 0, 5500, NULL),
+(612, 'TM37 Sandstorm', 'Teaches sandstorm', 'TM', 0, 2000, NULL),
+(613, 'TM38 Fire Blast', 'Teaches fire blast', 'TM', 0, 7500, NULL),
+(614, 'TM39 Rock Tomb', 'Teaches rock tomb', 'TM', 0, 2000, NULL),
+(615, 'TM40 Aerial Ace', 'Teaches aerial ace', 'TM', 0, 5500, NULL),
+(616, 'TM41 Torment', 'Teaches torment', 'TM', 0, 2000, NULL),
+(617, 'TM42 Facade', 'Teaches facade', 'TM', 0, 3000, NULL),
+(618, 'TM43 Secret Power', 'Teaches secret power', 'TM', 5, 2000, NULL),
+(619, 'TM44 Rest', 'Teaches rest', 'TM', 0, 3000, NULL),
+(620, 'TM45 Attract', 'Teaches attract', 'TM', 5, 2000, NULL),
+(621, 'TM46 Thief', 'Teaches thief', 'TM', 0, 2000, NULL),
+(622, 'TM47 Steel Wing', 'Teaches steel wing', 'TM', 0, 5500, NULL),
+(623, 'TM48 Skill Swap', 'Teaches skill swap', 'TM', 0, 2000, NULL),
+(624, 'TM49 Snatch', 'Teaches snatch', 'TM', 0, 2000, NULL),
+(625, 'TM50 Overheat', 'Teaches overheat', 'TM', 0, 5500, NULL),
+(626, 'TM51 Roost', 'Teaches roost', 'TM', 0, 5500, NULL),
+(627, 'TM52 Focus Blast', 'Teaches focus blast', 'TM', 0, 5500, NULL),
+(628, 'TM53 Energy Ball', 'Teaches energy ball', 'TM', 0, 2000, NULL),
+(629, 'TM54 False Swipe', 'Teaches false swipe', 'TM', 0, 2000, NULL),
+(630, 'TM55 Brine', 'Teaches brine', 'TM', 0, 5500, NULL),
+(631, 'TM56 Fling', 'Teaches fling', 'TM', 0, 2000, NULL),
+(632, 'TM57 Charge Beam', 'Teaches charge beam', 'TM', 0, 5500, NULL),
+(633, 'TM58 Endure', 'Teaches endure', 'TM', 0, 2000, NULL),
+(634, 'TM59 Dragon Pulse', 'Teaches dragon pulse', 'TM', 0, 5500, NULL),
+(635, 'TM60 Drain Punch', 'Teaches drain punch', 'TM', 0, 3000, NULL),
+(636, 'TM61 Will-O-Wisp', 'Teaches will-o-wisp', 'TM', 0, 3000, NULL),
+(637, 'TM62 Silver Wind', 'Teaches silver wind', 'TM', 0, 3000, NULL),
+(638, 'TM63 Embargo', 'Teaches embargo', 'TM', 0, 2000, NULL),
+(639, 'TM64 Explosion', 'Teaches explosion', 'TM', 0, 4000, NULL),
+(640, 'TM65 Shadow Claw', 'Teaches shadow claw', 'TM', 0, 3000, NULL),
+(641, 'TM66 Payback', 'Teaches payback', 'TM', 0, 2000, NULL),
+(642, 'TM67 Recycle', 'Teaches recycle', 'TM', 0, 2000, NULL),
+(643, 'TM68 Giga Impact', 'Teaches giga impact', 'TM', 0, 5500, NULL),
+(644, 'TM69 Rock Polish', 'Teaches rock polish', 'TM', 0, 2000, NULL),
+(645, 'TM70 Flash', 'Teaches flash', 'TM', 0, 1000, NULL),
+(646, 'TM71 Stone Edge', 'Teaches stone edge', 'TM', 0, 5500, NULL),
+(647, 'TM72 Avalanche', 'Teaches avalanche', 'TM', 0, 4000, NULL),
+(648, 'TM73 Thunder Wave', 'Teaches thunder wave', 'TM', 0, 2000, NULL),
+(649, 'TM74 Gyro Ball', 'Teaches gyro ball', 'TM', 0, 5500, NULL),
+(650, 'TM75 Swords Dance', 'Teaches swords dance', 'TM', 0, 3000, NULL),
+(651, 'TM76 Stealth Rock', 'Teaches stealth rock', 'TM', 0, 2000, NULL),
+(652, 'TM77 Psych Up', 'Teaches psych up', 'TM', 0, 3000, NULL),
+(653, 'TM78 Captivate', 'Teaches captivate', 'TM', 0, 2000, NULL),
+(654, 'TM79 Dark Pulse', 'Teaches dark pulse', 'TM', 0, 5500, NULL),
+(655, 'TM80 Rock Slide', 'Teaches rock slide', 'TM', 0, 5500, NULL),
+(656, 'TM81 X-Scissor', 'Teaches x-scissor', 'TM', 0, 5500, NULL),
+(657, 'TM82 Sleep Talk', 'Teaches sleep talk', 'TM', 0, 3000, NULL),
+(658, 'TM83 Natural Gift', 'Teaches natural gift', 'TM', 0, 2000, NULL),
+(659, 'TM84 Poison Jab', 'Teaches poison jab', 'TM', 0, 4000, NULL),
+(660, 'TM85 Dream Eater', 'Teaches dream eater', 'TM', 0, 2000, NULL),
+(661, 'TM86 Grass Knot', 'Teaches grass knot', 'TM', 0, 2000, NULL),
+(662, 'TM87 Swagger', 'Teaches swagger', 'TM', 0, 2000, NULL),
+(663, 'TM88 Pluck', 'Teaches pluck', 'TM', 0, 2000, NULL),
+(664, 'TM89 U-turn', 'Teaches u-turn', 'TM', 0, 3000, NULL),
+(665, 'TM90 Substitute', 'Teaches substitute', 'TM', 0, 5500, NULL),
+(666, 'TM91 Flash Cannon', 'Teaches flash cannon', 'TM', 0, 4000, NULL),
+(667, 'TM92 Trick Room', 'Teaches trick room', 'TM', 0, 3000, NULL),
+(668, 'TM93 Surf', 'Teaches surf', 'TM', 0, 7500, NULL),
+(669, 'TM94 Cut', 'Teaches Cut', 'TM', 0, 7500, NULL),
+(670, 'TM95 Fly', 'Teaches Fly', 'TM', 0, 7500, NULL),
+(671, 'TM96 Strength', 'Teaches Strength', 'TM', 0, 7500, NULL),
+(672, 'TM97 Rocksmash', 'Teaches Rocksmash', 'TM', 0, 7500, NULL),
+(673, 'TM98 Waterfall', 'Teaches Waterfall', 'TM', 0, 7500, NULL),
+(674, 'TM99 Dive', 'Teaches Dive', 'TM', 0, 7500, NULL),
+(750, 'Secret Potion', 'Known to cure psyduck headaches', 'Key', 0, 1000, NULL),
+(800, 'Voltorb Lollipop', 'Heals 50HP, but might Paralyze your Pokemon', 'Food', 10, 1000, NULL),
+(801, 'Sweet Chills', 'Restores 5PP to all moves, but might Freeze your Pokemon', 'Food', 10, 1000, NULL),
+(802, 'Cinnamon Candy', 'Heals All Status, but might Burn your Pokemon', 'Food', 10, 1000, NULL),
+(803, 'Candy Corn', 'Raises Happiness, but might Poison your Pokemon', 'Food', 10, 1000, NULL),
+(804, 'Poke Choc', 'Raises Happiness, and might Heal 30HP to your Pokemon', 'Food', 10, 1000, NULL),
+(805, 'Gummilax', 'Raises Happiness, but might put your Pokemon to Sleep', 'Food', 10, 1000, NULL),
+(806, 'Gengum', 'Heals your Pokemons HP for an unknown amount.', 'Food', 10, 1000, NULL);
