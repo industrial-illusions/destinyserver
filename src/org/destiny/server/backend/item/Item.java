@@ -1,8 +1,6 @@
 package org.destiny.server.backend.item;
 
 import java.util.ArrayList;
-import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
 
 /**
  * Represents an item
@@ -18,20 +16,10 @@ public class Item
 		BATTLE, CRAFT, FIELD, HOLD, MOVESLOT, OTHER, POKEMON
 	}
 
-	@ElementList
 	private ArrayList<ItemAttribute> m_attributes;
-	@Element
-	private String m_category;
-	@Element
-	private String m_description;
-	@Element
+	private String m_category, m_description, m_name, m_script;
 	private int m_id;
-	@Element
-	private String m_name;
-	@Element
 	private int m_price;
-
-	@Element
 	private int m_shop;
 
 	/**
@@ -115,6 +103,11 @@ public class Item
 	{
 		return m_shop;
 	}
+	
+	public String getScript()
+	{
+		return m_script;
+	}
 
 	/**
 	 * Sets the category of the item
@@ -175,4 +168,10 @@ public class Item
 	{
 		m_shop = s;
 	}
+	
+	public void setScript(String s)
+	{
+		m_script = s;
+	}
+
 }
